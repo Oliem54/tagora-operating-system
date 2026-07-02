@@ -1,0 +1,298 @@
+# Application progressive — TAGORA Time
+
+## Objectif
+
+Définir le plan d'adoption progressive des standards TOS sur **TAGORA Time**, premier projet pilote officiel de l'écosystème TAGORA.
+
+## Portée
+
+Module **TAGORA Time** uniquement — application métier horodateur / gestion du temps. TOS et Time restent des entités **séparées**.
+
+---
+
+## Pourquoi TAGORA Time est le projet pilote
+
+TAGORA Time est désigné pilote officiel pour les raisons suivantes :
+
+1. **Maturité relative** — Premier candidat naturel pour valider les standards en conditions réelles.
+2. **Périmètre maîtrisable** — Domaine métier défini (horodateur, temps) — permet d'itérer sans complexité excessive.
+3. **Impact transversal** — Time touche employés, permissions, multi-compagnies — concepts partagés avec TBF et TCP.
+4. **Besoin QA fort** — Application critique pour les utilisateurs ; le TQF y apporte une valeur immédiate.
+5. **Retour d'expérience** — Les standards validés sur Time deviennent la référence pour Stock Premium, Voice, Mail IA, Pulse et Platform.
+
+Time n'est pas choisi parce qu'il deviendrait TOS. Il est choisi parce qu'il **teste** TOS.
+
+---
+
+## Règle fondamentale : Time reste une application métier indépendante
+
+- **TAGORA Time** = application métier, dépôt séparé, logique horodateur et règles métier Time.
+- **TOS** = Constitution documentaire, dépôt séparé, aucune logique métier Time.
+- **Ne pas fusionner** Time avec TOS — ni en code, ni en dépôt, ni en responsabilité produit.
+- TOS **guide** Time ; Time **implémente** son métier et **adopte** les standards applicables.
+
+---
+
+## Ordre de priorité des piliers
+
+Les piliers TOS ne seront pas tous appliqués en même temps. Ordre de priorité pour Time :
+
+### Priorité 1 — TQF (TAGORA Quality Framework)
+
+**Pourquoi en premier :** Sans QA reproductible, toute adoption de standards est fragile.
+
+| Élément | Objectif sur Time |
+|---|---|
+| Comptes QA | Jeu de comptes dédiés par rôle, documentés (sans secrets dans TOS). |
+| Scénarios reproductibles | Parcours critiques écrits et exécutables par toute l'équipe. |
+| Playwright | Automatisation des smoke tests et parcours UI essentiels. |
+| Données QA | Fixtures et procédure de reset documentées. |
+| Smoke tests | Gate avant release — non négociable. |
+
+Références : `docs/06_qa/`
+
+---
+
+## Phase pilote TQF — QA initiale
+
+**Statut :** En cours (Phase 3A TOS)
+
+TAGORA Time applique le TQF en premier. Cette phase documente **comment** la QA sera structurée avant toute création de tests réels dans le dépôt Time.
+
+### Principes de la phase pilote QA
+
+| Principe | Description |
+|---|---|
+| **TQF en premier** | Le pilier qualité précède l'automatisation et la livraison production. |
+| **Documentation avant tests** | Les standards QA sont écrits dans TOS avant tout fichier `.spec.ts` dans Time. |
+| **Comptes et données avant Playwright** | Comptes QA et jeux de données validés dans l'environnement Time avant automatisation. |
+| **Scénarios avant code de test** | Chaque parcours critique est documenté (ex. `QA-TIME-001`) et validé humainement. |
+| **Pas d'automatisation sans validation** | Aucun test Playwright sans scénario au statut **Validé**. |
+
+### Livrables Phase 3A (dépôt TOS)
+
+- [x] [QA_FRAMEWORK_OVERVIEW.md](../06_qa/QA_FRAMEWORK_OVERVIEW.md) — cadre TQF
+- [x] [PLAYWRIGHT_STANDARD.md](../06_qa/PLAYWRIGHT_STANDARD.md) — conventions futures
+- [x] [COMPTES_QA_STANDARD.md](../06_qa/COMPTES_QA_STANDARD.md) — rôles QA Time
+- [x] [DONNEES_QA_STANDARD.md](../06_qa/DONNEES_QA_STANDARD.md) — données et reset
+- [x] [SMOKE_TEST_STANDARD.md](../06_qa/SMOKE_TEST_STANDARD.md) — gate release
+- [x] [QA-TIME-001](../06_qa/scenarios_time/QA-TIME-001-PUNCH_IN_OUT_EMPLOYE.md) — premier scénario
+- [ ] Validation humaine QA-TIME-001
+- [ ] Création comptes QA effectifs (dépôt Time)
+- [ ] Fixtures et reset (dépôt Time)
+- [ ] Automatisation Playwright (dépôt Time — après validation)
+
+### Prochaines scénarios documentaires suggérés
+
+- QA-TIME-002 — Permissions (employé vs direction)
+- QA-TIME-003 — Connexion et dashboard par rôle
+- QA-TIME-004 — Géolocalisation ou QR (si applicable — à confirmer)
+
+### Priorité 2 — TDS (TAGORA Design System)
+
+**Pourquoi en second :** La signature visuelle TAGORA doit être visible rapidement sur Time.
+
+| Élément | Objectif sur Time |
+|---|---|
+| Design premium | Interface épurée, professionnelle, lisible. |
+| Navigation | Patterns cohérents avec la vision écosystème. |
+| Lisibilité | Informations critiques visibles ; détails en vues secondaires. |
+| Cohérence visuelle | Alignement palette, typographie, composants (à définir dans TDS). |
+
+Références : `docs/09_design_system/`
+
+---
+
+## Phase pilote TDS — Design initial
+
+**Statut :** En cours (Phase 3B TOS)
+
+Le TDS est le **deuxième pilier** appliqué à TAGORA Time, après le TQF. Cette phase documente **comment** le design premium TAGORA sera structuré avant toute refonte ou modification UI importante dans le dépôt Time.
+
+### Principes de la phase pilote design
+
+| Principe | Description |
+|---|---|
+| **TDS après TQF** | Qualité testable d'abord ; design aligné ensuite — les deux se renforcent. |
+| **Documentation avant refonte UI** | Standards TDS écrits dans TOS avant changements visuels majeurs sur Time. |
+| **Pas de modification Time immédiate** | TOS guide ; le dépôt Time applique quand prêt. |
+| **Time reste indépendant** | Application métier séparée ; TDS = cadre, pas code dans TOS. |
+| **Pas de valeurs finales imposées** | Palette hex et polices validées ultérieurement. |
+
+### Priorité initiale design Time
+
+| Priorité | Domaine |
+|---|---|
+| 1 | **Navigation** — claire par rôle (employé, superviseur, direction, admin) |
+| 2 | **Lisibilité** — hiérarchie typographique, données critiques visibles |
+| 3 | **Statuts visuels** — punch actif, terminé, retard, validation, erreur |
+| 4 | **Dashboard employé** — action principale (pointage) évidente |
+| 5 | **Dashboard direction** — synthèse puis détails |
+| 6 | **Erreurs compréhensibles** — messages explicites, visibles |
+| 7 | **Cohérence desktop / mobile** — mêmes principes, adaptation responsive |
+
+### Livrables Phase 3B (dépôt TOS)
+
+- [x] [DESIGN_PREMIUM_2027.md](../09_design_system/DESIGN_PREMIUM_2027.md)
+- [x] [NAVIGATION_STANDARD.md](../09_design_system/NAVIGATION_STANDARD.md)
+- [x] [PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md) — catégories, sémantique Time
+- [x] [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md)
+- [x] [COMPOSANTS_UI_STANDARD.md](../09_design_system/COMPOSANTS_UI_STANDARD.md)
+- [x] [ACCESSIBILITE.md](../09_design_system/ACCESSIBILITE.md)
+- [x] [TDS_CHECKLIST_REVUE_UI.md](../09_design_system/TDS_CHECKLIST_REVUE_UI.md)
+- [x] [STANDARD_UX_UI.md](../02_standards/STANDARD_UX_UI.md) — philosophie et liens TDS/TQF
+- [x] [STANDARD_IMAGE_DE_MARQUE.md](../02_standards/STANDARD_IMAGE_DE_MARQUE.md)
+- [ ] Validation humaine palette et typographie (valeurs finales)
+- [ ] Revue UI écrans Time existants avec checklist TDS
+- [ ] ADR design si décision impactant l'écosystème
+
+### Priorité 3 — TES (TAGORA Engineering System)
+
+**Pourquoi en troisième :** Une fois QA et design cadrés, la méthode de développement structure le reste.
+
+| Élément | Objectif sur Time |
+|---|---|
+| Validation avant code | Checklist légère avant tout développement important. |
+| Documentation préalable | Besoin, périmètre, critères d'acceptation écrits. |
+| ADR | Décisions architecturales Time impactant l'écosystème → TKS. |
+| Alignement TRF | Workflow Git/PR/CI quand applicable au dépôt Time. |
+
+Références : `docs/03_gouvernance/REGLES_DE_VALIDATION_AVANT_CODE.md`
+
+---
+
+## Phase pilote TES — Méthode de développement
+
+**Statut :** En cours (Phase 3C TOS)
+
+Le TES est le **troisième pilier** appliqué à TAGORA Time, après TQF et TDS. Cette phase documente **comment** la méthode de développement, validation, sécurité et livraison structurent le travail **avant** modification du dépôt Time.
+
+### Principes de la phase pilote TES
+
+| Principe | Description |
+|---|---|
+| **TES après TQF et TDS** | Qualité et design cadrés ; méthode d'ingénierie ensuite |
+| **Validation avant code** | Aucun développement Time important sans fiche ou note ([ADR-0002](../05_adr/ADR-0002-DOCUMENTATION_AVANT_CODE.md)) |
+| **Time reste indépendant** | Application métier séparée ; TOS documente, ne modifie pas Time |
+| **Décisions dans leur contexte** | Fiches/ADR dans Time ou TKS selon périmètre |
+| **Pas de stack imposée** | Principes TES sans technologie finale |
+
+### Priorités initiales TES sur Time
+
+| Priorité | Domaine |
+|---|---|
+| 1 | **Validation avant code** — fiche VAL-TIME-XXX pour changements importants |
+| 2 | **Séparation des projets** — Time ≠ TOS ≠ autres modules |
+| 3 | **Sécurité des secrets** — jamais dans TOS ; environnements séparés |
+| 4 | **Préparation QA avant production** — smoke tests gate release |
+| 5 | **Traçabilité des décisions** — ADR si impact écosystème |
+
+### Livrables Phase 3C (dépôt TOS)
+
+- [x] [01_TES_TAGORA_ENGINEERING_SYSTEM.md](../01_piliers/01_TES_TAGORA_ENGINEERING_SYSTEM.md)
+- [x] [STANDARD_DEVELOPPEMENT.md](../02_standards/STANDARD_DEVELOPPEMENT.md)
+- [x] [STANDARD_ARCHITECTURE.md](../02_standards/STANDARD_ARCHITECTURE.md)
+- [x] [STANDARD_SECURITE.md](../02_standards/STANDARD_SECURITE.md)
+- [x] [STANDARD_DEVOPS.md](../02_standards/STANDARD_DEVOPS.md)
+- [x] [09_TRF_TAGORA_RELEASE_FRAMEWORK.md](../01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md)
+- [x] [REGLES_DE_VALIDATION_AVANT_CODE.md](../03_gouvernance/REGLES_DE_VALIDATION_AVANT_CODE.md) — enrichi
+- [x] [REGLES_DE_SEPARATION_DES_PROJETS.md](../03_gouvernance/REGLES_DE_SEPARATION_DES_PROJETS.md)
+- [x] [REGLES_DE_COMPATIBILITE_MODULES.md](../03_gouvernance/REGLES_DE_COMPATIBILITE_MODULES.md)
+- [x] [FICHE_VALIDATION_AVANT_CODE_TEMPLATE.md](../03_gouvernance/FICHE_VALIDATION_AVANT_CODE_TEMPLATE.md)
+- [x] [ADR-0002 — Documentation avant code](../05_adr/ADR-0002-DOCUMENTATION_AVANT_CODE.md)
+- [ ] Première fiche VAL-TIME-001 sur changement réel (dépôt Time)
+- [ ] Validation humaine ADR-0002
+
+### Priorité 4 — TKS (TAGORA Knowledge System)
+
+**Pourquoi en quatrième :** La mémoire documentaire consolide ce qui est appris sur Time.
+
+| Élément | Objectif sur Time |
+|---|---|
+| ADR | Décisions Time significatives pour l'écosystème. |
+| Retours d'expérience | Écarts, ajustements standards, leçons apprises. |
+| Problèmes connus | Registre partagé via TKS. |
+
+Références : `docs/05_adr/`
+
+---
+
+## Piliers en attente — ne pas modifier tout de suite
+
+Les piliers suivants sont **reconnus** mais **non prioritaires** pour la première vague d'adoption sur Time :
+
+| Pilier | Raison du report |
+|---|---|
+| **TAF** (IA) | À activer quand Time intègre des cas d'usage IA définis. |
+| **TOF** (Orchestration) | À activer pour workflows transverses — pas pour la logique métier Time. |
+| **TCP** (Core Platform) | Implémentation hors TOS — adoption quand briques communes validées et disponibles. |
+| **TBF** (Business Framework) | Documenter règles transverses au fil de l'eau ; pas de refonte métier Time imposée. |
+| **TRF** (Release) | Aligner progressivement ; pas de refonte pipeline d'un coup. |
+| **TMF** (Monitoring) | Renforcer quand observabilité Time identifiée comme gap. |
+
+> **Règle :** Ne pas bloquer Time en attendant TCP, TOF ou une plateforme complète. Adopter ce qui est prêt ; documenter le reste.
+
+---
+
+## Limites explicites
+
+1. **Pas de fusion Time / TOS** — Deux dépôts, deux missions.
+2. **Pas de déplacement de logique métier Time vers TOS** — Horodateur, règles congés Time, etc. restent dans Time.
+3. **Pas de big bang** — Adoption pilier par pilier, fonctionnalité par fonctionnalité si nécessaire.
+4. **Pas de standard non validé imposé** — Écarts documentés jusqu'à convergence.
+5. **Pas d'invention d'architecture dans TOS pour Time** — Time produit les ADR ; TOS enregistre les standards généralisables.
+
+---
+
+## Principes d'adoption
+
+- Adoption **progressive**, pas de big bang.
+- Retours d'expérience Time **alimentent** TOS et TKS avant généralisation.
+- Standards validés sur Time = **référence** pour les autres modules.
+- Écarts temporaires **documentés** avec date de résolution cible.
+
+## Règles
+
+- Prioriser TQF → TDS → TES → TKS sur la première phase.
+- Documenter écarts et dérogations temporaires.
+- Produire un ADR pour toute décision Time impactant l'écosystème.
+- Ne pas déployer en production sans smoke tests conformes TQF.
+
+---
+
+## État de convergence (à mettre à jour)
+
+| Pilier | Priorité | Statut | Notes |
+|---|---|---|---|
+| TQF | 1 | Complété (doc) | Phase 3A — standards QA ; QA-TIME-001 brouillon |
+| TDS | 2 | Complété (doc) | Phase 3B — standards design documentés |
+| TES | 3 | En cours | Phase 3C — validation avant code, ADR-0002 |
+| TKS | 4 | En cours | ADR-0001, ADR-0002 |
+| TAF | — | Reporté | — |
+| TOF | — | Reporté | — |
+| TCP | — | Reporté | — |
+| TBF | — | Reporté | — |
+| TRF | — | Reporté | — |
+| TMF | — | Reporté | — |
+
+---
+
+## Éléments à documenter plus tard
+
+- Calendrier indicatif par priorité
+- Critères de succès par pilier sur Time
+- Liste des écarts acceptés temporairement
+- Retours d'expérience et ajustements standards post-pilote
+
+## Statut
+
+**Enrichi — Phase 3C** — Pilote TES documenté. Application fiches validation sur dépôt Time à planifier.
+
+## Références
+
+- [ADR-0002 — Documentation avant code](../05_adr/ADR-0002-DOCUMENTATION_AVANT_CODE.md)
+- [Fiche validation avant code](../03_gouvernance/FICHE_VALIDATION_AVANT_CODE_TEMPLATE.md)
+- [TES](../01_piliers/01_TES_TAGORA_ENGINEERING_SYSTEM.md)
+
+- [ADR-0001 — TOS comme Constitution méthodologique](../05_adr/ADR-0001-TOS_COMME_CONSTITUTION_METHODOLOGIQUE.md)
+- [Constitution officielle](../00_constitution/00_CONSTITUTION_OFFICIELLE_TAGORA_OPERATING_SYSTEM.md)
