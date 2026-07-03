@@ -1,0 +1,26 @@
+# Secrets et configuration locale — ne jamais versionner
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Node / dépendances
+node_modules/
+.next/
+dist/
+build/
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Archives temporaires
+*.zip
+*.tmp
