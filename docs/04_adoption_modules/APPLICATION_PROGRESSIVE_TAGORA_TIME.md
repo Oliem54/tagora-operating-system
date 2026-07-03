@@ -213,7 +213,47 @@ Le TES est le **troisième pilier** appliqué à TAGORA Time, après TQF et TDS.
 | Retours d'expérience | Écarts, ajustements standards, leçons apprises. |
 | Problèmes connus | Registre partagé via TKS. |
 
-Références : `docs/05_adr/`
+Références : `docs/05_adr/`, `docs/10_knowledge/`
+
+---
+
+## Phase pilote TKS — Mémoire permanente
+
+**Statut :** En cours (Phase 3D TOS)
+
+Le TKS est le **quatrième pilier** appliqué à TAGORA Time, après TQF, TDS et TES. Cette phase documente **comment** les décisions, problèmes, solutions et leçons restent traçables — sans transformer TOS en application documentaire ni absorber Time.
+
+### Principes de la phase pilote mémoire
+
+| Principe | Description |
+|---|---|
+| **TKS après TQF, TDS et TES** | Qualité, design et méthode d'abord ; mémoire pour ne pas perdre le fil |
+| **Décisions Time traçables** | Les décisions importantes sont datées, statutées et liées (registre ou ADR si écosystème) |
+| **Problèmes connus séparés** | Les problèmes Time sont documentés dans leur contexte ; remontée TOS seulement si généralisable |
+| **Solutions reliées aux problèmes** | Pas de solution orpheline ; pas de solution inventée |
+| **ADR TOS ≠ doc interne Time** | Les ADR écosystème ne remplacent pas la documentation métier Time |
+| **Time reste indépendant** | Application métier séparée ; TOS documente la méthode mémoire |
+
+### Priorités initiales TKS sur Time
+
+| Priorité | Domaine |
+|---|---|
+| 1 | Traçabilité des décisions Time importantes |
+| 2 | Problèmes connus Time documentés séparément (après validation) |
+| 3 | Solutions validées reliées aux problèmes |
+| 4 | Leçons apprises du pilote remontées vers TOS si réutilisables |
+| 5 | Validations humaines (ADR, QA-TIME-001, checklist TDS, fiche VAL) |
+
+### Livrables Phase 3D (dépôt TOS)
+
+- [x] [06_TKS_TAGORA_KNOWLEDGE_SYSTEM.md](../01_piliers/06_TKS_TAGORA_KNOWLEDGE_SYSTEM.md)
+- [x] [README_ADR.md](../05_adr/README_ADR.md) — enrichi
+- [x] [ADR_REGISTRE.md](../05_adr/ADR_REGISTRE.md)
+- [x] [docs/10_knowledge/](../10_knowledge/README_KNOWLEDGE_SYSTEM.md) — registres
+- [x] [REGLES_DE_DECISION.md](../03_gouvernance/REGLES_DE_DECISION.md) — enrichi
+- [x] [REGLES_DE_PRIORISATION.md](../03_gouvernance/REGLES_DE_PRIORISATION.md) — enrichi
+- [ ] Validation humaine ADR-0001 / ADR-0002
+- [ ] Première entrée problème/solution Time après constat validé
 
 ---
 
@@ -266,8 +306,8 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 |---|---|---|---|
 | TQF | 1 | Complété (doc) | Phase 3A — standards QA ; QA-TIME-001 brouillon |
 | TDS | 2 | Complété (doc) | Phase 3B — standards design documentés |
-| TES | 3 | En cours | Phase 3C — validation avant code, ADR-0002 |
-| TKS | 4 | En cours | ADR-0001, ADR-0002 |
+| TES | 3 | Complété (doc) | Phase 3C — validation avant code, ADR-0002 |
+| TKS | 4 | En cours | Phase 3D — registres mémoire ; validations humaines à faire |
 | TAF | — | Reporté | — |
 | TOF | — | Reporté | — |
 | TCP | — | Reporté | — |
@@ -286,13 +326,16 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 3C** — Pilote TES documenté. Application fiches validation sur dépôt Time à planifier.
+**Enrichi — Phase 3D** — Pilote TKS documenté. Validations humaines et entrées terrain à planifier.
 
 ## Références
 
+- [TKS](../01_piliers/06_TKS_TAGORA_KNOWLEDGE_SYSTEM.md)
+- [Knowledge System](../10_knowledge/README_KNOWLEDGE_SYSTEM.md)
+- [ADR_REGISTRE](../05_adr/ADR_REGISTRE.md)
+- [REGISTRE_DECISIONS](../10_knowledge/REGISTRE_DECISIONS.md)
 - [ADR-0002 — Documentation avant code](../05_adr/ADR-0002-DOCUMENTATION_AVANT_CODE.md)
 - [Fiche validation avant code](../03_gouvernance/FICHE_VALIDATION_AVANT_CODE_TEMPLATE.md)
 - [TES](../01_piliers/01_TES_TAGORA_ENGINEERING_SYSTEM.md)
-
 - [ADR-0001 — TOS comme Constitution méthodologique](../05_adr/ADR-0001-TOS_COMME_CONSTITUTION_METHODOLOGIQUE.md)
 - [Constitution officielle](../00_constitution/00_CONSTITUTION_OFFICIELLE_TAGORA_OPERATING_SYSTEM.md)
