@@ -6,78 +6,108 @@ Fournir le modèle standard pour documenter un agent IA dans l'écosystème TAGO
 
 ## Portée
 
-Toute création ou modification d'agent IA — tous modules.
+Toute création ou modification d'un **rôle d'agent IA documenté** — tous modules.
 
 ## Principes
 
 - Périmètre et limites explicites.
 - Alignement avec `LIMITES_INTERVENTION_IA.md`.
-- Human in the Loop documenté si applicable.
+- Human in the Loop documenté.
 - Pas de secrets dans la documentation.
+- Ce template documente un **rôle** ; il ne crée pas un agent logiciel.
 
 ---
 
-## Modèle
+## Modèle complet
 
 ```markdown
 # Agent IA — [Nom]
 
-## Métadonnées
+## Identification
 
 | Champ | Valeur |
 |---|---|
-| Module | [TAGORA Mail IA / ...] |
-| Type | [Assistant / Automate / Analyse / ...] |
-| Statut | [Brouillon / Actif / Retiré] |
-| Propriétaire | [Équipe / rôle] |
+| **Nom de l'agent** | [Nom lisible] |
+| **ID** | AI-[PROJET]-[TYPE]-XXX |
+| **Projet actif** | [TAGORA Operating System / TAGORA Time / ...] |
+| **Rôle** | [Documentaire / QA / Vérification / ...] |
+| **Statut** | [Documenté / Proposé / Actif (hors TOS) / Retiré] |
 
-## Objectif
+## Mission
 
-[Rôle de l'agent et valeur apportée.]
+[Ce que l'agent doit accomplir — une mission claire.]
 
-## Périmètre
-
-### Autorisé
+## Périmètre autorisé
 
 - [Action ou domaine autorisé]
+- [Fichiers ou dossiers autorisés]
 
-### Interdit
+## Périmètre interdit
 
 - [Action ou domaine interdit]
+- [Ex. lire .env, modifier production, mélanger projets]
 
-## Entrées et sorties
+## Fichiers autorisés
 
-- **Entrées :** [...]
-- **Sorties :** [...]
-- **Format :** [...]
+- [Chemins ou motifs]
 
-## Prompts associés
+## Fichiers interdits
 
-- [Référence prompt versionné]
+- `.env`, secrets, credentials
+- [Autres projets hors périmètre]
+- [Données clients sensibles]
 
-## Human in the Loop
+## Outils ou commandes autorisés
 
-- **Requis :** [Oui / Non]
-- **Points de validation :** [...]
+- [Ex. lecture fichiers, git status, git log]
+- [Expliciter si commit/push autorisés — par défaut non]
 
-## Limites d'intervention
+## Conditions d'arrêt
 
-[Alignement explicite avec TAF — niveau d'autonomie.]
+- Contexte insuffisant
+- Action critique non autorisée
+- Ambiguïté de périmètre
+- Mission terminée + rapport livré (STOP)
 
-## Monitoring et audit
+## Validation humaine requise
 
-[Ce qui est loggé et comment.]
+| Action | Requise |
+|---|---|
+| Commit | [Oui / Non — si Oui, autorisation explicite] |
+| Push | [Oui] |
+| Suppression | [Oui] |
+| Autre action critique | [Oui] |
 
-## Éléments à documenter plus tard
+## Rapport attendu
 
-- [Tests, métriques, déploiement]
+Suivre [AI_REPORTING_STANDARD.md](../07_ai/AI_REPORTING_STANDARD.md) :
+
+- agent qui répond
+- projet actif
+- mission
+- actions effectuées
+- fichiers modifiés / créés
+- validations
+- risques
+- confirmations de sécurité
+- prochaine étape
+- STOP
+
+## Notes
+
+[Liens registre, prompts, décisions TKS]
 ```
 
-## Éléments à documenter plus tard
+---
 
-- Registre central des agents IA
-- Processus validation pré-production agent
+## Convention ID
+
+Format : **`AI-{PROJET}-{TYPE}-{NNN}`**
+
+Exemples : `AI-TOS-DOC-001`, `AI-TOS-GIT-001`, `AI-TOS-QA-001`
+
+Inscrire chaque agent dans [AGENTS_IA_REGISTRE.md](../07_ai/AGENTS_IA_REGISTRE.md).
 
 ## Statut
 
-**Brouillon initial**
+**Enrichi — Phase 3E**

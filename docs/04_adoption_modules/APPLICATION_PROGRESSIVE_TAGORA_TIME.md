@@ -257,13 +257,56 @@ Le TKS est le **quatrième pilier** appliqué à TAGORA Time, après TQF, TDS et
 
 ---
 
+## Phase pilote TAF — Agents IA encadrés
+
+**Statut :** Cadre documenté (Phase 3E TOS) — application dans Time **après** TQF, TDS, TES et TKS
+
+Le TAF définit comment les agents IA pourront aider TAGORA Time **sans** remplacer les décisions métier ni agir hors périmètre.
+
+### Principes
+
+| Principe | Description |
+|---|---|
+| **Ordre des piliers** | TAF appliqué à Time seulement **après** TQF, TDS, TES et TKS |
+| **Périmètre documenté** | Aucun agent IA ne doit agir dans Time sans périmètre documenté (template + registre) |
+| **Limites d'intervention** | Respect strict de [LIMITES_INTERVENTION_IA.md](../07_ai/LIMITES_INTERVENTION_IA.md) |
+| **Métier humain** | Les décisions métier Time restent humaines |
+| **Aide autorisée** | Documenter, vérifier, résumer, préparer des rapports |
+| **Interdit sans validation** | Modifier des données critiques, production, secrets, push non autorisé |
+
+### Ce que les agents pourront faire (plus tard, dans le contexte Time)
+
+- Aider à documenter des scénarios QA ou des écarts standards.
+- Vérifier la présence de fichiers ou la cohérence documentaire.
+- Résumer des décisions ou préparer des rapports.
+- Préparer des fiches de validation avant code.
+
+### Ce qu'ils ne doivent pas faire
+
+- Modifier des données critiques Time sans validation humaine.
+- Lire ou afficher des secrets.
+- Mélanger le dépôt Time et le dépôt TOS dans une même action non cadrée.
+- Remplacer une décision métier (punch, permissions, rapports direction).
+
+### Livrables Phase 3E (dépôt TOS)
+
+- [x] [04_TAF_TAGORA_AI_FRAMEWORK.md](../01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md)
+- [x] Standards `docs/07_ai/` enrichis
+- [x] [AGENTS_IA_REGISTRE.md](../07_ai/AGENTS_IA_REGISTRE.md)
+- [x] [AI_REPORTING_STANDARD.md](../07_ai/AI_REPORTING_STANDARD.md)
+- [x] [TEMPLATE_AGENT_IA.md](../99_templates/TEMPLATE_AGENT_IA.md)
+- [ ] Validation humaine TAF (VALD-006 à VALD-009)
+- [ ] Premier agent Time documenté (hors TOS) quand cas d'usage défini
+
+---
+
 ## Piliers en attente — ne pas modifier tout de suite
 
-Les piliers suivants sont **reconnus** mais **non prioritaires** pour la première vague d'adoption sur Time :
+Les piliers suivants sont **reconnus** mais **non prioritaires** pour la première vague d'**application terrain** sur Time :
 
 | Pilier | Raison du report |
 |---|---|
-| **TAF** (IA) | À activer quand Time intègre des cas d'usage IA définis. |
+| **TAF** (IA) | Cadre TOS documenté (Phase 3E) ; application Time seulement après TQF–TKS et cas d'usage défini. |
 | **TOF** (Orchestration) | À activer pour workflows transverses — pas pour la logique métier Time. |
 | **TCP** (Core Platform) | Implémentation hors TOS — adoption quand briques communes validées et disponibles. |
 | **TBF** (Business Framework) | Documenter règles transverses au fil de l'eau ; pas de refonte métier Time imposée. |
@@ -293,7 +336,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Règles
 
-- Prioriser TQF → TDS → TES → TKS sur la première phase.
+- Prioriser TQF → TDS → TES → TKS, puis TAF encadré, sur la première phase.
 - Documenter écarts et dérogations temporaires.
 - Produire un ADR pour toute décision Time impactant l'écosystème.
 - Ne pas déployer en production sans smoke tests conformes TQF.
@@ -307,8 +350,8 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 | TQF | 1 | Complété (doc) | Phase 3A — standards QA ; QA-TIME-001 brouillon |
 | TDS | 2 | Complété (doc) | Phase 3B — standards design documentés |
 | TES | 3 | Complété (doc) | Phase 3C — validation avant code, ADR-0002 |
-| TKS | 4 | En cours | Phase 3D — registres mémoire ; validations humaines à faire |
-| TAF | — | Reporté | — |
+| TKS | 4 | Complété (doc) | Phase 3D — registres mémoire ; validations humaines à faire |
+| TAF | 5 | Cadre doc | Phase 3E — standards agents IA ; pas d'agent réel dans Time |
 | TOF | — | Reporté | — |
 | TCP | — | Reporté | — |
 | TBF | — | Reporté | — |
@@ -326,10 +369,13 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 3D** — Pilote TKS documenté. Validations humaines et entrées terrain à planifier.
+**Enrichi — Phase 3E** — Cadre TAF documenté. Application agents dans Time après validations et cas d'usage.
 
 ## Références
 
+- [TAF](../01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md)
+- [AGENTS_IA_REGISTRE](../07_ai/AGENTS_IA_REGISTRE.md)
+- [LIMITES_INTERVENTION_IA](../07_ai/LIMITES_INTERVENTION_IA.md)
 - [TKS](../01_piliers/06_TKS_TAGORA_KNOWLEDGE_SYSTEM.md)
 - [Knowledge System](../10_knowledge/README_KNOWLEDGE_SYSTEM.md)
 - [ADR_REGISTRE](../05_adr/ADR_REGISTRE.md)
