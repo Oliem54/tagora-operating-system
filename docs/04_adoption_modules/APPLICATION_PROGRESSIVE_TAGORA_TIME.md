@@ -679,6 +679,27 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4N-TOS — Validation de l'autorisation d'ouverture contrôlée
+
+**Statut :** Validation humaine actée — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider humainement l'autorisation Phase 4M comme cadre documentaire préparatoire |
+| **Document** | [VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md](plans_instanciation/VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Autorisation 4M validée — TAGORA Time reste non ouvert |
+
+### Note Phase 4N-TOS (2026-07-05)
+
+- **VALD-057 à VALD-062** sont validées.
+- L'**autorisation 4M** est approuvée comme cadre documentaire.
+- **TAGORA Time reste non ouvert et non modifié** dans cette phase.
+- Une **future ouverture** serait limitée à une **vérification Git de surface**.
+- Toute **étape future** devra être validée séparément (Phase 4O-TOS).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -774,7 +795,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4M-TOS** — Cadre autorisation ouverture contrôlée préparé. Phase 4N-TOS — validation humaine autorisation 4M.
+**Enrichi — Phase 4N-TOS** — Validation autorisation ouverture contrôlée actée. Phase 4O-TOS — ouverture contrôlée lecture Git dépôt cible.
 
 ## Références
 
