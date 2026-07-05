@@ -745,6 +745,28 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4Q-TOS — Protocole de clarification du WIP
+
+**Statut :** Protocole documentaire réalisé — **aucune ouverture ni modification de TAGORA Time**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Préparer le protocole de clarification du WIP commissions avant toute action future |
+| **Document** | [PROTOCOLE_PHASE_4Q_CLARIFICATION_WIP_TAGORA_TIME.md](plans_instanciation/PROTOCOLE_PHASE_4Q_CLARIFICATION_WIP_TAGORA_TIME.md) |
+| **Dépôt cible** | `C:\dev\tagora-time` — **non ouvert** |
+| **Règle** | Le protocole ne règle pas le WIP ; il prépare l'arbitrage humain futur |
+
+### Note Phase 4Q-TOS
+
+- Le **protocole de clarification du WIP** est préparé.
+- **TAGORA Time n'est pas rouvert.**
+- Le **WIP commissions reste à clarifier.**
+- La **baseline reste non prête.**
+- L'**instanciation documentaire reste bloquée.**
+- **Prochaine étape** : validation humaine du protocole 4Q (Phase 4R-TOS).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -840,7 +862,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4P-TOS** — Arbitrage baseline et WIP TAGORA Time acté. Phase 4Q-TOS — protocole clarification WIP.
+**Enrichi — Phase 4Q-TOS** — Protocole clarification WIP préparé. Phase 4R-TOS — validation humaine protocole 4Q.
 
 ## Références
 

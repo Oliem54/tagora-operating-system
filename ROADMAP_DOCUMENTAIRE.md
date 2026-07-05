@@ -386,17 +386,31 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4Q-TOS — Protocole de clarification du WIP avant action ⏳ Prochaine étape documentaire
+### Phase 4Q-TOS — Protocole de clarification du WIP avant action ✅ Complétée
 
 **Objectif :** Préparer dans TOS le protocole de clarification du WIP commissions — **sans modifier TAGORA Time**.
 
-**Condition :** Phase 4P complétée ; checklist §7 Phase 4P remplie avant toute action.
+**Livrables réalisés :**
+
+- [x] [PROTOCOLE_PHASE_4Q_CLARIFICATION_WIP_TAGORA_TIME.md](docs/04_adoption_modules/plans_instanciation/PROTOCOLE_PHASE_4Q_CLARIFICATION_WIP_TAGORA_TIME.md)
+- [x] Questions d'arbitrage, options A à D, position conservatrice TOS
+- [x] Checklist conditions avant action future dans TAGORA Time
+- [x] VALD-069 à VALD-074 inscrites (À faire)
+- [x] Section Phase 4Q-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+
+---
+
+### Phase 4R-TOS — Validation humaine du protocole de clarification WIP ⏳ Prochaine étape documentaire
+
+**Objectif :** Valider humainement le protocole Phase 4Q — **sans ouvrir ni modifier TAGORA Time**.
+
+**Condition :** Phase 4Q complétée ; VALD-069 à VALD-074 à arbitrer.
 
 **Livrables prévus :**
 
-- Document protocole clarification WIP (sauvegarder, terminer, isoler ou reporter)
-- Conditions de reprise lecture Git contrôlée
-- Rapport attendu et STOP obligatoire
+- Document validation protocole clarification WIP
+- Décisions sur stratégie WIP, branche cible et report instanciation
+- Conditions avant nouvelle ouverture contrôlée
 
 ---
 
@@ -452,8 +466,9 @@ Phase 4M-TOS Autorisation ouverture contrôlée dépôt ✅ Complétée
 Phase 4N-TOS Validation autorisation ouverture contrôlée ✅ Complétée
 Phase 4O-TOS Ouverture contrôlée lecture Git dépôt ✅ Complétée
 Phase 4P-TOS Arbitrage baseline et WIP Time ✅ Complétée
-Phase 4Q-TOS Protocole clarification WIP ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-clarification WIP Phase 4Q
+Phase 4Q-TOS Protocole clarification WIP ✅ Complétée
+Phase 4R-TOS Validation protocole clarification WIP ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4R
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -462,7 +477,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4P-TOS** — Arbitrage baseline et WIP TAGORA Time acté. Phase 4Q-TOS — protocole clarification WIP.
+**Enrichi — Phase 4Q-TOS** — Protocole clarification WIP préparé. Phase 4R-TOS — validation humaine protocole 4Q.
 
 ## Références
 
