@@ -52,6 +52,11 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-021 | 2026-07-05 | Template incident report | Humaine | À désigner | À faire | [TEMPLATE_INCIDENT_REPORT.md](../99_templates/TEMPLATE_INCIDENT_REPORT.md) | Valider le template incident |
 | VALD-022 | 2026-07-05 | Checklist monitoring | Humaine | À désigner | À faire | [TEMPLATE_MONITORING_CHECKLIST.md](../99_templates/TEMPLATE_MONITORING_CHECKLIST.md) | Valider la checklist monitoring |
 | VALD-023 | 2026-07-05 | Suivi post-release sur changement Time | Terrain / QA | À désigner | À faire | [POST_RELEASE_MONITORING_STANDARD.md](../12_monitoring/POST_RELEASE_MONITORING_STANDARD.md) | Tester le suivi post-release sur un vrai changement TAGORA Time |
+| VALD-024 | 2026-07-05 | Carte des 10 piliers TOS | Humaine | À désigner | À faire | [CARTE_DES_10_PILIERS_TOS.md](../00_constitution/CARTE_DES_10_PILIERS_TOS.md) | Valider la carte officielle |
+| VALD-025 | 2026-07-05 | Matrice d'interdépendance piliers | Humaine | À désigner | À faire | [MATRICE_INTERDEPENDANCE_PILIERS.md](../00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md) | Valider les liens entre piliers |
+| VALD-026 | 2026-07-05 | État de maturité TOS | Humaine | À désigner | À faire | [ETAT_MATURITE_TOS.md](../00_constitution/ETAT_MATURITE_TOS.md) | Valider l'état de maturité documentaire |
+| VALD-027 | 2026-07-05 | Ordre d'application piliers sur TAGORA Time | Humaine | À désigner | À faire | [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md) | Valider l'ordre consolidé Time |
+| VALD-028 | 2026-07-05 | Stratégie adoption progressive modules | Humaine | À désigner | À faire | [STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md](../04_adoption_modules/STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md) | Valider la stratégie écosystème |
 
 ---
 
@@ -63,4 +68,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 3H**
+**Enrichi — Phase 3I**

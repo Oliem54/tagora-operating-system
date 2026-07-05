@@ -41,6 +41,33 @@ Construire un écosystème logiciel unifié, cohérent, moderne et évolutif où
 
 **TAGORA Time** — premier module à appliquer progressivement les standards TOS.
 
+## Cohérence des 10 piliers
+
+Les **dix piliers TOS** forment un **langage commun** entre gestion, développement, QA, design, IA, orchestration, release et monitoring :
+
+| Domaine | Pilier |
+|---|---|
+| Engineering | TES |
+| Design | TDS |
+| Qualité | TQF |
+| Agents IA | TAF |
+| Orchestration | TOF |
+| Mémoire | TKS |
+| Plateforme | TCP (futur) |
+| Métier transverse | TBF (futur) |
+| Release | TRF |
+| Monitoring | TMF |
+
+TOS unifie la **méthode** ; chaque pilier a une **responsabilité distincte** — sans absorber les modules métier.
+
+## Règles d'adoption
+
+- **Adoption progressive** — chaque module adopte TOS pilier par pilier, **jamais en big-bang**.
+- **Standards au service de l'équipe** — les standards doivent **aider** l'entreprise, pas la bloquer.
+- **Documentation first** — Documentation → Architecture → Code → QA → Production.
+
+Voir [CARTE_DES_10_PILIERS_TOS.md](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md).
+
 ## Ordre méthodologique officiel
 
 **Documentation → Architecture → Code → QA → Production**
@@ -54,4 +81,4 @@ Construire un écosystème logiciel unifié, cohérent, moderne et évolutif où
 
 ## Statut
 
-**Brouillon initial**
+**Enrichi — Phase 3I**

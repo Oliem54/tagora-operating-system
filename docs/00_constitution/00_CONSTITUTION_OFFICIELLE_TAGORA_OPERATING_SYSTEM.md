@@ -111,6 +111,24 @@ Contourner une étape sans justification documentée est une dérogation, pas un
 
 ---
 
+---
+
+## Les 10 piliers comme structure constitutionnelle
+
+Les **dix piliers** forment la **structure officielle** du TAGORA Operating System. Chaque pilier possède une **responsabilité distincte** documentée dans `docs/01_piliers/` et les dossiers standards associés.
+
+| Principe | Description |
+|---|---|
+| **Structure officielle** | TES, TDS, TQF, TAF, TOF, TKS, TCP, TBF, TRF, TMF — voir [CARTE_DES_10_PILIERS_TOS.md](CARTE_DES_10_PILIERS_TOS.md) |
+| **Responsabilités séparées** | Aucun pilier ne remplace un autre ; pas de chevauchement métier |
+| **Pas d'absorption des modules** | Les piliers **encadrent les méthodes**, pas les opérations métier quotidiennes |
+| **Règles métier dans les modules** | Punch, stock, courriel, etc. restent dans les applications concernées |
+| **TOS coordonne** | Alignement progressif ; pas de fusion Time / TOS / autres modules |
+
+Synthèse : [MATRICE_INTERDEPENDANCE_PILIERS.md](MATRICE_INTERDEPENDANCE_PILIERS.md) · [ETAT_MATURITE_TOS.md](ETAT_MATURITE_TOS.md)
+
+---
+
 ## Les dix piliers
 
 | Sigle | Nom | Rôle synthétique |
@@ -147,7 +165,7 @@ Ces sujets seront tranchés via ADR (TKS) ou validation humaine explicite — ja
 
 ## Statut du document
 
-**Enrichi — Phase 2** — Base constitutionnelle structurée. Validation humaine formelle à confirmer.
+**Enrichi — Phase 3I** — Structure constitutionnelle à 10 piliers consolidée. Validation humaine formelle à confirmer.
 
 Référence ADR associée : [ADR-0001 — TOS comme Constitution méthodologique](../05_adr/ADR-0001-TOS_COMME_CONSTITUTION_METHODOLOGIQUE.md).
 

@@ -30,7 +30,27 @@ Ce dépôt est la **Constitution méthodologique** de l'écosystème logiciel TA
 | `docs/07_ai/` | Standards agents IA |
 | `docs/08_orchestration/` | Standards n8n, LangChain, workflows |
 | `docs/09_design_system/` | Image de marque et design system |
+| `docs/12_monitoring/` | Standards monitoring et observabilité |
 | `docs/99_templates/` | Modèles réutilisables |
+
+## État actuel de la documentation TOS
+
+TOS est structuré autour des **10 piliers constitutionnels** (TES, TDS, TQF, TAF, TOF, TKS, TCP, TBF, TRF, TMF).
+
+| Phase | Statut |
+|---|---|
+| Phases 1 à 3H | **Complétées** — fondation, constitution, standards par pilier |
+| Phase 3I | **Complétée** — consolidation des 10 piliers |
+| Prochaine étape | **Phase 4A** — audit application progressive sur TAGORA Time |
+
+Documents de synthèse :
+
+- [Carte des 10 piliers](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md)
+- [Matrice d'interdépendance](docs/00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md)
+- [État de maturité TOS](docs/00_constitution/ETAT_MATURITE_TOS.md)
+- [Roadmap documentaire](ROADMAP_DOCUMENTAIRE.md)
+
+---
 
 ## Ordre méthodologique officiel
 
@@ -44,4 +64,4 @@ Ce dépôt est la **Constitution méthodologique** de l'écosystème logiciel TA
 
 ## Statut
 
-**Brouillon initial** — Fondation documentaire en construction.
+**Enrichi — Phase 3I** — Dix piliers documentés et consolidés. Phase 4A application Time à venir.

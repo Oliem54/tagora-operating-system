@@ -122,15 +122,32 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 3I — Consolidation des 10 piliers TOS ⏳ Prochaine étape
+### Phase 3I — Consolidation des 10 piliers TOS ✅ Complétée
 
-**Objectif :** Consolider la cohérence transversale des dix piliers documentés (TES, TQF, TDS, TKS, TAF, TOF, TRF, TMF, TCP, TBF) — vue d'ensemble, liens croisés, écarts et priorités Phase 4.
+**Objectif :** Vue cohérente des dix piliers — carte, matrice, maturité, stratégie adoption — avant application terrain Time.
+
+**Livrables réalisés :**
+
+- [x] CARTE_DES_10_PILIERS_TOS.md
+- [x] MATRICE_INTERDEPENDANCE_PILIERS.md
+- [x] ETAT_MATURITE_TOS.md
+- [x] STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md
+- [x] README, Manifeste, Constitution — sections consolidation
+- [x] APPLICATION_PROGRESSIVE_TAGORA_TIME — ordre consolidé
+- [x] DEC-013 + VALD-024 à VALD-028
+- [ ] Validation humaine consolidation (VALD-024 à VALD-028)
+
+---
+
+### Phase 4A — Audit d'application progressive sur TAGORA Time ⏳ Prochaine étape
+
+**Objectif :** État des lieux dépôt Time vs standards TOS ; plan premiers lots ; validations humaines prioritaires.
 
 **Livrables prévus :**
 
-- Matrice piliers ↔ standards ↔ Time
-- Synthèse gouvernance et validations en attente
-- Préparation Phase 4 application terrain
+- Audit documentaire Time vs TQF/TDS/TES
+- Liste écarts et priorités
+- Calendrier indicatif validations VALD en attente
 
 ---
 
@@ -159,8 +176,9 @@ Phase 3E  Standards TAF / agents IA        ✅ Complétée
 Phase 3F  Standards TOF / orchestration    ✅ Complétée
 Phase 3G  Standards TRF / release          ✅ Complétée
 Phase 3H  Standards TMF / monitoring     ✅ Complétée
-Phase 3I  Consolidation 10 piliers TOS     ⏳ Prochaine étape
-Phase 4   Application sur TAGORA Time    ⏳ À venir
+Phase 3I  Consolidation 10 piliers TOS  ✅ Complétée
+Phase 4A  Audit application Time       ⏳ Prochaine étape
+Phase 4   Application sur TAGORA Time  ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
 
@@ -168,10 +186,14 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 3H** — Cadre monitoring TMF documenté. Phase 3I consolidation à démarrer.
+**Enrichi — Phase 3I** — Dix piliers consolidés. Phase 4A audit Time à démarrer.
 
 ## Références
 
+- [Carte des 10 piliers](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md)
+- [Matrice interdépendance](docs/00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md)
+- [État maturité TOS](docs/00_constitution/ETAT_MATURITE_TOS.md)
+- [Stratégie adoption modules](docs/04_adoption_modules/STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md)
 - [TMF](docs/01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md)
 - [README Monitoring Framework](docs/12_monitoring/README_MONITORING_FRAMEWORK.md)
 - [LOGGING_STANDARD](docs/12_monitoring/LOGGING_STANDARD.md)
