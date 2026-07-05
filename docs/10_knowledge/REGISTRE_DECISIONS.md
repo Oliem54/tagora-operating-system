@@ -39,6 +39,7 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 | DEC-007 | 2026-07-02 | Priorité piliers Time | TES est le troisième pilier appliqué à Time | Acté | Time | Validation avant code, sécurité, séparation projets | Phase 3C | — |
 | DEC-008 | 2026-07-02 | Séparation modules | Les modules restent indépendants (Time, Stock Premium, Voice, Mail IA, Pulse, Platform) | Acté | Écosystème | Pas de fusion avec TOS ni entre modules sans décision officielle | [REGLES_DE_SEPARATION_DES_PROJETS.md](../03_gouvernance/REGLES_DE_SEPARATION_DES_PROJETS.md) | — |
 | DEC-009 | 2026-07-03 | Agents IA | Les agents IA TAGORA doivent respecter un périmètre explicite, des interdictions claires, un rapport vérifiable et une validation humaine pour les actions critiques | Acté | Écosystème | Cadre TAF obligatoire pour tout agent | [TAF](../01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md), [AGENTS_IA_REGISTRE.md](../07_ai/AGENTS_IA_REGISTRE.md) | Phase 3E |
+| DEC-010 | 2026-07-05 | Orchestration | Les orchestrations TAGORA doivent rester séparées de la logique métier des modules et respecter des contrats documentés, une validation humaine pour les actions critiques et des rapports vérifiables | Acté | Écosystème | Cadre TOF obligatoire pour tout workflow ou événement | [TOF](../01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md), [ORCHESTRATION_REGISTRE.md](../08_orchestration/ORCHESTRATION_REGISTRE.md) | Phase 3F |
 
 ---
 
@@ -51,4 +52,4 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 
 ## Statut
 
-**Brouillon initial — Phase 3D**
+**Enrichi — Phase 3F**

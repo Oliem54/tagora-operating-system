@@ -38,6 +38,10 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-007 | 2026-07-03 | TEMPLATE_AGENT_IA | Humaine | À désigner | À faire | [TEMPLATE_AGENT_IA.md](../99_templates/TEMPLATE_AGENT_IA.md) | Valider le template agent |
 | VALD-008 | 2026-07-03 | Human in the Loop standard | Humaine | À désigner | À faire | [HUMAN_IN_THE_LOOP_STANDARD.md](../07_ai/HUMAN_IN_THE_LOOP_STANDARD.md) | Valider les points HITL |
 | VALD-009 | 2026-07-03 | Registre des agents IA | Humaine | À désigner | À faire | [AGENTS_IA_REGISTRE.md](../07_ai/AGENTS_IA_REGISTRE.md) | Valider les rôles documentés |
+| VALD-010 | 2026-07-05 | Standard TOF (pilier + docs/08_orchestration) | Humaine | À désigner | À faire | [05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md](../01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md) | Valider le cadre orchestration |
+| VALD-011 | 2026-07-05 | Standard Event Bus | Humaine | À désigner | À faire | [EVENT_BUS_STANDARD.md](../08_orchestration/EVENT_BUS_STANDARD.md) | Valider contrats événements documentaires |
+| VALD-012 | 2026-07-05 | Template workflow orchestration | Humaine | À désigner | À faire | [TEMPLATE_WORKFLOW_ORCHESTRATION.md](../99_templates/TEMPLATE_WORKFLOW_ORCHESTRATION.md) | Valider le template workflow |
+| VALD-013 | 2026-07-05 | ORCH-TIME-001 et ORCH-TIME-002 | Humaine | À désigner | À faire | [ORCHESTRATION_REGISTRE.md](../08_orchestration/ORCHESTRATION_REGISTRE.md) | Valider avant toute implémentation réelle |
 
 ---
 
@@ -49,4 +53,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 3E**
+**Enrichi — Phase 3F**

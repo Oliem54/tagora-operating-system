@@ -68,16 +68,35 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 3F — Standards TOF / orchestration n8n + LangChain ⏳ Prochaine étape
+### Phase 3F — Standards TOF / orchestration ✅ Complétée
 
-**Objectif :** Cadre documentaire d'orchestration — workflows, event bus, Human in the Loop — sans workflow réel ni logique métier dans TOF.
+**Objectif :** Cadre documentaire d'orchestration — workflows, event bus conceptuel, registre, rapports — sans workflow réel ni logique métier dans TOF.
+
+**Livrables réalisés :**
+
+- [x] TOF pilier enrichi
+- [x] N8N_STANDARD — rôle futur, types workflows, sécurité, retry
+- [x] LANGCHAIN_STANDARD — chaînes IA, distinction agent/orchestration
+- [x] WORKFLOW_ENGINE_STANDARD — cycle de vie, règles propriétaire
+- [x] EVENT_BUS_STANDARD — contrats événements, exemples documentaires
+- [x] ORCHESTRATION_REGISTRE — ORCH-TIME-001, ORCH-TIME-002, ORCH-TOS-001 (brouillon)
+- [x] ORCHESTRATION_REPORTING_STANDARD — format rapport
+- [x] TEMPLATE_WORKFLOW_ORCHESTRATION
+- [x] DEC-010 + VALD-010 à VALD-013
+- [x] Section « Phase pilote TOF » dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Validation humaine TOF (VALD-010 à VALD-013)
+
+---
+
+### Phase 3G — Standards TRF / release et déploiement ⏳ Prochaine étape
+
+**Objectif :** Enrichir le cadre release, déploiement et gates production — aligné TES et TQF.
 
 **Livrables prévus :**
 
-- Enrichissement TOF pilier et `docs/08_orchestration/`
-- Règle : TOF orchestre, ne remplace pas la logique métier
-- Lien TAF ↔ TOF
-- Aucun workflow n8n / LangChain réel dans TOS
+- Enrichissement TRF pilier et standards DevOps
+- Gates release documentaires
+- Lien TRF ↔ TOF (activation workflows en production)
 
 ---
 
@@ -103,8 +122,9 @@ Phase 3B  Standards TDS prioritaires       ✅ Complétée
 Phase 3C  Standards TES prioritaires       ✅ Complétée
 Phase 3D  Standards TKS / mémoire          ✅ Complétée
 Phase 3E  Standards TAF / agents IA        ✅ Complétée
-Phase 3F  Standards TOF / orchestration    ⏳ Prochaine étape
-Phase 4   Application sur TAGORA Time      ⏳ À venir
+Phase 3F  Standards TOF / orchestration  ✅ Complétée
+Phase 3G  Standards TRF / release        ⏳ Prochaine étape
+Phase 4   Application sur TAGORA Time    ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
 
@@ -112,10 +132,13 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 3E** — Cadre agents IA documenté. Phase 3F TOF à démarrer.
+**Enrichi — Phase 3F** — Cadre orchestration TOF documenté. Phase 3G TRF à démarrer.
 
 ## Références
 
+- [TOF](docs/01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md)
+- [ORCHESTRATION_REGISTRE](docs/08_orchestration/ORCHESTRATION_REGISTRE.md)
+- [EVENT_BUS_STANDARD](docs/08_orchestration/EVENT_BUS_STANDARD.md)
 - [TAF](docs/01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md)
 - [AGENTS_IA_REGISTRE](docs/07_ai/AGENTS_IA_REGISTRE.md)
 - [LIMITES_INTERVENTION_IA](docs/07_ai/LIMITES_INTERVENTION_IA.md)

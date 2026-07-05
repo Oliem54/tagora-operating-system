@@ -300,14 +300,55 @@ Le TAF définit comment les agents IA pourront aider TAGORA Time **sans** rempla
 
 ---
 
+## Phase pilote TOF — Orchestration contrôlée
+
+**Statut :** Cadre documenté (Phase 3F TOS) — application dans Time **après** TQF, TDS, TES, TKS et TAF
+
+Le TOF définit comment les workflows et événements pourront coordonner TAGORA Time **sans** remplacer la logique métier Time ni implémenter n8n / LangChain / event bus dans TOS.
+
+### Principes
+
+| Principe | Description |
+|---|---|
+| **Ordre des piliers** | TOF appliqué à Time seulement **après** TQF, TDS, TES, TKS et TAF |
+| **Séparation orchestration / métier** | Workflows Time (notification, rappel) ≠ règles punch, congés, approbation |
+| **Documentation avant implémentation** | ORCH-TIME-XXX documenté et inscrit au registre avant tout outil réel |
+| **Événements comme contrats** | `Employee Punched In`, `Timesheet Submitted`, etc. — documentés, non implémentés dans TOS |
+| **Validation humaine actions critiques** | Approbation feuille de temps, paie, suppression, modification temps = humain |
+| **Time indépendant** | Application métier séparée ; TOF = cadre TOS, pas code Time |
+
+### Ce que l'orchestration pourra faire (plus tard, dans le contexte Time)
+
+- Notifier un oubli de punch (ORCH-TIME-001 — brouillon).
+- Préparer le contexte d'une validation de feuille de temps (ORCH-TIME-002 — brouillon).
+- Logger des exécutions selon [ORCHESTRATION_REPORTING_STANDARD.md](../08_orchestration/ORCHESTRATION_REPORTING_STANDARD.md).
+
+### Ce qu'elle ne doit pas faire
+
+- Calculer ou modifier des heures travaillées sans validation humaine.
+- Approuver une feuille de temps à la place d'un superviseur.
+- Contourner les permissions Time.
+- Lire ou transporter des secrets.
+
+### Livrables Phase 3F (dépôt TOS)
+
+- [x] [05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md](../01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md)
+- [x] Standards `docs/08_orchestration/` enrichis
+- [x] [ORCHESTRATION_REGISTRE.md](../08_orchestration/ORCHESTRATION_REGISTRE.md)
+- [x] [ORCHESTRATION_REPORTING_STANDARD.md](../08_orchestration/ORCHESTRATION_REPORTING_STANDARD.md)
+- [x] [TEMPLATE_WORKFLOW_ORCHESTRATION.md](../99_templates/TEMPLATE_WORKFLOW_ORCHESTRATION.md)
+- [ ] Validation humaine TOF (VALD-010 à VALD-013)
+- [ ] Première fiche ORCH-TIME complète sur cas réel (dépôt Time — après validation)
+
+---
+
 ## Piliers en attente — ne pas modifier tout de suite
 
 Les piliers suivants sont **reconnus** mais **non prioritaires** pour la première vague d'**application terrain** sur Time :
 
 | Pilier | Raison du report |
 |---|---|
-| **TAF** (IA) | Cadre TOS documenté (Phase 3E) ; application Time seulement après TQF–TKS et cas d'usage défini. |
-| **TOF** (Orchestration) | À activer pour workflows transverses — pas pour la logique métier Time. |
+| **TOF** (Orchestration) | Cadre TOS documenté (Phase 3F) ; application Time seulement après TQF–TAF et validations VALD-010 à VALD-013. |
 | **TCP** (Core Platform) | Implémentation hors TOS — adoption quand briques communes validées et disponibles. |
 | **TBF** (Business Framework) | Documenter règles transverses au fil de l'eau ; pas de refonte métier Time imposée. |
 | **TRF** (Release) | Aligner progressivement ; pas de refonte pipeline d'un coup. |
@@ -336,7 +377,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Règles
 
-- Prioriser TQF → TDS → TES → TKS, puis TAF encadré, sur la première phase.
+- Prioriser TQF → TDS → TES → TKS, puis TAF encadré, puis TOF documenté, sur la première phase.
 - Documenter écarts et dérogations temporaires.
 - Produire un ADR pour toute décision Time impactant l'écosystème.
 - Ne pas déployer en production sans smoke tests conformes TQF.
@@ -352,7 +393,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 | TES | 3 | Complété (doc) | Phase 3C — validation avant code, ADR-0002 |
 | TKS | 4 | Complété (doc) | Phase 3D — registres mémoire ; validations humaines à faire |
 | TAF | 5 | Cadre doc | Phase 3E — standards agents IA ; pas d'agent réel dans Time |
-| TOF | — | Reporté | — |
+| TOF | 6 | Complété (doc) | Phase 3F — standards orchestration ; ORCH-TIME brouillon |
 | TCP | — | Reporté | — |
 | TBF | — | Reporté | — |
 | TRF | — | Reporté | — |
@@ -369,10 +410,13 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 3E** — Cadre TAF documenté. Application agents dans Time après validations et cas d'usage.
+**Enrichi — Phase 3F** — Cadre TOF documenté. Application orchestration dans Time après validations.
 
 ## Références
 
+- [TOF](../01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md)
+- [ORCHESTRATION_REGISTRE](../08_orchestration/ORCHESTRATION_REGISTRE.md)
+- [EVENT_BUS_STANDARD](../08_orchestration/EVENT_BUS_STANDARD.md)
 - [TAF](../01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md)
 - [AGENTS_IA_REGISTRE](../07_ai/AGENTS_IA_REGISTRE.md)
 - [LIMITES_INTERVENTION_IA](../07_ai/LIMITES_INTERVENTION_IA.md)
