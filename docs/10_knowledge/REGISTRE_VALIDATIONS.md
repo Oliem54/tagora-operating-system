@@ -91,6 +91,12 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-060 | 2026-07-05 | Interdictions d'ouverture contrôlée | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md) | Garde-fous obligatoires §5 autorisation 4M |
 | VALD-061 | 2026-07-05 | Rapport attendu avant STOP | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md) | Rapport §7 et STOP obligatoire |
 | VALD-062 | 2026-07-05 | Besoin Phase 4N-TOS | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4N_AUTORISATION_OUVERTURE_CONTROLEE.md) | Validation autorisation 4M sans ouverture dépôt cible |
+| VALD-063 | 2026-07-05 | Rapport Phase 4O-TOS | Humaine | À désigner | À faire | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) | Valider le rapport d'ouverture contrôlée lecture Git |
+| VALD-064 | 2026-07-05 | Baseline TAGORA Time non prête | Humaine | À désigner | À faire | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) | Valider que la baseline documentaire n'est pas utilisable maintenant |
+| VALD-065 | 2026-07-05 | Arbitrage WIP commissions | Humaine | À désigner | À faire | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) | Valider l'arbitrage du WIP commissions avant toute suite |
+| VALD-066 | 2026-07-05 | Branche cible réelle TAGORA Time | Humaine | À désigner | À faire | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) | Valider la branche cible à utiliser (≠ main observé) |
+| VALD-067 | 2026-07-05 | Conditions avant instanciation documentaire | Humaine | À désigner | À faire | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) | Valider le blocage instanciation — checklist plan 4K non remplie |
+| VALD-068 | 2026-07-05 | Besoin Phase 4P-TOS | Humaine | À désigner | À faire | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) | Valider le lancement de Phase 4P — arbitrage baseline et WIP |
 
 ---
 
@@ -102,4 +108,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 4N-TOS** — VALD-057 à 062 **Validé** (Martin ST-Gelais — Direction, 2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Phase 4O-TOS** — VALD-063 à 068 ajoutées (À faire). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).

@@ -700,6 +700,29 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4O-TOS — Lecture Git contrôlée du dépôt cible
+
+**Statut :** Ouverture contrôlée complétée — **lecture Git seulement, dépôt intact**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Vérification Git de surface dans `C:\dev\tagora-time` |
+| **Document** | [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md) |
+| **Branche observée** | `feature/admin-commissions-premium-header-kpi` |
+| **HEAD observé** | `5d4e39780690c2a93c4bb04b8f7242a686cb8c48` |
+| **Résultat** | Working tree non propre — instanciation documentaire bloquée |
+
+### Note Phase 4O-TOS
+
+- La **lecture Git contrôlée** a été réalisée (commandes §4 autorisation 4M uniquement).
+- **Branche observée** : `feature/admin-commissions-premium-header-kpi` (≠ `main` prévu plan 4K).
+- **HEAD observé** : `5d4e39780690c2a93c4bb04b8f7242a686cb8c48`.
+- **Working tree non propre** — 5 fichiers modifiés (WIP commissions).
+- **Aucune instanciation documentaire** ne doit commencer.
+- **Prochaine étape** : Phase 4P-TOS — arbitrage TOS du WIP et de la baseline.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -795,7 +818,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4N-TOS** — Validation autorisation ouverture contrôlée actée. Phase 4O-TOS — ouverture contrôlée lecture Git dépôt cible.
+**Enrichi — Phase 4O-TOS** — Rapport ouverture contrôlée TAGORA Time. Phase 4P-TOS — arbitrage baseline et WIP.
 
 ## Références
 

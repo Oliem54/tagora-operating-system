@@ -357,17 +357,32 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4O-TOS — Ouverture contrôlée lecture Git du dépôt cible ⏳ Prochaine étape conditionnelle
+### Phase 4O-TOS — Ouverture contrôlée lecture Git du dépôt cible ✅ Complétée
 
 **Objectif :** Effectuer une vérification Git de surface dans `C:\dev\tagora-time` — **lecture seule, sans modification**.
 
-**Condition :** Phase 4N complétée ; checklist §6 Phase 4N remplie ; commandes §4 autorisation 4M uniquement.
+**Livrables réalisés :**
+
+- [x] [RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md](docs/04_adoption_modules/plans_instanciation/RAPPORT_PHASE_4O_OUVERTURE_CONTROLEE_TAGORA_TIME.md)
+- [x] Branche `feature/admin-commissions-premium-header-kpi`, HEAD `5d4e397`, WIP 5 fichiers documenté
+- [x] Instanciation documentaire bloquée — baseline non prête
+- [x] Section Phase 4O-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] VALD-063 à VALD-068 inscrites (À faire)
+- [ ] Validation humaine rapport 4O (Phase 4P préalable)
+
+---
+
+### Phase 4P-TOS — Arbitrage baseline et WIP TAGORA Time ⏳ Prochaine étape documentaire
+
+**Objectif :** Documenter l'arbitrage TOS du WIP commissions et de la branche/baseline cible — **sans modifier TAGORA Time**.
+
+**Condition :** Rapport Phase 4O complété ; VALD-063 à VALD-068 au statut **Validé** (partiel ou complet selon arbitrage).
 
 **Livrables prévus :**
 
-- Rapport minimal §7 autorisation 4M
-- HEAD, branche, working tree du dépôt cible
-- STOP obligatoire après rapport — aucun commit ni push
+- Document d'arbitrage baseline et WIP
+- Décision sur branche cible réelle et statut WIP commissions
+- Conditions mises à jour avant toute instanciation documentaire
 
 ---
 
@@ -421,8 +436,9 @@ Phase 4K-TOS Plan instanciation documentaire ciblée ✅ Complétée
 Phase 4L-TOS Validation plan instanciation ciblée ✅ Complétée
 Phase 4M-TOS Autorisation ouverture contrôlée dépôt ✅ Complétée
 Phase 4N-TOS Validation autorisation ouverture contrôlée ✅ Complétée
-Phase 4O-TOS Ouverture contrôlée lecture Git dépôt ⏳ Prochaine étape conditionnelle
-Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4O
+Phase 4O-TOS Ouverture contrôlée lecture Git dépôt ✅ Complétée
+Phase 4P-TOS Arbitrage baseline et WIP Time ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-arbitrage Phase 4P
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -431,7 +447,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4N-TOS** — Validation autorisation ouverture contrôlée actée. Phase 4O-TOS — ouverture contrôlée lecture Git dépôt cible.
+**Enrichi — Phase 4O-TOS** — Rapport ouverture contrôlée TAGORA Time. Phase 4P-TOS — arbitrage baseline et WIP.
 
 ## Références
 
