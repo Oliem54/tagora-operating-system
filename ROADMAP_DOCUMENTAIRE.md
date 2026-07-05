@@ -218,16 +218,31 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4E-TOS — Préparation du paquet d'application pilote ⏳ Prochaine étape documentaire
+### Phase 4E-TOS — Paquet documentaire d'application pilote ✅ Complétée
 
-**Objectif :** Préparer le paquet documentaire d'application (ou documentation minimale dans Time) **après** arbitrage Phase 4D-TOS validé.
+**Objectif :** Préparer le paquet documentaire TQF / TDS / TES réutilisable avant toute application réelle.
 
-**Condition :** Checklist §6 TIME_ARBITRAGE — remplie (VALD-029 à 033 **Validé**, 2026-07-05).
+**Livrables réalisés :**
+
+- [x] [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](docs/04_adoption_modules/paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md)
+- [x] Lots TQF, TDS, TES documentés
+- [x] Conditions avant application réelle (checklist)
+- [x] Section Phase 4E-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] VALD-034 à VALD-038 inscrites (À faire)
+- [ ] Validation humaine du paquet 4E (Phase 4F-TOS)
+
+---
+
+### Phase 4F-TOS — Validation du paquet pilote ⏳ Prochaine étape documentaire
+
+**Objectif :** Valider humainement le paquet Phase 4E-TOS et les lots TQF/TDS/TES avant toute création dans le module pilote.
+
+**Condition :** Paquet 4E complété ; VALD-034 à VALD-038 au statut **Validé**.
 
 **Livrables prévus :**
 
-- Paquet docs QA/TDS/TES pour dépôt Time (sans code)
-- Ou Phase documentation Time directe si arbitrage global « Autorisé »
+- Décision de sortie §11 PAQUET_PHASE_4E remplie
+- Autorisation ou report de la Phase documentation Time
 
 ---
 
@@ -271,8 +286,9 @@ Phase 4B  Plan action Time TQF/TDS/TES ✅ Complétée
 Phase 4C-TOS Validation avant application  ✅ Complétée
 Phase 4D-TOS Arbitrage validations humaines ✅ Complétée
 Phase 4D.1-TOS Inscription validations humaines ✅ Complétée
-Phase 4E-TOS Paquet application pilote     ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-arbitrage
+Phase 4E-TOS Paquet application pilote     ✅ Complétée
+Phase 4F-TOS Validation du paquet pilote   ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation paquet 4E
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -281,7 +297,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4D.1-TOS** — Validations VALD-029 à 033 actées. Phase 4E-TOS — prochaine étape documentaire.
+**Enrichi — Phase 4E-TOS** — Paquet pilote TQF/TDS/TES documenté. Phase 4F-TOS — validation du paquet.
 
 ## Références
 

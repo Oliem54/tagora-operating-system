@@ -496,6 +496,26 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4E-TOS — Paquet documentaire d'application pilote
+
+**Statut :** Paquet documentaire réalisé — **aucune modification du module pilote**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Préparer le cadre réutilisable TQF / TDS / TES avant toute application réelle |
+| **Document** | [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md) |
+| **Lots préparés** | QA minimale, revue UX/UI écrans P1, fiche validation avant code |
+| **Règle** | Phase 4E prépare **seulement** le paquet documentaire — aucune modification réelle du module pilote |
+
+### Note Phase 4E-TOS
+
+- Phase 4E **prépare seulement le paquet documentaire** d'une future application.
+- **Aucune modification réelle** du module pilote dans cette phase.
+- **TQF, TDS et TES** sont les premiers lots préparés (scénarios QA, checklist TDS, fiche TES).
+- La **prochaine étape** dépend d'une **validation humaine du paquet 4E** (Phase 4F-TOS).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -591,7 +611,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4D.1-TOS** — Arbitrage VALD-029 à 033 acté. Phase 4E-TOS — prochaine étape documentaire.
+**Enrichi — Phase 4E-TOS** — Paquet documentaire TQF/TDS/TES préparé. Phase 4F-TOS — validation du paquet.
 
 ## Références
 
