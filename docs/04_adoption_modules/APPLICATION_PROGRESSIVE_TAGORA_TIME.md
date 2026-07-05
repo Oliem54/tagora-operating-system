@@ -555,6 +555,26 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4H-TOS — Validation des templates d'application pilote
+
+**Statut :** Validation humaine actée — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider les templates Phase 4G comme modèles documentaires TOS |
+| **Document** | [VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md](templates_pilotes/VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Kit documentaire réutilisable validé — module pilote intact |
+
+### Note Phase 4H-TOS (2026-07-05)
+
+- **VALD-039 à VALD-045** sont validées.
+- Les **templates Phase 4G** sont approuvés comme modèles documentaires TOS.
+- Cette validation **n'autorise aucune modification réelle** du module pilote (pas de code, migration, refonte).
+- La **prochaine étape reste dans TOS** : Phase 4I-TOS — paquet final de transition.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -650,7 +670,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4G-TOS** — Templates application pilote préparés. Phase 4H-TOS — validation templates.
+**Enrichi — Phase 4H-TOS** — Templates application pilote validés. Phase 4I-TOS — paquet transition.
 
 ## Références
 
