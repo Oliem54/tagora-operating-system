@@ -74,6 +74,10 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-043 | 2026-07-05 | Template checklist TDS pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md](../04_adoption_modules/templates_pilotes/VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md) | Modèle revue UX/UI accepté |
 | VALD-044 | 2026-07-05 | Template validation avant code pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md](../04_adoption_modules/templates_pilotes/VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md) | Garde-fou TES accepté |
 | VALD-045 | 2026-07-05 | Template plan application pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md](../04_adoption_modules/templates_pilotes/VALIDATION_PHASE_4H_TEMPLATES_APPLICATION_PILOTE.md) | Cadre plan d'application par lots accepté |
+| VALD-046 | 2026-07-05 | Paquet final Phase 4I-TOS | Humaine | À désigner | À faire | [PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md) | Valider le paquet final de transition |
+| VALD-047 | 2026-07-05 | Porte de passage vers application documentaire | Humaine | À désigner | À faire | [PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md) | Valider la checklist §6 porte de passage |
+| VALD-048 | 2026-07-05 | Règle finale de transition TOS → module pilote | Humaine | À désigner | À faire | [PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md) | Valider la règle §9 (dépôt, branche, périmètre, fichiers) |
+| VALD-049 | 2026-07-05 | Besoin Phase 4J-TOS | Humaine | À désigner | À faire | [PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md) | Valider le lancement de Phase 4J — passage instanciation documentaire |
 
 ---
 
@@ -85,4 +89,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 4H-TOS** — VALD-039 à 045 **Validé** (Martin ST-Gelais — Direction, 2026-07-05).
+**Enrichi — Phase 4I-TOS** — VALD-046 à 049 ajoutées (À faire). VALD-029 à 045 **Validé** (2026-07-05).

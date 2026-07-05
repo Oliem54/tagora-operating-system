@@ -273,16 +273,30 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4I-TOS — Paquet final de transition ⏳ Prochaine étape documentaire
+### Phase 4I-TOS — Paquet final de transition ✅ Complétée
 
-**Objectif :** Préparer le paquet documentaire de transition vers une future application documentaire dans le module pilote — **sans modifier Time**.
+**Objectif :** Regrouper les conditions de passage vers une future application documentaire — **sans modifier le module pilote**.
 
-**Condition :** Templates 4G et validation 4H actées.
+**Livrables réalisés :**
+
+- [x] [PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md](docs/04_adoption_modules/paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md)
+- [x] Porte de passage (checklist §6) et règle finale §9
+- [x] Section Phase 4I-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] VALD-046 à VALD-049 inscrites (À faire)
+- [ ] Validation humaine paquet final 4I (VALD-046 à 049)
+
+---
+
+### Phase 4J-TOS — Validation du passage vers instanciation documentaire ⏳ Prochaine étape documentaire
+
+**Objectif :** Valider humainement le passage vers une future préparation d'instanciation documentaire — **sans modifier le module pilote**.
+
+**Condition :** Paquet 4I complété ; VALD-046 à VALD-049 au statut **Validé**.
 
 **Livrables prévus :**
 
-- Guide de transition TOS → instanciation documentaire module pilote
-- Checklist finale avant Phase documentation Time
+- Décision de passage : dépôt, branche, périmètre, fichiers autorisés
+- Autorisation ou report de la préparation documentaire ciblée
 
 ---
 
@@ -330,8 +344,9 @@ Phase 4E-TOS Paquet application pilote     ✅ Complétée
 Phase 4F-TOS Validation du paquet pilote   ✅ Complétée
 Phase 4G-TOS Templates application pilote ✅ Complétée
 Phase 4H-TOS Validation templates pilote  ✅ Complétée
-Phase 4I-TOS Paquet transition application ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-paquet transition 4I
+Phase 4I-TOS Paquet transition application ✅ Complétée
+Phase 4J-TOS Validation passage instanciation ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4J
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -340,7 +355,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4H-TOS** — Templates validés (VALD-039 à 045). Phase 4I-TOS — paquet transition.
+**Enrichi — Phase 4I-TOS** — Paquet final de transition documenté. Phase 4J-TOS — validation passage.
 
 ## Références
 

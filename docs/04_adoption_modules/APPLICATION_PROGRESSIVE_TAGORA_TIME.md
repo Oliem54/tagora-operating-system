@@ -575,6 +575,25 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4I-TOS — Paquet final de transition
+
+**Statut :** Paquet de transition réalisé — **aucune modification du module pilote**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Regrouper les conditions de passage vers une future application documentaire |
+| **Document** | [PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md](paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md) |
+| **Règle** | Toute application future devra être validée séparément (Phase 4J) |
+
+### Note Phase 4I-TOS
+
+- Phase 4I **regroupe les conditions de passage** vers une future application documentaire.
+- Elle **ne modifie pas** le module pilote.
+- Elle rappelle que **toute application future** devra être validée séparément.
+- Le **module pilote reste autonome** — TOS documente, n'implémente pas.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -670,7 +689,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4H-TOS** — Templates application pilote validés. Phase 4I-TOS — paquet transition.
+**Enrichi — Phase 4I-TOS** — Paquet final de transition préparé. Phase 4J-TOS — validation passage.
 
 ## Références
 
