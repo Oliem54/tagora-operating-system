@@ -446,6 +446,20 @@ Priorité confirmée : **TQF → TDS → TES** avant TKS, TAF, TOF, TRF, TMF en 
 
 ---
 
+## Phase 4B — Plan d'action TQF / TDS / TES
+
+**Statut :** Plan documentaire réalisé — **aucun changement dans Time**
+
+| Élément | Description |
+|---|---|
+| **Source** | Transforme l'audit [Phase 4A](audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md) en lots d'action |
+| **Plan** | [TIME_PLAN_PHASE_4B_TQF_TDS_TES.md](plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md) |
+| **Priorité** | Lot 1 stabilisation Git → QA minimale → TDS écrans P1 → fiche validation TES |
+| **Décisions ouvertes** | DEC-TIME-4B-001 à DEC-TIME-4B-005 — validation humaine requise |
+| **Phase 4C** | Premiers documents dans Time (après validation) — pas de code |
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -541,10 +555,11 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4A** — Audit initial TQF/TDS/TES documenté. Plan Phase 4B à valider.
+**Enrichi — Phase 4B** — Plan d'action TQF/TDS/TES documenté. Phase 4C après validation humaine.
 
 ## Références
 
+- [Plan Phase 4B TQF/TDS/TES](plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A TQF/TDS/TES](audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
 - [Carte des 10 piliers](../00_constitution/CARTE_DES_10_PILIERS_TOS.md)
 - [Stratégie adoption modules](STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md)

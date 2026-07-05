@@ -164,15 +164,31 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4B — Plan d'action TAGORA Time TQF/TDS/TES ⏳ Prochaine étape
+### Phase 4B — Plan d'action TAGORA Time TQF/TDS/TES ✅ Complétée
 
-**Objectif :** Plan documentaire par petits lots (QA minimale, checklist TDS, fiche validation) — toujours sans refonte massive.
+**Objectif :** Plan documentaire par petits lots — QA minimale, checklist TDS, fiche validation TES.
+
+**Livrables réalisés :**
+
+- [x] [TIME_PLAN_PHASE_4B_TQF_TDS_TES.md](docs/04_adoption_modules/plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
+- [x] Décisions ouvertes DEC-TIME-4B-001 à 005
+- [x] Lots 1 à 6 documentés
+- [x] Section Phase 4B dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Validation humaine décisions DEC-TIME-4B-001 à 005
+
+---
+
+### Phase 4C — Documentation minimale dans TAGORA Time ⏳ Prochaine étape
+
+**Objectif :** Créer les premiers documents QA/TDS/TES **dans le dépôt Time** — sans code ni migration.
 
 **Livrables prévus :**
 
-- Plan Phase 4B validé humainement
-- Stabilisation point Git Time (décision WIP)
-- Premiers documents QA dans Time (après validation — hors scope TOS seul)
+- `docs/qa/` minimal dans Time (après validation DEC-TIME-4B)
+- Première revue TDS écran punch / horodateur
+- Première fiche VAL-TIME si changement planifié
+
+**Prérequis :** Lot 1 stabilisation Git Time + validation humaine Phase 4B.
 
 ---
 
@@ -197,7 +213,8 @@ Phase 3G  Standards TRF / release          ✅ Complétée
 Phase 3H  Standards TMF / monitoring     ✅ Complétée
 Phase 3I  Consolidation 10 piliers TOS  ✅ Complétée
 Phase 4A  Audit application Time       ✅ Complétée
-Phase 4B  Plan action Time TQF/TDS/TES ⏳ Prochaine étape
+Phase 4B  Plan action Time TQF/TDS/TES ✅ Complétée
+Phase 4C  Documentation minimale Time  ⏳ Prochaine étape
 Phase 4   Application sur TAGORA Time  ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -206,10 +223,11 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4A** — Audit initial Time documenté. Phase 4B plan d'action à démarrer.
+**Enrichi — Phase 4B** — Plan d'action Time documenté. Phase 4C documentation Time à démarrer après validation.
 
 ## Références
 
+- [Plan Phase 4B Time](docs/04_adoption_modules/plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A Time](docs/04_adoption_modules/audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
 - [Application progressive TAGORA Time](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
 - [Carte des 10 piliers](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md)
