@@ -88,15 +88,33 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 3G — Standards TRF / release et déploiement ⏳ Prochaine étape
+### Phase 3G — Standards TRF / release et déploiement ✅ Complétée
 
-**Objectif :** Enrichir le cadre release, déploiement et gates production — aligné TES et TQF.
+**Objectif :** Enrichir le cadre release, déploiement, rollback, hotfix et gates production — aligné TES, TQF et TOF.
+
+**Livrables réalisés :**
+
+- [x] TRF pilier enrichi
+- [x] Dossier `docs/11_release/` — README, checklist, changelog, versioning, rollback, hotfix, release notes
+- [x] STANDARD_DEVOPS — environnements local/dev/staging/production
+- [x] STANDARD_DEVELOPPEMENT — branches, commits, règles merge
+- [x] REGLES_DE_VALIDATION_AVANT_CODE — section validation avant release
+- [x] TEMPLATE_RELEASE_CHECKLIST + TEMPLATE_RELEASE_NOTES
+- [x] DEC-011 + VALD-014 à VALD-018
+- [x] Section « Phase pilote TRF » dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Validation humaine TRF (VALD-014 à VALD-018)
+
+---
+
+### Phase 3H — Standards TMF / monitoring et observabilité ⏳ Prochaine étape
+
+**Objectif :** Définir le cadre documentaire de monitoring, logs, alertes et observabilité — sans outil imposé.
 
 **Livrables prévus :**
 
-- Enrichissement TRF pilier et standards DevOps
-- Gates release documentaires
-- Lien TRF ↔ TOF (activation workflows en production)
+- Enrichissement pilier TMF
+- Standards logs, alertes, métriques
+- Lien TMF ↔ TRF (post-release) et TMF ↔ TOF (workflows)
 
 ---
 
@@ -122,8 +140,9 @@ Phase 3B  Standards TDS prioritaires       ✅ Complétée
 Phase 3C  Standards TES prioritaires       ✅ Complétée
 Phase 3D  Standards TKS / mémoire          ✅ Complétée
 Phase 3E  Standards TAF / agents IA        ✅ Complétée
-Phase 3F  Standards TOF / orchestration  ✅ Complétée
-Phase 3G  Standards TRF / release        ⏳ Prochaine étape
+Phase 3F  Standards TOF / orchestration    ✅ Complétée
+Phase 3G  Standards TRF / release          ✅ Complétée
+Phase 3H  Standards TMF / monitoring       ⏳ Prochaine étape
 Phase 4   Application sur TAGORA Time    ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -132,10 +151,13 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 3F** — Cadre orchestration TOF documenté. Phase 3G TRF à démarrer.
+**Enrichi — Phase 3G** — Cadre release TRF documenté. Phase 3H TMF à démarrer.
 
 ## Références
 
+- [TRF](docs/01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md)
+- [README Release Framework](docs/11_release/README_RELEASE_FRAMEWORK.md)
+- [RELEASE_CHECKLIST_STANDARD](docs/11_release/RELEASE_CHECKLIST_STANDARD.md)
 - [TOF](docs/01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md)
 - [ORCHESTRATION_REGISTRE](docs/08_orchestration/ORCHESTRATION_REGISTRE.md)
 - [EVENT_BUS_STANDARD](docs/08_orchestration/EVENT_BUS_STANDARD.md)

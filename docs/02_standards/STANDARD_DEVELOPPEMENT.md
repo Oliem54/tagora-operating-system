@@ -35,6 +35,45 @@ Pratiques de codage, structure, conventions et discipline — tous modules. Pilo
 
 ---
 
+## Règles de branches Git
+
+| Branche | Usage |
+|---|---|
+| **`main`** | Ligne stable ; reflète l'état livrable ou déployé |
+| **`feature/*`** | Nouvelle fonctionnalité ou évolution planifiée |
+| **`fix/*`** | Correctif non urgent (bug, régression, dette) |
+| **`hotfix/*`** | Correctif urgent sur stable — voir [HOTFIX_STANDARD.md](../11_release/HOTFIX_STANDARD.md) |
+| **`docs/*`** | Documentation seule — sans changement métier |
+
+---
+
+## Règles de commit
+
+| Règle | Description |
+|---|---|
+| **Message clair** | Intention lisible en une ligne (ex. `fix: corriger validation punch`) |
+| **Portée explicite** | Module ou domaine identifiable dans le message |
+| **Un commit = une intention** | Pas de mélange feature + refactor + typo dans le même commit |
+| **Éviter les commits fourre-tout** | Découper si nécessaire ; facilite review et rollback |
+
+---
+
+## Règles avant merge
+
+Avant fusion vers `main` (ou branche stable) :
+
+| Vérification | Obligatoire si |
+|---|---|
+| **Documentation à jour** | Changement visible ou impact métier |
+| **QA minimale identifiée** | Toujours — au minimum smoke test si parcours touché |
+| **Impact UX identifié** | Modification interface ou parcours utilisateur |
+| **Risques identifiés** | Sécurité, données, permissions, migration |
+| **Validation humaine** | Changement critique (prod, auth, punch, paie, données masse) |
+
+Voir aussi [RELEASE_CHECKLIST_STANDARD.md](../11_release/RELEASE_CHECKLIST_STANDARD.md) pour releases planifiées.
+
+---
+
 ## Ce que ce standard n'impose pas (encore)
 
 - Langage ou framework obligatoire.
@@ -66,4 +105,4 @@ Ces choix seront documentés via **ADR** lorsque validés par module ou écosyst
 
 ## Statut
 
-**Enrichi — Phase 3C** — Principes définis. Conventions techniques : ultérieur.
+**Enrichi — Phase 3G** — Principes, branches, commits et règles merge définis. Conventions techniques : ultérieur.

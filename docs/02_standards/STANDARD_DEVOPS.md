@@ -24,16 +24,49 @@ TOS documente les **principes** ; chaque dépôt module implémente les pipeline
 
 ---
 
+## Environnements recommandés
+
+| Environnement | Rôle |
+|---|---|
+| **Local** | Développement individuel ; tests rapides ; aucune donnée sensible réelle |
+| **Dev** | Intégration continue légère ; partage équipe ; données de test uniquement |
+| **Staging** | Reproduction proche production ; validation QA complète ; smoke tests gate |
+| **Production** | Utilisateurs réels ; données réelles ; accès restreint ; changements contrôlés |
+
+---
+
+## Rôle de chaque environnement
+
+| Environnement | Usage principal | Données |
+|---|---|---|
+| **Local** | Coder, déboguer, expérimenter | Fixtures, mocks, comptes QA locaux |
+| **Dev** | Intégrer branches, tests partagés | Jeux de test ; jamais production |
+| **Staging** | Valider release avant prod | Données anonymisées ou QA ; pas de prod copiée sans procédure |
+| **Production** | Service utilisateurs | Données réelles ; modifications via TRF |
+
+---
+
+## Règles de séparation des environnements
+
+1. **Aucune donnée sensible réelle** dans les documents TOS (comptes, tokens, URLs privées).
+2. **Aucun secret dans Git** — variables d'environnement, vault ou gestionnaire externe.
+3. **Production protégée** — accès limité ; pas de test ad hoc direct sur prod.
+4. **Staging avant production** pour tout changement important (feature, migration, permissions).
+5. **Rollback prévu** avant toute release critique — documenté dans checklist TRF.
+6. **Pas de confusion d'URL ou de config** — chaque environnement identifiable clairement.
+
+---
+
 ## Principes
 
 | Principe | Description |
 |---|---|
 | **Préparation avant production** | Staging validé ; smoke tests passés (TQF) |
-| **Environnements séparés** | dev / QA / staging / prod — pas de confusion |
+| **Environnements séparés** | local / dev / staging / prod — pas de confusion |
 | **Validation avant déploiement** | Gate QA + revue selon criticité |
 | **Rollback prévu** | Procédure écrite avant release risquée |
 | **Changelog prévu** | Utilisateurs et équipe savent ce qui change |
-| **Pas de pipeline figé ici** | CI/CD détaillé — Phase ultérieure / TRF |
+| **Pas de pipeline imposé** | Aucun pipeline CI/CD réel n'est imposé à ce stade — TRF documente la méthode |
 
 ---
 
@@ -75,4 +108,4 @@ Post-déploiement : logs, alertes, métriques — TMF complète DevOps pour dét
 
 ## Statut
 
-**Enrichi — Phase 3C** — Principes DevOps définis. Pipelines : ultérieur.
+**Enrichi — Phase 3G** — Environnements, séparation et principes DevOps définis. Pipelines réels : ultérieur.

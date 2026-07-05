@@ -120,9 +120,31 @@ En cas de doute → **ADR** (coût faible, mémoire TKS précieuse).
 - Prévoir QA en parallèle ou avant merge — pas après production.
 - Ne pas déployer sans validation QA conforme TQF.
 
+---
+
+## Validation avant release
+
+Une **release ne doit pas partir** uniquement parce que le code fonctionne localement. Avant toute release importante ou critique, vérifier :
+
+| # | Vérification | Référence |
+|---|---|---|
+| 1 | **Documentation** à jour (changelog, release notes, doc utilisateur si pertinent) | [CHANGELOG_STANDARD.md](../11_release/CHANGELOG_STANDARD.md) |
+| 2 | **QA** — smoke tests et scénarios pertinents passés | TQF, [SMOKE_TEST_STANDARD.md](../06_qa/SMOKE_TEST_STANDARD.md) |
+| 3 | **Migrations** identifiées et testées si applicable | [ROLLBACK_STANDARD.md](../11_release/ROLLBACK_STANDARD.md) |
+| 4 | **Secrets** — aucun exposé ; config prod hors dépôt | [STANDARD_SECURITE.md](../02_standards/STANDARD_SECURITE.md) |
+| 5 | **Permissions** — rôles et accès revus si changement auth | — |
+| 6 | **Rollback** — plan documenté si release critique | [RELEASE_CHECKLIST_STANDARD.md](../11_release/RELEASE_CHECKLIST_STANDARD.md) |
+| 7 | **Validation métier** — décision humaine si impact règles métier | — |
+| 8 | **Impact utilisateur** — communication prévue si changement visible | [RELEASE_NOTES_STANDARD.md](../11_release/RELEASE_NOTES_STANDARD.md) |
+| 9 | **Changelog / notes de release** — rédigés et cohérents | [TEMPLATE_RELEASE_NOTES.md](../99_templates/TEMPLATE_RELEASE_NOTES.md) |
+
+**Règle :** le fonctionnement local ne remplace pas staging, QA ni validation humaine pour les releases critiques.
+
+---
+
 ## Statut
 
-**Enrichi — Phase 3C** — Processus, exemples et lien ADR-0002.
+**Enrichi — Phase 3G** — Processus avant code + validation avant release.
 
 ## Références
 

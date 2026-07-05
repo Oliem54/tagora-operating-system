@@ -342,19 +342,65 @@ Le TOF définit comment les workflows et événements pourront coordonner TAGORA
 
 ---
 
+## Phase pilote TRF — Release contrôlée
+
+**Statut :** Cadre documenté (Phase 3G TOS) — application dans Time **après** TQF, TDS, TES, TKS, TAF et TOF
+
+Le TRF définit comment TAGORA Time pourra être **livré en production** de façon traçable, validée et réversible — **sans** créer de pipeline CI/CD dans TOS.
+
+### Principes
+
+| Principe | Description |
+|---|---|
+| **Ordre des piliers** | TRF appliqué à Time seulement **après** TQF, TDS, TES, TKS, TAF et TOF |
+| **Release documentée** | Chaque release Time importante = checklist + changelog + notes si impact utilisateur |
+| **Changements critiques** | Validation QA (TQF) + validation humaine obligatoires |
+| **Migrations identifiées** | Schéma ou données — documentées avant release ; rollback prévu |
+| **Hotfix limités** | Périmètre minimal ; traçabilité ; revue post-hotfix |
+| **Rollback anticipé** | Plan écrit avant changements critiques (permissions, punch, paie) |
+| **Time indépendant** | Application métier séparée ; TRF = cadre TOS, pas déploiement depuis TOS |
+
+### Ce que TRF encadrera (plus tard, dans le contexte Time)
+
+- Branches `feature/*`, `fix/*`, `hotfix/*` alignées sur standards TES.
+- Versioning semver par release Time.
+- Smoke tests gate avant promotion staging → production.
+- Changelog et release notes pour releases visibles.
+
+### Ce que TRF n'autorise pas
+
+- Release parce que « ça marche en local ».
+- Déploiement production sans QA minimale.
+- Hotfix fourre-tout ou sans traçabilité.
+- Rollback improvisé sur production critique.
+
+### Livrables Phase 3G (dépôt TOS)
+
+- [x] [09_TRF_TAGORA_RELEASE_FRAMEWORK.md](../01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md)
+- [x] Standards `docs/11_release/` (checklist, changelog, versioning, rollback, hotfix, release notes)
+- [x] [STANDARD_DEVOPS.md](../02_standards/STANDARD_DEVOPS.md) — environnements enrichis
+- [x] [STANDARD_DEVELOPPEMENT.md](../02_standards/STANDARD_DEVELOPPEMENT.md) — branches et commits
+- [x] [REGLES_DE_VALIDATION_AVANT_CODE.md](../03_gouvernance/REGLES_DE_VALIDATION_AVANT_CODE.md) — validation avant release
+- [x] [TEMPLATE_RELEASE_CHECKLIST.md](../99_templates/TEMPLATE_RELEASE_CHECKLIST.md)
+- [x] [TEMPLATE_RELEASE_NOTES.md](../99_templates/TEMPLATE_RELEASE_NOTES.md)
+- [ ] Validation humaine TRF (VALD-014 à VALD-018)
+- [ ] Première checklist release remplie sur changement Time réel
+
+---
+
 ## Piliers en attente — ne pas modifier tout de suite
 
 Les piliers suivants sont **reconnus** mais **non prioritaires** pour la première vague d'**application terrain** sur Time :
 
 | Pilier | Raison du report |
 |---|---|
-| **TOF** (Orchestration) | Cadre TOS documenté (Phase 3F) ; application Time seulement après TQF–TAF et validations VALD-010 à VALD-013. |
 | **TCP** (Core Platform) | Implémentation hors TOS — adoption quand briques communes validées et disponibles. |
 | **TBF** (Business Framework) | Documenter règles transverses au fil de l'eau ; pas de refonte métier Time imposée. |
-| **TRF** (Release) | Aligner progressivement ; pas de refonte pipeline d'un coup. |
-| **TMF** (Monitoring) | Renforcer quand observabilité Time identifiée comme gap. |
+| **TMF** (Monitoring) | Renforcer quand observabilité Time identifiée comme gap — Phase 3H TOS. |
 
-> **Règle :** Ne pas bloquer Time en attendant TCP, TOF ou une plateforme complète. Adopter ce qui est prêt ; documenter le reste.
+> **Note :** TOF et TRF ont un cadre documentaire TOS (Phases 3F et 3G). L'application terrain dans Time reste progressive, après validations humaines.
+
+> **Règle :** Ne pas bloquer Time en attendant TCP ou une plateforme complète. Adopter ce qui est prêt ; documenter le reste.
 
 ---
 
@@ -377,7 +423,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Règles
 
-- Prioriser TQF → TDS → TES → TKS, puis TAF encadré, puis TOF documenté, sur la première phase.
+- Prioriser TQF → TDS → TES → TKS, puis TAF encadré, puis TOF documenté, puis TRF documenté, sur la première phase.
 - Documenter écarts et dérogations temporaires.
 - Produire un ADR pour toute décision Time impactant l'écosystème.
 - Ne pas déployer en production sans smoke tests conformes TQF.
@@ -394,10 +440,10 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 | TKS | 4 | Complété (doc) | Phase 3D — registres mémoire ; validations humaines à faire |
 | TAF | 5 | Cadre doc | Phase 3E — standards agents IA ; pas d'agent réel dans Time |
 | TOF | 6 | Complété (doc) | Phase 3F — standards orchestration ; ORCH-TIME brouillon |
+| TRF | 7 | Complété (doc) | Phase 3G — standards release ; validations VALD-014 à VALD-018 à faire |
 | TCP | — | Reporté | — |
 | TBF | — | Reporté | — |
-| TRF | — | Reporté | — |
-| TMF | — | Reporté | — |
+| TMF | 8 | Prochaine (doc) | Phase 3H — monitoring et observabilité |
 
 ---
 
@@ -410,10 +456,13 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 3F** — Cadre TOF documenté. Application orchestration dans Time après validations.
+**Enrichi — Phase 3G** — Cadre TRF documenté. Application release dans Time après validations.
 
 ## Références
 
+- [TRF](../01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md)
+- [README Release Framework](../11_release/README_RELEASE_FRAMEWORK.md)
+- [RELEASE_CHECKLIST_STANDARD](../11_release/RELEASE_CHECKLIST_STANDARD.md)
 - [TOF](../01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md)
 - [ORCHESTRATION_REGISTRE](../08_orchestration/ORCHESTRATION_REGISTRE.md)
 - [EVENT_BUS_STANDARD](../08_orchestration/EVENT_BUS_STANDARD.md)

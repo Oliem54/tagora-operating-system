@@ -42,6 +42,11 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-011 | 2026-07-05 | Standard Event Bus | Humaine | À désigner | À faire | [EVENT_BUS_STANDARD.md](../08_orchestration/EVENT_BUS_STANDARD.md) | Valider contrats événements documentaires |
 | VALD-012 | 2026-07-05 | Template workflow orchestration | Humaine | À désigner | À faire | [TEMPLATE_WORKFLOW_ORCHESTRATION.md](../99_templates/TEMPLATE_WORKFLOW_ORCHESTRATION.md) | Valider le template workflow |
 | VALD-013 | 2026-07-05 | ORCH-TIME-001 et ORCH-TIME-002 | Humaine | À désigner | À faire | [ORCHESTRATION_REGISTRE.md](../08_orchestration/ORCHESTRATION_REGISTRE.md) | Valider avant toute implémentation réelle |
+| VALD-014 | 2026-07-05 | Standard TRF (pilier + docs/11_release) | Humaine | À désigner | À faire | [09_TRF_TAGORA_RELEASE_FRAMEWORK.md](../01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md) | Valider le cadre release |
+| VALD-015 | 2026-07-05 | Checklist release standard | Humaine | À désigner | À faire | [RELEASE_CHECKLIST_STANDARD.md](../11_release/RELEASE_CHECKLIST_STANDARD.md) | Valider la checklist release |
+| VALD-016 | 2026-07-05 | Standard rollback | Humaine | À désigner | À faire | [ROLLBACK_STANDARD.md](../11_release/ROLLBACK_STANDARD.md) | Valider le standard rollback |
+| VALD-017 | 2026-07-05 | Standard hotfix | Humaine | À désigner | À faire | [HOTFIX_STANDARD.md](../11_release/HOTFIX_STANDARD.md) | Valider le standard hotfix |
+| VALD-018 | 2026-07-05 | Checklist release sur changement Time | Terrain / QA | À désigner | À faire | [TEMPLATE_RELEASE_CHECKLIST.md](../99_templates/TEMPLATE_RELEASE_CHECKLIST.md) | Tester la checklist sur un vrai changement TAGORA Time |
 
 ---
 
@@ -53,4 +58,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 3F**
+**Enrichi — Phase 3G**
