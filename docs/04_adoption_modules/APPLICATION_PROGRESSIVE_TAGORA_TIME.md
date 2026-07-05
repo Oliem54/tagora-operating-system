@@ -516,6 +516,26 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4F-TOS — Validation du paquet pilote
+
+**Statut :** Validation humaine actée — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider humainement le paquet Phase 4E et les lots TQF/TDS/TES |
+| **Document** | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Paquet 4E approuvé comme cadre documentaire préparatoire |
+
+### Note Phase 4F-TOS (2026-07-05)
+
+- **VALD-034 à VALD-038** sont validées.
+- Le **paquet 4E** est approuvé comme cadre documentaire.
+- Cette validation **n'autorise aucune modification réelle** du module pilote (pas de code, migration, refonte).
+- La **prochaine étape reste dans TOS** : préparation des templates d'application pilote (Phase 4G-TOS).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -611,7 +631,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4E-TOS** — Paquet documentaire TQF/TDS/TES préparé. Phase 4F-TOS — validation du paquet.
+**Enrichi — Phase 4F-TOS** — Paquet pilote validé. Phase 4G-TOS — templates d'application pilote.
 
 ## Références
 

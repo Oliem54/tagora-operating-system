@@ -62,11 +62,11 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-031 | 2026-07-05 | DEC-TIME-4B-003 — écrans TDS prioritaires | Humaine | Martin ST-Gelais — Direction | Validé | [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md) | Priorité : punch employé, horodateur, dashboard employé — commissions après clarification WIP |
 | VALD-032 | 2026-07-05 | DEC-TIME-4B-004 — scénarios QA obligatoires | Humaine | Martin ST-Gelais — Direction | Validé | [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md) | Scénarios obligatoires : punch in/out, punch GPS, GPS refusé/absent, feuille soumise, approbation superviseur/direction |
 | VALD-033 | 2026-07-05 | DEC-TIME-4B-005 — fiche validation avant code | Humaine | Martin ST-Gelais — Direction | Validé | [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md) | Fiche obligatoire pour tout changement critique et prochain changement punch/GPS |
-| VALD-034 | 2026-07-05 | Paquet documentaire Phase 4E-TOS | Humaine | À désigner | À faire | [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](../04_adoption_modules/paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md) | Valider le paquet global avant toute application réelle |
-| VALD-035 | 2026-07-05 | Lot TQF du paquet pilote | Humaine | À désigner | À faire | [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](../04_adoption_modules/paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md) | Valider scénarios QA, comptes, données et smoke test prévus |
-| VALD-036 | 2026-07-05 | Lot TDS du paquet pilote | Humaine | À désigner | À faire | [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](../04_adoption_modules/paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md) | Valider écrans P1 et critères revue UX/UI |
-| VALD-037 | 2026-07-05 | Lot TES du paquet pilote | Humaine | À désigner | À faire | [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](../04_adoption_modules/paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md) | Valider règle fiche validation avant code et éléments à vérifier |
-| VALD-038 | 2026-07-05 | Conditions avant application réelle | Humaine | À désigner | À faire | [PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md](../04_adoption_modules/paquets_pilotes/PAQUET_PHASE_4E_APPLICATION_PILOTE_TQF_TDS_TES.md) | Valider checklist §8 avant création docs dans module pilote |
+| VALD-034 | 2026-07-05 | Paquet documentaire Phase 4E-TOS | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Paquet accepté comme cadre préparatoire |
+| VALD-035 | 2026-07-05 | Lot TQF du paquet pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Lot QA minimale accepté comme préparation documentaire |
+| VALD-036 | 2026-07-05 | Lot TDS du paquet pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Lot revue UX/UI minimale accepté comme préparation documentaire |
+| VALD-037 | 2026-07-05 | Lot TES du paquet pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Lot validation avant code accepté comme préparation documentaire |
+| VALD-038 | 2026-07-05 | Conditions avant application réelle | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Conditions acceptées comme garde-fous obligatoires |
 
 ---
 
@@ -78,4 +78,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 4E-TOS** — VALD-034 à 038 ajoutées (À faire). VALD-029 à 033 **Validé** (2026-07-05).
+**Enrichi — Phase 4F-TOS** — VALD-034 à 038 **Validé** (Martin ST-Gelais — Direction, 2026-07-05).
