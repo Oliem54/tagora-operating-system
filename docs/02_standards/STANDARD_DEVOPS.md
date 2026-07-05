@@ -88,6 +88,25 @@ Voir [09_TRF_TAGORA_RELEASE_FRAMEWORK.md](../01_piliers/09_TRF_TAGORA_RELEASE_FR
 
 Post-déploiement : logs, alertes, métriques — TMF complète DevOps pour détecter régressions en production.
 
+Voir [10_TMF_TAGORA_MONITORING_FRAMEWORK.md](../01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md).
+
+---
+
+## Monitoring et observabilité
+
+| Principe | Description |
+|---|---|
+| **Stratégie de logs** | Chaque module critique devrait documenter quoi logger et où |
+| **Erreurs détectables** | Les erreurs critiques doivent être identifiables (logs, métriques ou alertes) |
+| **Suivi post-release** | Les releases importantes doivent être surveillées après déploiement (TRF + TMF) |
+| **Alertes utiles** | Actionnables ; pas trop nombreuses — éviter la fatigue d'alerte |
+| **Aucun secret dans les logs** | Mots de passe, tokens, clés API interdits |
+| **Aucun secret dans les rapports** | Incidents, checklists monitoring — sans credential |
+| **Incidents traçables** | Datés, statutés, documentés ([INCIDENT_RESPONSE_STANDARD.md](../12_monitoring/INCIDENT_RESPONSE_STANDARD.md)) |
+| **Aucun outil imposé** | Sentry, Datadog, Railway, etc. — choix module ultérieur (ADR) |
+
+Références : `docs/12_monitoring/`
+
 ---
 
 ## Règles
@@ -108,4 +127,4 @@ Post-déploiement : logs, alertes, métriques — TMF complète DevOps pour dét
 
 ## Statut
 
-**Enrichi — Phase 3G** — Environnements, séparation et principes DevOps définis. Pipelines réels : ultérieur.
+**Enrichi — Phase 3H** — Environnements, monitoring documentaire et principes DevOps définis. Pipelines et outils réels : ultérieur.

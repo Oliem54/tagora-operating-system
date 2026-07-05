@@ -41,6 +41,7 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 | DEC-009 | 2026-07-03 | Agents IA | Les agents IA TAGORA doivent respecter un périmètre explicite, des interdictions claires, un rapport vérifiable et une validation humaine pour les actions critiques | Acté | Écosystème | Cadre TAF obligatoire pour tout agent | [TAF](../01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md), [AGENTS_IA_REGISTRE.md](../07_ai/AGENTS_IA_REGISTRE.md) | Phase 3E |
 | DEC-010 | 2026-07-05 | Orchestration | Les orchestrations TAGORA doivent rester séparées de la logique métier des modules et respecter des contrats documentés, une validation humaine pour les actions critiques et des rapports vérifiables | Acté | Écosystème | Cadre TOF obligatoire pour tout workflow ou événement | [TOF](../01_piliers/05_TOF_TAGORA_ORCHESTRATION_FRAMEWORK.md), [ORCHESTRATION_REGISTRE.md](../08_orchestration/ORCHESTRATION_REGISTRE.md) | Phase 3F |
 | DEC-011 | 2026-07-05 | Release | Les releases TAGORA doivent être traçables, validées selon leur niveau de risque, documentées, et accompagnées d'un plan de rollback pour les changements critiques | Acté | Écosystème | Cadre TRF obligatoire pour toute livraison significative | [TRF](../01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md), [README_RELEASE_FRAMEWORK.md](../11_release/README_RELEASE_FRAMEWORK.md) | Phase 3G |
+| DEC-012 | 2026-07-05 | Monitoring | Les modules TAGORA critiques doivent prévoir une observabilité minimale, des logs sans secret, un suivi post-release et une traçabilité des incidents | Acté | Écosystème | Cadre TMF obligatoire pour modules critiques | [TMF](../01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md), [README_MONITORING_FRAMEWORK.md](../12_monitoring/README_MONITORING_FRAMEWORK.md) | Phase 3H |
 
 ---
 
@@ -53,4 +54,4 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 
 ## Statut
 
-**Enrichi — Phase 3G**
+**Enrichi — Phase 3H**

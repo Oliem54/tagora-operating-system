@@ -47,6 +47,11 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-016 | 2026-07-05 | Standard rollback | Humaine | À désigner | À faire | [ROLLBACK_STANDARD.md](../11_release/ROLLBACK_STANDARD.md) | Valider le standard rollback |
 | VALD-017 | 2026-07-05 | Standard hotfix | Humaine | À désigner | À faire | [HOTFIX_STANDARD.md](../11_release/HOTFIX_STANDARD.md) | Valider le standard hotfix |
 | VALD-018 | 2026-07-05 | Checklist release sur changement Time | Terrain / QA | À désigner | À faire | [TEMPLATE_RELEASE_CHECKLIST.md](../99_templates/TEMPLATE_RELEASE_CHECKLIST.md) | Tester la checklist sur un vrai changement TAGORA Time |
+| VALD-019 | 2026-07-05 | Standard TMF (pilier + docs/12_monitoring) | Humaine | À désigner | À faire | [10_TMF_TAGORA_MONITORING_FRAMEWORK.md](../01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md) | Valider le cadre monitoring |
+| VALD-020 | 2026-07-05 | Standard logging | Humaine | À désigner | À faire | [LOGGING_STANDARD.md](../12_monitoring/LOGGING_STANDARD.md) | Valider le standard logs |
+| VALD-021 | 2026-07-05 | Template incident report | Humaine | À désigner | À faire | [TEMPLATE_INCIDENT_REPORT.md](../99_templates/TEMPLATE_INCIDENT_REPORT.md) | Valider le template incident |
+| VALD-022 | 2026-07-05 | Checklist monitoring | Humaine | À désigner | À faire | [TEMPLATE_MONITORING_CHECKLIST.md](../99_templates/TEMPLATE_MONITORING_CHECKLIST.md) | Valider la checklist monitoring |
+| VALD-023 | 2026-07-05 | Suivi post-release sur changement Time | Terrain / QA | À désigner | À faire | [POST_RELEASE_MONITORING_STANDARD.md](../12_monitoring/POST_RELEASE_MONITORING_STANDARD.md) | Tester le suivi post-release sur un vrai changement TAGORA Time |
 
 ---
 
@@ -58,4 +63,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 3G**
+**Enrichi — Phase 3H**

@@ -106,15 +106,31 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 3H — Standards TMF / monitoring et observabilité ⏳ Prochaine étape
+### Phase 3H — Standards TMF / monitoring et observabilité ✅ Complétée
 
-**Objectif :** Définir le cadre documentaire de monitoring, logs, alertes et observabilité — sans outil imposé.
+**Objectif :** Définir le cadre documentaire de monitoring, logs, alertes, métriques, incidents et suivi post-release — sans outil imposé.
+
+**Livrables réalisés :**
+
+- [x] TMF pilier enrichi
+- [x] Dossier `docs/12_monitoring/` — README, logs, erreurs, alertes, métriques, incidents, post-release, dashboards
+- [x] STANDARD_DEVOPS — section monitoring et observabilité
+- [x] TEMPLATE_INCIDENT_REPORT + TEMPLATE_MONITORING_CHECKLIST
+- [x] DEC-012 + VALD-019 à VALD-023
+- [x] Section « Phase pilote TMF » dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Validation humaine TMF (VALD-019 à VALD-023)
+
+---
+
+### Phase 3I — Consolidation des 10 piliers TOS ⏳ Prochaine étape
+
+**Objectif :** Consolider la cohérence transversale des dix piliers documentés (TES, TQF, TDS, TKS, TAF, TOF, TRF, TMF, TCP, TBF) — vue d'ensemble, liens croisés, écarts et priorités Phase 4.
 
 **Livrables prévus :**
 
-- Enrichissement pilier TMF
-- Standards logs, alertes, métriques
-- Lien TMF ↔ TRF (post-release) et TMF ↔ TOF (workflows)
+- Matrice piliers ↔ standards ↔ Time
+- Synthèse gouvernance et validations en attente
+- Préparation Phase 4 application terrain
 
 ---
 
@@ -142,7 +158,8 @@ Phase 3D  Standards TKS / mémoire          ✅ Complétée
 Phase 3E  Standards TAF / agents IA        ✅ Complétée
 Phase 3F  Standards TOF / orchestration    ✅ Complétée
 Phase 3G  Standards TRF / release          ✅ Complétée
-Phase 3H  Standards TMF / monitoring       ⏳ Prochaine étape
+Phase 3H  Standards TMF / monitoring     ✅ Complétée
+Phase 3I  Consolidation 10 piliers TOS     ⏳ Prochaine étape
 Phase 4   Application sur TAGORA Time    ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -151,10 +168,14 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 3G** — Cadre release TRF documenté. Phase 3H TMF à démarrer.
+**Enrichi — Phase 3H** — Cadre monitoring TMF documenté. Phase 3I consolidation à démarrer.
 
 ## Références
 
+- [TMF](docs/01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md)
+- [README Monitoring Framework](docs/12_monitoring/README_MONITORING_FRAMEWORK.md)
+- [LOGGING_STANDARD](docs/12_monitoring/LOGGING_STANDARD.md)
+- [POST_RELEASE_MONITORING_STANDARD](docs/12_monitoring/POST_RELEASE_MONITORING_STANDARD.md)
 - [TRF](docs/01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md)
 - [README Release Framework](docs/11_release/README_RELEASE_FRAMEWORK.md)
 - [RELEASE_CHECKLIST_STANDARD](docs/11_release/RELEASE_CHECKLIST_STANDARD.md)
