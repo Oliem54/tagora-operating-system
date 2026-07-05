@@ -300,17 +300,33 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4K-TOS — Plan d'instanciation documentaire ciblée ⏳ Prochaine étape documentaire
+### Phase 4K-TOS — Plan d'instanciation documentaire ciblée ✅ Complétée
 
 **Objectif :** Préparer un plan documentaire ciblé d'instanciation — **sans modifier le module pilote ni ouvrir un autre dépôt**.
 
-**Condition :** Phase 4J complétée ; checklist §6 du paquet 4J remplie avant toute action ultérieure.
+**Livrables réalisés :**
+
+- [x] [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](docs/04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md)
+- [x] Module cible TAGORA Time, dépôt `C:\dev\tagora-time`, branche `main` nommés
+- [x] 11 fichiers documentaires futurs proposés (§5)
+- [x] Checklist conditions avant instanciation réelle (§6)
+- [x] Section Phase 4K-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] VALD-050 à VALD-056 inscrites (À faire)
+- [ ] Validation humaine du plan 4K (Phase 4L-TOS)
+
+---
+
+### Phase 4L-TOS — Validation humaine du plan d'instanciation ciblée ⏳ Prochaine étape documentaire
+
+**Objectif :** Valider humainement le plan Phase 4K — **sans ouvrir ni modifier le dépôt cible**.
+
+**Condition :** Plan 4K complété ; VALD-050 à VALD-056 au statut **Validé**.
 
 **Livrables prévus :**
 
-- Module cible, dépôt, branche et périmètre nommés explicitement
-- Liste des fichiers documentaires à créer (futurs)
-- Checklist interdictions et validation humaine avant action dans un autre dépôt
+- Document de validation Phase 4L-TOS
+- Décision sur module, dépôt, branche, fichiers autorisés et conditions §6
+- Autorisation ou report de toute future préparation dans un autre dépôt
 
 ---
 
@@ -360,8 +376,9 @@ Phase 4G-TOS Templates application pilote ✅ Complétée
 Phase 4H-TOS Validation templates pilote  ✅ Complétée
 Phase 4I-TOS Paquet transition application ✅ Complétée
 Phase 4J-TOS Validation passage instanciation ✅ Complétée
-Phase 4K-TOS Plan instanciation documentaire ciblée ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4K
+Phase 4K-TOS Plan instanciation documentaire ciblée ✅ Complétée
+Phase 4L-TOS Validation plan instanciation ciblée ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4L
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -370,7 +387,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4J-TOS** — Validation passage instanciation documentaire actée. Phase 4K-TOS — plan d'instanciation ciblée.
+**Enrichi — Phase 4K-TOS** — Plan d'instanciation documentaire ciblée préparé. Phase 4L-TOS — validation humaine du plan 4K.
 
 ## Références
 

@@ -78,6 +78,13 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-047 | 2026-07-05 | Porte de passage vers application documentaire | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md) | Checklist §6 acceptée comme porte de passage obligatoire |
 | VALD-048 | 2026-07-05 | Règle finale de transition TOS → module pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md) | Règle §9 — dépôt, branche, périmètre, fichiers autorisés |
 | VALD-049 | 2026-07-05 | Besoin Phase 4J-TOS | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md) | Phase 4J reconnue comme validation de passage sans modification module |
+| VALD-050 | 2026-07-05 | Plan Phase 4K-TOS | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider le plan d'instanciation documentaire ciblée |
+| VALD-051 | 2026-07-05 | Module cible TAGORA Time | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider TAGORA Time comme module cible futur |
+| VALD-052 | 2026-07-05 | Dépôt cible référencé C:\dev\tagora-time | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider le dépôt cible référencé (planification seulement) |
+| VALD-053 | 2026-07-05 | Branche cible prévue main | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider la branche cible prévue |
+| VALD-054 | 2026-07-05 | Liste fichiers documentaires futurs proposés | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider les 11 fichiers futurs proposés §5 |
+| VALD-055 | 2026-07-05 | Conditions avant instanciation réelle | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider la checklist §6 avant toute action dans un autre dépôt |
+| VALD-056 | 2026-07-05 | Besoin Phase 4L-TOS | Humaine | À désigner | À faire | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Valider le lancement de Phase 4L — validation humaine du plan 4K |
 
 ---
 
@@ -89,4 +96,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 4J-TOS** — VALD-046 à 049 **Validé** (Martin ST-Gelais — Direction, 2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Phase 4K-TOS** — VALD-050 à 056 ajoutées (À faire). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).

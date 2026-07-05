@@ -615,6 +615,28 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4K-TOS — Plan d'instanciation documentaire ciblée
+
+**Statut :** Plan documentaire réalisé — **aucune modification du module pilote**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Nommer explicitement module, dépôt, branche, périmètre et fichiers documentaires futurs |
+| **Document** | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) |
+| **Module cible** | TAGORA Time (référence uniquement) |
+| **Dépôt cible référencé** | `C:\dev\tagora-time` — **non ouvert** |
+| **Règle** | Cette phase n'autorise aucune création dans TAGORA Time |
+
+### Note Phase 4K-TOS
+
+- Phase 4K **nomme TAGORA Time** comme module cible futur.
+- Le **dépôt cible** est seulement référencé, **pas ouvert**.
+- Le plan **liste les fichiers documentaires futurs proposés** (11 fichiers Markdown).
+- Cette phase **n'autorise aucune création** dans TAGORA Time.
+- La **prochaine étape reste dans TOS** : Phase 4L-TOS — validation humaine du plan 4K (VALD-050 à VALD-056).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -710,7 +732,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4J-TOS** — Validation passage instanciation documentaire actée. Phase 4K-TOS — plan d'instanciation ciblée.
+**Enrichi — Phase 4K-TOS** — Plan d'instanciation documentaire ciblée préparé. Phase 4L-TOS — validation humaine du plan 4K.
 
 ## Références
 
