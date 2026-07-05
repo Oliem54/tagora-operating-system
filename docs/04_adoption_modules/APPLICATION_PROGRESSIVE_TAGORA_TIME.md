@@ -658,6 +658,27 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4M-TOS — Autorisation d'ouverture contrôlée du dépôt cible
+
+**Statut :** Cadre d'autorisation documentaire réalisé — **aucune ouverture du dépôt cible**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Préparer l'autorisation documentaire d'ouverture contrôlée limitée à une vérification Git de surface |
+| **Document** | [AUTORISATION_PHASE_4M_OUVERTURE_CONTROLEE_DEPOT_CIBLE.md](plans_instanciation/AUTORISATION_PHASE_4M_OUVERTURE_CONTROLEE_DEPOT_CIBLE.md) |
+| **Dépôt cible prévu** | `C:\dev\tagora-time` — **non ouvert** |
+| **Règle** | Cette phase ne donne pas le droit d'ouvrir TAGORA Time |
+
+### Note Phase 4M-TOS
+
+- Phase 4M **prépare l'autorisation documentaire** d'ouverture contrôlée.
+- **TAGORA Time reste non ouvert et non modifié**.
+- L'ouverture future serait **limitée à une vérification Git de surface** (`status`, `log`, `rev-parse`, `branch`).
+- **Aucune instanciation documentaire** ne commence encore.
+- La **prochaine étape reste dans TOS** : Phase 4N-TOS — validation humaine de l'autorisation 4M (VALD-057 à VALD-062).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -753,7 +774,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4L-TOS** — Validation plan instanciation documentaire ciblée actée. Phase 4M-TOS — autorisation ouverture contrôlée dépôt cible.
+**Enrichi — Phase 4M-TOS** — Cadre autorisation ouverture contrôlée préparé. Phase 4N-TOS — validation humaine autorisation 4M.
 
 ## Références
 

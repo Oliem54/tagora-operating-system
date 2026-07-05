@@ -329,17 +329,32 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4M-TOS — Autorisation d'ouverture contrôlée du dépôt cible ⏳ Prochaine étape documentaire
+### Phase 4M-TOS — Autorisation d'ouverture contrôlée du dépôt cible ✅ Complétée
 
 **Objectif :** Préparer dans TOS le cadre d'autorisation pour ouvrir le dépôt cible en **lecture seule Git** — **sans modifier TAGORA Time**.
 
-**Condition :** Phase 4L complétée ; checklist §6 Phase 4L remplie avant toute action.
+**Livrables réalisés :**
+
+- [x] [AUTORISATION_PHASE_4M_OUVERTURE_CONTROLEE_DEPOT_CIBLE.md](docs/04_adoption_modules/plans_instanciation/AUTORISATION_PHASE_4M_OUVERTURE_CONTROLEE_DEPOT_CIBLE.md)
+- [x] Commandes Git futures autorisées (§4) et interdictions absolues (§5)
+- [x] Checklist conditions avant ouverture réelle (§6) et rapport attendu (§7)
+- [x] Section Phase 4M-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] VALD-057 à VALD-062 inscrites (À faire)
+- [ ] Validation humaine autorisation 4M (Phase 4N-TOS)
+
+---
+
+### Phase 4N-TOS — Validation humaine de l'autorisation d'ouverture contrôlée ⏳ Prochaine étape documentaire
+
+**Objectif :** Valider humainement le cadre Phase 4M — **sans ouvrir ni modifier le dépôt cible**.
+
+**Condition :** Phase 4M complétée ; VALD-057 à VALD-062 au statut **Validé**.
 
 **Livrables prévus :**
 
-- Document d'autorisation d'ouverture contrôlée
-- Périmètre Git autorisé (`status`, `log`, `rev-parse` uniquement)
-- Validation humaine avant toute vérification du dépôt cible
+- Document de validation Phase 4N-TOS
+- Décision sur dépôt, commandes autorisées, interdictions et rapport §7
+- Autorisation ou report de toute future vérification Git dans le dépôt cible
 
 ---
 
@@ -391,8 +406,9 @@ Phase 4I-TOS Paquet transition application ✅ Complétée
 Phase 4J-TOS Validation passage instanciation ✅ Complétée
 Phase 4K-TOS Plan instanciation documentaire ciblée ✅ Complétée
 Phase 4L-TOS Validation plan instanciation ciblée ✅ Complétée
-Phase 4M-TOS Autorisation ouverture contrôlée dépôt ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4M
+Phase 4M-TOS Autorisation ouverture contrôlée dépôt ✅ Complétée
+Phase 4N-TOS Validation autorisation ouverture contrôlée ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4N
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -401,7 +417,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4L-TOS** — Validation plan instanciation documentaire ciblée actée. Phase 4M-TOS — autorisation ouverture contrôlée dépôt cible.
+**Enrichi — Phase 4M-TOS** — Cadre autorisation ouverture contrôlée préparé. Phase 4N-TOS — validation humaine autorisation 4M.
 
 ## Références
 
