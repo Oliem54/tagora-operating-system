@@ -456,7 +456,22 @@ Priorité confirmée : **TQF → TDS → TES** avant TKS, TAF, TOF, TRF, TMF en 
 | **Plan** | [TIME_PLAN_PHASE_4B_TQF_TDS_TES.md](plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md) |
 | **Priorité** | Lot 1 stabilisation Git → QA minimale → TDS écrans P1 → fiche validation TES |
 | **Décisions ouvertes** | DEC-TIME-4B-001 à DEC-TIME-4B-005 — validation humaine requise |
-| **Phase 4C** | Premiers documents dans Time (après validation) — pas de code |
+| **Phase 4C** | Premiers documents dans Time (après validation) — voir Phase 4D |
+
+---
+
+## Phase 4C-TOS — Validation avant application pilote
+
+**Statut :** Cadre documentaire réalisé — **TOS reste le projet actif ; Time = référence pilote uniquement**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider humainement DEC-TIME-4B-001 à 005 avant toute modification Time |
+| **Document** | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) |
+| **Règle** | **Aucune modification Time** tant que validations non actées |
+| **Phase 4D** | Documentation minimale dans Time — **uniquement après** validation Phase 4C-TOS |
+
+Validations registre : VALD-029 à VALD-033.
 
 ---
 
@@ -555,10 +570,11 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4B** — Plan d'action TQF/TDS/TES documenté. Phase 4C après validation humaine.
+**Enrichi — Phase 4C-TOS** — Cadre validation avant application pilote. Phase 4D conditionnelle après validation humaine.
 
 ## Références
 
+- [Validation Phase 4C-TOS](validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md)
 - [Plan Phase 4B TQF/TDS/TES](plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A TQF/TDS/TES](audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
 - [Carte des 10 piliers](../00_constitution/CARTE_DES_10_PILIERS_TOS.md)

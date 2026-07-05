@@ -178,17 +178,32 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4C — Documentation minimale dans TAGORA Time ⏳ Prochaine étape
+### Phase 4C-TOS — Validation avant application pilote ✅ Complétée
+
+**Objectif :** Cadre TOS pour valider humainement les décisions Phase 4B avant toute toucher Time.
+
+**Livrables réalisés :**
+
+- [x] [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](docs/04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md)
+- [x] Critères de passage Phase 4D
+- [x] VALD-029 à VALD-033
+- [x] Section Phase 4C-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Validation humaine DEC-TIME-4B-001 à 005
+
+---
+
+### Phase 4D — Documentation minimale dans TAGORA Time ⏳ Future étape conditionnelle
 
 **Objectif :** Créer les premiers documents QA/TDS/TES **dans le dépôt Time** — sans code ni migration.
 
+**Condition :** Toutes les validations Phase 4C-TOS actées (checklist §5).
+
 **Livrables prévus :**
 
-- `docs/qa/` minimal dans Time (après validation DEC-TIME-4B)
-- Première revue TDS écran punch / horodateur
+- `docs/qa/` minimal dans Time
+- Matrice comptes / données QA (sans secrets)
+- Première checklist TDS écran P1
 - Première fiche VAL-TIME si changement planifié
-
-**Prérequis :** Lot 1 stabilisation Git Time + validation humaine Phase 4B.
 
 ---
 
@@ -214,8 +229,9 @@ Phase 3H  Standards TMF / monitoring     ✅ Complétée
 Phase 3I  Consolidation 10 piliers TOS  ✅ Complétée
 Phase 4A  Audit application Time       ✅ Complétée
 Phase 4B  Plan action Time TQF/TDS/TES ✅ Complétée
-Phase 4C  Documentation minimale Time  ⏳ Prochaine étape
-Phase 4   Application sur TAGORA Time  ⏳ À venir
+Phase 4C-TOS Validation avant application  ✅ Complétée
+Phase 4D  Documentation minimale Time     ⏳ Conditionnelle
+Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
 
@@ -223,10 +239,11 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4B** — Plan d'action Time documenté. Phase 4C documentation Time à démarrer après validation.
+**Enrichi — Phase 4C-TOS** — Cadre validation pilote documenté. Phase 4D après validations humaines.
 
 ## Références
 
+- [Validation Phase 4C-TOS Time](docs/04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md)
 - [Plan Phase 4B Time](docs/04_adoption_modules/plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A Time](docs/04_adoption_modules/audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
 - [Application progressive TAGORA Time](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
