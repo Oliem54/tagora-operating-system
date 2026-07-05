@@ -27,11 +27,11 @@
 
 | Validation | Décision liée | Sujet | Options possibles | Recommandation TOS | Décision humaine | Décideur | Date | Statut | Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| **VALD-029** | DEC-TIME-4B-001 | Baseline Git du module pilote | A. `main` stable · B. Branche feature actuelle · C. Autre branche dédiée | Ne pas appliquer sur un état **WIP non clarifié** ; préférer **`main` stable** pour TQF/TDS métier | *À remplir* | *À désigner* | *À remplir* | **À valider** | Branche actuelle : `feature/admin-commissions-premium-header-kpi` |
-| **VALD-030** | DEC-TIME-4B-002 | Traitement du WIP commissions (5 fichiers) | A. Commit + push avant suite · B. Isoler branche dédiée · C. Reporter écrans commissions · D. Annuler WIP si non désiré | **Stabiliser ou isoler** avant toute application | *À remplir* | *À désigner* | *À remplir* | **À valider** | WIP exclu audit 4A |
-| **VALD-031** | DEC-TIME-4B-003 | Écrans prioritaires TDS | A. Punch employé + horodateur · B. Dashboards employé/direction · C. Admin commissions · D. Navigation globale | Commencer par **punch employé, horodateur et dashboard employé** | *À remplir* | *À désigner* | *À remplir* | **À valider** | Commissions après DEC-002 |
-| **VALD-032** | DEC-TIME-4B-004 | Scénarios QA obligatoires | A. Punch in/out · B. Punch GPS · C. GPS refusé · D. Feuille de temps soumise · E. Approbation superviseur/direction | **A à E obligatoires** pour pilote minimal | *À remplir* | *À désigner* | *À remplir* | **À valider** | QA-TIME-001 dans TOS |
-| **VALD-033** | DEC-TIME-4B-005 | Fiche validation avant code | A. Prochain changement punch/GPS · B. Prochain changement commissions · C. Tout changement critique · D. Seulement avant release | Fiche sur **tout changement critique** + **prochain changement punch/GPS** | *À remplir* | *À désigner* | *À remplir* | **À valider** | Template TOS FICHE_VALIDATION |
+| **VALD-029** | DEC-TIME-4B-001 | Baseline Git du module pilote | A. `main` stable · B. Branche feature actuelle · C. Autre branche dédiée | Ne pas appliquer sur un état **WIP non clarifié** ; préférer **`main` stable** pour TQF/TDS métier | Validé — aucune application TOS future ne doit se faire sur un état WIP non clarifié. Le point de départ devra être propre, identifié et documenté. | Martin ST-Gelais — Direction | 2026-07-05 | **Validé** | Branche actuelle : `feature/admin-commissions-premium-header-kpi` |
+| **VALD-030** | DEC-TIME-4B-002 | Traitement du WIP commissions (5 fichiers) | A. Commit + push avant suite · B. Isoler branche dédiée · C. Reporter écrans commissions · D. Annuler WIP si non désiré | **Stabiliser ou isoler** avant toute application | Validé — tout WIP du module pilote devra être stabilisé, isolé ou explicitement reporté avant une application réelle. | Martin ST-Gelais — Direction | 2026-07-05 | **Validé** | WIP exclu audit 4A |
+| **VALD-031** | DEC-TIME-4B-003 | Écrans prioritaires TDS | A. Punch employé + horodateur · B. Dashboards employé/direction · C. Admin commissions · D. Navigation globale | Commencer par **punch employé, horodateur et dashboard employé** | Validé — les premiers écrans prioritaires pour une future revue TDS seront punch employé, horodateur et dashboard employé. Les écrans commissions viendront seulement après clarification du WIP. | Martin ST-Gelais — Direction | 2026-07-05 | **Validé** | Commissions après DEC-002 |
+| **VALD-032** | DEC-TIME-4B-004 | Scénarios QA obligatoires | A. Punch in/out · B. Punch GPS · C. GPS refusé · D. Feuille de temps soumise · E. Approbation superviseur/direction | **A à E obligatoires** pour pilote minimal | Validé — les scénarios QA minimaux obligatoires seront punch in/out, punch avec GPS, GPS refusé ou absent, feuille de temps soumise, approbation superviseur/direction. | Martin ST-Gelais — Direction | 2026-07-05 | **Validé** | QA-TIME-001 dans TOS |
+| **VALD-033** | DEC-TIME-4B-005 | Fiche validation avant code | A. Prochain changement punch/GPS · B. Prochain changement commissions · C. Tout changement critique · D. Seulement avant release | Fiche sur **tout changement critique** + **prochain changement punch/GPS** | Validé — la fiche de validation avant code sera obligatoire pour tout changement critique et pour le prochain changement punch/GPS. | Martin ST-Gelais — Direction | 2026-07-05 | **Validé** | Template TOS FICHE_VALIDATION |
 
 ---
 
@@ -65,13 +65,13 @@ Checklist — **toutes les conditions requises** :
 
 | # | Critère | ☐ |
 |---|---|:---:|
-| 1 | **VALD-029** statut **Validé** | ☐ |
-| 2 | **VALD-030** statut **Validé** ou **Reporté** avec justification | ☐ |
-| 3 | **VALD-031** statut **Validé** | ☐ |
-| 4 | **VALD-032** statut **Validé** | ☐ |
-| 5 | **VALD-033** statut **Validé** | ☐ |
-| 6 | **Périmètre future phase** approuvé (4E-TOS ou doc Time) | ☐ |
-| 7 | **Interdictions confirmées** : aucun secret, migration, code non validé | ☐ |
+| 1 | **VALD-029** statut **Validé** | ☑ |
+| 2 | **VALD-030** statut **Validé** ou **Reporté** avec justification | ☑ |
+| 3 | **VALD-031** statut **Validé** | ☑ |
+| 4 | **VALD-032** statut **Validé** | ☑ |
+| 5 | **VALD-033** statut **Validé** | ☑ |
+| 6 | **Périmètre future phase** approuvé (4E-TOS ou doc Time) | ☑ |
+| 7 | **Interdictions confirmées** : aucun secret, migration, code non validé | ☑ |
 
 ---
 
@@ -79,10 +79,10 @@ Checklist — **toutes les conditions requises** :
 
 | Champ | Valeur |
 |---|---|
-| **Phase 4D-TOS arbitrée par** | *À remplir* |
-| **Date** | *À remplir* |
-| **Résultat global** | ☐ Autorisé à préparer une application future · ☐ Non autorisé · ☐ Autorisé partiellement · ☐ À clarifier |
-| **Notes direction** | *À remplir* |
+| **Phase 4D-TOS arbitrée par** | Martin ST-Gelais — Direction |
+| **Date** | 2026-07-05 |
+| **Résultat global** | ☑ Autorisé à préparer une application future · ☐ Non autorisé · ☐ Autorisé partiellement · ☐ À clarifier |
+| **Notes direction** | Les 5 recommandations TOS sont validées. Aucune application réelle ne doit commencer sans rester dans le cadre approuvé. |
 
 ---
 
@@ -100,8 +100,9 @@ Checklist — **toutes les conditions requises** :
 ## 9. Conclusion
 
 - TOS dispose d'un **mécanisme d'arbitrage** centralisé pour le module pilote.
-- **Aucune application réelle** ne doit commencer sans décisions **Validé** dans ce registre.
-- La **prochaine étape** dépend du résultat humain (Phase 4E-TOS ou documentation Time conditionnelle).
+- Les **cinq validations VALD-029 à VALD-033** sont actées au statut **Validé** (Phase 4D.1-TOS, 2026-07-05).
+- Cette validation **autorise la préparation documentaire** d'une future application — **pas** le code, les migrations ni la refonte du module pilote.
+- La **prochaine étape** : Phase 4E-TOS — paquet d'application pilote conditionnel.
 
 ---
 
@@ -112,4 +113,4 @@ Checklist — **toutes les conditions requises** :
 
 ## Statut
 
-**Créé — Phase 4D-TOS** — Arbitrage documentaire. Validations VALD-029 à 033 restent **À valider**.
+**Complété — Phase 4D.1-TOS** — Validations VALD-029 à 033 **Validé** (Martin ST-Gelais — Direction, 2026-07-05).

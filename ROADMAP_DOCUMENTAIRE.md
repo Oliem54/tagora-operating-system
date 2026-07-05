@@ -201,15 +201,28 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 - [x] [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](docs/04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)
 - [x] Statuts d'arbitrage et critères autorisation future
 - [x] Section Phase 4D-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
-- [ ] Arbitrage humain VALD-029 à VALD-033 (statuts restent **À valider**)
+- [x] Arbitrage humain VALD-029 à VALD-033 (Phase 4D.1-TOS, 2026-07-05)
 
 ---
 
-### Phase 4E-TOS — Préparation du paquet d'application pilote ⏳ Future étape conditionnelle
+### Phase 4D.1-TOS — Inscription des validations humaines ✅ Complétée
+
+**Objectif :** Inscrire officiellement les arbitrages humains approuvés pour VALD-029 à VALD-033.
+
+**Livrables réalisés :**
+
+- [x] Décisions actées dans TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md
+- [x] REGISTRE_VALIDATIONS — VALD-029 à 033 au statut **Validé**
+- [x] Note Phase 4D.1 dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] Décideur : Martin ST-Gelais — Direction — Date : 2026-07-05
+
+---
+
+### Phase 4E-TOS — Préparation du paquet d'application pilote ⏳ Prochaine étape documentaire
 
 **Objectif :** Préparer le paquet documentaire d'application (ou documentation minimale dans Time) **après** arbitrage Phase 4D-TOS validé.
 
-**Condition :** Checklist §6 TIME_ARBITRAGE — toutes VALD pertinentes au statut Validé.
+**Condition :** Checklist §6 TIME_ARBITRAGE — remplie (VALD-029 à 033 **Validé**, 2026-07-05).
 
 **Livrables prévus :**
 
@@ -257,7 +270,8 @@ Phase 4A  Audit application Time       ✅ Complétée
 Phase 4B  Plan action Time TQF/TDS/TES ✅ Complétée
 Phase 4C-TOS Validation avant application  ✅ Complétée
 Phase 4D-TOS Arbitrage validations humaines ✅ Complétée
-Phase 4E-TOS Paquet application pilote     ⏳ Conditionnelle
+Phase 4D.1-TOS Inscription validations humaines ✅ Complétée
+Phase 4E-TOS Paquet application pilote     ⏳ Prochaine étape documentaire
 Phase 4D  Documentation minimale Time       ⏳ Post-arbitrage
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
@@ -267,7 +281,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4D-TOS** — Registre arbitrage documenté. Phase 4E-TOS après décisions humaines.
+**Enrichi — Phase 4D.1-TOS** — Validations VALD-029 à 033 actées. Phase 4E-TOS — prochaine étape documentaire.
 
 ## Références
 

@@ -477,16 +477,22 @@ Validations registre : VALD-029 à VALD-033.
 
 ## Phase 4D-TOS — Arbitrage des validations humaines
 
-**Statut :** Registre d'arbitrage documentaire — **ne modifie pas le module pilote**
+**Statut :** Arbitrage acté — **Phase 4D.1-TOS complétée** (2026-07-05)
 
 | Élément | Description |
 |---|---|
 | **Objectif** | Documenter les décisions humaines VALD-029 à VALD-033 |
 | **Document** | [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md) |
-| **Porte de contrôle** | Aucune phase d'application réelle sans décisions **Validé** |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Autorisé à préparer une application future (documentaire uniquement) |
 | **Règle** | TOS documente ; Time reste autonome et non modifié |
 
-Aucune Phase d'application ne peut démarrer sans arbitrage humain acté dans ce registre.
+### Note Phase 4D.1-TOS (2026-07-05)
+
+- Les validations **VALD-029 à VALD-033** ont été arbitrées humainement le **2026-07-05**.
+- Les **recommandations TOS sont validées** par la direction.
+- Cette validation **autorise seulement la préparation documentaire** d'une future application.
+- Elle **n'autorise pas encore** de code, migration, refonte ou modification réelle du module pilote.
 
 ---
 
@@ -585,7 +591,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4D-TOS** — Registre arbitrage validations humaines. Phase 4E-TOS conditionnelle.
+**Enrichi — Phase 4D.1-TOS** — Arbitrage VALD-029 à 033 acté. Phase 4E-TOS — prochaine étape documentaire.
 
 ## Références
 
