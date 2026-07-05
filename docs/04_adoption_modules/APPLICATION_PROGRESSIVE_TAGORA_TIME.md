@@ -637,6 +637,27 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4L-TOS — Validation du plan d'instanciation documentaire ciblée
+
+**Statut :** Validation humaine actée — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider humainement le plan Phase 4K comme cadre documentaire préparatoire |
+| **Document** | [VALIDATION_PHASE_4L_PLAN_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](plans_instanciation/VALIDATION_PHASE_4L_PLAN_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Plan 4K validé — TAGORA Time reste cible future, dépôt non ouvert |
+
+### Note Phase 4L-TOS (2026-07-05)
+
+- **VALD-050 à VALD-056** sont validées.
+- Le **plan 4K** est approuvé comme cadre documentaire.
+- **TAGORA Time reste seulement une cible future** — dépôt non ouvert, non modifié.
+- Cette validation **n'autorise pas l'ouverture ni la modification** de TAGORA Time.
+- Toute **étape future** devra être validée séparément (Phase 4M-TOS).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -732,7 +753,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4K-TOS** — Plan d'instanciation documentaire ciblée préparé. Phase 4L-TOS — validation humaine du plan 4K.
+**Enrichi — Phase 4L-TOS** — Validation plan instanciation documentaire ciblée actée. Phase 4M-TOS — autorisation ouverture contrôlée dépôt cible.
 
 ## Références
 

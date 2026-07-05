@@ -312,21 +312,34 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 - [x] Checklist conditions avant instanciation réelle (§6)
 - [x] Section Phase 4K-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
 - [x] VALD-050 à VALD-056 inscrites (À faire)
-- [ ] Validation humaine du plan 4K (Phase 4L-TOS)
+- [x] Validation humaine du plan 4K (Phase 4L-TOS, 2026-07-05)
 
 ---
 
-### Phase 4L-TOS — Validation humaine du plan d'instanciation ciblée ⏳ Prochaine étape documentaire
+### Phase 4L-TOS — Validation humaine du plan d'instanciation ciblée ✅ Complétée
 
 **Objectif :** Valider humainement le plan Phase 4K — **sans ouvrir ni modifier le dépôt cible**.
 
-**Condition :** Plan 4K complété ; VALD-050 à VALD-056 au statut **Validé**.
+**Livrables réalisés :**
+
+- [x] [VALIDATION_PHASE_4L_PLAN_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](docs/04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4L_PLAN_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md)
+- [x] VALD-050 à VALD-056 au statut **Validé**
+- [x] Section Phase 4L-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] Décideur : Martin ST-Gelais — Direction — Date : 2026-07-05
+
+---
+
+### Phase 4M-TOS — Autorisation d'ouverture contrôlée du dépôt cible ⏳ Prochaine étape documentaire
+
+**Objectif :** Préparer dans TOS le cadre d'autorisation pour ouvrir le dépôt cible en **lecture seule Git** — **sans modifier TAGORA Time**.
+
+**Condition :** Phase 4L complétée ; checklist §6 Phase 4L remplie avant toute action.
 
 **Livrables prévus :**
 
-- Document de validation Phase 4L-TOS
-- Décision sur module, dépôt, branche, fichiers autorisés et conditions §6
-- Autorisation ou report de toute future préparation dans un autre dépôt
+- Document d'autorisation d'ouverture contrôlée
+- Périmètre Git autorisé (`status`, `log`, `rev-parse` uniquement)
+- Validation humaine avant toute vérification du dépôt cible
 
 ---
 
@@ -377,8 +390,9 @@ Phase 4H-TOS Validation templates pilote  ✅ Complétée
 Phase 4I-TOS Paquet transition application ✅ Complétée
 Phase 4J-TOS Validation passage instanciation ✅ Complétée
 Phase 4K-TOS Plan instanciation documentaire ciblée ✅ Complétée
-Phase 4L-TOS Validation plan instanciation ciblée ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4L
+Phase 4L-TOS Validation plan instanciation ciblée ✅ Complétée
+Phase 4M-TOS Autorisation ouverture contrôlée dépôt ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4M
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -387,7 +401,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4K-TOS** — Plan d'instanciation documentaire ciblée préparé. Phase 4L-TOS — validation humaine du plan 4K.
+**Enrichi — Phase 4L-TOS** — Validation plan instanciation documentaire ciblée actée. Phase 4M-TOS — autorisation ouverture contrôlée dépôt cible.
 
 ## Références
 
