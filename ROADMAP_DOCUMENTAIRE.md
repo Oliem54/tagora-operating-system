@@ -192,11 +192,37 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4D — Documentation minimale dans TAGORA Time ⏳ Future étape conditionnelle
+### Phase 4D-TOS — Arbitrage des validations humaines ✅ Complétée
+
+**Objectif :** Registre TOS pour arbitrer VALD-029 à VALD-033 avant toute application sur le module pilote.
+
+**Livrables réalisés :**
+
+- [x] [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](docs/04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)
+- [x] Statuts d'arbitrage et critères autorisation future
+- [x] Section Phase 4D-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Arbitrage humain VALD-029 à VALD-033 (statuts restent **À valider**)
+
+---
+
+### Phase 4E-TOS — Préparation du paquet d'application pilote ⏳ Future étape conditionnelle
+
+**Objectif :** Préparer le paquet documentaire d'application (ou documentation minimale dans Time) **après** arbitrage Phase 4D-TOS validé.
+
+**Condition :** Checklist §6 TIME_ARBITRAGE — toutes VALD pertinentes au statut Validé.
+
+**Livrables prévus :**
+
+- Paquet docs QA/TDS/TES pour dépôt Time (sans code)
+- Ou Phase documentation Time directe si arbitrage global « Autorisé »
+
+---
+
+### Phase 4D — Documentation minimale dans TAGORA Time ⏳ Conditionnelle (post-arbitrage)
 
 **Objectif :** Créer les premiers documents QA/TDS/TES **dans le dépôt Time** — sans code ni migration.
 
-**Condition :** Toutes les validations Phase 4C-TOS actées (checklist §5).
+**Condition :** Arbitrage Phase 4D-TOS + checklist Phase 4C-TOS complète.
 
 **Livrables prévus :**
 
@@ -230,7 +256,9 @@ Phase 3I  Consolidation 10 piliers TOS  ✅ Complétée
 Phase 4A  Audit application Time       ✅ Complétée
 Phase 4B  Plan action Time TQF/TDS/TES ✅ Complétée
 Phase 4C-TOS Validation avant application  ✅ Complétée
-Phase 4D  Documentation minimale Time     ⏳ Conditionnelle
+Phase 4D-TOS Arbitrage validations humaines ✅ Complétée
+Phase 4E-TOS Paquet application pilote     ⏳ Conditionnelle
+Phase 4D  Documentation minimale Time       ⏳ Post-arbitrage
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -239,10 +267,11 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4C-TOS** — Cadre validation pilote documenté. Phase 4D après validations humaines.
+**Enrichi — Phase 4D-TOS** — Registre arbitrage documenté. Phase 4E-TOS après décisions humaines.
 
 ## Références
 
+- [Arbitrage Phase 4D-TOS Time](docs/04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)
 - [Validation Phase 4C-TOS Time](docs/04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md)
 - [Plan Phase 4B Time](docs/04_adoption_modules/plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A Time](docs/04_adoption_modules/audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)

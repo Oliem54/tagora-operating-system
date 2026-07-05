@@ -475,6 +475,21 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4D-TOS — Arbitrage des validations humaines
+
+**Statut :** Registre d'arbitrage documentaire — **ne modifie pas le module pilote**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Documenter les décisions humaines VALD-029 à VALD-033 |
+| **Document** | [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md) |
+| **Porte de contrôle** | Aucune phase d'application réelle sans décisions **Validé** |
+| **Règle** | TOS documente ; Time reste autonome et non modifié |
+
+Aucune Phase d'application ne peut démarrer sans arbitrage humain acté dans ce registre.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -570,10 +585,11 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4C-TOS** — Cadre validation avant application pilote. Phase 4D conditionnelle après validation humaine.
+**Enrichi — Phase 4D-TOS** — Registre arbitrage validations humaines. Phase 4E-TOS conditionnelle.
 
 ## Références
 
+- [Arbitrage Phase 4D-TOS](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)
 - [Validation Phase 4C-TOS](validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md)
 - [Plan Phase 4B TQF/TDS/TES](plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A TQF/TDS/TES](audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)

@@ -57,11 +57,11 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-026 | 2026-07-05 | État de maturité TOS | Humaine | À désigner | À faire | [ETAT_MATURITE_TOS.md](../00_constitution/ETAT_MATURITE_TOS.md) | Valider l'état de maturité documentaire |
 | VALD-027 | 2026-07-05 | Ordre d'application piliers sur TAGORA Time | Humaine | À désigner | À faire | [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md) | Valider l'ordre consolidé Time |
 | VALD-028 | 2026-07-05 | Stratégie adoption progressive modules | Humaine | À désigner | À faire | [STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md](../04_adoption_modules/STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md) | Valider la stratégie écosystème |
-| VALD-029 | 2026-07-05 | DEC-TIME-4B-001 — baseline Git Time | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider main stable vs branche feature |
-| VALD-030 | 2026-07-05 | DEC-TIME-4B-002 — WIP commissions | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider traitement WIP avant Phase 4D |
-| VALD-031 | 2026-07-05 | DEC-TIME-4B-003 — écrans TDS prioritaires | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider liste écrans revue TDS |
-| VALD-032 | 2026-07-05 | DEC-TIME-4B-004 — scénarios QA obligatoires | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider scénarios QA gate Time |
-| VALD-033 | 2026-07-05 | DEC-TIME-4B-005 — fiche validation avant code | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider seuil utilisation fiche TES |
+| VALD-029 | 2026-07-05 | DEC-TIME-4B-001 — baseline Git Time | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider main stable vs branche feature — **Arbitrage : [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)** |
+| VALD-030 | 2026-07-05 | DEC-TIME-4B-002 — WIP commissions | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider traitement WIP avant Phase 4D — **Arbitrage : [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)** |
+| VALD-031 | 2026-07-05 | DEC-TIME-4B-003 — écrans TDS prioritaires | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider liste écrans revue TDS — **Arbitrage : [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)** |
+| VALD-032 | 2026-07-05 | DEC-TIME-4B-004 — scénarios QA obligatoires | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider scénarios QA gate Time — **Arbitrage : [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)** |
+| VALD-033 | 2026-07-05 | DEC-TIME-4B-005 — fiche validation avant code | Humaine | À désigner | À faire | [TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md](../04_adoption_modules/validations_time/TIME_VALIDATION_PHASE_4C_AVANT_APPLICATION.md) | Valider seuil utilisation fiche TES — **Arbitrage : [TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md](../04_adoption_modules/validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)** |
 
 ---
 
@@ -73,4 +73,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 4C-TOS**
+**Enrichi — Phase 4D-TOS** — Arbitrage VALD-029 à 033 centralisé ; statuts restent **À faire**.
