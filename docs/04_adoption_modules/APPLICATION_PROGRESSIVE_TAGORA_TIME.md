@@ -594,6 +594,27 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4J-TOS — Validation du passage vers instanciation documentaire
+
+**Statut :** Validation humaine actée — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider humainement le passage vers une future instanciation documentaire |
+| **Document** | [VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md](paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Passage vers instanciation documentaire validé comme principe TOS — module pilote intact |
+
+### Note Phase 4J-TOS (2026-07-05)
+
+- **VALD-046 à VALD-049** sont validées.
+- Le **paquet final 4I** est approuvé comme cadre de transition.
+- Cette validation **n'autorise aucune modification réelle** du module pilote (pas de code, migration, refonte).
+- Toute **future instanciation documentaire** devra être validée séparément avec **dépôt, branche, périmètre et fichiers autorisés** explicitement nommés.
+- La **prochaine étape reste dans TOS** : Phase 4K-TOS — plan d'instanciation documentaire ciblée.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -689,7 +710,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4I-TOS** — Paquet final de transition préparé. Phase 4J-TOS — validation passage.
+**Enrichi — Phase 4J-TOS** — Validation passage instanciation documentaire actée. Phase 4K-TOS — plan d'instanciation ciblée.
 
 ## Références
 

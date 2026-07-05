@@ -283,20 +283,34 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 - [x] Porte de passage (checklist §6) et règle finale §9
 - [x] Section Phase 4I-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
 - [x] VALD-046 à VALD-049 inscrites (À faire)
-- [ ] Validation humaine paquet final 4I (VALD-046 à 049)
+- [x] Validation humaine paquet final 4I (Phase 4J-TOS, 2026-07-05)
 
 ---
 
-### Phase 4J-TOS — Validation du passage vers instanciation documentaire ⏳ Prochaine étape documentaire
+### Phase 4J-TOS — Validation du passage vers instanciation documentaire ✅ Complétée
 
 **Objectif :** Valider humainement le passage vers une future préparation d'instanciation documentaire — **sans modifier le module pilote**.
 
-**Condition :** Paquet 4I complété ; VALD-046 à VALD-049 au statut **Validé**.
+**Livrables réalisés :**
+
+- [x] [VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md](docs/04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
+- [x] VALD-046 à VALD-049 au statut **Validé**
+- [x] Section Phase 4J-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] Décideur : Martin ST-Gelais — Direction — Date : 2026-07-05
+
+---
+
+### Phase 4K-TOS — Plan d'instanciation documentaire ciblée ⏳ Prochaine étape documentaire
+
+**Objectif :** Préparer un plan documentaire ciblé d'instanciation — **sans modifier le module pilote ni ouvrir un autre dépôt**.
+
+**Condition :** Phase 4J complétée ; checklist §6 du paquet 4J remplie avant toute action ultérieure.
 
 **Livrables prévus :**
 
-- Décision de passage : dépôt, branche, périmètre, fichiers autorisés
-- Autorisation ou report de la préparation documentaire ciblée
+- Module cible, dépôt, branche et périmètre nommés explicitement
+- Liste des fichiers documentaires à créer (futurs)
+- Checklist interdictions et validation humaine avant action dans un autre dépôt
 
 ---
 
@@ -345,8 +359,9 @@ Phase 4F-TOS Validation du paquet pilote   ✅ Complétée
 Phase 4G-TOS Templates application pilote ✅ Complétée
 Phase 4H-TOS Validation templates pilote  ✅ Complétée
 Phase 4I-TOS Paquet transition application ✅ Complétée
-Phase 4J-TOS Validation passage instanciation ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4J
+Phase 4J-TOS Validation passage instanciation ✅ Complétée
+Phase 4K-TOS Plan instanciation documentaire ciblée ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation Phase 4K
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -355,7 +370,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4I-TOS** — Paquet final de transition documenté. Phase 4J-TOS — validation passage.
+**Enrichi — Phase 4J-TOS** — Validation passage instanciation documentaire actée. Phase 4K-TOS — plan d'instanciation ciblée.
 
 ## Références
 
