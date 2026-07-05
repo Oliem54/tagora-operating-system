@@ -368,21 +368,35 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 - [x] Instanciation documentaire bloquée — baseline non prête
 - [x] Section Phase 4O-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
 - [x] VALD-063 à VALD-068 inscrites (À faire)
-- [ ] Validation humaine rapport 4O (Phase 4P préalable)
+- [x] Arbitrage baseline et WIP (Phase 4P-TOS, 2026-07-05)
 
 ---
 
-### Phase 4P-TOS — Arbitrage baseline et WIP TAGORA Time ⏳ Prochaine étape documentaire
+### Phase 4P-TOS — Arbitrage baseline et WIP TAGORA Time ✅ Complétée
 
 **Objectif :** Documenter l'arbitrage TOS du WIP commissions et de la branche/baseline cible — **sans modifier TAGORA Time**.
 
-**Condition :** Rapport Phase 4O complété ; VALD-063 à VALD-068 au statut **Validé** (partiel ou complet selon arbitrage).
+**Livrables réalisés :**
+
+- [x] [ARBITRAGE_PHASE_4P_BASELINE_WIP_TAGORA_TIME.md](docs/04_adoption_modules/plans_instanciation/ARBITRAGE_PHASE_4P_BASELINE_WIP_TAGORA_TIME.md)
+- [x] VALD-063 à VALD-068 au statut **Validé**
+- [x] Instanciation documentaire bloquée — baseline non prête, WIP à clarifier
+- [x] Section Phase 4P-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] Décideur : Martin ST-Gelais — Direction — Date : 2026-07-05
+
+---
+
+### Phase 4Q-TOS — Protocole de clarification du WIP avant action ⏳ Prochaine étape documentaire
+
+**Objectif :** Préparer dans TOS le protocole de clarification du WIP commissions — **sans modifier TAGORA Time**.
+
+**Condition :** Phase 4P complétée ; checklist §7 Phase 4P remplie avant toute action.
 
 **Livrables prévus :**
 
-- Document d'arbitrage baseline et WIP
-- Décision sur branche cible réelle et statut WIP commissions
-- Conditions mises à jour avant toute instanciation documentaire
+- Document protocole clarification WIP (sauvegarder, terminer, isoler ou reporter)
+- Conditions de reprise lecture Git contrôlée
+- Rapport attendu et STOP obligatoire
 
 ---
 
@@ -437,8 +451,9 @@ Phase 4L-TOS Validation plan instanciation ciblée ✅ Complétée
 Phase 4M-TOS Autorisation ouverture contrôlée dépôt ✅ Complétée
 Phase 4N-TOS Validation autorisation ouverture contrôlée ✅ Complétée
 Phase 4O-TOS Ouverture contrôlée lecture Git dépôt ✅ Complétée
-Phase 4P-TOS Arbitrage baseline et WIP Time ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-arbitrage Phase 4P
+Phase 4P-TOS Arbitrage baseline et WIP Time ✅ Complétée
+Phase 4Q-TOS Protocole clarification WIP ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-clarification WIP Phase 4Q
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -447,7 +462,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4O-TOS** — Rapport ouverture contrôlée TAGORA Time. Phase 4P-TOS — arbitrage baseline et WIP.
+**Enrichi — Phase 4P-TOS** — Arbitrage baseline et WIP TAGORA Time acté. Phase 4Q-TOS — protocole clarification WIP.
 
 ## Références
 

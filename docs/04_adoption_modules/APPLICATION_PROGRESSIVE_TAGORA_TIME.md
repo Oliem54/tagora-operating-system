@@ -723,6 +723,28 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4P-TOS — Arbitrage baseline et WIP TAGORA Time
+
+**Statut :** Arbitrage humain acté — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Arbitrer baseline, WIP commissions et blocage instanciation documentaire |
+| **Document** | [ARBITRAGE_PHASE_4P_BASELINE_WIP_TAGORA_TIME.md](plans_instanciation/ARBITRAGE_PHASE_4P_BASELINE_WIP_TAGORA_TIME.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Instanciation documentaire refusée — WIP et baseline à clarifier |
+
+### Note Phase 4P-TOS (2026-07-05)
+
+- **VALD-063 à VALD-068** sont validées.
+- Le **rapport Phase 4O** est accepté comme lecture Git officielle.
+- La **baseline TAGORA Time n'est pas prête** (branche feature, working tree non propre).
+- Le **WIP commissions doit être clarifié** avant toute instanciation documentaire.
+- **Aucune action dans TAGORA Time** n'est autorisée.
+- **Prochaine étape** : Phase 4Q-TOS — protocole de clarification du WIP dans TOS.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -818,7 +840,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4O-TOS** — Rapport ouverture contrôlée TAGORA Time. Phase 4P-TOS — arbitrage baseline et WIP.
+**Enrichi — Phase 4P-TOS** — Arbitrage baseline et WIP TAGORA Time acté. Phase 4Q-TOS — protocole clarification WIP.
 
 ## Références
 
