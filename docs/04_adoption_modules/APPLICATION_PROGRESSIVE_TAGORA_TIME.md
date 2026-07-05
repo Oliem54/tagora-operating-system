@@ -767,6 +767,30 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4R-TOS — Validation du protocole de clarification WIP
+
+**Statut :** Validation humaine actée — **2026-07-05**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Valider humainement le protocole Phase 4Q et la stratégie conservatrice WIP |
+| **Document** | [VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md](plans_instanciation/VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md) |
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Résultat** | Protocole 4Q approuvé — instanciation documentaire toujours bloquée |
+
+### Note Phase 4R-TOS (2026-07-05)
+
+- **VALD-069 à VALD-074** sont validées.
+- Le **protocole 4Q** est approuvé.
+- La **stratégie conservatrice** est confirmée.
+- **TAGORA Time reste non ouvert et non modifié.**
+- **WIP commissions reste à clarifier.**
+- **Branche cible réelle reste à confirmer.**
+- L'**instanciation documentaire reste bloquée.**
+- **Prochaine étape** : préparation de la décision stratégique WIP et branche cible dans TOS (Phase 4S-TOS).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -862,7 +886,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4Q-TOS** — Protocole clarification WIP préparé. Phase 4R-TOS — validation humaine protocole 4Q.
+**Enrichi — Phase 4R-TOS** — Validation protocole clarification WIP actée. Phase 4S-TOS — décision stratégique WIP et branche cible.
 
 ## Références
 
