@@ -536,6 +536,25 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4G-TOS — Templates d'application pilote
+
+**Statut :** Templates documentaires réalisés — **aucune modification du module pilote**
+
+| Élément | Description |
+|---|---|
+| **Objectif** | Modèles réutilisables TQF / TDS / TES pour application progressive |
+| **Dossier** | [templates_pilotes/](templates_pilotes/README_TEMPLATES_APPLICATION_PILOTE.md) |
+| **Couverture** | QA, comptes QA, données QA, checklist TDS, validation avant code, plan application |
+
+### Note Phase 4G-TOS
+
+- Des **templates génériques** ont été préparés dans TOS.
+- Ils **ne modifient pas** le module pilote.
+- Ils couvrent **QA, données QA, comptes QA, revue TDS et validation avant code**.
+- Ils ne serviront **qu'après nouvelle validation humaine** (Phase 4H-TOS — VALD-039 à VALD-045).
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -631,7 +650,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4F-TOS** — Paquet pilote validé. Phase 4G-TOS — templates d'application pilote.
+**Enrichi — Phase 4G-TOS** — Templates application pilote préparés. Phase 4H-TOS — validation templates.
 
 ## Références
 

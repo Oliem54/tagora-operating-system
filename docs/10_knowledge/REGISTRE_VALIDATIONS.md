@@ -67,6 +67,13 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-036 | 2026-07-05 | Lot TDS du paquet pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Lot revue UX/UI minimale accepté comme préparation documentaire |
 | VALD-037 | 2026-07-05 | Lot TES du paquet pilote | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Lot validation avant code accepté comme préparation documentaire |
 | VALD-038 | 2026-07-05 | Conditions avant application réelle | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4F_PAQUET_PILOTE.md](../04_adoption_modules/paquets_pilotes/VALIDATION_PHASE_4F_PAQUET_PILOTE.md) | Conditions acceptées comme garde-fous obligatoires |
+| VALD-039 | 2026-07-05 | README templates application pilote | Humaine | À désigner | À faire | [README_TEMPLATES_APPLICATION_PILOTE.md](../04_adoption_modules/templates_pilotes/README_TEMPLATES_APPLICATION_PILOTE.md) | Valider le README et les règles du dossier templates |
+| VALD-040 | 2026-07-05 | Template scénario QA pilote | Humaine | À désigner | À faire | [TEMPLATE_PILOTE_SCENARIO_QA.md](../04_adoption_modules/templates_pilotes/TEMPLATE_PILOTE_SCENARIO_QA.md) | Valider le modèle scénario TQF |
+| VALD-041 | 2026-07-05 | Template matrice comptes QA | Humaine | À désigner | À faire | [TEMPLATE_PILOTE_MATRICE_COMPTES_QA.md](../04_adoption_modules/templates_pilotes/TEMPLATE_PILOTE_MATRICE_COMPTES_QA.md) | Valider le modèle comptes QA sans secrets |
+| VALD-042 | 2026-07-05 | Template matrice données QA | Humaine | À désigner | À faire | [TEMPLATE_PILOTE_MATRICE_DONNEES_QA.md](../04_adoption_modules/templates_pilotes/TEMPLATE_PILOTE_MATRICE_DONNEES_QA.md) | Valider le modèle données fictives |
+| VALD-043 | 2026-07-05 | Template checklist TDS pilote | Humaine | À désigner | À faire | [TEMPLATE_PILOTE_CHECKLIST_TDS.md](../04_adoption_modules/templates_pilotes/TEMPLATE_PILOTE_CHECKLIST_TDS.md) | Valider le modèle revue UX/UI |
+| VALD-044 | 2026-07-05 | Template validation avant code pilote | Humaine | À désigner | À faire | [TEMPLATE_PILOTE_VALIDATION_AVANT_CODE.md](../04_adoption_modules/templates_pilotes/TEMPLATE_PILOTE_VALIDATION_AVANT_CODE.md) | Valider le modèle fiche TES |
+| VALD-045 | 2026-07-05 | Template plan application pilote | Humaine | À désigner | À faire | [TEMPLATE_PILOTE_PLAN_APPLICATION.md](../04_adoption_modules/templates_pilotes/TEMPLATE_PILOTE_PLAN_APPLICATION.md) | Valider le modèle plan d'application par lots |
 
 ---
 
@@ -78,4 +85,4 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — Phase 4F-TOS** — VALD-034 à 038 **Validé** (Martin ST-Gelais — Direction, 2026-07-05).
+**Enrichi — Phase 4G-TOS** — VALD-039 à 045 ajoutées (À faire). VALD-029 à 038 **Validé** (2026-07-05).

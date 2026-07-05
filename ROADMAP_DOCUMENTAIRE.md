@@ -246,16 +246,30 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4G-TOS — Templates d'application pilote ⏳ Prochaine étape documentaire
+### Phase 4G-TOS — Templates d'application pilote ✅ Complétée
 
-**Objectif :** Préparer les templates documentaires réutilisables (QA, TDS, TES) pour une future application dans le module pilote — **sans modifier Time**.
+**Objectif :** Préparer les templates documentaires réutilisables (QA, TDS, TES) — **sans modifier le module pilote**.
 
-**Condition :** Paquet 4E et validation 4F actées.
+**Livrables réalisés :**
+
+- [x] Dossier [templates_pilotes/](docs/04_adoption_modules/templates_pilotes/README_TEMPLATES_APPLICATION_PILOTE.md)
+- [x] 7 templates + README
+- [x] Section Phase 4G-TOS dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [x] VALD-039 à VALD-045 inscrites (À faire)
+- [ ] Validation humaine templates (Phase 4H-TOS)
+
+---
+
+### Phase 4H-TOS — Validation des templates d'application pilote ⏳ Prochaine étape documentaire
+
+**Objectif :** Valider humainement les templates Phase 4G avant toute instanciation dans un module pilote.
+
+**Condition :** Templates 4G complétés ; VALD-039 à VALD-045 au statut **Validé**.
 
 **Livrables prévus :**
 
-- Templates scénarios QA, checklist TDS, fiche VAL-TIME
-- Guide de création documentaire dans le module pilote (TOS uniquement)
+- Décision globale validation templates
+- Autorisation ou report de l'instanciation documentaire dans le module pilote
 
 ---
 
@@ -301,8 +315,9 @@ Phase 4D-TOS Arbitrage validations humaines ✅ Complétée
 Phase 4D.1-TOS Inscription validations humaines ✅ Complétée
 Phase 4E-TOS Paquet application pilote     ✅ Complétée
 Phase 4F-TOS Validation du paquet pilote   ✅ Complétée
-Phase 4G-TOS Templates application pilote ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-validation paquet + templates 4G
+Phase 4G-TOS Templates application pilote ✅ Complétée
+Phase 4H-TOS Validation templates pilote  ⏳ Prochaine étape documentaire
+Phase 4D  Documentation minimale Time       ⏳ Post-validation templates 4H
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -311,7 +326,7 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 4F-TOS** — Paquet pilote validé (VALD-034 à 038). Phase 4G-TOS — templates d'application pilote.
+**Enrichi — Phase 4G-TOS** — Templates application pilote créés. Phase 4H-TOS — validation templates.
 
 ## Références
 
