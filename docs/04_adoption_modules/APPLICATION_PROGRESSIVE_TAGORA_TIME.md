@@ -430,6 +430,22 @@ Le TMF définit comment TAGORA Time pourra rester **observable en production** �
 
 ---
 
+## Phase 4A — Audit initial TQF / TDS / TES
+
+**Statut :** Audit documentaire réalisé (lecture seule Time) — **aucun changement dans Time**
+
+| Élément | Valeur |
+|---|---|
+| **Time branche auditée** | `feature/admin-commissions-premium-header-kpi` |
+| **Time HEAD audité** | `5d4e39780690c2a93c4bb04b8f7242a686cb8c48` |
+| **WIP exclu** | 5 fichiers commissions / PageHeader / globals.css |
+| **Piliers audités** | TQF, TDS, TES uniquement |
+| **Rapport** | [TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md](audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md) |
+
+Priorité confirmée : **TQF → TDS → TES** avant TKS, TAF, TOF, TRF, TMF en application terrain.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -525,10 +541,11 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 3I** — Ordre consolidé des piliers. Application terrain Time — Phase 4A.
+**Enrichi — Phase 4A** — Audit initial TQF/TDS/TES documenté. Plan Phase 4B à valider.
 
 ## Références
 
+- [Audit Phase 4A TQF/TDS/TES](audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
 - [Carte des 10 piliers](../00_constitution/CARTE_DES_10_PILIERS_TOS.md)
 - [Stratégie adoption modules](STRATEGIE_ADOPTION_PROGRESSIVE_MODULES.md)
 - [État maturité TOS](../00_constitution/ETAT_MATURITE_TOS.md)

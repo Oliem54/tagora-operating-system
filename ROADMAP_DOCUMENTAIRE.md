@@ -151,9 +151,28 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4 — Application progressive à TAGORA Time
+### Phase 4A — Audit d'application progressive sur TAGORA Time ✅ Complétée
 
-Comptes QA, fixtures, Playwright, revue UI, fiches validation, retours terrain, validations humaines.
+**Objectif :** Premier audit lecture seule Time vs standards TQF, TDS, TES — sans modifier Time.
+
+**Livrables réalisés :**
+
+- [x] Pré-audit Git TOS + Time
+- [x] [TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md](docs/04_adoption_modules/audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
+- [x] Section Phase 4A dans APPLICATION_PROGRESSIVE_TAGORA_TIME
+- [ ] Validation humaine périmètre audit et décisions ouvertes
+
+---
+
+### Phase 4B — Plan d'action TAGORA Time TQF/TDS/TES ⏳ Prochaine étape
+
+**Objectif :** Plan documentaire par petits lots (QA minimale, checklist TDS, fiche validation) — toujours sans refonte massive.
+
+**Livrables prévus :**
+
+- Plan Phase 4B validé humainement
+- Stabilisation point Git Time (décision WIP)
+- Premiers documents QA dans Time (après validation — hors scope TOS seul)
 
 ---
 
@@ -177,7 +196,8 @@ Phase 3F  Standards TOF / orchestration    ✅ Complétée
 Phase 3G  Standards TRF / release          ✅ Complétée
 Phase 3H  Standards TMF / monitoring     ✅ Complétée
 Phase 3I  Consolidation 10 piliers TOS  ✅ Complétée
-Phase 4A  Audit application Time       ⏳ Prochaine étape
+Phase 4A  Audit application Time       ✅ Complétée
+Phase 4B  Plan action Time TQF/TDS/TES ⏳ Prochaine étape
 Phase 4   Application sur TAGORA Time  ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 ```
@@ -186,10 +206,12 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 
 ## Statut
 
-**Enrichi — Phase 3I** — Dix piliers consolidés. Phase 4A audit Time à démarrer.
+**Enrichi — Phase 4A** — Audit initial Time documenté. Phase 4B plan d'action à démarrer.
 
 ## Références
 
+- [Audit Phase 4A Time](docs/04_adoption_modules/audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
+- [Application progressive TAGORA Time](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
 - [Carte des 10 piliers](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md)
 - [Matrice interdépendance](docs/00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md)
 - [État maturité TOS](docs/00_constitution/ETAT_MATURITE_TOS.md)
