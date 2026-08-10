@@ -187,8 +187,21 @@ Séquence recommandée **après validation Phase 4L-TOS** :
 ORIGINAL_4K_PLANNED_BRANCH=main
 CURRENT_BASELINE_SOURCE=main
 CURRENT_DOCUMENTATION_BRANCH_STRATEGY=DEDICATED_BRANCH_FROM_MAIN
-DOCUMENTATION_BRANCH_NAME=OPEN
+DOCUMENTATION_BRANCH_NAME=docs/tos-phase-4d-time
 SOURCE_DECISION=PHASE_4S_VALD_083_VALD_084
+
+PHASE_4D_DOCUMENTATION_BRANCH_DECISION=VALIDATED
+DOCUMENTATION_BRANCH_SOURCE=main
+DOCUMENTATION_BRANCH_PURPOSE=PHASE_4D_DOCUMENTATION_ONLY
+COMMISSIONS_FEATURE_EXCLUDED=feature/admin-commissions-premium-header-kpi
+DIRECT_WRITE_TO_MAIN=NO
+TIME_BRANCH_CREATION_AUTHORIZED_IN_THIS_BLOCK=NO
+TIME_WRITE_AUTHORIZED_IN_THIS_BLOCK=NO
+
+DOCUMENTATION_BRANCH_NAME_DECISION_DATE=2026-08-10
+DOCUMENTATION_BRANCH_NAME_DECIDED_BY=Martin ST-Gelais — Direction
+DOCUMENTATION_BRANCH_CREATION_STATUS=NOT_STARTED
+SEPARATE_GO_REQUIRED=YES
 ```
 
 | Précision | Contenu |
@@ -196,9 +209,22 @@ SOURCE_DECISION=PHASE_4S_VALD_083_VALD_084
 | Historique 4K | La mention de `main` comme **branche cible prévue** (§2, checklist §6) reste dans le texte historique ci-dessus. |
 | Baseline source | `main` reste la **baseline SOURCE** propre confirmée (VALD-083). |
 | Exécution future | La future instanciation documentaire **ne doit plus écrire directement dans `main`**. |
-| Stratégie actuelle | Une **branche documentaire dédiée** devra être créée **depuis `main`** (VALD-084 / Option D). |
-| Création | Nécessite un **GO Martin séparé**. |
-| Nom | Exactement **OPEN** — non décidé dans cet addendum. |
+| Stratégie actuelle | Branche documentaire dédiée créée **depuis `main`** (VALD-084 / Option D). |
+| Nom validé | `docs/tos-phase-4d-time` (VALD-085) |
+| Création | **NOT_STARTED** — nécessite un **GO Martin séparé**. |
+
+### Règles de la branche future `docs/tos-phase-4d-time`
+
+1. Créée uniquement depuis le `main` propre confirmé.
+2. Dédiée à la documentation Phase 4D.
+3. Ne doit contenir aucun travail commissions.
+4. Ne doit **pas** être créée depuis `feature/admin-commissions-premium-header-kpi`.
+5. Aucun merge / rebase de la feature commissions n'est autorisé.
+6. Aucun code fonctionnel n'est autorisé dans la branche documentaire.
+7. Aucune DB / migration / Supabase n'est autorisée.
+8. Seuls les fichiers documentaires déjà validés par TOS pourront être instanciés.
+9. Création de la branche = **GO Martin séparé**.
+10. Commit / push des documents Time = autorisation séparée selon le gate défini.
 
 Le corps historique du plan 4K n'est **pas** réécrit. Cet addendum gouverne l'usage opérationnel futur.
 
@@ -217,3 +243,4 @@ Le corps historique du plan 4K n'est **pas** réécrit. Cet addendum gouverne l'
 
 **Créé — Phase 4K-TOS** — Plan d'instanciation ciblée. Validations VALD-050 à 056 **À faire**.
 **Addendum 2026-08-10** — stratégie de branche alignée Phase 4S (VALD-083 / VALD-084).
+**Nom de branche Phase 4D** — `docs/tos-phase-4d-time` validé (VALD-085) ; création **NOT_STARTED**.
