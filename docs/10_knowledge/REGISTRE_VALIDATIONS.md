@@ -114,6 +114,7 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-083 | 2026-08-10 | Baseline TAGORA Time pour future instanciation TOS | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) | main confirmé comme baseline source propre |
 | VALD-084 | 2026-08-10 | Stratégie branche documentaire TAGORA Time | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) | Option D — future branche documentaire depuis main, sous GO Martin séparé |
 | VALD-085 | 2026-08-10 | Nom de branche documentaire TAGORA Time Phase 4D | Humaine | Martin ST-Gelais — Direction | Validé | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Branche future `docs/tos-phase-4d-time`, créée depuis `main` uniquement sous GO séparé — aucune création dans ce bloc |
+| VALD-086 | 2026-08-10 | Validation état branche documentaire locale TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Locale `docs/tos-phase-4d-time` prête ; HEAD = main ; 0/0 ; clean ; non poussée ; dernier rerun HOLD car déjà existante ; aucune doc Time créée |
 
 ---
 
@@ -128,4 +129,13 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 
 ## Statut
 
-**Enrichi — préparation Phase 4D** — VALD-085 **Validé** (nom `docs/tos-phase-4d-time` ; création non démarrée). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+```text
+PHASE_4D_DOCUMENTATION_BRANCH_NAME=VALIDATED_BY_VALD_085
+PHASE_4D_LOCAL_BRANCH_STATE=VALIDATED_BY_VALD_086
+LOCAL_DOCUMENTATION_BRANCH=docs/tos-phase-4d-time
+LOCAL_BRANCH_READY=YES
+REMOTE_BRANCH_CREATED=NO
+TIME_DOCUMENTATION_STARTED=NO
+```
+
+**Enrichi — Phase 4D branche locale** — VALD-086 **Validé** (état local prêt / non poussé). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).

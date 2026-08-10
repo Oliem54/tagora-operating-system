@@ -200,8 +200,24 @@ TIME_WRITE_AUTHORIZED_IN_THIS_BLOCK=NO
 
 DOCUMENTATION_BRANCH_NAME_DECISION_DATE=2026-08-10
 DOCUMENTATION_BRANCH_NAME_DECIDED_BY=Martin ST-Gelais — Direction
-DOCUMENTATION_BRANCH_CREATION_STATUS=NOT_STARTED
+DOCUMENTATION_BRANCH_CREATION_STATUS=LOCAL_CREATED_NOT_PUSHED
+DOCUMENTATION_BRANCH_VALIDATION_STATUS=VALIDATED
+DOCUMENTATION_BRANCH_LOCAL_HEAD=815ac4d49302ae597bbdcd4a15b76163063d4b56
+DOCUMENTATION_BRANCH_MAIN_HEAD=815ac4d49302ae597bbdcd4a15b76163063d4b56
+DOCUMENTATION_BRANCH_DIVERGENCE=0_0
+DOCUMENTATION_BRANCH_WORKING_TREE_CLEAN=YES
+DOCUMENTATION_BRANCH_FILES_DIFFERENT_FROM_MAIN=0
+DOCUMENTATION_BRANCH_REMOTE_STATUS=NOT_CREATED
+DOCUMENTATION_BRANCH_PUSH_STATUS=NOT_EXECUTED
+DOCUMENTATION_INSTANTIATION_STATUS=NOT_STARTED
+BRANCH_CREATION_OBJECTIVE=SATISFIED
 SEPARATE_GO_REQUIRED=YES
+
+LAST_BRANCH_CREATION_RERUN_VERDICT=HOLD
+LAST_BRANCH_CREATION_RERUN_HOLD_REASON=DOCUMENTATION_BRANCH_ALREADY_EXISTS_LOCAL
+LOCAL_BRANCH_STATUS=CREATED_PREVIOUSLY_AND_VALIDATED
+LOCAL_BRANCH_CREATED_DURING_LAST_RERUN=NO
+LOCAL_BRANCH_VALIDATED=YES
 ```
 
 | Précision | Contenu |
@@ -211,7 +227,31 @@ SEPARATE_GO_REQUIRED=YES
 | Exécution future | La future instanciation documentaire **ne doit plus écrire directement dans `main`**. |
 | Stratégie actuelle | Branche documentaire dédiée créée **depuis `main`** (VALD-084 / Option D). |
 | Nom validé | `docs/tos-phase-4d-time` (VALD-085) |
-| Création | **NOT_STARTED** — nécessite un **GO Martin séparé**. |
+| Création locale | **LOCAL_CREATED_NOT_PUSHED** — validée VALD-086 |
+| Instanciation docs | **NOT_STARTED** |
+
+### Note — historique exact du dernier rerun de création
+
+Le dernier rerun de création a retourné **HOLD** parce que la branche locale existait déjà (`DOCUMENTATION_BRANCH_ALREADY_EXISTS_LOCAL`).
+
+Cet HOLD **n'indique pas** un échec de l'objectif.
+
+L'état factuel validé est :
+
+- branche locale présente ;
+- branche active correcte (`docs/tos-phase-4d-time`) ;
+- même SHA que `main` (`815ac4d49302ae597bbdcd4a15b76163063d4b56`) ;
+- divergence `0/0` ;
+- working tree propre ;
+- aucun fichier différent de `main` ;
+- aucune branche distante ;
+- aucun push ;
+- aucun document Phase 4D créé.
+
+```text
+BRANCH_CREATION_OBJECTIVE=SATISFIED
+LOCAL_BRANCH_STATUS=CREATED_PREVIOUSLY_AND_VALIDATED
+```
 
 ### Règles de la branche future `docs/tos-phase-4d-time`
 
@@ -243,4 +283,5 @@ Le corps historique du plan 4K n'est **pas** réécrit. Cet addendum gouverne l'
 
 **Créé — Phase 4K-TOS** — Plan d'instanciation ciblée. Validations VALD-050 à 056 **À faire**.
 **Addendum 2026-08-10** — stratégie de branche alignée Phase 4S (VALD-083 / VALD-084).
-**Nom de branche Phase 4D** — `docs/tos-phase-4d-time` validé (VALD-085) ; création **NOT_STARTED**.
+**Nom de branche Phase 4D** — `docs/tos-phase-4d-time` validé (VALD-085).
+**État local** — **LOCAL_CREATED_NOT_PUSHED** ; validé VALD-086 ; instanciation documentaire **NOT_STARTED**.
