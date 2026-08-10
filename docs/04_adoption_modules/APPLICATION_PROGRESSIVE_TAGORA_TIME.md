@@ -916,6 +916,34 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 **Enrichi — Phase 4S-TOS COMPLETE** — WIP Option B ; baseline `main` ; future doc Option D ; VALD-081 à 084 Validé ; aucune écriture Time. Prochaine étape roadmap : Phase 4D (GO distinct).
 
+---
+
+## Addendum Phase 4D — Contexte gouvernant TOS
+
+**Date :** 2026-08-10
+**Validation :** VALD-088
+**Règle :** « TOS gouverne ; les modules appliquent. »
+
+```text
+ACTIVE_PROJECT=TAGORA_OPERATING_SYSTEM
+GOVERNING_PROJECT=TAGORA_OPERATING_SYSTEM
+PILOT_TARGET=TAGORA_TIME
+TARGET_REPOSITORY_IS_SEPARATE=YES
+PROJECT_SWITCH_REQUIRED=NO
+TARGET_ACTION_MODEL=TOS_GOVERNED_BOUNDED_EXTERNAL_ACTION
+RETURN_TO_TOS_AFTER_TARGET_ACTION=MANDATORY
+```
+
+| Précision | Contenu |
+|---|---|
+| Pilote | TAGORA Time reste le **module pilote séparé** — dépôt cible, jamais projet gouvernant de la session TOS |
+| Gouvernance | TOS reste le **contexte gouvernant** de toute action Phase 4D |
+| Action bornée | Une action autorisée dans Time **n'est pas** un changement de projet |
+| Retour | Après toute action cible : STOP + retour contrôle TOS |
+| Non-autorisation | Aucune autorisation implicite code, DB, migration, Supabase, staging ou production |
+
+Les phases antérieures de ce document ne sont **pas** réécrites. Cet addendum fixe uniquement le modèle de gouvernance pour les actions cibles Time sous GO.
+
 ## Références
 
 - [Arbitrage Phase 4D-TOS](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)

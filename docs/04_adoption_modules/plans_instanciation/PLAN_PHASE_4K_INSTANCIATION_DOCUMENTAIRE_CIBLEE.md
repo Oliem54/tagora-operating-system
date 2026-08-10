@@ -363,6 +363,60 @@ Prochain gate d'exécution : `TOS-PHASE-4D-FIRST-DOCUMENTATION-LOT-INSTANTIATION
 
 ---
 
+## Phase 4D — Recadrage gouvernance TOS
+
+**Date :** 2026-08-10
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-088
+
+Ce recadrage formalise que TOS reste toujours le projet gouvernant ; TAGORA Time reste uniquement la cible pilote séparée. Il **ne** crée **aucun** fichier Time et **n'autorise** aucune exécution Lot 1.
+
+```text
+PHASE_4D_GOVERNANCE_RECENTERING=COMPLETE
+ACTIVE_PROJECT=TAGORA_OPERATING_SYSTEM
+GOVERNING_PROJECT=TAGORA_OPERATING_SYSTEM
+PILOT_TARGET=TAGORA_TIME
+TARGET_ACTION_MODEL=TOS_GOVERNED_BOUNDED_EXTERNAL_ACTION
+PROJECT_SWITCH_REQUIRED=NO
+RETURN_TO_TOS_AFTER_TARGET_ACTION=MANDATORY
+
+STANDALONE_BRANCH_SWITCH_GATE_REQUIRED=NO
+LOT_1_PARENT_GATE_MAY_SWITCH_TARGET_BRANCH=YES_IF_PRECONDITIONS_PASS
+
+TIME_BASELINE_SHA=815ac4d49302ae597bbdcd4a15b76163063d4b56
+DOCUMENTATION_BRANCH=docs/tos-phase-4d-time
+VALD_085=VALIDATED
+VALD_086=VALIDATED
+VALD_087=VALIDATED
+
+LOT_1_SCOPE=FOUNDATION_AND_QA_MATRICES
+LOT_1_FILE_COUNT=4
+LOT_1_EXECUTION_STATUS=NOT_STARTED
+TIME_DOCUMENTATION_STARTED=NO
+
+LAST_LOT_1_INSTANTIATION_ATTEMPT=HOLD
+LAST_LOT_1_HOLD_REASON=ACTIVE_BRANCH_IS_MAIN_NOT_DOCUMENTATION_BRANCH
+LAST_LOT_1_FILES_CREATED=0
+
+NEXT_GATE=TOS-PHASE-4D-FIRST-DOCUMENTATION-LOT-INSTANTIATION-GO
+NEXT_GATE_PROMPT_VERSION=RECENTERED_V2
+PREVIOUS_LOT_1_INSTANTIATION_PROMPT_REUSE=NO
+TARGET_BRANCH_PRECONDITION_HANDLED_INSIDE_GATE=YES
+
+LOT_2_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+```
+
+### Interprétation du HOLD Lot 1
+
+Le HOLD `ACTIVE_BRANCH_IS_MAIN_NOT_DOCUMENTATION_BRANCH` **n'est pas** un échec de la Phase 4D. Il indique seulement que le futur gate parent (prompt `RECENTERED_V2`) doit gérer lui-même le prérequis de branche documentaire déjà validée, sans gate administratif autonome de simple `git switch`.
+
+Le futur gate V2 pourra, sous GO Martin distinct : vérifier Time ; si nécessaire switcher de `main` vers `docs/tos-phase-4d-time` (préconditions passées) ; créer exactement les 4 fichiers Lot 1 ; STOP avant commit/push.
+
+**Inchangé par ce recadrage :** périmètre Lot 1 (4 fichiers) ; baseline Time ; branche documentaire validée ; exclusion commissions `feature/admin-commissions-premium-header-kpi`.
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -379,3 +433,4 @@ Prochain gate d'exécution : `TOS-PHASE-4D-FIRST-DOCUMENTATION-LOT-INSTANTIATION
 **Nom de branche Phase 4D** — `docs/tos-phase-4d-time` validé (VALD-085).
 **État local** — **LOCAL_CREATED_NOT_PUSHED** ; validé VALD-086.
 **Lot 1** — préparation **COMPLETE** (VALD-087) ; exécution **NOT_STARTED** ; Lots 2/3 non autorisés.
+**Recadrage gouvernance Phase 4D** — **COMPLETE** (VALD-088) ; prochain gate Lot 1 = `RECENTERED_V2`.
