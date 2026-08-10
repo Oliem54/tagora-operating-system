@@ -109,6 +109,10 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-078 | 2026-08-10 | TAGORA Platform = terme déprécié ; ancien repo intact jusqu'à GO séparé | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) | Dépréciation sémantique seulement — aucun recycle auto |
 | VALD-079 | 2026-08-10 | Frontière TOS / Nexus / TCP / Flow / modules | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md), [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) | Entitlement-first ; séparation logique Nexus/TCP obligatoire |
 | VALD-080 | 2026-08-10 | Baseline documentaire Nexus autorisée | Humaine | Martin ST-Gelais — Direction | Validé | [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) | `TAGORA-NEXUS-TOS-ADOPTION-BASELINE` doc/archi only — pas de repo/code/DB |
+| VALD-081 | 2026-08-10 | Lecture Git contrôlée TAGORA Time Phase 4S | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) | main propre et synchronisé ; working tree clean ; lecture READ-ONLY complète |
+| VALD-082 | 2026-08-10 | Décision finale WIP commissions Phase 4S | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) | Option B — préserver dans `feature/admin-commissions-premium-header-kpi` ; aucun merge/rebase/delete |
+| VALD-083 | 2026-08-10 | Baseline TAGORA Time pour future instanciation TOS | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) | main confirmé comme baseline source propre |
+| VALD-084 | 2026-08-10 | Stratégie branche documentaire TAGORA Time | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) | Option D — future branche documentaire depuis main, sous GO Martin séparé |
 
 ---
 
@@ -118,7 +122,8 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 2. Mettre à jour le statut dès validation humaine réelle.
 3. Aucun secret ni donnée sensible.
 4. VALD-080 autorise uniquement la baseline documentaire Nexus — jamais la création de repository, le code, la DB, le staging ou la production.
+5. VALD-081 à 084 ferment Phase 4S ; elles n'autorisent aucune écriture Time ni création de branche documentaire sans GO séparé.
 
 ## Statut
 
-**Enrichi — Track Nexus** — VALD-075 à 080 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Phase 4R-TOS inchangée : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Phase 4S-TOS** — VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).

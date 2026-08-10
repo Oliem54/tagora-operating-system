@@ -414,17 +414,22 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4S-TOS — Préparation décision stratégique WIP et branche cible ⏳ Prochaine étape documentaire
+### Phase 4S-TOS — Préparation décision stratégique WIP et branche cible ✅ Complétée
 
-**Objectif :** Préparer dans TOS la décision stratégique sur le WIP commissions et la branche cible — **sans ouvrir ni modifier TAGORA Time**.
+**Objectif :** Préparer puis trancher dans TOS la décision stratégique sur le WIP commissions et la branche cible — **sans écrire dans TAGORA Time**.
 
-**Condition :** Phase 4R complétée ; protocole 4Q validé ; WIP non clarifié.
+**Condition :** Phase 4R complétée ; protocole 4Q validé.
 
-**Livrables prévus :**
+**Livrables réalisés :**
 
-- Document préparation décision stratégique WIP et branche cible
-- Choix possibles sans action dans TAGORA Time
-- Conditions avant future autorisation encadrée
+- [x] [PREPARATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](docs/04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md)
+- [x] [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](docs/04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md)
+- [x] Lecture Git contrôlée Time complète (READ-ONLY)
+- [x] `main` confirmé baseline propre
+- [x] WIP commissions préservé dans feature dédiée (`feature/admin-commissions-premium-header-kpi`)
+- [x] Future documentation via branche dédiée depuis `main` (Option D — GO séparé)
+- [x] Aucune écriture Time effectuée
+- [x] VALD-081 à VALD-084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10)
 
 > **Note track parallèle :** Un track Nexus documentaire existe ci-dessous. Il **ne remplace pas**, **n'annule pas** et **ne modifie pas** la Phase 4S-TOS.
 
@@ -454,11 +459,11 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 
 ---
 
-### Phase 4D — Documentation minimale dans TAGORA Time ⏳ Conditionnelle (post-arbitrage)
+### Phase 4D — Documentation minimale dans TAGORA Time ⏳ Prochaine étape (post Phase 4S)
 
 **Objectif :** Créer les premiers documents QA/TDS/TES **dans le dépôt Time** — sans code ni migration.
 
-**Condition :** Arbitrage Phase 4D-TOS + checklist Phase 4C-TOS complète.
+**Condition :** Phase 4S complétée ; baseline `main` confirmée ; future branche documentaire depuis `main` sous GO Martin séparé ; aucune écriture Time sans autorisation distincte.
 
 **Livrables prévus :**
 
@@ -508,12 +513,12 @@ Phase 4O-TOS Ouverture contrôlée lecture Git dépôt ✅ Complétée
 Phase 4P-TOS Arbitrage baseline et WIP Time ✅ Complétée
 Phase 4Q-TOS Protocole clarification WIP ✅ Complétée
 Phase 4R-TOS Validation protocole clarification WIP ✅ Complétée
-Phase 4S-TOS Décision stratégique WIP branche ⏳ Prochaine étape documentaire
-Phase 4D  Documentation minimale Time       ⏳ Post-décision stratégique Phase 4S
+Phase 4S-TOS Décision stratégique WIP branche ✅ Complétée
+Phase 4D  Documentation minimale Time       ⏳ Prochaine étape (post Phase 4S)
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
 
-Track Nexus (parallèle, n'annule pas 4S)
+Track Nexus (parallèle)
   ADR-0003 Option A renforcée             ✅ Validé (2026-08-10)
   Baseline documentaire Nexus             ⏳ Autorisée — prochaine
   tagora-cloud-portal                     ⛔ HOLD (pas de création)
@@ -523,8 +528,9 @@ Track Nexus (parallèle, n'annule pas 4S)
 
 ## Statut
 
-**Enrichi — Phase 4R-TOS** — Validation protocole clarification WIP actée. Phase 4S-TOS — décision stratégique WIP et branche cible (inchangée).
-**Track Nexus** — ADR-0003 **Validé** (Option A renforcée) ; VALD-075 à 080 **Validé** ; baseline documentaire autorisée ; repository toujours interdit.
+**Enrichi — Phase 4S-TOS** — Complétée. Lecture contrôlée Time ; main baseline propre ; WIP commissions préservé en feature ; Option D pour future branche documentaire ; VALD-081 à 084 **Validé**. Aucune écriture Time.
+**Prochaine étape officielle :** Phase 4D — Documentation minimale dans TAGORA Time (sous GO distinct).
+**Track Nexus** — ADR-0003 **Validé** ; VALD-075 à 080 **Validé** ; baseline documentaire autorisée ; repository toujours interdit.
 
 ## Références
 

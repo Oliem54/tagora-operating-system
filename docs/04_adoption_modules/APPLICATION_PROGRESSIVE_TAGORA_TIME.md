@@ -791,6 +791,34 @@ Validations registre : VALD-029 à VALD-033.
 
 ---
 
+## Phase 4S-TOS — Décision stratégique WIP / branche (fermeture)
+
+**Statut :** **COMPLETE** — 2026-08-10
+
+```text
+PHASE_4S=COMPLETE
+WIP_DECISION=OPTION_B
+TIME_BASELINE=main
+FUTURE_DOCUMENTATION_STRATEGY=OPTION_D
+TIME_WRITES_EXECUTED=NO
+NEXT_STEP=PHASE_POST_4S_FROM_OFFICIAL_ROADMAP
+```
+
+| Champ | Valeur |
+|---|---|
+| Lecture Git contrôlée | **COMPLETE** (READ-ONLY) |
+| WIP commissions | **OPTION_B** — préservé dans `feature/admin-commissions-premium-header-kpi` |
+| Baseline Time | **`main`** confirmé propre |
+| Stratégie documentaire future | **OPTION_D** — branche dédiée depuis `main` (GO séparé) |
+| Option C temporaire | **RESOLVED** — ne constitue pas une autorisation d'écriture |
+| Écritures Time pendant 4S | **NON** |
+| Validations | VALD-081 à VALD-084 **Validé** |
+| Document | [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](plans_instanciation/VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md) |
+
+**Prochaine étape officielle (roadmap) :** Phase 4D — Documentation minimale dans TAGORA Time — uniquement sous GO Martin distinct.
+
+---
+
 ## Ordre consolidé d'application des piliers à TAGORA Time
 
 Ordre officiel retenu pour l'**application progressive** sur TAGORA Time — consolidé Phase 3I :
@@ -886,7 +914,7 @@ Les piliers suivants sont **reconnus** mais **non prioritaires** pour la premiè
 
 ## Statut
 
-**Enrichi — Phase 4R-TOS** — Validation protocole clarification WIP actée. Phase 4S-TOS — décision stratégique WIP et branche cible.
+**Enrichi — Phase 4S-TOS COMPLETE** — WIP Option B ; baseline `main` ; future doc Option D ; VALD-081 à 084 Validé ; aucune écriture Time. Prochaine étape roadmap : Phase 4D (GO distinct).
 
 ## Références
 

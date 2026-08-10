@@ -118,18 +118,115 @@ Ce document TOS **n'autorise PAS** automatiquement l'ouverture de TAGORA Time.
 
 ---
 
-## Synthèse opérationnelle
+## Synthèse opérationnelle (intermédiaire — historique)
 
 | Champ | Valeur |
 |---|---|
 | Phase 4S préparation | **COMPLETE** |
-| Décision stratégique intermédiaire | **ENREGISTRÉE** |
-| Décision finale WIP | **OPEN** |
-| Décision finale branche | **OPEN** |
-| Lecture Time dans ce bloc | **NON** |
-| Écriture Time | **NON** |
-| Instanciation Time | **NON** |
-| Prochaine étape | `TOS-PHASE-4S-CONTROLLED-TIME-READ-GO` (GO distinct requis) |
+| Décision stratégique intermédiaire | **ENREGISTRÉE** (puis complétée par décision finale ci-dessous) |
+| Lecture contrôlée | Exécutée ensuite — voir décision finale |
+| Écriture Time pendant Phase 4S | **NON** |
+| Instanciation Time pendant Phase 4S | **NON** |
+
+---
+
+## Décision finale après lecture contrôlée
+
+```text
+PHASE_4S_CONTROLLED_READ=COMPLETE
+PHASE_4S_FINAL_DECISION=VALIDATED
+
+CONTROLLED_TIME_READ=COMPLETE
+
+FINAL_WIP_DECISION=OPTION_B_EXISTING_FEATURE_PRESERVED
+FINAL_TIME_BASELINE=MAIN_CONFIRMED_CLEAN
+FINAL_TARGET_BRANCH_STRATEGY=OPTION_D_FUTURE_DOCUMENTATION_BRANCH_FROM_MAIN
+
+CURRENT_COMMISSIONS_FEATURE=feature/admin-commissions-premium-header-kpi
+COMMISSIONS_FEATURE_ACTION=PRESERVE_UNTOUCHED
+COMMISSIONS_FEATURE_PRESERVED=YES
+
+OPTION_C_TEMPORARY_REPORT=RESOLVED
+
+TIME_WRITE_AUTHORIZED_IN_THIS_BLOCK=NO
+TIME_BRANCH_CREATION_AUTHORIZED_IN_THIS_BLOCK=NO
+TIME_DOCUMENTATION_INSTANTIATION_AUTHORIZED_IN_THIS_BLOCK=NO
+TIME_MODIFICATION_AUTHORIZED=NO
+TIME_MODIFIED_DURING_PHASE_4S=NO
+
+DOCUMENTATION_BRANCH_REQUIRED=YES
+DOCUMENTATION_BRANCH_SOURCE=main
+DOCUMENTATION_BRANCH_NAME=OPEN
+DOCUMENTATION_BRANCH_CREATION=REQUIRES_SEPARATE_MARTIN_GO
+
+MAIN_BASELINE_STATUS=CONFIRMED
+PHASE_4S_STATUS=COMPLETE
+```
+
+| Champ | Valeur actée |
+|---|---|
+| **Décideur** | Martin ST-Gelais — Direction |
+| **Date décision finale** | 2026-08-10 |
+| **VALD** | VALD-081 à VALD-084 **Validé** |
+
+### Faits de la lecture contrôlée (READ-ONLY)
+
+| Champ | Valeur observée |
+|---|---|
+| CURRENT_BRANCH | `main` |
+| CURRENT_HEAD | `815ac4d49302ae597bbdcd4a15b76163063d4b56` |
+| UPSTREAM | `origin/main` |
+| LOCAL_AHEAD / LOCAL_BEHIND | `0` / `0` |
+| TRACKING_REF_MATCHES_REMOTE_LIVE | `YES` |
+| WORKING_TREE_CLEAN | `YES` |
+| MODIFIED_FILES_COUNT | `0` |
+| UNTRACKED_FILES_COUNT | `0` |
+| HISTORICAL_UNCOMMITTED_WIP_PRESENT | `NO` |
+| COMMISSIONS_FEATURE_REMOTE_EXISTS | `YES` |
+| COMMISSIONS_FEATURE_REMOTE_SHA | `bb195fd0544d2c9c3f42e9afdef5dd7d1ce293fa` |
+
+La feature commissions **ne doit pas** être modifiée, mergée, rebasée, supprimée ni utilisée comme branche documentaire dans ce bloc de fermeture.
+
+### Interprétation finale
+
+#### WIP commissions — Option B
+
+L'ancien WIP non commité observé Phase 4O n'est plus présent dans le working tree actuel.
+Le travail commissions existe toutefois dans une feature Git distante distincte.
+
+Décision finale : **OPTION_B** — travail commissions **isolé / préservé** dans :
+
+`feature/admin-commissions-premium-header-kpi`
+
+Aucune action Git n'est requise sur cette branche pour fermer Phase 4S.
+
+#### Baseline — main confirmé
+
+`MAIN_BASELINE_STATUS=CONFIRMED` :
+
+- branche active `main` ;
+- working tree clean ;
+- HEAD aligné avec `origin/main` local ;
+- SHA distant live identique ;
+- aucun WIP non commité.
+
+#### Branche documentaire future — Option D
+
+- Ne **PAS** utiliser la feature commissions.
+- Ne **PAS** écrire directement dans `main` dans ce bloc.
+- Stratégie : **OPTION_D** — future branche documentaire dédiée créée **à partir du main propre confirmé**.
+- Nom exact de la branche : **OPEN** (non décidé ici).
+- Création : **REQUIRES_SEPARATE_MARTIN_GO**.
+
+#### Option C temporaire — résolue
+
+`OPTION_C_TEMPORARY_REPORT=RESOLVED`
+
+Le report Option C était un garde-fou tant que l'état Git Time était inconnu.
+La lecture contrôlée ayant confirmé main propre, absence de WIP non commité et travail commissions isolé ailleurs, le report est levé comme **blocage Phase 4S**.
+
+**Lever Option C ne constitue PAS une autorisation d'écriture dans Time.**
+`TIME_MODIFICATION_AUTHORIZED=NO`
 
 ---
 
@@ -140,7 +237,8 @@ Ce document TOS **n'autorise PAS** automatiquement l'ouverture de TAGORA Time.
 - [VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md](VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md)
 - [POINT_REPRISE_BUREAU_PHASE_4R_VERS_4S.md](POINT_REPRISE_BUREAU_PHASE_4R_VERS_4S.md)
 - [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
+- [REGISTRE_VALIDATIONS.md](../../10_knowledge/REGISTRE_VALIDATIONS.md)
 
 ## Statut
 
-**Phase 4S — décision stratégique intermédiaire Validée — lecture Time non autorisée dans ce bloc — STOP.**
+**Phase 4S — COMPLETE — décision finale Validée (VALD-081 à 084) — aucune écriture Time — STOP.**
