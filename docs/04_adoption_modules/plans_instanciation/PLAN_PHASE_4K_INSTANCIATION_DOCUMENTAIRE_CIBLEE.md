@@ -177,14 +177,43 @@ Séquence recommandée **après validation Phase 4L-TOS** :
 
 ---
 
+## Addendum post Phase 4S — stratégie de branche actualisée
+
+**Date addendum :** 2026-08-10
+**Source de décision :** Phase 4S — VALD-083 / VALD-084
+**Document :** [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md)
+
+```text
+ORIGINAL_4K_PLANNED_BRANCH=main
+CURRENT_BASELINE_SOURCE=main
+CURRENT_DOCUMENTATION_BRANCH_STRATEGY=DEDICATED_BRANCH_FROM_MAIN
+DOCUMENTATION_BRANCH_NAME=OPEN
+SOURCE_DECISION=PHASE_4S_VALD_083_VALD_084
+```
+
+| Précision | Contenu |
+|---|---|
+| Historique 4K | La mention de `main` comme **branche cible prévue** (§2, checklist §6) reste dans le texte historique ci-dessus. |
+| Baseline source | `main` reste la **baseline SOURCE** propre confirmée (VALD-083). |
+| Exécution future | La future instanciation documentaire **ne doit plus écrire directement dans `main`**. |
+| Stratégie actuelle | Une **branche documentaire dédiée** devra être créée **depuis `main`** (VALD-084 / Option D). |
+| Création | Nécessite un **GO Martin séparé**. |
+| Nom | Exactement **OPEN** — non décidé dans cet addendum. |
+
+Le corps historique du plan 4K n'est **pas** réécrit. Cet addendum gouverne l'usage opérationnel futur.
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
 - [Paquet final Phase 4I](../paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md)
 - [Templates application pilote](../templates_pilotes/README_TEMPLATES_APPLICATION_PILOTE.md)
 - [Application progressive TAGORA Time](../APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
+- [Validation Phase 4S](VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md)
 - [REGISTRE_VALIDATIONS.md](../../10_knowledge/REGISTRE_VALIDATIONS.md)
 
 ## Statut
 
 **Créé — Phase 4K-TOS** — Plan d'instanciation ciblée. Validations VALD-050 à 056 **À faire**.
+**Addendum 2026-08-10** — stratégie de branche alignée Phase 4S (VALD-083 / VALD-084).

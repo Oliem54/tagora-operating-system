@@ -104,14 +104,44 @@ Checklist — **toutes les conditions requises** avant toute préparation Phase 
 
 ---
 
+## Addendum post Phase 4S — supersession opérationnelle VALD-053
+
+**Date addendum :** 2026-08-10
+**Source :** [VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md](VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md)
+
+```text
+VALD_053_HISTORICAL_STATUS=VALIDATED
+VALD_053_OPERATIONAL_BRANCH_TARGET=SUPERSEDED
+SUPERSEDED_BY=VALD_084
+CURRENT_BASELINE_SOURCE=main
+CURRENT_DOCUMENTATION_BRANCH_STRATEGY=DEDICATED_BRANCH_FROM_MAIN
+```
+
+| Élément | Valeur |
+|---|---|
+| VALD-053 date historique | **2026-07-05** — inchangée |
+| Décideur historique | Martin ST-Gelais — Direction — inchangé |
+| Statut historique VALD-053 | **Validé** — inchangé (trace de la décision du 2026-07-05) |
+| Usage opérationnel futur de « écrire dans main » | **SUPERSEDED** |
+| Remplacé opérationnellement par | **VALD-084** |
+| Baseline source actuelle | `main` (VALD-083) |
+| Stratégie branche documentaire actuelle | Branche dédiée créée depuis `main` (VALD-084) |
+
+**Explication :** VALD-053 demeure une validation historique correcte pour son époque (main = branche cible **prévue**).
+VALD-084 remplace **seulement** son usage opérationnel futur : la future instanciation doit viser une branche documentaire dédiée depuis main, pas une écriture directe dans main.
+
+---
+
 ## Références
 
 - [Plan Phase 4K](PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md)
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
 - [Paquet final Phase 4I](../paquets_pilotes/PAQUET_FINAL_PHASE_4I_TRANSITION_APPLICATION_DOCUMENTAIRE.md)
 - [Application progressive TAGORA Time](../APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
+- [Validation Phase 4S](VALIDATION_PHASE_4S_DECISION_STRATEGIQUE_WIP_BRANCHE_TAGORA_TIME.md)
 - [REGISTRE_VALIDATIONS.md](../../10_knowledge/REGISTRE_VALIDATIONS.md)
 
 ## Statut
 
 **Complété — Phase 4L-TOS** — VALD-050 à 056 **Validé** (Martin ST-Gelais — Direction, 2026-07-05).
+**Addendum 2026-08-10** — VALD-053 opérationnellement supersédé par VALD-084 pour la cible d'écriture future.
