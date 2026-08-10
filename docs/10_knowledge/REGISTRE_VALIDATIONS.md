@@ -103,6 +103,12 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-072 | 2026-07-05 | Report ou non instanciation documentaire | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md) | Instanciation reportée et bloquée |
 | VALD-073 | 2026-07-05 | Conditions avant nouvelle ouverture contrôlée | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md) | Conditions Phase 4Q obligatoires |
 | VALD-074 | 2026-07-05 | Besoin Phase 4R-TOS | Humaine | Martin ST-Gelais — Direction | Validé | [VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md](../04_adoption_modules/plans_instanciation/VALIDATION_PHASE_4R_PROTOCOLE_CLARIFICATION_WIP.md) | Validation protocole 4Q — suite documentaire TOS |
+| VALD-075 | 2026-08-10 | ADR-0003 — Option A renforcée | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) | Option A renforcée actée |
+| VALD-076 | 2026-08-10 | Nexus = portail et control plane UX « Mon espace TAGORA » | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) | Connexion, org, membres, catalogue, droits, abonnement |
+| VALD-077 | 2026-08-10 | TAGORA Cloud = marque/offre SaaS commerciale globale | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) | Pas automatiquement un repository ni une couche technique |
+| VALD-078 | 2026-08-10 | TAGORA Platform = terme déprécié ; ancien repo intact jusqu'à GO séparé | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) | Dépréciation sémantique seulement — aucun recycle auto |
+| VALD-079 | 2026-08-10 | Frontière TOS / Nexus / TCP / Flow / modules | Humaine | Martin ST-Gelais — Direction | Validé | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md), [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) | Entitlement-first ; séparation logique Nexus/TCP obligatoire |
+| VALD-080 | 2026-08-10 | Baseline documentaire Nexus autorisée | Humaine | Martin ST-Gelais — Direction | Validé | [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) | `TAGORA-NEXUS-TOS-ADOPTION-BASELINE` doc/archi only — pas de repo/code/DB |
 
 ---
 
@@ -111,7 +117,8 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 1. Un élément « Accepté initialement » n'est pas « Validé » tant que ce registre ne le confirme pas.
 2. Mettre à jour le statut dès validation humaine réelle.
 3. Aucun secret ni donnée sensible.
+4. VALD-080 autorise uniquement la baseline documentaire Nexus — jamais la création de repository, le code, la DB, le staging ou la production.
 
 ## Statut
 
-**Enrichi — Phase 4R-TOS** — VALD-069 à 074 **Validé** (Martin ST-Gelais — Direction, 2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Track Nexus** — VALD-075 à 080 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Phase 4R-TOS inchangée : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).

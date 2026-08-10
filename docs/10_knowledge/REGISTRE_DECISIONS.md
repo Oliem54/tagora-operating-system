@@ -43,6 +43,7 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 | DEC-011 | 2026-07-05 | Release | Les releases TAGORA doivent être traçables, validées selon leur niveau de risque, documentées, et accompagnées d'un plan de rollback pour les changements critiques | Acté | Écosystème | Cadre TRF obligatoire pour toute livraison significative | [TRF](../01_piliers/09_TRF_TAGORA_RELEASE_FRAMEWORK.md), [README_RELEASE_FRAMEWORK.md](../11_release/README_RELEASE_FRAMEWORK.md) | Phase 3G |
 | DEC-012 | 2026-07-05 | Monitoring | Les modules TAGORA critiques doivent prévoir une observabilité minimale, des logs sans secret, un suivi post-release et une traçabilité des incidents | Acté | Écosystème | Cadre TMF obligatoire pour modules critiques | [TMF](../01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md), [README_MONITORING_FRAMEWORK.md](../12_monitoring/README_MONITORING_FRAMEWORK.md) | Phase 3H |
 | DEC-013 | 2026-07-05 | Structure TOS | Les 10 piliers TOS forment la structure officielle de gouvernance méthodologique TAGORA, mais leur adoption doit rester progressive, module par module, sans fusionner les applications métier | Acté | Écosystème | Carte et matrice piliers ; pas de big-bang | [CARTE_DES_10_PILIERS_TOS.md](../00_constitution/CARTE_DES_10_PILIERS_TOS.md), [MATRICE_INTERDEPENDANCE_PILIERS.md](../00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md) | Phase 3I |
+| DEC-014 | 2026-08-10 | Positionnement Nexus / Cloud / Platform / TCP / Flow | Option A renforcée validée : TOS = constitution ; Cloud = marque/offre SaaS ; Nexus = portail « Mon espace TAGORA » ; TCP = capacités faisant autorité ; Flow = orchestration ; Platform = terme déprécié (ancien repo intact) ; baseline documentaire Nexus autorisée ; repository interdit | **Validé** | Écosystème | Baseline doc only ; pas de `tagora-cloud-portal` | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md), [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) | Track Nexus — n'affecte pas Phase 4S Time ; VALD-075 à 080 |
 
 ---
 
@@ -52,7 +53,8 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 - Si décision structurante → ADR + mise à jour [ADR_REGISTRE.md](../05_adr/ADR_REGISTRE.md).
 - Ne pas inventer de décision non actée.
 - Aucun secret dans ce registre.
+- Les entrées **Brouillon — À VALIDER** ne sont pas des décisions officielles tant que non passées à **Validé** / **Acté**.
 
 ## Statut
 
-**Enrichi — Phase 3I**
+**Enrichi — Track Nexus** — DEC-014 **Validé** (ADR-0003 Option A renforcée, Martin ST-Gelais — Direction, 2026-08-10). DEC-001 à 013 inchangées.

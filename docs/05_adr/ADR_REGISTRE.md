@@ -26,20 +26,22 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 |---|---|---|---|---|---|---|
 | ADR-0001 | TOS comme Constitution méthodologique, pas comme application | Accepté initialement — à valider humainement | 2026-07-02 | Écosystème TAGORA | TOS n'est pas une application métier ; c'est la référence méthodologique, documentaire, architecturale, QA, design, IA, orchestration et gouvernance | Tous modules ; Time = pilote |
 | ADR-0002 | Documentation avant code | Accepté initialement — à valider humainement | 2026-07-02 | Écosystème TAGORA | Tout développement important est précédé d'une documentation minimale (besoin, périmètre, métier, UX, QA, risques, validation) | Time en premier ; tous modules ensuite |
+| ADR-0003 | Positionnement TAGORA Nexus, Cloud, Platform, TCP et Flow | **Validé** — Martin ST-Gelais — Direction | 2026-08-10 | Écosystème TAGORA | Option A renforcée : TOS = constitution ; Cloud = marque/offre SaaS ; Nexus = portail « Mon espace TAGORA » ; TCP = capacités faisant autorité ; Flow = orchestration ; Platform = terme déprécié (ancien repo intact) | Baseline documentaire Nexus autorisée ; `tagora-cloud-portal` toujours interdit |
 
 ### Liens
 
 - [ADR-0001](ADR-0001-TOS_COMME_CONSTITUTION_METHODOLOGIQUE.md)
 - [ADR-0002](ADR-0002-DOCUMENTATION_AVANT_CODE.md)
+- [ADR-0003](ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures seront ajoutées ici (ADR-0003, etc.) dès création.
+Les ADR futures (TCP entitlements, billing, auth commune, repos Nexus/TCP, etc.) pourront être ajoutées après la baseline documentaire Nexus.
 
 ---
 
 ## Statut du registre
 
-**Brouillon initial**
+**Enrichi — ADR-0003 Validé (Option A renforcée, track Nexus)**

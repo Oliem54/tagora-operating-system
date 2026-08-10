@@ -426,6 +426,32 @@ Méthode documentaire légère : décisions, ADR, problèmes, solutions, leçons
 - Choix possibles sans action dans TAGORA Time
 - Conditions avant future autorisation encadrée
 
+> **Note track parallèle :** Un track Nexus documentaire existe ci-dessous. Il **ne remplace pas**, **n'annule pas** et **ne modifie pas** la Phase 4S-TOS.
+
+---
+
+### Track Nexus — Positionnement constitutionnel ✅ Validé (baseline documentaire autorisée)
+
+**Objectif :** Positionner TAGORA Nexus / Cloud / Platform / TCP / Flow dans TOS — **sans créer de repository**, **sans code**, **sans toucher TAGORA Time**.
+
+**Statut :** **ADR-0003 Validé** (Martin ST-Gelais — Direction, 2026-08-10) — Option A renforcée.
+**Prochaine action autorisée :** `TAGORA-NEXUS-TOS-ADOPTION-BASELINE` (documentation et architecture seulement).
+
+**Livrables :**
+
+- [x] [ADR-0003](docs/05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) — Option A renforcée **Validé**
+- [x] [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) — plan d'adoption aligné
+- [x] DEC-014 **Validé** ; VALD-075 à 080 **Validé**
+- [ ] Baseline documentaire Nexus (`TAGORA-NEXUS-TOS-ADOPTION-BASELINE`)
+- [ ] Création `tagora-cloud-portal` (**toujours interdit** jusqu'à GO séparé)
+
+**Interdictions track Nexus (état actuel) :**
+
+- Pas de création de dépôt Nexus / `git init`
+- Pas de code, DB, migration, staging, production
+- Pas d'action sur l'ancien `tagora-platform`
+- Pas d'impact sur Phase 4S-TOS ni sur l'état TAGORA Time
+
 ---
 
 ### Phase 4D — Documentation minimale dans TAGORA Time ⏳ Conditionnelle (post-arbitrage)
@@ -486,13 +512,19 @@ Phase 4S-TOS Décision stratégique WIP branche ⏳ Prochaine étape documentair
 Phase 4D  Documentation minimale Time       ⏳ Post-décision stratégique Phase 4S
 Phase 4   Application sur TAGORA Time     ⏳ À venir
 Phase 5   Généralisation écosystème        ⏳ À venir
+
+Track Nexus (parallèle, n'annule pas 4S)
+  ADR-0003 Option A renforcée             ✅ Validé (2026-08-10)
+  Baseline documentaire Nexus             ⏳ Autorisée — prochaine
+  tagora-cloud-portal                     ⛔ HOLD (pas de création)
 ```
 
 ---
 
 ## Statut
 
-**Enrichi — Phase 4R-TOS** — Validation protocole clarification WIP actée. Phase 4S-TOS — décision stratégique WIP et branche cible.
+**Enrichi — Phase 4R-TOS** — Validation protocole clarification WIP actée. Phase 4S-TOS — décision stratégique WIP et branche cible (inchangée).
+**Track Nexus** — ADR-0003 **Validé** (Option A renforcée) ; VALD-075 à 080 **Validé** ; baseline documentaire autorisée ; repository toujours interdit.
 
 ## Références
 
@@ -501,6 +533,8 @@ Phase 5   Généralisation écosystème        ⏳ À venir
 - [Plan Phase 4B Time](docs/04_adoption_modules/plans_time/TIME_PLAN_PHASE_4B_TQF_TDS_TES.md)
 - [Audit Phase 4A Time](docs/04_adoption_modules/audits_time/TIME_AUDIT_PHASE_4A_INITIAL_TQF_TDS_TES.md)
 - [Application progressive TAGORA Time](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
+- [ADR-0003 Positionnement Nexus (Validé)](docs/05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md)
+- [Application progressive TAGORA Nexus](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md)
 - [Carte des 10 piliers](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md)
 - [Matrice interdépendance](docs/00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md)
 - [État maturité TOS](docs/00_constitution/ETAT_MATURITE_TOS.md)
