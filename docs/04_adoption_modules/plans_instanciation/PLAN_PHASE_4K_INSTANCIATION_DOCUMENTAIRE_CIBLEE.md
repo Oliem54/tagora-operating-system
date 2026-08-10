@@ -270,6 +270,99 @@ Le corps historique du plan 4K n'est **pas** réécrit. Cet addendum gouverne l'
 
 ---
 
+## Phase 4D — Préparation Lot 1 documentaire
+
+**Date :** 2026-08-10
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-087
+
+```text
+PHASE_4S=COMPLETE
+PHASE_4D_DOCUMENTATION_BRANCH_NAME=docs/tos-phase-4d-time
+PHASE_4D_BRANCH_NAME_VALIDATION=VALD_085
+PHASE_4D_LOCAL_BRANCH_VALIDATION=VALD_086
+DOCUMENTATION_BRANCH_STATUS=LOCAL_CREATED_NOT_PUSHED
+TIME_BASELINE_SHA=815ac4d49302ae597bbdcd4a15b76163063d4b56
+LOCAL_BRANCH_READY=YES
+REMOTE_BRANCH_CREATED=NO
+TIME_DOCUMENTATION_STARTED=NO
+
+PHASE_4D_LOT_1_PREPARATION=COMPLETE
+PHASE_4D_DOCUMENTATION_LOT_1=FOUNDATION_AND_QA_MATRICES
+LOT_1_FILE_COUNT=4
+LOT_1_EXECUTION_STATUS=NOT_STARTED
+TIME_ACCESSED_DURING_PREPARATION=NO
+TIME_MODIFIED_DURING_PREPARATION=NO
+```
+
+### Lot 1 — fichiers (préparation TOS seulement)
+
+| # | Fichier futur (dépôt Time) | Template source TOS |
+|---|---|---|
+| 1 | `docs/tos/APPLICATION_TOS_README.md` | [TEMPLATE_APPLICATION_PILOTE_README.md](../templates_pilotes/TEMPLATE_APPLICATION_PILOTE_README.md) |
+| 2 | `docs/tos/PLAN_APPLICATION_TOS_TIME.md` | [TEMPLATE_PILOTE_PLAN_APPLICATION.md](../templates_pilotes/TEMPLATE_PILOTE_PLAN_APPLICATION.md) |
+| 3 | `docs/qa/MATRICE_COMPTES_QA_TIME.md` | [TEMPLATE_PILOTE_MATRICE_COMPTES_QA.md](../templates_pilotes/TEMPLATE_PILOTE_MATRICE_COMPTES_QA.md) |
+| 4 | `docs/qa/MATRICE_DONNEES_QA_TIME.md` | [TEMPLATE_PILOTE_MATRICE_DONNEES_QA.md](../templates_pilotes/TEMPLATE_PILOTE_MATRICE_DONNEES_QA.md) |
+
+```text
+LOT_1_FILE_1=docs/tos/APPLICATION_TOS_README.md
+LOT_1_FILE_2=docs/tos/PLAN_APPLICATION_TOS_TIME.md
+LOT_1_FILE_3=docs/qa/MATRICE_COMPTES_QA_TIME.md
+LOT_1_FILE_4=docs/qa/MATRICE_DONNEES_QA_TIME.md
+```
+
+### Raison du découpage
+
+Le premier lot est volontairement limité afin de :
+
+- établir l'identité documentaire TOS du module Time ;
+- établir le plan d'application TOS propre à Time ;
+- établir la matrice des comptes QA ;
+- établir la matrice des données QA ;
+- préparer les bases avant les scénarios QA détaillés ;
+- éviter d'instancier les 11 documents en une seule opération.
+
+Les cinq scénarios QA détaillés restent pour un lot ultérieur.
+La checklist TDS et la validation TES restent également dans un lot ultérieur.
+Aucun fichier déjà prévu par le plan 4K (§5) n'est supprimé.
+
+### Garde-fous contenu futur (gate d'instanciation)
+
+| Fichier | Garde-fous |
+|---|---|
+| `APPLICATION_TOS_README` | Identité, rôle, gouvernance TOS, périmètre, références — **aucune donnée sensible** |
+| `PLAN_APPLICATION_TOS_TIME` | Ordre TQF → TDS → TES ; lots ; gates ; dépendances — **aucun changement fonctionnel** |
+| `MATRICE_COMPTES_QA_TIME` | Rôles logiques uniquement — **aucun** vrai mot de passe, secret, credential ou donnée d'auth sensible |
+| `MATRICE_DONNEES_QA_TIME` | Données fictives ou anonymisées seulement — **aucun** PII réel non nécessaire, secret, ni copie production |
+
+### Lots futurs — planification seulement
+
+```text
+LOT_2_PLANNED=QA_SCENARIOS
+LOT_2_FILES_PLANNED=5
+LOT_2_AUTHORIZED=NO
+```
+
+- `docs/qa/SCENARIO_QA_TIME_PUNCH_IN_OUT.md`
+- `docs/qa/SCENARIO_QA_TIME_PUNCH_GPS.md`
+- `docs/qa/SCENARIO_QA_TIME_GPS_REFUSE_ABSENT.md`
+- `docs/qa/SCENARIO_QA_TIME_FEUILLE_TEMPS_SOUMISE.md`
+- `docs/qa/SCENARIO_QA_TIME_APPROBATION_DIRECTION.md`
+
+```text
+LOT_3_PLANNED=TDS_AND_TES
+LOT_3_FILES_PLANNED=2
+LOT_3_AUTHORIZED=NO
+```
+
+- `docs/tds/CHECKLIST_TDS_TIME_PUNCH_HORODATEUR_DASHBOARD.md`
+- `docs/tes/VALIDATION_AVANT_CODE_TIME_PUNCH_GPS.md`
+
+**Aucun fichier Time n'est créé dans ce bloc.**
+Prochain gate d'exécution : `TOS-PHASE-4D-FIRST-DOCUMENTATION-LOT-INSTANTIATION-GO` (GO Martin séparé).
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -284,4 +377,5 @@ Le corps historique du plan 4K n'est **pas** réécrit. Cet addendum gouverne l'
 **Créé — Phase 4K-TOS** — Plan d'instanciation ciblée. Validations VALD-050 à 056 **À faire**.
 **Addendum 2026-08-10** — stratégie de branche alignée Phase 4S (VALD-083 / VALD-084).
 **Nom de branche Phase 4D** — `docs/tos-phase-4d-time` validé (VALD-085).
-**État local** — **LOCAL_CREATED_NOT_PUSHED** ; validé VALD-086 ; instanciation documentaire **NOT_STARTED**.
+**État local** — **LOCAL_CREATED_NOT_PUSHED** ; validé VALD-086.
+**Lot 1** — préparation **COMPLETE** (VALD-087) ; exécution **NOT_STARTED** ; Lots 2/3 non autorisés.
