@@ -944,6 +944,48 @@ RETURN_TO_TOS_AFTER_TARGET_ACTION=MANDATORY
 
 Les phases antérieures de ce document ne sont **pas** réécrites. Cet addendum fixe uniquement le modèle de gouvernance pour les actions cibles Time sous GO.
 
+---
+
+## Phase 4D — Clôture du Lot 1 documentaire
+
+**Date :** 2026-08-11
+**Validation :** VALD-089
+**Règle :** « TOS gouverne ; les modules appliquent. »
+
+| Fait | Contenu |
+|---|---|
+| Gouvernant | TOS reste le projet gouvernant |
+| Pilote | TAGORA Time reste le module pilote séparé |
+| Modèle | `TOS_GOVERNED_BOUNDED_EXTERNAL_ACTION` |
+| Lot 1 | Exécuté ; revue contenu TOS = **PASS** |
+| Livrables | Exactement **4** documents fondation / matrices QA |
+| Branche | `docs/tos-phase-4d-time` (distante protégée) |
+| Checkpoint initial | `f2bce3e896f5f7bdb981c39bcd27afc76fb8c9c1` |
+| Commit de clôture | `2960a73e1bcefd35dce81969157af213c83fafd2` |
+| Sauvegarde | Commit / push / sauvegarde distante confirmés |
+| Checkout Time | Remis sur `main` |
+| Sync main Time | Main local Time volontairement derrière `origin/main` (`93e99cb…`) ; synchronisation = propriétaire TAGORA Time |
+| R2 | Aucune intervention TOS |
+| Hors portée respectée | Aucun code, DB, migration, Supabase, staging ou production |
+| Lots suivants | Lot 2 et Lot 3 **non autorisés** |
+
+```text
+PHASE_4D=IN_PROGRESS
+PHASE_4D_LOT_1=COMPLETE
+LOT_1_CONTENT_REVIEW=PASS
+LOT_1_REMOTE_BRANCH=docs/tos-phase-4d-time
+LOT_1_INITIAL_CHECKPOINT=f2bce3e896f5f7bdb981c39bcd27afc76fb8c9c1
+LOT_1_CLOSURE_COMMIT=2960a73e1bcefd35dce81969157af213c83fafd2
+LOT_1_WORK_COMMITTED=YES
+LOT_1_WORK_PUSHED=YES
+LOT_1_WORK_SAFELY_SAVED=YES
+TIME_CHECKOUT_RELEASED_TO_MAIN=YES
+LOT_2_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+```
+
+La Phase 4D globale reste **IN_PROGRESS**. Seul le Lot 1 documentaire est clôturé.
+
 ## Références
 
 - [Arbitrage Phase 4D-TOS](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)

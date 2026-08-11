@@ -117,6 +117,7 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-086 | 2026-08-10 | Validation état branche documentaire locale TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Locale `docs/tos-phase-4d-time` prête ; HEAD = main ; 0/0 ; clean ; non poussée ; dernier rerun HOLD car déjà existante ; aucune doc Time créée |
 | VALD-087 | 2026-08-10 | Périmètre Lot 1 documentaire TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Lot 1 = 4 fichiers fondation/QA matrices ; préparation TOS seulement ; aucun fichier Time ; Lots 2/3 non autorisés |
 | VALD-088 | 2026-08-10 | Recadrage gouvernance Phase 4D — TOS reste le contexte gouvernant des actions cibles | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [REGLES_DE_SEPARATION_DES_PROJETS.md](../03_gouvernance/REGLES_DE_SEPARATION_DES_PROJETS.md), [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | TOS demeure le projet gouvernant ; Time demeure cible pilote séparée ; actions dépôt cible = externes bornées sous GO ; prérequis Git non destructif inclusible dans gate parent si autorisé/prévalidé ; retour TOS obligatoire ; aucun élargissement code/DB/production |
+| VALD-089 | 2026-08-11 | Clôture documentaire Lot 1 TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Lot 1 clôturé ; 4 documents fondation/QA ; revue contenu PASS ; branche `docs/tos-phase-4d-time` protégée ; checkpoint `f2bce3e` ; clôture `2960a73e` ; checkout Time libéré sur main ; Lots 2/3 non autorisés ; aucun code/DB/production |
 
 ---
 
@@ -136,11 +137,19 @@ PHASE_4D_DOCUMENTATION_BRANCH_NAME=VALIDATED_BY_VALD_085
 PHASE_4D_LOCAL_BRANCH_STATE=VALIDATED_BY_VALD_086
 PHASE_4D_LOT_1_SCOPE=VALIDATED_BY_VALD_087
 PHASE_4D_GOVERNANCE_MODEL=VALIDATED_BY_VALD_088
-LOCAL_DOCUMENTATION_BRANCH=docs/tos-phase-4d-time
-LOCAL_BRANCH_READY=YES
-REMOTE_BRANCH_CREATED=NO
-TIME_DOCUMENTATION_STARTED=NO
-LOT_1_EXECUTION_STATUS=NOT_STARTED
+PHASE_4D_LOT_1_CLOSURE=VALIDATED_BY_VALD_089
+DOCUMENTATION_BRANCH=docs/tos-phase-4d-time
+REMOTE_BRANCH_CREATED=YES
+TIME_DOCUMENTATION_STARTED=YES
+LOT_1_EXECUTION_STATUS=COMPLETE
+LOT_1_CONTENT_REVIEW=PASS
+LOT_1_WORK_SAFELY_SAVED=YES
+LOT_1_INITIAL_CHECKPOINT=f2bce3e896f5f7bdb981c39bcd27afc76fb8c9c1
+LOT_1_CLOSURE_COMMIT=2960a73e1bcefd35dce81969157af213c83fafd2
+TIME_CHECKOUT_RELEASED_TO_MAIN=YES
+LOT_2_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+PHASE_4D_STATUS=IN_PROGRESS
 ```
 
-**Enrichi — Phase 4D gouvernance recadrée** — VALD-088 **Validé** (TOS gouvernant ; actions cibles bornées ; switch branche inclusible dans gate parent). VALD-087 **Validé** (périmètre Lot 1 ; exécution non démarrée). VALD-086 **Validé** (branche locale). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Phase 4D Lot 1 clôturé** — VALD-089 **Validé** (clôture documentaire Lot 1 Time ; Phase 4D globale IN_PROGRESS ; Lots 2/3 non autorisés). VALD-088 **Validé** (gouvernance). VALD-087 **Validé** (périmètre Lot 1). VALD-086 **Validé** (branche locale). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).

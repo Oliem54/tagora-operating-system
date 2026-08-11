@@ -417,6 +417,47 @@ Le futur gate V2 pourra, sous GO Martin distinct : vérifier Time ; si nécessai
 
 ---
 
+## Addendum — clôture effective Phase 4D Lot 1
+
+**Date :** 2026-08-11
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-089
+
+Cet addendum enregistre la **clôture effective** du Lot 1 documentaire dans le dépôt cible TAGORA Time. Il ne remplace pas la baseline Phase 4D d'origine et n'autorise ni Lot 2 ni Lot 3.
+
+```text
+TIME_ORIGINAL_BASELINE=815ac4d49302ae597bbdcd4a15b76163063d4b56
+
+LOT_1_SCOPE=FOUNDATION_AND_QA_MATRICES
+LOT_1_FILE_COUNT=4
+LOT_1_EXECUTION_STATUS=COMPLETE
+LOT_1_CONTENT_REVIEW=PASS
+LOT_1_INITIAL_CHECKPOINT=f2bce3e896f5f7bdb981c39bcd27afc76fb8c9c1
+LOT_1_CLOSURE_COMMIT=2960a73e1bcefd35dce81969157af213c83fafd2
+LOT_1_REMOTE_BRANCH=docs/tos-phase-4d-time
+REMOTE_BRANCH_CREATED=YES
+TIME_DOCUMENTATION_STARTED=YES
+LOT_1_WORK_COMMITTED=YES
+LOT_1_WORK_PUSHED=YES
+LOT_1_WORK_SAFELY_SAVED=YES
+TIME_CHECKOUT_RELEASED_TO_MAIN=YES
+
+LOT_2_EXECUTION_STATUS=NOT_STARTED
+LOT_2_AUTHORIZED=NO
+LOT_3_EXECUTION_STATUS=NOT_STARTED
+LOT_3_AUTHORIZED=NO
+
+PHASE_4D=IN_PROGRESS
+CODE_MODIFIED_BY_PHASE_4D_LOT1=NO
+DATABASE_MODIFIED=NO
+COMMISSIONS_FEATURE_MODIFIED=NO
+R2_TIME_MODIFIED=NO
+```
+
+**Précision obligatoire :** `TIME_ORIGINAL_BASELINE` reste `815ac4d49302ae597bbdcd4a15b76163063d4b56`. Elle n'est **pas** remplacée par le `main` Time plus récent (`93e99cb…` à la libération du checkout).
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -432,5 +473,6 @@ Le futur gate V2 pourra, sous GO Martin distinct : vérifier Time ; si nécessai
 **Addendum 2026-08-10** — stratégie de branche alignée Phase 4S (VALD-083 / VALD-084).
 **Nom de branche Phase 4D** — `docs/tos-phase-4d-time` validé (VALD-085).
 **État local** — **LOCAL_CREATED_NOT_PUSHED** ; validé VALD-086.
-**Lot 1** — préparation **COMPLETE** (VALD-087) ; exécution **NOT_STARTED** ; Lots 2/3 non autorisés.
-**Recadrage gouvernance Phase 4D** — **COMPLETE** (VALD-088) ; prochain gate Lot 1 = `RECENTERED_V2`.
+**Lot 1** — préparation **COMPLETE** (VALD-087) ; exécution **COMPLETE** (VALD-089) ; Lots 2/3 non autorisés.
+**Recadrage gouvernance Phase 4D** — **COMPLETE** (VALD-088).
+**Clôture Lot 1** — **COMPLETE** (VALD-089) ; branche distante `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.
