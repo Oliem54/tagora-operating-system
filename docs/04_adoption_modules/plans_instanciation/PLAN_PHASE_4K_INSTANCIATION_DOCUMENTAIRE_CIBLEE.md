@@ -503,6 +503,44 @@ Les addenda Lot 1 existants restent inchangés.
 
 ---
 
+## Addendum — décision stratégie Git Phase 4D Lot 2
+
+**Date :** 2026-08-11
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-091
+**Document :** [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md)
+
+Décision humaine Martin après inspection read-only PASS : réutiliser la branche documentaire Phase 4D existante. Aucune écriture Time dans ce bloc.
+
+```text
+LOT_2_PREPARATION_STATUS=COMPLETE
+LOT_2_BRANCH_INSPECTION_STATUS=PASS
+
+LOT_2_BRANCH_STRATEGY=OPTION_A_REUSE_EXISTING_PHASE4D_DOCUMENTATION_BRANCH
+LOT_2_TARGET_BRANCH=docs/tos-phase-4d-time
+LOT_2_TARGET_BASE_SHA=2960a73e1bcefd35dce81969157af213c83fafd2
+LOT_2_BRANCH_STRATEGY_DECIDED=YES
+
+NEW_BRANCH_REQUIRED=NO
+DIRECT_MAIN_WRITE=NO
+MAIN_MERGE_REQUIRED=NO
+CHERRY_PICK_REQUIRED=NO
+
+LOT_1_STATUS=COMPLETE
+LOT_2_FILE_COUNT=5
+
+LOT_2_EXECUTION_STATUS=NOT_STARTED
+LOT_2_EXECUTION_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+
+PRE_EXECUTION_REVALIDATION_REQUIRED=YES
+PHASE_4D=IN_PROGRESS
+```
+
+La Phase 4D globale reste **IN_PROGRESS**. L'exécution Lot 2 n'est **pas** autorisée.
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -521,4 +559,5 @@ Les addenda Lot 1 existants restent inchangés.
 **Lot 1** — préparation **COMPLETE** (VALD-087) ; exécution **COMPLETE** (VALD-089) ; Lots 2/3 non autorisés.
 **Recadrage gouvernance Phase 4D** — **COMPLETE** (VALD-088).
 **Clôture Lot 1** — **COMPLETE** (VALD-089) ; branche distante `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.
-**Préparation Lot 2 QA** — **COMPLETE** (VALD-090) ; 5 scénarios préparés ; exécution **NOT_AUTHORIZED** ; stratégie branche Time `TO_DECIDE_BEFORE_EXECUTION`.
+**Préparation Lot 2 QA** — **COMPLETE** (VALD-090) ; 5 scénarios préparés ; exécution **NOT_AUTHORIZED**.
+**Décision stratégie Git Lot 2** — **COMPLETE** (VALD-091) ; Option A = réutiliser `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.

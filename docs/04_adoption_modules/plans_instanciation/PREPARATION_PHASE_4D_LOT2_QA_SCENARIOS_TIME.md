@@ -201,21 +201,62 @@ NO_DEPLOYMENT
 | Permissions exactes direction | TO_CONFIRM |
 | Priorités L2-002 à L2-005 | TO_CONFIRM |
 | Valeur GPS synthétique précise | TO_CONFIRM à l'instanciation |
-| Stratégie de branche Git Time pour Lot 2 | TO_DECIDE_BEFORE_EXECUTION |
+| Stratégie de branche Git Time pour Lot 2 | DÉCIDÉE — Option A (VALD-091) |
 
 ## 10. Stratégie Git Time
 
 ```text
-LOT_2_TARGET_BRANCH_STRATEGY=TO_DECIDE_BEFORE_EXECUTION
+LOT_2_TARGET_BRANCH_STRATEGY=OPTION_A_REUSE_EXISTING_PHASE4D_DOCUMENTATION_BRANCH
 TIME_REPOSITORY_INSPECTION_REQUIRED_BEFORE_LOT2=YES
 TIME_WRITE_AUTHORIZED=NO
 ```
 
-Ce gate **ne décide pas** si Lot 2 écrira sur `main`, sur `docs/tos-phase-4d-time`, ou sur une nouvelle branche.
+Historique : la préparation initiale laissait la stratégie `TO_DECIDE_BEFORE_EXECUTION`. L'inspection read-only et la décision humaine Martin (VALD-091) sont enregistrées ci-dessous.
 
-Raison : le checkout Time a été libéré sur `main` après Lot 1 ; `main` et la branche documentaire ont évolué séparément. Une décision Git bornée devra précéder toute instanciation Lot 2.
+## 10bis. Décision stratégie Git Lot 2
 
-Aucune procédure d'écriture Time n'est incluse ici.
+**Date :** 2026-08-11
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-091
+**Inspection read-only :** PASS
+
+```text
+INSPECTION_READONLY_STATUS=PASS
+
+LOT_2_BRANCH_STRATEGY=OPTION_A_REUSE_EXISTING_PHASE4D_DOCUMENTATION_BRANCH
+LOT_2_TARGET_BRANCH=docs/tos-phase-4d-time
+LOT_2_TARGET_BASE_SHA=2960a73e1bcefd35dce81969157af213c83fafd2
+
+NEW_BRANCH_REQUIRED=NO
+DIRECT_MAIN_WRITE=NO
+MERGE_REQUIRED=NO
+REBASE_REQUIRED=NO
+CHERRY_PICK_REQUIRED=NO
+
+LOT1_DEPENDENCIES_ALREADY_PRESENT=YES
+LOT2_PATH_COLLISION=NO
+
+STRATEGY_DECIDED=YES
+STRATEGY_VALIDATION=VALD-091
+
+LOT_2_EXECUTION_STATUS=NOT_STARTED
+LOT_2_EXECUTION_AUTHORIZED=NO
+TIME_WRITE_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+```
+
+### Garde-fous de future exécution
+
+```text
+PRE_EXECUTION_REMOTE_REVALIDATION_REQUIRED=YES
+PRE_EXECUTION_CODE_DIVERGENCE_REVALIDATION_REQUIRED=YES
+LOCAL_DOC_BRANCH_RECONCILIATION_MAY_BE_INCLUDED_IN_PARENT_GATE=YES_IF_EXACT_PRECONDITIONS_PASS
+STANDALONE_BRANCH_SWITCH_GATE_REQUIRED=NO
+```
+
+Le futur gate parent d'instanciation pourra, sous GO Martin séparé, effectuer les prérequis Git minimaux nécessaires (fetch ciblé, switch branche documentaire et fast-forward strict si requis), seulement si les SHA et l'état propre attendus sont confirmés.
+
+Aucune de ces actions n'est exécutée ici.
 
 ## 11. Hors portée
 
@@ -236,9 +277,13 @@ LOT_1_STATUS=COMPLETE
 LOT_2_PREPARATION_STATUS=COMPLETE
 LOT_2_SCOPE=QA_SCENARIOS
 LOT_2_FILE_COUNT=5
+LOT_2_BRANCH_STRATEGY_DECIDED=YES
+LOT_2_TARGET_BRANCH=docs/tos-phase-4d-time
+LOT_2_TARGET_BASE_SHA=2960a73e1bcefd35dce81969157af213c83fafd2
+LOT_2_EXECUTION_STATUS=NOT_STARTED
 LOT_2_EXECUTION_AUTHORIZED=NO
 LOT_3_AUTHORIZED=NO
-NEXT_GATE=TOS-PHASE-4D-LOT2-TIME-BRANCH-STRATEGY-READONLY-GO
+NEXT_GATE=TOS-PHASE-4D-LOT2-QA-SCENARIOS-INSTANTIATION-GO
 NEXT_GATE_AUTHORIZED=NO
 ```
 
