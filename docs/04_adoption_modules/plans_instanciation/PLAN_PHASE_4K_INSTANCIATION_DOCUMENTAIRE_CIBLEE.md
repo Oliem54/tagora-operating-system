@@ -458,6 +458,51 @@ R2_TIME_MODIFIED=NO
 
 ---
 
+## Addendum — préparation Phase 4D Lot 2 QA
+
+**Date :** 2026-08-11
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-090
+**Document :** [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md)
+
+Cet addendum enregistre la **préparation TOS** du Lot 2 (scénarios QA). Il n'autorise **aucune** écriture dans TAGORA Time.
+
+```text
+LOT_1_STATUS=COMPLETE
+
+LOT_2_PREPARATION_STATUS=COMPLETE
+LOT_2_SCOPE=QA_SCENARIOS
+LOT_2_FILE_COUNT=5
+
+LOT_2_SCENARIO_001=QA-TIME-L2-001
+LOT_2_SCENARIO_002=QA-TIME-L2-002
+LOT_2_SCENARIO_003=QA-TIME-L2-003
+LOT_2_SCENARIO_004=QA-TIME-L2-004
+LOT_2_SCENARIO_005=QA-TIME-L2-005
+
+LOT_2_TARGET_BRANCH_STRATEGY=TO_DECIDE_BEFORE_EXECUTION
+TIME_REPOSITORY_INSPECTION_REQUIRED_BEFORE_LOT2=YES
+
+LOT_2_EXECUTION_STATUS=NOT_STARTED
+LOT_2_EXECUTION_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+
+PHASE_4D=IN_PROGRESS
+TIME_WRITE_AUTHORIZED=NO
+```
+
+Fichiers futurs Time (non créés ici) :
+
+1. `docs/qa/SCENARIO_QA_TIME_PUNCH_IN_OUT.md`
+2. `docs/qa/SCENARIO_QA_TIME_PUNCH_GPS.md`
+3. `docs/qa/SCENARIO_QA_TIME_GPS_REFUSE_ABSENT.md`
+4. `docs/qa/SCENARIO_QA_TIME_FEUILLE_TEMPS_SOUMISE.md`
+5. `docs/qa/SCENARIO_QA_TIME_APPROBATION_DIRECTION.md`
+
+Les addenda Lot 1 existants restent inchangés.
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -476,3 +521,4 @@ R2_TIME_MODIFIED=NO
 **Lot 1** — préparation **COMPLETE** (VALD-087) ; exécution **COMPLETE** (VALD-089) ; Lots 2/3 non autorisés.
 **Recadrage gouvernance Phase 4D** — **COMPLETE** (VALD-088).
 **Clôture Lot 1** — **COMPLETE** (VALD-089) ; branche distante `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.
+**Préparation Lot 2 QA** — **COMPLETE** (VALD-090) ; 5 scénarios préparés ; exécution **NOT_AUTHORIZED** ; stratégie branche Time `TO_DECIDE_BEFORE_EXECUTION`.
