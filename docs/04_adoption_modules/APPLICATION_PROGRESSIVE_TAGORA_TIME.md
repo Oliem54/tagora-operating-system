@@ -986,6 +986,46 @@ LOT_3_AUTHORIZED=NO
 
 La Phase 4D globale reste **IN_PROGRESS**. Seul le Lot 1 documentaire est clôturé.
 
+---
+
+## Phase 4D — Clôture du Lot 2 documentaire (scénarios QA)
+
+**Date :** 2026-08-12
+**Validation :** VALD-092
+**Décision :** `MARTIN_DECISION=OPTION_1`
+**Règle :** « TOS gouverne ; les modules appliquent. »
+
+| Fait | Contenu |
+|---|---|
+| Gouvernant | TOS reste le projet gouvernant |
+| Pilote | TAGORA Time reste le module pilote séparé |
+| Modèle | `TOS_GOVERNED_BOUNDED_EXTERNAL_ACTION` |
+| Reconnaissance | Lot 2 **déjà instancié** sur la branche documentaire Time |
+| Livrables | Exactement **5** scénarios QA documentaires |
+| Branche | `docs/tos-phase-4d-time` (distante) |
+| Tip distant de clôture | `754baaf23f27a3629eb1e1f36567fd3b032cd6cd` |
+| Commit d'instanciation | `ab227dac252d5a89e08f4f58a0262386bf400b8d` |
+| Base `2960a73e` | Supersédée par l'historique distant observé |
+| Écriture Time ce bloc | **NON** — clôture TOS seulement |
+| QA terrain | **NOT_STARTED** |
+| Hors portée respectée | Aucun code, DB, migration, compte réel, secret, staging ou production |
+| Lot suivant | Lot 3 **non autorisé** |
+
+```text
+PHASE_4D=IN_PROGRESS
+PHASE_4D_LOT_1=COMPLETE
+PHASE_4D_LOT_2_DOCUMENT_INSTANTIATION=COMPLETE
+LOT_2_REMOTE_BRANCH=docs/tos-phase-4d-time
+LOT_2_REMOTE_TIP=754baaf23f27a3629eb1e1f36567fd3b032cd6cd
+LOT_2_INSTANTIATION_COMMIT=ab227dac252d5a89e08f4f58a0262386bf400b8d
+EXPECTED_BASE_2960A73E=SUPERSEDED_BY_OBSERVED_REMOTE_HISTORY
+LOT_2_QA_EXECUTION=NOT_STARTED
+LOT_3_AUTHORIZED=NO
+TIME_WRITE_REQUIRED=NO
+```
+
+La Phase 4D globale reste **IN_PROGRESS**. Le Lot 2 documentaire est clôturé ; l'exécution QA terrain et le Lot 3 ne le sont pas.
+
 ## Références
 
 - [Arbitrage Phase 4D-TOS](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)

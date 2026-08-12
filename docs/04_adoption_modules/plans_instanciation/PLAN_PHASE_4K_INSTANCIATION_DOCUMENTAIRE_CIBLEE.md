@@ -541,6 +541,36 @@ La Phase 4D globale reste **IN_PROGRESS**. L'exécution Lot 2 n'est **pas** auto
 
 ---
 
+## Addendum — clôture documentaire Phase 4D Lot 2
+
+**Date :** 2026-08-12
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-092
+**Document :** [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md)
+**Décision :** `MARTIN_DECISION=OPTION_1`
+
+Cet addendum enregistre la **clôture documentaire** du Lot 2 (5 scénarios QA) après revalidation distante. Les fichiers étaient déjà instanciés sur `docs/tos-phase-4d-time`. Aucune écriture Time dans ce bloc.
+
+```text
+ACKNOWLEDGE_LOT2_ALREADY_INSTANTIATED=YES
+LOT_2_DOCUMENT_INSTANTIATION=COMPLETE
+LOT_2_REMOTE_BRANCH=docs/tos-phase-4d-time
+LOT_2_REMOTE_TIP=754baaf23f27a3629eb1e1f36567fd3b032cd6cd
+LOT_2_INSTANTIATION_COMMIT=ab227dac252d5a89e08f4f58a0262386bf400b8d
+EXPECTED_BASE_2960A73E=SUPERSEDED_BY_OBSERVED_REMOTE_HISTORY
+
+LOT_1_STATUS=COMPLETE
+LOT_2_FILE_COUNT=5
+LOT_2_QA_EXECUTION=NOT_STARTED
+LOT_3_AUTHORIZED=NO
+TIME_WRITE_REQUIRED=NO
+PHASE_4D=IN_PROGRESS
+```
+
+La Phase 4D globale reste **IN_PROGRESS**. L'exécution QA terrain Lot 2 et le Lot 3 restent **non autorisés**.
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -561,3 +591,4 @@ La Phase 4D globale reste **IN_PROGRESS**. L'exécution Lot 2 n'est **pas** auto
 **Clôture Lot 1** — **COMPLETE** (VALD-089) ; branche distante `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.
 **Préparation Lot 2 QA** — **COMPLETE** (VALD-090) ; 5 scénarios préparés ; exécution **NOT_AUTHORIZED**.
 **Décision stratégie Git Lot 2** — **COMPLETE** (VALD-091) ; Option A = réutiliser `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.
+**Clôture Lot 2 documentaire** — **COMPLETE** (VALD-092) ; déjà instancié ; tip distant `docs/tos-phase-4d-time` @ `754baaf` ; base `2960a73e` supersédée ; QA terrain **NOT_STARTED** ; Lot 3 non autorisé ; Phase 4D globale **IN_PROGRESS**.

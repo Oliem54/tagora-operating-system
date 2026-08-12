@@ -120,6 +120,7 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-089 | 2026-08-11 | Clôture documentaire Lot 1 TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Lot 1 clôturé ; 4 documents fondation/QA ; revue contenu PASS ; branche `docs/tos-phase-4d-time` protégée ; checkpoint `f2bce3e` ; clôture `2960a73e` ; checkout Time libéré sur main ; Lots 2/3 non autorisés ; aucun code/DB/production |
 | VALD-090 | 2026-08-11 | Préparation Phase 4D Lot 2 — scénarios QA TAGORA Time | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](../04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Périmètre Lot 2 fixé à 5 scénarios QA ; comptes/données Lot 1 comme dépendances ; aucune création compte réel ; aucun Playwright ; stratégie branche Time à décider avant exécution ; Lot 2 non exécuté ; Lot 3 non autorisé |
 | VALD-091 | 2026-08-11 | Décision stratégie Git Phase 4D Lot 2 TAGORA Time | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](../04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Option A validée ; réutilisation de `docs/tos-phase-4d-time` ; base `2960a73e` ; dépendances Lot 1 présentes ; aucune collision Lot 2 ; aucun code divergent lors de l'inspection ; pas de nouvelle branche ; pas d'écriture main ; pas de merge/cherry-pick ; exécution Lot 2 toujours non autorisée ; revalidation Git obligatoire avant future instanciation |
+| VALD-092 | 2026-08-12 | Clôture documentaire Lot 2 TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](../04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md), [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md) | OPTION_1 ; Lot 2 déjà instancié ; 5 scénarios QA présents ; tip `754baaf` ; base `2960a73e` supersédée ; aucune réécriture Time ; QA terrain NOT_STARTED ; Lot 3 non autorisé ; Phase 4D IN_PROGRESS |
 
 ---
 
@@ -131,6 +132,7 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 4. VALD-080 autorise uniquement la baseline documentaire Nexus — jamais la création de repository, le code, la DB, le staging ou la production.
 5. VALD-081 à 084 ferment Phase 4S ; elles n'autorisent aucune écriture Time ni création de branche documentaire sans GO séparé.
 6. **Cohérence VALD-053 / Phase 4S :** VALD-053 reste une validation **historique** (branche cible prévue au moment de Phase 4L, statut **Validé** inchangé). Depuis Phase 4S : VALD-083 confirme `main` comme baseline source propre ; VALD-084 valide une future branche documentaire dédiée depuis `main`. Donc `VALD_053_OPERATIONAL_STATUS=SUPERSEDED_BY_VALD_084` pour l'exécution future uniquement.
+7. VALD-092 clôture uniquement l'instanciation **documentaire** Lot 2 ; elle n'autorise ni exécution QA terrain, ni Playwright, ni Lot 3, ni écriture Time supplémentaire.
 
 ## Statut
 
@@ -142,6 +144,7 @@ PHASE_4D_GOVERNANCE_MODEL=VALIDATED_BY_VALD_088
 PHASE_4D_LOT_1_CLOSURE=VALIDATED_BY_VALD_089
 PHASE_4D_LOT_2_PREPARATION=VALIDATED_BY_VALD_090
 PHASE_4D_LOT_2_BRANCH_STRATEGY=VALIDATED_BY_VALD_091
+PHASE_4D_LOT_2_DOCUMENT_CLOSURE=VALIDATED_BY_VALD_092
 DOCUMENTATION_BRANCH=docs/tos-phase-4d-time
 REMOTE_BRANCH_CREATED=YES
 TIME_DOCUMENTATION_STARTED=YES
@@ -157,15 +160,18 @@ LOT_2_BRANCH_INSPECTION_STATUS=PASS
 LOT_2_TARGET_BRANCH_STRATEGY=OPTION_A_REUSE_EXISTING_PHASE4D_DOCUMENTATION_BRANCH
 LOT_2_TARGET_BRANCH=docs/tos-phase-4d-time
 LOT_2_TARGET_BASE_SHA=2960a73e1bcefd35dce81969157af213c83fafd2
+EXPECTED_BASE_2960A73E=SUPERSEDED_BY_OBSERVED_REMOTE_HISTORY
 LOT_2_BRANCH_STRATEGY_DECIDED=YES
+LOT_2_DOCUMENT_INSTANTIATION=COMPLETE
+LOT_2_REMOTE_TIP=754baaf23f27a3629eb1e1f36567fd3b032cd6cd
+LOT_2_INSTANTIATION_COMMIT=ab227dac252d5a89e08f4f58a0262386bf400b8d
+ACKNOWLEDGE_LOT2_ALREADY_INSTANTIATED=YES
 NEW_BRANCH_REQUIRED=NO
 DIRECT_MAIN_WRITE=NO
-PRE_EXECUTION_REVALIDATION_REQUIRED=YES
-LOT_2_EXECUTION_STATUS=NOT_STARTED
-LOT_2_EXECUTION_AUTHORIZED=NO
-LOT_2_AUTHORIZED=NO
+TIME_WRITE_REQUIRED=NO
+LOT_2_QA_EXECUTION=NOT_STARTED
 LOT_3_AUTHORIZED=NO
 PHASE_4D_STATUS=IN_PROGRESS
 ```
 
-**Enrichi — Phase 4D Lot 2 stratégie Git décidée** — VALD-091 **Validé** (Option A ; `docs/tos-phase-4d-time` @ `2960a73e` ; exécution toujours non autorisée). VALD-090 **Validé** (préparation 5 scénarios). VALD-089 **Validé** (clôture Lot 1). VALD-088 **Validé** (gouvernance). VALD-087 **Validé** (périmètre Lot 1). VALD-086 **Validé** (branche locale). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Phase 4D Lot 2 clôturé documentairement** — VALD-092 **Validé** (OPTION_1 ; déjà instancié ; `docs/tos-phase-4d-time` @ `754baaf` ; base `2960a73e` supersédée ; QA terrain NOT_STARTED ; Lot 3 non autorisé). VALD-091 **Validé** (stratégie Git Option A). VALD-090 **Validé** (préparation 5 scénarios). VALD-089 **Validé** (clôture Lot 1). VALD-088 **Validé** (gouvernance). VALD-087 **Validé** (périmètre Lot 1). VALD-086 **Validé** (branche locale). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
