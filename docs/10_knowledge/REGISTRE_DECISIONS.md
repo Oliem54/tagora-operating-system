@@ -44,6 +44,7 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 | DEC-012 | 2026-07-05 | Monitoring | Les modules TAGORA critiques doivent prévoir une observabilité minimale, des logs sans secret, un suivi post-release et une traçabilité des incidents | Acté | Écosystème | Cadre TMF obligatoire pour modules critiques | [TMF](../01_piliers/10_TMF_TAGORA_MONITORING_FRAMEWORK.md), [README_MONITORING_FRAMEWORK.md](../12_monitoring/README_MONITORING_FRAMEWORK.md) | Phase 3H |
 | DEC-013 | 2026-07-05 | Structure TOS | Les 10 piliers TOS forment la structure officielle de gouvernance méthodologique TAGORA, mais leur adoption doit rester progressive, module par module, sans fusionner les applications métier | Acté | Écosystème | Carte et matrice piliers ; pas de big-bang | [CARTE_DES_10_PILIERS_TOS.md](../00_constitution/CARTE_DES_10_PILIERS_TOS.md), [MATRICE_INTERDEPENDANCE_PILIERS.md](../00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md) | Phase 3I |
 | DEC-014 | 2026-08-10 | Positionnement Nexus / Cloud / Platform / TCP / Flow | Option A renforcée validée : TOS = constitution ; Cloud = marque/offre SaaS ; Nexus = portail « Mon espace TAGORA » ; TCP = capacités faisant autorité ; Flow = orchestration ; Platform = terme déprécié (ancien repo intact) ; baseline documentaire Nexus autorisée ; repository interdit | **Validé** | Écosystème | Baseline doc only ; pas de `tagora-cloud-portal` | [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md), [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md) | Track Nexus — n'affecte pas Phase 4S Time ; VALD-075 à 080 |
+| DEC-015 | 2026-08-12 | Domaines canoniques TAGORA | `tagora.ca` = site public ; `app.tagora.ca` = Nexus uniquement ; `time.tagora.ca`, `mail.tagora.ca`, `stock.tagora.ca`, `pulse.tagora.ca` = modules ; `admin.tagora.ca` réservé futur ; staging `{service}.staging.tagora.ca` ; login `/login` | **Validé** | Écosystème | Convention URL commune sans DNS ni déploiement | [ADR-0004](../05_adr/ADR-0004-CONVENTION-DOMAINES-CANONIQUES-TAGORA.md) | VALD-093 ; implémentation par chaque projet uniquement après transfert Martin et GO propre |
 
 ---
 
@@ -57,4 +58,4 @@ Décisions méthodologiques et de gouvernance TOS. Les décisions purement inter
 
 ## Statut
 
-**Enrichi — Track Nexus** — DEC-014 **Validé** (ADR-0003 Option A renforcée, Martin ST-Gelais — Direction, 2026-08-10). DEC-001 à 013 inchangées.
+**Enrichi — Convention domaines canoniques TAGORA** — DEC-015 **Validé** (ADR-0004, Martin ST-Gelais — Direction, 2026-08-12). DEC-014 reste inchangée.
