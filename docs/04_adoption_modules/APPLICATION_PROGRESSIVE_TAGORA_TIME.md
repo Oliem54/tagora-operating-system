@@ -1026,6 +1026,38 @@ TIME_WRITE_REQUIRED=NO
 
 La Phase 4D globale reste **IN_PROGRESS**. Le Lot 2 documentaire est clôturé ; l'exécution QA terrain et le Lot 3 ne le sont pas.
 
+---
+
+## Phase 4D — Préparation du gate d'exécution QA Lot 2
+
+**Date :** 2026-08-13
+**Validation :** VALD-094
+**Décision :** `NEXT_LOGICAL_PATH=OPTION_A` — `OPTION_A_SCOPE=TOS_PREPARATION_ONLY`
+**Règle :** « TOS gouverne ; les modules appliquent. »
+
+| Fait | Contenu |
+|---|---|
+| Gouvernant | TOS reste le projet gouvernant |
+| Gate préparé | `TOS-PHASE-4D-LOT2-QA-EXECUTION-GO` |
+| Mode | Préflight obligatoire, puis exécution conditionnelle des 5 scénarios |
+| Écriture Time ce bloc | **NON** |
+| QA terrain | **NOT_STARTED** |
+| Lot 3 | **non autorisé** |
+
+```text
+PHASE_4D=IN_PROGRESS
+LOT_2_DOCUMENT_INSTANTIATION=COMPLETE
+LOT_2_QA_GATE_PREPARATION=COMPLETE
+LOT_2_QA_EXECUTION=NOT_STARTED
+LOT_2_QA_EXECUTION_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+TIME_WRITE_REQUIRED=NO
+NEXT_GATE=TOS-PHASE-4D-LOT2-QA-EXECUTION-GO
+NEXT_GATE_AUTHORIZED=NO
+```
+
+La Phase 4D globale reste **IN_PROGRESS**. Le gate est préparé dans TOS ; il n'est pas autorisé à s'exécuter.
+
 ## Références
 
 - [Arbitrage Phase 4D-TOS](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)

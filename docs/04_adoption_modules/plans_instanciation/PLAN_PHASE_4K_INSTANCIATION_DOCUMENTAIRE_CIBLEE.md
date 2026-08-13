@@ -571,6 +571,32 @@ La Phase 4D globale reste **IN_PROGRESS**. L'exécution QA terrain Lot 2 et le L
 
 ---
 
+## Addendum — préparation gate d'exécution QA Phase 4D Lot 2
+
+**Date :** 2026-08-13
+**Décideur :** Martin ST-Gelais — Direction
+**Validation :** VALD-094
+**Document :** [PREPARATION_PHASE_4D_LOT2_QA_EXECUTION_GATE_TIME.md](PREPARATION_PHASE_4D_LOT2_QA_EXECUTION_GATE_TIME.md)
+**Décision :** `NEXT_LOGICAL_PATH=OPTION_A` — `OPTION_A_SCOPE=TOS_PREPARATION_ONLY`
+
+Préparation TOS du futur gate unique `TOS-PHASE-4D-LOT2-QA-EXECUTION-GO` (préflight puis exécution conditionnelle). Aucune écriture Time. Aucune exécution QA.
+
+```text
+LOT_2_DOCUMENT_INSTANTIATION=COMPLETE
+LOT_2_QA_GATE_PREPARATION=COMPLETE
+LOT_2_QA_EXECUTION=NOT_STARTED
+LOT_2_QA_EXECUTION_AUTHORIZED=NO
+LOT_3_AUTHORIZED=NO
+TIME_WRITE_AUTHORIZED=NO
+NEXT_GATE=TOS-PHASE-4D-LOT2-QA-EXECUTION-GO
+NEXT_GATE_AUTHORIZED=NO
+PHASE_4D=IN_PROGRESS
+```
+
+Le PASS de cette préparation n'autorise pas Lot 3.
+
+---
+
 ## Références
 
 - [Validation Phase 4J](../paquets_pilotes/VALIDATION_PHASE_4J_PASSAGE_INSTANCIATION_DOCUMENTAIRE.md)
@@ -592,3 +618,4 @@ La Phase 4D globale reste **IN_PROGRESS**. L'exécution QA terrain Lot 2 et le L
 **Préparation Lot 2 QA** — **COMPLETE** (VALD-090) ; 5 scénarios préparés ; exécution **NOT_AUTHORIZED**.
 **Décision stratégie Git Lot 2** — **COMPLETE** (VALD-091) ; Option A = réutiliser `docs/tos-phase-4d-time` @ `2960a73e` ; Phase 4D globale **IN_PROGRESS**.
 **Clôture Lot 2 documentaire** — **COMPLETE** (VALD-092) ; déjà instancié ; tip distant `docs/tos-phase-4d-time` @ `754baaf` ; base `2960a73e` supersédée ; QA terrain **NOT_STARTED** ; Lot 3 non autorisé ; Phase 4D globale **IN_PROGRESS**.
+**Préparation gate exécution QA Lot 2** — **COMPLETE** (VALD-094) ; TOS seulement ; exécution **NOT_STARTED** ; Lot 3 non autorisé ; Phase 4D globale **IN_PROGRESS**.
