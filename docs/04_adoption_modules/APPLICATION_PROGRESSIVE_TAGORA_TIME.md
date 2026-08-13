@@ -1058,6 +1058,35 @@ NEXT_GATE_AUTHORIZED=NO
 
 La Phase 4D globale reste **IN_PROGRESS**. Le gate est préparé dans TOS ; il n'est pas autorisé à s'exécuter.
 
+---
+
+## Piste distincte — Track B (entrée publique → Website)
+
+**Date :** 2026-08-13
+**Validation :** VALD-095
+**Décision :** DEC-016
+
+Cette section **n'appartient pas** à Phase 4D QA. Elle n'autorise aucun cleanup Time.
+
+| Champ | Valeur |
+|---|---|
+| Preuve | Audit READ-ONLY Time `main` @ `68561a3` |
+| Propriétaire public | TAGORA Website |
+| Propriétaire application | TAGORA Time |
+| Gate préparé | `TOS-WEBSITE-PUBLIC-REBUILD-GO` — **non autorisé** |
+| Cleanup Time | **NO** |
+
+Documents : [TIME_AUDIT_READONLY_ENTREE_PUBLIQUE.md](audits_time/TIME_AUDIT_READONLY_ENTREE_PUBLIQUE.md), [PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md](plans_instanciation/PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md)
+
+Les états Phase 4D ci-dessus restent inchangés :
+
+```text
+LOT_2_QA_GATE_PREPARATION=COMPLETE
+LOT_2_QA_EXECUTION=NOT_STARTED
+LOT_3_AUTHORIZED=NO
+PHASE_4D=IN_PROGRESS
+```
+
 ## Références
 
 - [Arbitrage Phase 4D-TOS](validations_time/TIME_ARBITRAGE_PHASE_4D_DECISIONS_HUMAINES.md)

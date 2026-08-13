@@ -122,6 +122,7 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 | VALD-091 | 2026-08-11 | Décision stratégie Git Phase 4D Lot 2 TAGORA Time | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](../04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md) | Option A validée ; réutilisation de `docs/tos-phase-4d-time` ; base `2960a73e` ; dépendances Lot 1 présentes ; aucune collision Lot 2 ; aucun code divergent lors de l'inspection ; pas de nouvelle branche ; pas d'écriture main ; pas de merge/cherry-pick ; exécution Lot 2 toujours non autorisée ; revalidation Git obligatoire avant future instanciation |
 | VALD-092 | 2026-08-12 | Clôture documentaire Lot 2 TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md](../04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4D_LOT2_QA_SCENARIOS_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md), [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md) | OPTION_1 ; Lot 2 déjà instancié ; 5 scénarios QA présents ; tip `754baaf` ; base `2960a73e` supersédée ; aucune réécriture Time ; QA terrain NOT_STARTED ; Lot 3 non autorisé ; Phase 4D IN_PROGRESS |
 | VALD-094 | 2026-08-13 | Préparation gate d'exécution QA Lot 2 TAGORA Time Phase 4D | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [PREPARATION_PHASE_4D_LOT2_QA_EXECUTION_GATE_TIME.md](../04_adoption_modules/plans_instanciation/PREPARATION_PHASE_4D_LOT2_QA_EXECUTION_GATE_TIME.md), [PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md](../04_adoption_modules/plans_instanciation/PLAN_PHASE_4K_INSTANCIATION_DOCUMENTAIRE_CIBLEE.md), [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md) | OPTION_A TOS_PREPARATION_ONLY ; gate unique préflight + exécution conditionnelle ; 5 scénarios L2-001 à L2-005 ; exécution NOT_STARTED / non autorisée ; Lot 3 non autorisé ; Time non ouvert ; VALD-093 = domaines canoniques (autre piste) |
+| VALD-095 | 2026-08-13 | Enregistrement audit READ-ONLY entrée publique Time + préparation Track B Website | Humaine / Gouvernance | Martin ST-Gelais — Direction | Validé | [TIME_AUDIT_READONLY_ENTREE_PUBLIQUE.md](../04_adoption_modules/audits_time/TIME_AUDIT_READONLY_ENTREE_PUBLIQUE.md), [PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md](../04_adoption_modules/plans_instanciation/PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md) | Audit Time `main` @ `68561a3` enregistré ; REBUILD public → Website ; Auth/métier REMAIN Time ; cleanup Time NON autorisé ; gate `TOS-WEBSITE-PUBLIC-REBUILD-GO` préparé non exécuté ; Track A VALD-094 inchangée ; QA NOT_STARTED ; Lot 3 NO |
 
 ---
 
@@ -135,6 +136,7 @@ Validations liées aux ADR, scénarios QA, checklists design, fiches de validati
 6. **Cohérence VALD-053 / Phase 4S :** VALD-053 reste une validation **historique** (branche cible prévue au moment de Phase 4L, statut **Validé** inchangé). Depuis Phase 4S : VALD-083 confirme `main` comme baseline source propre ; VALD-084 valide une future branche documentaire dédiée depuis `main`. Donc `VALD_053_OPERATIONAL_STATUS=SUPERSEDED_BY_VALD_084` pour l'exécution future uniquement.
 7. VALD-092 clôture uniquement l'instanciation **documentaire** Lot 2 ; elle n'autorise ni exécution QA terrain, ni Playwright, ni Lot 3, ni écriture Time supplémentaire.
 8. VALD-094 prépare uniquement le **gate TOS** d'exécution QA Lot 2 ; elle n'autorise ni ouverture Time, ni QA terrain, ni Lot 3. VALD-093 (domaines canoniques) reste une piste distincte.
+9. VALD-095 enregistre l'audit READ-ONLY d'entrée publique Time et prépare Track B (Website rebuild). Elle n'autorise ni écriture Website/Time/Nexus, ni cleanup Time, ni DNS, ni production, et **ne modifie pas** Track A / VALD-094.
 
 ## Statut
 
@@ -148,6 +150,7 @@ PHASE_4D_LOT_2_PREPARATION=VALIDATED_BY_VALD_090
 PHASE_4D_LOT_2_BRANCH_STRATEGY=VALIDATED_BY_VALD_091
 PHASE_4D_LOT_2_DOCUMENT_CLOSURE=VALIDATED_BY_VALD_092
 PHASE_4D_LOT_2_QA_GATE_PREPARATION=VALIDATED_BY_VALD_094
+TRACK_B_PUBLIC_ENTRY_TO_WEBSITE=VALIDATED_BY_VALD_095
 DOCUMENTATION_BRANCH=docs/tos-phase-4d-time
 REMOTE_BRANCH_CREATED=YES
 TIME_DOCUMENTATION_STARTED=YES
@@ -177,8 +180,13 @@ LOT_2_QA_EXECUTION=NOT_STARTED
 LOT_2_QA_EXECUTION_AUTHORIZED=NO
 LOT_3_AUTHORIZED=NO
 PHASE_4D_STATUS=IN_PROGRESS
-NEXT_GATE=TOS-PHASE-4D-LOT2-QA-EXECUTION-GO
-NEXT_GATE_AUTHORIZED=NO
+TRACK_A_NEXT_GATE=TOS-PHASE-4D-LOT2-QA-EXECUTION-GO
+TRACK_A_NEXT_GATE_AUTHORIZED=NO
+TRACK_B_PREPARATION=COMPLETE
+TRACK_B_EXECUTION_AUTHORIZED=NO
+TRACK_B_NEXT_GATE=TOS-WEBSITE-PUBLIC-REBUILD-GO
+TRACK_B_NEXT_GATE_AUTHORIZED=NO
+TIME_PUBLIC_CLEANUP_AUTHORIZED=NO
 ```
 
-**Enrichi — Phase 4D Lot 2 gate QA préparé** — VALD-094 **Validé** (préparation TOS seulement ; exécution NOT_STARTED). VALD-092 **Validé** (clôture documentaire Lot 2 ; `754baaf`). VALD-091 **Validé** (stratégie Git). VALD-090 **Validé** (préparation 5 scénarios). VALD-089 **Validé** (clôture Lot 1). VALD-088 **Validé** (gouvernance). VALD-087 **Validé** (périmètre Lot 1). VALD-086 **Validé** (branche locale). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. VALD-093 **Validé** hors table historique Phase 4D (domaines canoniques). Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
+**Enrichi — Track B entrée publique Time → Website** — VALD-095 **Validé** (audit READ-ONLY enregistré ; rebuild Website préparé, non exécuté ; cleanup Time NO). VALD-094 **Validé** (gate QA Lot 2 préparé ; exécution NOT_STARTED). VALD-092 **Validé** (clôture documentaire Lot 2). VALD-091 **Validé** (stratégie Git). VALD-090 **Validé** (préparation 5 scénarios). VALD-089 **Validé** (clôture Lot 1). VALD-088 **Validé** (gouvernance). VALD-087 **Validé** (périmètre Lot 1). VALD-086 **Validé** (branche locale). VALD-085 **Validé** (nom). VALD-053 historique **Validé** ; usage opérationnel supersédé par VALD-084. VALD-093 **Validé** hors table historique Phase 4D (domaines canoniques). Phase 4S-TOS : VALD-081 à 084 **Validé** (Martin ST-Gelais — Direction, 2026-08-10). Track Nexus : VALD-075 à 080 **Validé** (2026-08-10). Phase 4R-TOS : VALD-069 à 074 **Validé** (2026-07-05). VALD-063 à 068 **Validé** (2026-07-05). VALD-057 à 062 **Validé** (2026-07-05). VALD-050 à 056 **Validé** (2026-07-05). VALD-046 à 049 **Validé** (2026-07-05). VALD-029 à 045 **Validé** (2026-07-05).
