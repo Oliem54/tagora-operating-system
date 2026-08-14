@@ -49,7 +49,7 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 |---|---|
 | **Logo** | Usage officiel uniquement — règles d'espace, taille, fond (à valider) |
 | **Couleurs** | Tokens TDS — pas de palette locale ad hoc ([PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md)) |
-| **Typographie** | Échelle TAGORA — pas de polices externes non approuvées ([TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md)) |
+| **Typographie** | Duo officiel Outfit (body/UI) + Syne (display/marque) — [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md), [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md) |
 | **Icônes** | Style cohérent — set iconographique commun (à valider) |
 | **Statuts** | Couleurs et libellés sémantiques alignés écosystème |
 | **Exceptions** | Documentées via gouvernance TOS — temporaires |
@@ -68,11 +68,12 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 - Logo officiel et fichiers source
 - Charte logo (marges, interdictions, versions)
-- Palette hex et tokens design
-- Polices licenciées
+- Palette hex et tokens design (contrat couleurs distinct du contrat typo)
 - Bibliothèque icônes
 - Guidelines marketing vs produit (si distinct)
 - Co-branding partenaires
+
+> **Note 2026-08-14 :** la typographie commune Outfit + Syne est **validée** (DEC-017 / ADR-0005 / VALD-096). Les polices ne sont plus « à valider » ; seule leur application produit reste soumise à transfert Martin.
 
 ---
 
@@ -84,4 +85,4 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 ## Statut
 
-**Enrichi — Phase 3B** — Cadre image de marque défini. Assets et valeurs finales : à valider.
+**Enrichi — Typographie transversale validée (2026-08-14)** — Cadre image de marque défini. Assets logo et valeurs couleurs finales : à valider séparément.
