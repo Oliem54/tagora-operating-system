@@ -105,8 +105,9 @@ Le design Time est **documenté dans TOS** avant toute refonte UI importante dan
 - Toute évolution design majeure alignée avec cette direction.
 - Valider via gouvernance TOS avant déploiement écosystème.
 - Documenter écarts temporaires par module.
-- Référencer palette, typographie et composants officiels une fois validés.
+- Référencer la typographie officielle Outfit + Syne ([TYPOGRAPHIE.md](TYPOGRAPHIE.md), [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md)).
+- Référencer palette hex et composants officiels une fois leur contrat distinct validé.
 
 ## Statut
 
-**Enrichi — Phase 3B** — Direction design premium structurée. Valeurs visuelles finales à valider.
+**Enrichi — Typographie transversale validée (2026-08-14)** — Direction design premium structurée. Typo Outfit + Syne actée. Palette hex et composants : à valider séparément.

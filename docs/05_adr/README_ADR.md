@@ -46,7 +46,7 @@ Créer une ADR si :
 - Elle pose un **précédent** pour les futurs projets.
 - Elle concerne la **sécurité**, l'**auth**, les **API communes** ou la **nature de TOS**.
 
-Exemples existants : ADR-0001 (nature de TOS), ADR-0002 (documentation avant code).
+Exemples existants : ADR-0001 (nature de TOS), ADR-0002 (documentation avant code), ADR-0005 (typographie transversale Outfit + Syne).
 
 ---
 

@@ -39,6 +39,7 @@ Chaque catégorie fera l'objet d'une **spécification détaillée** avant implé
 4. **TOS documente ; ailleurs on implémente** — Pas de React, CSS ou Tailwind dans ce dépôt.
 5. **Accessibilité by default** — Chaque spec composant inclura critères a11y (voir [ACCESSIBILITE.md](ACCESSIBILITE.md)).
 6. **Validation avant code** — Spec TDS validée → puis bibliothèque composants (TCP ou package dédié — à décider).
+7. **Typographie composants** — navigation, boutons, champs, tableaux, badges, alertes et modales en Outfit ; BrandMark et titres display en Syne (voir [TYPOGRAPHIE.md](TYPOGRAPHIE.md), [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md)).
 
 ---
 
@@ -59,4 +60,4 @@ Chaque catégorie fera l'objet d'une **spécification détaillée** avant implé
 
 ## Statut
 
-**Enrichi — Phase 3B** — Catégories définies. Specs et code : ultérieur.
+**Enrichi — Typographie transversale validée (2026-08-14)** — Catégories définies. Specs et code : ultérieur. Typo composants alignée sur ADR-0005.

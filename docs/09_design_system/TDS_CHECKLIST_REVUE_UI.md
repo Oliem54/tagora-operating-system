@@ -47,6 +47,7 @@ Les échecs doivent être **notés** (ticket, commentaire PR, note TKS) — pas 
 
 - Contraste texte/fond acceptable ([ACCESSIBILITE.md](ACCESSIBILITE.md))
 - Texte suffisamment grand pour données importantes ([TYPOGRAPHIE.md](TYPOGRAPHIE.md))
+- Body/UI en Outfit ; BrandMark et titres display en Syne ; poids 400/500/600/700 ([ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md))
 - Pas de surcharge — détails secondaires en vues dédiées ([DESIGN_PREMIUM_2027.md](DESIGN_PREMIUM_2027.md))
 
 ---
