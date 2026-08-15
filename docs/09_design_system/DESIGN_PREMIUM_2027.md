@@ -90,8 +90,9 @@ Le design Time est **documenté dans TOS** avant toute refonte UI importante dan
 
 ## Ce qui reste à valider plus tard
 
-- Valeurs exactes palette (hex, tokens) — voir [PALETTE_COULEURS.md](PALETTE_COULEURS.md)
-- Polices officielles — voir [TYPOGRAPHIE.md](TYPOGRAPHIE.md)
+- Mapping sémantique des huit couleurs officielles (tokens) — voir [PALETTE_COULEURS.md](PALETTE_COULEURS.md)
+- Rôle body/display de Avenir Next et JHC Notion — voir [TYPOGRAPHIE.md](TYPOGRAPHIE.md)
+- Assets logo/favicon officiels et fichiers web licenciés
 - Bibliothèque de composants implémentée (hors TOS)
 - Espacement, elevation, motion, animations
 - Mockups de référence et design tokens techniques
@@ -105,9 +106,10 @@ Le design Time est **documenté dans TOS** avant toute refonte UI importante dan
 - Toute évolution design majeure alignée avec cette direction.
 - Valider via gouvernance TOS avant déploiement écosystème.
 - Documenter écarts temporaires par module.
-- Référencer la typographie officielle Outfit + Syne ([TYPOGRAPHIE.md](TYPOGRAPHIE.md), [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md)).
-- Référencer palette hex et composants officiels une fois leur contrat distinct validé.
+- Référencer la charte de marque centrale finale ([CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAGORA.md), [ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)).
+- Référencer la palette exclusive, les dégradés officiels et les familles Avenir Next + JHC Notion. Outfit + Syne : LEGACY.
+- Ne pas appliquer le mapping body/display tant que `TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION`.
 
 ## Statut
 
-**Enrichi — Typographie transversale validée (2026-08-14)** — Direction design premium structurée. Typo Outfit + Syne actée. Palette hex et composants : à valider séparément.
+**Enrichi — Charte centrale finale (2026-08-15)** — Direction design premium structurée. Identité centrale actée (DEC-018 / ADR-0006). Mapping sémantique couleurs, rôles typo et composants : à confirmer. Application produit : non autorisée.

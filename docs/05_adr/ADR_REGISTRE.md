@@ -28,7 +28,8 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0002 | Documentation avant code | Accepté initialement — à valider humainement | 2026-07-02 | Écosystème TAGORA | Tout développement important est précédé d'une documentation minimale (besoin, périmètre, métier, UX, QA, risques, validation) | Time en premier ; tous modules ensuite |
 | ADR-0003 | Positionnement TAGORA Nexus, Cloud, Platform, TCP et Flow | **Validé** — Martin ST-Gelais — Direction | 2026-08-10 | Écosystème TAGORA | Option A renforcée : TOS = constitution ; Cloud = marque/offre SaaS ; Nexus = portail « Mon espace TAGORA » ; TCP = capacités faisant autorité ; Flow = orchestration ; Platform = terme déprécié (ancien repo intact) | Baseline documentaire Nexus autorisée ; `tagora-cloud-portal` toujours interdit |
 | ADR-0004 | Convention des domaines canoniques TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-12 | Écosystème TAGORA | `tagora.ca` public ; `app.tagora.ca` Nexus ; sous-domaines stables par module ; staging `{service}.staging.tagora.ca` ; login `/login` | Convention normative seulement ; aucun DNS, déploiement ou autre repo autorisé |
-| ADR-0005 | Contrat typographique transversal Outfit + Syne | **Validé** — Martin ST-Gelais — Direction | 2026-08-14 | Écosystème TAGORA | Body = Outfit ; Display = Syne ; fallback Segoe UI ; poids 400/500/600/700 ; preuve Website `6415cdd` | Ferme `WAITING_FOR_WEBSITE_EVIDENCE` ; aucun produit modifié par TOS |
+| ADR-0005 | Contrat typographique transversal Outfit + Syne | **Remplacé par ADR-0006** — historique Validé 2026-08-14 | 2026-08-14 | Écosystème TAGORA | Body = Outfit ; Display = Syne ; preuve Website `6415cdd` — **LEGACY** pour usage actif | `WAITING_FOR_WEBSITE_EVIDENCE` reste CLOSED ; supersédé par ADR-0006 |
+| ADR-0006 | Charte de marque centrale finale TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-15 | Écosystème TAGORA | Guide PDF 2026-08-14 = source finale ; 8 couleurs exclusives ; 4 gradients ; Avenir Next + JHC Notion ; mapping rôles en attente | Aucun produit modifié ; assets sources et fonts non reçus ; transfert Martin requis |
 
 ### Liens
 
@@ -36,16 +37,17 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0002](ADR-0002-DOCUMENTATION_AVANT_CODE.md)
 - [ADR-0003](ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md)
 - [ADR-0004](ADR-0004-CONVENTION-DOMAINES-CANONIQUES-TAGORA.md)
-- [ADR-0005](ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md)
+- [ADR-0005](ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md) — remplacé par ADR-0006
+- [ADR-0006](ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (TCP entitlements, billing, auth commune, contrat couleurs hex, repos Nexus/TCP, etc.) pourront être ajoutées après transfert Martin des paquets concernés.
+Les ADR futures (TCP entitlements, billing, auth commune, mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, etc.) pourront être ajoutées après transfert Martin des paquets concernés.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0005 Validé (contrat typographique Outfit + Syne, 2026-08-14)**
+**Enrichi — ADR-0006 Validé (charte de marque centrale finale, 2026-08-15)** — ADR-0005 **Remplacé** (Outfit + Syne LEGACY ; `WAITING_FOR_WEBSITE_EVIDENCE` historiquement CLOSED).

@@ -2,12 +2,26 @@
 
 ## Statut
 
-**Validé — Martin ST-Gelais — Direction — 2026-08-14**
+**Remplacé par ADR-0006 — SUPERSEDED_BY_ADR_0006**
 
-Validation : **VALD-096**  
-Décision : **DEC-017**
+Validé historiquement le **2026-08-14** (Martin ST-Gelais — Direction).  
+Validation historique : **VALD-096**  
+Décision historique : **DEC-017**
 
-Cette ADR ferme uniquement le **contrat typographique** transversal TAGORA.
+```text
+ADR-0005_STATUS=SUPERSEDED_BY_ADR_0006
+DEC-017_STATUS=REPLACED_BY_FINAL_BRAND_GUIDE
+VALD-096_STATUS=HISTORICAL_VALIDATION_SUPERSEDED_FOR_ACTIVE_BRAND_USE
+OUTFIT_SYNE_STATUS=LEGACY
+WAITING_FOR_WEBSITE_EVIDENCE=CLOSED
+```
+
+Cette ADR n'est **pas** supprimée. Elle documente le contrat Outfit + Syne réellement clos le 14 août 2026.  
+Pour l'**usage actif**, la charte centrale finale du 14 août 2026 (ADR-0006 / DEC-018 / VALD-097) la remplace.
+
+Voir [ADR-0006](ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md).
+
+Cette ADR fermait uniquement le **contrat typographique** transversal TAGORA.
 
 Elle **n'autorise aucune application** dans Website, Nexus, Time, Mail IA, Stock Premium ou Pulse AI.  
 Elle **ne modifie pas** le contrat de couleurs.  
@@ -118,6 +132,8 @@ Cette ADR **ne décide pas** :
 1. `WAITING_FOR_WEBSITE_EVIDENCE` est **fermé**.
 2. Les projets reçoivent un paquet de transfert Martin avant toute application locale.
 3. Outfit + Syne deviennent la référence commune TAGORA.
+
+> **Note d'usage actif (2026-08-15) :** la conséquence 3 est **SUPERSEDED** par ADR-0006. Outfit + Syne = LEGACY. `WAITING_FOR_WEBSITE_EVIDENCE` reste historiquement CLOSED.
 4. Toute exception typographique future nécessite une décision TOS/Martin distincte.
 
 ---
@@ -128,6 +144,7 @@ Inspection Website READ-ONLY PASS — HEAD `6415cdd0eea9e416d0ec8f4b47ca56d41865
 
 Voir aussi :
 
+- Usage actif : [ADR-0006](ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)
 - [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md)
 - [CONTRAT_TYPOGRAPHIQUE_TRANSVERSAL.md](../09_design_system/CONTRAT_TYPOGRAPHIQUE_TRANSVERSAL.md)
 - [PAQUET_TRANSFERT_TYPOGRAPHIE_TRANSVERSALE.md](../04_adoption_modules/paquets_transfert/PAQUET_TRANSFERT_TYPOGRAPHIE_TRANSVERSALE.md)

@@ -46,6 +46,7 @@ Le TDS **matérialise** la philosophie UX :
 | Objectif écran, parcours | [NAVIGATION_STANDARD.md](../09_design_system/NAVIGATION_STANDARD.md) |
 | Hiérarchie information | [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md), [DESIGN_PREMIUM_2027.md](../09_design_system/DESIGN_PREMIUM_2027.md) |
 | Statuts compréhensibles | [PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md), composants statuts |
+| Identité visuelle | [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md) |
 | Revue écran | [TDS_CHECKLIST_REVUE_UI.md](../09_design_system/TDS_CHECKLIST_REVUE_UI.md) |
 | Image de marque | [STANDARD_IMAGE_DE_MARQUE.md](STANDARD_IMAGE_DE_MARQUE.md) |
 

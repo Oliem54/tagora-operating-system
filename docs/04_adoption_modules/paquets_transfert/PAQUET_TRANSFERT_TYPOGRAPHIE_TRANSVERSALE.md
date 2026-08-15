@@ -2,11 +2,15 @@
 
 ## Objectif
 
-Préparer les directives typographiques destinées à chaque projet après fermeture TOS du contrat Outfit + Syne.
+Conserver le paquet historique Outfit + Syne préparé le 14 août 2026. **SUPERSEDED** pour l'usage actif.
+
+Le paquet actif est [PAQUET_TRANSFERT_CHARTE_MARQUE_CENTRALE.md](PAQUET_TRANSFERT_CHARTE_MARQUE_CENTRALE.md) (DEC-018 / ADR-0006 / VALD-097).
 
 ## Règle de transfert
 
 ```text
+PACKET_STATUS=SUPERSEDED_BY_CHARTE_MARQUE_CENTRALE
+OUTFIT_SYNE_STATUS=LEGACY
 TOS_SCOPE_ONLY=YES
 PRODUCT_APPLICATION_BY_TOS=NO
 MARTIN_TRANSFER_REQUIRED=YES
@@ -14,7 +18,10 @@ SOURCE_ADR=ADR-0005
 SOURCE_DECISION=DEC-017
 SOURCE_VALIDATION=VALD-096
 TYPOGRAPHY_SOURCE_HEAD=6415cdd0eea9e416d0ec8f4b47ca56d41865adce
+WAITING_FOR_WEBSITE_EVIDENCE=CLOSED
 ```
+
+Le contenu ci-dessous documente le paquet réellement préparé le **2026-08-14**. Il n'est pas réécrit. Il n'est plus le paquet de transfert actif.
 
 Martin transfère séparément ce paquet à chaque agent de projet.  
 Aucun agent produit ne doit être modifié par TOS.
@@ -164,6 +171,7 @@ MARTIN_TRANSFER_REQUIRED: YES
 
 ## Références
 
+- Paquet actif : [PAQUET_TRANSFERT_CHARTE_MARQUE_CENTRALE.md](PAQUET_TRANSFERT_CHARTE_MARQUE_CENTRALE.md)
 - [ADR-0005](../../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md)
 - [CONTRAT_TYPOGRAPHIQUE_TRANSVERSAL.md](../../09_design_system/CONTRAT_TYPOGRAPHIQUE_TRANSVERSAL.md)
 - [TYPOGRAPHIE.md](../../09_design_system/TYPOGRAPHIE.md)

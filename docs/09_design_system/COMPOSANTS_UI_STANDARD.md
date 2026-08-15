@@ -39,13 +39,13 @@ Chaque catégorie fera l'objet d'une **spécification détaillée** avant implé
 4. **TOS documente ; ailleurs on implémente** — Pas de React, CSS ou Tailwind dans ce dépôt.
 5. **Accessibilité by default** — Chaque spec composant inclura critères a11y (voir [ACCESSIBILITE.md](ACCESSIBILITE.md)).
 6. **Validation avant code** — Spec TDS validée → puis bibliothèque composants (TCP ou package dédié — à décider).
-7. **Typographie composants** — navigation, boutons, champs, tableaux, badges, alertes et modales en Outfit ; BrandMark et titres display en Syne (voir [TYPOGRAPHIE.md](TYPOGRAPHIE.md), [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md)).
+7. **Typographie composants** — familles officielles Avenir Next et JHC Notion uniquement ; **aucun mapping body/display inventé** tant que `TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION` (voir [TYPOGRAPHIE.md](TYPOGRAPHIE.md), [ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)). Outfit et Syne sont LEGACY.
 
 ---
 
 ## Relation avec les autres documents TDS
 
-- Couleurs composants → [PALETTE_COULEURS.md](PALETTE_COULEURS.md)
+- Couleurs composants → [PALETTE_COULEURS.md](PALETTE_COULEURS.md), [CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAGORA.md)
 - Textes dans composants → [TYPOGRAPHIE.md](TYPOGRAPHIE.md)
 - Revue écran → [TDS_CHECKLIST_REVUE_UI.md](TDS_CHECKLIST_REVUE_UI.md)
 
@@ -60,4 +60,4 @@ Chaque catégorie fera l'objet d'une **spécification détaillée** avant implé
 
 ## Statut
 
-**Enrichi — Typographie transversale validée (2026-08-14)** — Catégories définies. Specs et code : ultérieur. Typo composants alignée sur ADR-0005.
+**Enrichi — Charte centrale finale (2026-08-15)** — Catégories définies. Specs et code : ultérieur. Typo composants alignée sur ADR-0006 (familles finales ; rôles en attente).

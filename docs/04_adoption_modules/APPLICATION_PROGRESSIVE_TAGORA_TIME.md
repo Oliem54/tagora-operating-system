@@ -117,7 +117,7 @@ Le TDS est le **deuxième pilier** appliqué à TAGORA Time, après le TQF. Cett
 | **Documentation avant refonte UI** | Standards TDS écrits dans TOS avant changements visuels majeurs sur Time. |
 | **Pas de modification Time immédiate** | TOS guide ; le dépôt Time applique quand prêt. |
 | **Time reste indépendant** | Application métier séparée ; TDS = cadre, pas code dans TOS. |
-| **Pas de valeurs finales imposées** | Palette hex et polices validées ultérieurement. |
+| **Pas de valeurs finales imposées** | Principe historique Phase 3B (2026-07). Pour l'usage actif, palette hex exclusive et familles Avenir Next + JHC Notion sont actées par DEC-018 / ADR-0006 (2026-08-15) ; mapping sémantique et rôles typo restent à confirmer. Application Time : uniquement après transfert Martin. |
 
 ### Priorité initiale design Time
 
@@ -135,16 +135,17 @@ Le TDS est le **deuxième pilier** appliqué à TAGORA Time, après le TQF. Cett
 
 - [x] [DESIGN_PREMIUM_2027.md](../09_design_system/DESIGN_PREMIUM_2027.md)
 - [x] [NAVIGATION_STANDARD.md](../09_design_system/NAVIGATION_STANDARD.md)
-- [x] [PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md) — catégories, sémantique Time
-- [x] [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md)
+- [x] [PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md) — 8 hex exclusifs actés ; mapping sémantique Time encore non défini
+- [x] [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md) — familles finales Avenir Next + JHC Notion ; rôles en attente
+- [x] [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md) — source canonique DEC-018 / ADR-0006
 - [x] [COMPOSANTS_UI_STANDARD.md](../09_design_system/COMPOSANTS_UI_STANDARD.md)
 - [x] [ACCESSIBILITE.md](../09_design_system/ACCESSIBILITE.md)
 - [x] [TDS_CHECKLIST_REVUE_UI.md](../09_design_system/TDS_CHECKLIST_REVUE_UI.md)
 - [x] [STANDARD_UX_UI.md](../02_standards/STANDARD_UX_UI.md) — philosophie et liens TDS/TQF
 - [x] [STANDARD_IMAGE_DE_MARQUE.md](../02_standards/STANDARD_IMAGE_DE_MARQUE.md)
-- [ ] Validation humaine palette et typographie (valeurs finales)
+- [x] Validation humaine palette hex exclusive et familles typographiques finales (DEC-018 / VALD-097) — mapping sémantique, rôles typo et assets sources encore requis
 - [ ] Revue UI écrans Time existants avec checklist TDS
-- [ ] ADR design si décision impactant l'écosystème
+- [x] ADR design écosystème — [ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)
 
 ### Priorité 3 — TES (TAGORA Engineering System)
 

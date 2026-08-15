@@ -47,7 +47,8 @@ Les échecs doivent être **notés** (ticket, commentaire PR, note TKS) — pas 
 
 - Contraste texte/fond acceptable ([ACCESSIBILITE.md](ACCESSIBILITE.md))
 - Texte suffisamment grand pour données importantes ([TYPOGRAPHIE.md](TYPOGRAPHIE.md))
-- Body/UI en Outfit ; BrandMark et titres display en Syne ; poids 400/500/600/700 ([ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md))
+- Familles Avenir Next + JHC Notion uniquement ; Outfit/Syne LEGACY ; aucun mapping body/display inventé ([ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md), [CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAGORA.md))
+- Couleurs centrales limitées à la palette exclusive ; gradients officiels uniquement
 - Pas de surcharge — détails secondaires en vues dédiées ([DESIGN_PREMIUM_2027.md](DESIGN_PREMIUM_2027.md))
 
 ---
@@ -69,4 +70,4 @@ Les échecs doivent être **notés** (ticket, commentaire PR, note TKS) — pas 
 
 ## Statut
 
-**Brouillon initial**
+**Enrichi — Charte centrale finale (2026-08-15)** — Compléments optionnels alignés sur ADR-0006. Checklist 8 points inchangée.

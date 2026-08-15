@@ -106,7 +106,7 @@ Les éléments suivants restent **interdits** dans Phase 4E et tant que le paque
 
 - **Écrans commissions** — exclus tant que le WIP commissions n'est pas stabilisé, isolé ou reporté (VALD-030).
 - **Refonte globale** — revue par écran, pas redesign complet.
-- **Valeurs finales palette/typo** — à valider humainement (VALD-004).
+- **Valeurs finales palette/typo** — exclusion historique du lot 4E (VALD-004). Note 2026-08-15 : palette hex exclusive et familles Avenir Next + JHC Notion actées par DEC-018 / ADR-0006 ; mapping sémantique et rôles typo restent hors de ce paquet 4E.
 
 ---
 

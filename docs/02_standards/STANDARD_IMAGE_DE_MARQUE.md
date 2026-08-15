@@ -47,9 +47,9 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 | Élément | Règle |
 |---|---|
-| **Logo** | Usage officiel uniquement — règles d'espace, taille, fond (à valider) |
-| **Couleurs** | Tokens TDS — pas de palette locale ad hoc ([PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md)) |
-| **Typographie** | Duo officiel Outfit (body/UI) + Syne (display/marque) — [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md), [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md) |
+| **Logo** | Symbole géométrique + logotype + signature « Piloter • Innover • Performer » — versions verticale/horizontale ; min. 30 px ; proportions préservées ; assets sources requis ([CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md)) |
+| **Couleurs** | Huit couleurs exclusives et quatre dégradés officiels — [PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md), [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md) |
+| **Typographie** | Familles finales Avenir Next + JHC Notion — rôles body/display **non confirmés** — [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md), [ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md) |
 | **Icônes** | Style cohérent — set iconographique commun (à valider) |
 | **Statuts** | Couleurs et libellés sémantiques alignés écosystème |
 | **Exceptions** | Documentées via gouvernance TOS — temporaires |
@@ -66,14 +66,17 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 ## Ce qui reste à valider plus tard
 
-- Logo officiel et fichiers source
-- Charte logo (marges, interdictions, versions)
-- Palette hex et tokens design (contrat couleurs distinct du contrat typo)
+- Fichiers source logo (SVG, variantes, favicon) — `LOGO_SOURCE_ASSETS_RECEIVED=NO`
+- Fichiers web licenciés Avenir Next et JHC Notion — `FONT_FILES_RECEIVED=NO`
+- Confirmation du rôle Avenir Next / JHC Notion — `TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION`
+- Mapping sémantique des huit couleurs (primaire, succès, danger, modules)
 - Bibliothèque icônes
 - Guidelines marketing vs produit (si distinct)
 - Co-branding partenaires
 
-> **Note 2026-08-14 :** la typographie commune Outfit + Syne est **validée** (DEC-017 / ADR-0005 / VALD-096). Les polices ne sont plus « à valider » ; seule leur application produit reste soumise à transfert Martin.
+> **Note 2026-08-15 :** la charte centrale finale est **validée** (DEC-018 / ADR-0006 / VALD-097). Outfit + Syne sont **LEGACY**. Les polices finales et le logo sont nommés ; leurs fichiers sources et le mapping de rôles restent requis avant application produit.
+>
+> **Note historique 2026-08-14 :** la typographie commune Outfit + Syne a été validée ce jour-là (DEC-017 / ADR-0005 / VALD-096). Cette validation reste historiquement vraie et `WAITING_FOR_WEBSITE_EVIDENCE` reste CLOSED. Elle est remplacée pour l'usage actif par DEC-018.
 
 ---
 
@@ -82,7 +85,9 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 - Ne pas dévier sans validation gouvernance TOS.
 - Documenter écarts temporaires par module.
 - Aligner toute UI sur TDS avant release.
+- Ne pas reconstruire le logo ni les polices depuis le PDF.
+- Application produit uniquement après transfert Martin.
 
 ## Statut
 
-**Enrichi — Typographie transversale validée (2026-08-14)** — Cadre image de marque défini. Assets logo et valeurs couleurs finales : à valider séparément.
+**Enrichi — Charte centrale finale (2026-08-15)** — Identité centrale actée. Assets sources, licences font et mapping typo : en attente. Application produit : non autorisée.
