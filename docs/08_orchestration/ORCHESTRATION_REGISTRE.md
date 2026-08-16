@@ -33,6 +33,9 @@ Registre TOS (TOF). **Aucune entrée ci-dessous n'est active** — toutes sont a
 | ORCH-TIME-001 | Notification oubli punch | workflow | TAGORA Time | Notification (employé / superviseur) | draft | Non | [TEMPLATE_WORKFLOW_ORCHESTRATION.md](../99_templates/TEMPLATE_WORKFLOW_ORCHESTRATION.md) | Rappel si punch manquant — **non implémenté** |
 | ORCH-TIME-002 | Validation feuille de temps | workflow | TAGORA Time | TAGORA Time (approbation) | draft | Oui | [TEMPLATE_WORKFLOW_ORCHESTRATION.md](../99_templates/TEMPLATE_WORKFLOW_ORCHESTRATION.md) | Préparer contexte approbation — décision humaine obligatoire — **non implémenté** |
 | ORCH-TOS-001 | Rapport QA documentaire | workflow | TOS | Rapport / équipe QA | draft | Non | [ORCHESTRATION_REPORTING_STANDARD.md](ORCHESTRATION_REPORTING_STANDARD.md) | Synthèse statut scénarios QA — **non implémenté** |
+| ORCH-SOURCING-001 | Ingestion courriel fournisseur vers mission | workflow | TAGORA Mail IA | TAGORA Sourcing AI | draft | Oui | [fondation](../04_adoption_modules/TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md) | Flux entrant cible — **non implémenté** |
+| ORCH-SOURCING-002 | Brouillon Sourcing vers Mail IA | workflow | TAGORA Sourcing AI | TAGORA Mail IA | draft | Oui | Idem | Flux sortant cible ; AUTO_SEND=NO — **non implémenté** |
+| ORCH-SOURCING-003 | Brouillon réponse plateforme | workflow | TAGORA Sourcing AI | Humain / adapter futur | draft | Oui | Idem | Copy-paste V1 ; adapter post-V1 — **non implémenté** |
 
 ---
 
@@ -48,7 +51,7 @@ Registre TOS (TOF). **Aucune entrée ci-dessous n'est active** — toutes sont a
 ## Éléments à documenter plus tard
 
 - Entrées événements domaine (catalogue Event Bus)
-- Workflows Stock Premium, Mail IA, Pulse
+- Workflows Stock Premium, Mail IA, Pulse (Sourcing AI : ORCH-SOURCING-001 à 003 en draft)
 - Propriétaires nominatifs par workflow
 - Dates d'activation réelle (hors TOS)
 

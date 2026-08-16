@@ -1,0 +1,85 @@
+# VALD-103 — Fondation officielle du module TAGORA Sourcing AI (super-agent)
+
+**Date :** 2026-08-16  
+**Décideur :** Martin ST-Gelais — Direction  
+**Statut :** Validé  
+**Type :** Humaine / Gouvernance  
+**Gate :** `TOS_TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION_GO`
+
+## Décision validée
+
+Martin confirme l'existence officielle du module TAGORA Sourcing AI, son rôle de super-agent, ses frontières et ses limites d'autorité. Cette décision **complète** les contrats de surfaces / mapping / identité / handoff. Elle **ne les remplace pas**.
+
+L'ancien gate `TOS_TAGORA_SOURCING_AI_MODULE_FOUNDATION_GO` n'est **pas** exécuté. Il est remplacé par le présent gate enrichi.
+
+```text
+MODULE_OFFICIALLY_DEFINED=YES
+COMMERCIAL_NAME=TAGORA Sourcing AI
+INTERNAL_ENGINE_NAME=Supplier Intelligence
+VISIBLE_AGENT_NAME=TAGORA Sourcing Agent
+PROJECT_TYPE=AUTONOMOUS_TAGORA_SAAS_AGENTIC_MODULE
+MONTHLY_SAAS_RESELLABLE=YES
+ONE_VISIBLE_CHAT_AGENT=YES
+ALIBABA_FIRST_CLASS_CHANNEL=YES
+V1_DEFAULT_AUTONOMY=LEVEL_2
+AI_PURCHASE_AUTHORITY=NO
+AI_ORDER_PLACEMENT_AUTHORITY=NO
+AI_PAYMENT_AUTHORITY=NO
+SURFACE_STATUS=CANDIDATE
+REPO_CREATED=NO
+SUPERSEDED_GATE_EXECUTED=NO
+PHASE4D_LOT2_UNCHANGED=YES
+```
+
+Cette validation autorise **uniquement** l'enregistrement normatif TOS (documentation). Elle n'autorise **pas** le bootstrap du dépôt, ni aucun connecteur, ni aucun DNS.
+
+Prochain retour recommandé : `TAGORA_SOURCING_AI_REPOSITORY_BOOTSTRAP_GO` — sous nouveau Human Gate Martin. Non autorisé maintenant.
+
+## Autorisations
+
+Cette validation autorise uniquement l'enregistrement documentaire TOS.
+
+```text
+PRODUCT_APPLICATION_AUTHORIZED=NO
+OTHER_REPOSITORY_WRITE_AUTHORIZED=NO
+REPO_CREATION_AUTHORIZED=NO
+DB_AUTHORIZED=NO
+DNS_AUTHORIZED=NO
+ALIBABA_REAL_CONNECTOR_AUTHORIZED=NO
+ALIBABA_LOGIN_AUTHORIZED=NO
+ALIBABA_MESSAGE_SEND_AUTHORIZED=NO
+ALIBABA_AUTOMATION_AUTHORIZED=NO
+REAL_MAIL_AI_INTEGRATION_AUTHORIZED=NO
+NEXUS_IMPLEMENTATION_AUTHORIZED=NO
+HANDOFF_IMPLEMENTATION_AUTHORIZED=NO
+SSO_AUTHORIZED=NO
+OAUTH_AUTHORIZED=NO
+ENTRA_AUTHORIZED=NO
+WEBSITE_IMPLEMENTATION_AUTHORIZED=NO
+STOCK_INTEGRATION_AUTHORIZED=NO
+ODOO_INTEGRATION_AUTHORIZED=NO
+PURCHASE_ORDER_CREATION_AUTHORIZED=NO
+SECRET_AUTHORIZED=NO
+SCRAPING_AUTHORIZED=NO
+DEPLOYMENT_AUTHORIZED=NO
+PRODUCTION_AUTHORIZED=NO
+MARTIN_TRANSFER_REQUIRED=YES
+IMPLEMENTATION_AUTHORIZED=NO
+PACKETS_EXECUTED=NO
+```
+
+## Décisions liées
+
+ADR-0011 / DEC-023 / VALD-102 restent **Validé** (pilote identité Stock ; hors sujet Sourcing).  
+ADR-0010 / DEC-022 / VALD-101 restent **Validé** (handoff).  
+ADR-0008 / DEC-020 / VALD-099 restent **Validé** (mapping).  
+ADR-0007 / DEC-019 / VALD-098 restent **Validé** (surfaces).  
+ADR-0004 / DEC-015 / VALD-093 restent **Validé** (domaines canoniques — non étendus DNS).  
+VALD-094 / Phase 4D Lot 2 restent **inchangés**.
+
+## Référence
+
+- [ADR-0012](../05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
+- [TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md](../04_adoption_modules/TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md)
+- [APPLICATION_PROGRESSIVE_TAGORA_SOURCING_AI.md](../04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_SOURCING_AI.md)
+- [REGISTRE_DECISIONS.md](REGISTRE_DECISIONS.md) — DEC-024

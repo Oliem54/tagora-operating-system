@@ -124,12 +124,22 @@ Routes portail **réservées** comme contrat canonique :
 | TAGORA Stock Premium | `stock` | `https://app.tagora.ca/modules/stock` |
 | TAGORA Pulse AI | `pulse` | `https://app.tagora.ca/modules/pulse` |
 
+Slug candidat (non canonique DNS — DEC-024 / ADR-0012) :
+
+| Module | Slug candidat | Route portail candidate |
+|---|---|---|
+| TAGORA Sourcing AI | `sourcing` | `https://app.tagora.ca/modules/sourcing` |
+
 ```text
 CANONICAL_SLUGS=time ; mail ; stock ; pulse
+CANDIDATE_SLUG_SOURCING=sourcing
 TIME_PORTAL_ROUTE=https://app.tagora.ca/modules/time
 MAIL_PORTAL_ROUTE=https://app.tagora.ca/modules/mail
 STOCK_PORTAL_ROUTE=https://app.tagora.ca/modules/stock
 PULSE_PORTAL_ROUTE=https://app.tagora.ca/modules/pulse
+SOURCING_PORTAL_ROUTE_CANDIDATE=https://app.tagora.ca/modules/sourcing
+SOURCING_SURFACE_STATUS=CANDIDATE_UNTIL_OFFICIAL_TOS_ADOPTION
+DNS_AUTHORIZED=NO
 ```
 
 Nexus orchestre l'accès. Nexus **n'absorbe pas** les SaaS.
@@ -145,6 +155,7 @@ Nexus orchestre l'accès. Nexus **n'absorbe pas** les SaaS.
 | TAGORA Stock Premium | `https://stock.tagora.ca` |
 | TAGORA Pulse AI | `https://pulse.tagora.ca` |
 | Administration future | `https://admin.tagora.ca` |
+| TAGORA Sourcing AI (candidat) | `https://sourcing.tagora.ca` — **non canonique DNS** |
 
 Les applications restent autonomes.
 
@@ -205,6 +216,8 @@ Cibles d'architecture. **Aucune** app registration, Entra, OAuth, secret, token,
 Les URL SaaS canoniques restent valides pour accès direct ou favori :
 
 `time.tagora.ca` · `mail.tagora.ca` · `stock.tagora.ca` · `pulse.tagora.ca`
+
+Candidat non activé : `sourcing.tagora.ca` (DEC-024 ; DNS interdit).
 
 À terme :
 
@@ -288,6 +301,7 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 | ADR-0009 / DEC-021 / VALD-100 | Identité centrale / bootstrap Time — **complété**, non remplacé |
 | ADR-0010 / DEC-022 / VALD-101 | Contrat technique TAGORA_HANDOFF_V1 — **complété**, non remplacé |
 | ADR-0011 / DEC-023 / VALD-102 | Sélection officielle du pilote Stock Premium — **complété**, non remplacé |
+| ADR-0012 / DEC-024 / VALD-103 | TAGORA Sourcing AI — slug / domaine **candidats** seulement ; DNS non adopté |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
 ---
@@ -299,5 +313,6 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 - Complément identité : [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md)
 - Complément handoff : [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
 - Complément sélection pilote : [ADR-0011](../05_adr/ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
+- Complément candidat Sourcing AI : [ADR-0012](../05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
 - [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md)
 - [ADR-0007](../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)

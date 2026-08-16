@@ -363,7 +363,10 @@ TIME_HANDOFF_ADAPTER
 MAIL_HANDOFF_ADAPTER
 STOCK_HANDOFF_ADAPTER
 PULSE_HANDOFF_ADAPTER
+SOURCING_HANDOFF_ADAPTER=CANDIDATE_FUTURE
 ```
+
+`SOURCING_HANDOFF_ADAPTER` est un **candidat** (DEC-024 / ADR-0012). Il n'est pas un adapter officiel de ce contrat. `HANDOFF_IMPLEMENTATION_AUTHORIZED=NO`. `NEXUS_MODULE_KEY` candidat = `sourcing`.
 
 Chaque adapter résout : `TAGORA_USER_ID` → user local, tenant/org local, account local, source de rôles locaux, création de session locale.
 

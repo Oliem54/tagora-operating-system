@@ -148,7 +148,7 @@ Aucune suppression, redirection, déplacement ou déploiement n'est autorisé pa
 
 `app.tagora.ca` = TAGORA Nexus.
 
-Nexus peut à terme fournir : portail client ; accès aux modules ; navigation inter-produits ; organisation / tenant context ; accès aux abonnements ; liens vers Time, Mail IA, Stock Premium, Pulse AI.
+Nexus peut à terme fournir : portail client ; accès aux modules ; navigation inter-produits ; organisation / tenant context ; accès aux abonnements ; liens vers Time, Mail IA, Stock Premium, Pulse AI, et le module candidat TAGORA Sourcing AI.
 
 Nexus **ne fusionne pas** les applications. Les SaaS restent autonomes sur leurs sous-domaines.
 
@@ -171,6 +171,29 @@ NEXUS_MAY_PROPOSE_IMPLEMENTATION_PLAN=YES
 6. DNS / hosting : Human Gate Martin séparé.
 
 Voir [PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md](../04_adoption_modules/plans_instanciation/PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md).
+
+---
+
+## Module candidat — TAGORA Sourcing AI (non canonique DNS)
+
+Complément **DEC-024 / ADR-0012 / VALD-103**. N'étend pas le tableau canonique ci-dessus. Aucun DNS.
+
+```text
+SOURCING_SURFACE_STATUS=CANDIDATE_UNTIL_OFFICIAL_TOS_ADOPTION
+COMMERCIAL_NAME=TAGORA Sourcing AI
+SAAS_APPLICATION_CANDIDATE=https://sourcing.tagora.ca
+NEXUS_MODULE_ROUTE_CANDIDATE=https://app.tagora.ca/modules/sourcing
+NEXUS_MODULE_KEY=sourcing
+PUBLIC_COMMERCIAL_PAGE_FR=https://tagora.ca/fr/sourcing
+PUBLIC_COMMERCIAL_PAGE_EN=https://tagora.ca/en/sourcing
+DNS_AUTHORIZED=NO
+WEBSITE_IMPLEMENTATION_AUTHORIZED=NO
+NEXUS_IMPLEMENTATION_AUTHORIZED=NO
+```
+
+L'adoption officielle de ces adresses dans le tableau canonique exige un Human Gate Martin distinct. Ce contrat n'active aucun sous-domaine.
+
+Source : [TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md](../04_adoption_modules/TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md).
 
 ---
 
@@ -208,6 +231,7 @@ Un nouveau GO Martin séparé est obligatoire avant :
 |---|---|
 | ADR-0003 / DEC-014 | Positionnement Nexus / Cloud / TCP — inchangé |
 | ADR-0004 / DEC-015 / VALD-093 | Domaines canoniques — **complétés**, non remplacés |
+| ADR-0012 / DEC-024 / VALD-103 | TAGORA Sourcing AI — surfaces **candidates** seulement ; DNS non adopté |
 | DEC-016 / VALD-095 | Track B entrée publique Time → Website — rôle Time public **clos** ici ; exécution / redirect **non autorisés** |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
@@ -221,3 +245,4 @@ Un nouveau GO Martin séparé est obligatoire avant :
 - [PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md](../04_adoption_modules/plans_instanciation/PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md)
 - [ADR-0004](../05_adr/ADR-0004-CONVENTION-DOMAINES-CANONIQUES-TAGORA.md)
 - [PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md](../04_adoption_modules/plans_instanciation/PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md)
+- Complément candidat Sourcing AI : [ADR-0012](../05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)

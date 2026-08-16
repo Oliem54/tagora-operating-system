@@ -10,6 +10,8 @@ Module TAGORA Stock Premium — adoption post-pilote.
 
 **Complément identité / handoff 2026-08-16 :** IDENTITY-I2 PASS. Tenant local canonique = `stock_premium_organizations.id` UUID. Contrat TAGORA_HANDOFF_V1 conceptuel (DEC-022). Module pilote identité **sélectionné** (DEC-023 / ADR-0011 / VALD-102). `PILOT_IMPLEMENTATION_AUTHORIZED=NO`. IDENTITY-I7 non commencé. Paquets : [PAQUET_TRANSFERT_IDENTITE_STOCK_PREMIUM.md](paquets_transfert/PAQUET_TRANSFERT_IDENTITE_STOCK_PREMIUM.md), [PAQUET_TRANSFERT_HANDOFF_STOCK_PREMIUM.md](paquets_transfert/PAQUET_TRANSFERT_HANDOFF_STOCK_PREMIUM.md). Aucune DB. Aucun accès dépôt Stock.
 
+**Complément post-décision Sourcing AI 2026-08-16 :** DEC-024 / ADR-0012 / VALD-103. Après décision fournisseur humaine, Sourcing AI pourra à terme transmettre un produit approuvé vers Stock Premium. Paquet préparé, non exécuté : [PAQUET_TRANSFERT_SOURCING_AI_STOCK_PREMIUM.md](paquets_transfert/PAQUET_TRANSFERT_SOURCING_AI_STOCK_PREMIUM.md). `STOCK_INTEGRATION_AUTHORIZED=NO`. `PURCHASE_ORDER_CREATION_AUTHORIZED=NO`. Aucun accès dépôt Stock.
+
 ## Principes
 
 - Convergence vers TOS après validation sur TAGORA Time.

@@ -46,6 +46,7 @@ Tous les modules TAGORA actuels et futurs. **Aucune implémentation** — cadre 
 | **TAGORA Voice** | Voix / communication | 3 | Selon maturité produit |
 | **TAGORA Mail IA** | Courriel assisté IA | 3 | TAF encadré prioritaire |
 | **TAGORA Pulse** | Signaux / activité | 4 | Selon périmètre |
+| **TAGORA Sourcing AI** | Super-agent sourcing / intelligence fournisseurs | Fondation documentaire (DEC-024) | Repo non créé ; TAF/HITL prioritaires ; adoption produit après bootstrap |
 | **TAGORA Platform** | Plateforme transverse | 4 | Lien futur TCP |
 
 Chaque module :
@@ -81,10 +82,12 @@ Chaque module :
 ## Références
 
 - [APPLICATION_PROGRESSIVE_TAGORA_TIME.md](APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
+- [APPLICATION_PROGRESSIVE_TAGORA_SOURCING_AI.md](APPLICATION_PROGRESSIVE_TAGORA_SOURCING_AI.md)
+- [TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md](TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md)
 - [CARTE_DES_10_PILIERS_TOS.md](../00_constitution/CARTE_DES_10_PILIERS_TOS.md)
 - [ETAT_MATURITE_TOS.md](../00_constitution/ETAT_MATURITE_TOS.md)
 - [REGLES_DE_SEPARATION_DES_PROJETS.md](../03_gouvernance/REGLES_DE_SEPARATION_DES_PROJETS.md)
 
 ## Statut
 
-**Créé — Phase 3I**
+**Enrichi — DEC-024** — TAGORA Sourcing AI inscrit comme module autonome (fondation documentaire seulement).

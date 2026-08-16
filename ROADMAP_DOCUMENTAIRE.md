@@ -529,7 +529,8 @@ Track Nexus (parallèle)
 ## Statut
 
 **Enrichi — Phase 4S-TOS** — Complétée. Lecture contrôlée Time ; main baseline propre ; WIP commissions préservé en feature ; Option D pour future branche documentaire ; VALD-081 à 084 **Validé**. Aucune écriture Time.
-**Prochaine étape officielle :** Phase 4D — Documentation minimale dans TAGORA Time (sous GO distinct).
+**Enrichi — DEC-024** — Fondation officielle TAGORA Sourcing AI (super-agent) ; VALD-103 **Validé** ; repo / DNS / connecteurs interdits.
+**Prochaine étape officielle :** Phase 4D — Documentation minimale dans TAGORA Time (sous GO distinct). Track Sourcing : prochain Human Gate recommandé `TAGORA_SOURCING_AI_REPOSITORY_BOOTSTRAP_GO` (non autorisé maintenant).
 **Track Nexus** — ADR-0003 **Validé** ; VALD-075 à 080 **Validé** ; baseline documentaire autorisée ; repository toujours interdit.
 
 ## Références
@@ -541,6 +542,8 @@ Track Nexus (parallèle)
 - [Application progressive TAGORA Time](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_TIME.md)
 - [ADR-0003 Positionnement Nexus (Validé)](docs/05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md)
 - [Application progressive TAGORA Nexus](docs/04_adoption_modules/APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md)
+- [Fondation TAGORA Sourcing AI](docs/04_adoption_modules/TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md)
+- [ADR-0012 Fondation Sourcing AI](docs/05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
 - [Carte des 10 piliers](docs/00_constitution/CARTE_DES_10_PILIERS_TOS.md)
 - [Matrice interdépendance](docs/00_constitution/MATRICE_INTERDEPENDANCE_PILIERS.md)
 - [État maturité TOS](docs/00_constitution/ETAT_MATURITE_TOS.md)

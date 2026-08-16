@@ -35,6 +35,15 @@ Rôles définis dans TOS sous gouvernance TAF.
 | AI-TOS-DOC-001 | Architecte documentaire TOS | TAGORA Operating System | Documentaire | Documenté | Documentation Markdown TOS uniquement | Oui pour commit/push | [TAF](../01_piliers/04_TAF_TAGORA_AI_FRAMEWORK.md), [TEMPLATE_AGENT_IA.md](../99_templates/TEMPLATE_AGENT_IA.md) | Rôle utilisé pour phases documentaires |
 | AI-TOS-GIT-001 | Agent Git de sauvegarde | TAGORA Operating System | Vérification / Git | Documenté | Commit/push documentaire sur dépôt TOS si mission explicite | Oui — commit et push autorisés uniquement par mission | [AI_REPORTING_STANDARD.md](AI_REPORTING_STANDARD.md) | Ne pas push sans autorisation |
 | AI-TOS-QA-001 | Agent QA documentaire | TAGORA Operating System | QA documentaire | Documenté | Standards TQF, scénarios documentaires, checklists | Oui pour toute automatisation réelle | [AI_AGENT_STANDARD.md](AI_AGENT_STANDARD.md), `docs/06_qa/` | Pas de tests Playwright réels dans TOS |
+| AI-SOURCING-001 | TAGORA Sourcing Agent | TAGORA Sourcing AI | Super-agent visible | Documenté | Chat global et projet ; missions ; recommandations ; brouillons | Oui avant communication externe et tout engagement | [fondation](../04_adoption_modules/TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md) | Seul agent visible ; DEC-024 |
+| AI-SOURCING-002 | Product Scout Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Recherche produits / listings / candidats | Orchestré ; pas d'engagement | Idem | HIDDEN_ORCHESTRATED |
+| AI-SOURCING-003 | Supplier Analyst Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Analyse fournisseur ; mémoire ; scores | Orchestré ; pas d'engagement | Idem | HIDDEN_ORCHESTRATED |
+| AI-SOURCING-004 | Offer Comparator Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Comparaison d'offres et versions | Orchestré | Idem | HIDDEN_ORCHESTRATED |
+| AI-SOURCING-005 | Domain Expert Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Critères du domaine de compétence | Orchestré | Idem | Un domaine ≠ critères d'un autre |
+| AI-SOURCING-006 | Risk Analyst Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Risques technique / commercial / qualité / livraison | Orchestré | Idem | HIDDEN_ORCHESTRATED |
+| AI-SOURCING-007 | Landed Cost Analyst Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Scénarios de coût rendu estimatif | Orchestré ; estimé ≠ confirmé | Idem | HIDDEN_ORCHESTRATED |
+| AI-SOURCING-008 | Negotiation Copilot Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Points, stratégie, contre-offre, brouillons | Oui avant envoi externe | Idem | HIDDEN_ORCHESTRATED |
+| AI-SOURCING-009 | Document Extraction Agent | TAGORA Sourcing AI | Spécialiste interne | Documenté | Extraction structurée documents / messages | Confiance + vérification humaine des claims critiques | Idem | HIDDEN_ORCHESTRATED |
 
 ---
 
@@ -47,4 +56,4 @@ Rôles définis dans TOS sous gouvernance TAF.
 
 ## Statut
 
-**Brouillon initial — Phase 3E**
+**Enrichi — DEC-024 / ADR-0012** — rôles documentaires TAGORA Sourcing AI inscrits (AI-SOURCING-001 à 009). Aucun agent logiciel déployé.

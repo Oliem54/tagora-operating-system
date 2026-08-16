@@ -28,6 +28,7 @@ TOS unifie la **méthode** ; chaque module garde son **métier**, son **dépôt*
 | **Voice** | Voix / temps réel | Idem |
 | **Mail IA** | Messagerie IA | Idem |
 | **Pulse** | Monitoring / analytics | Idem |
+| **TAGORA Sourcing AI** | Sourcing / intelligence fournisseurs (super-agent) | Dépôt futur distinct — **non créé** (DEC-024) |
 | **Platform** | Hub plateforme (à préciser) | Idem |
 | **TCP** (futur) | Briques communes code | Hors TOS ; pas de métier spécifique module |
 | **TOF** (futur) | Orchestration | Pas de logique métier critique seule |
@@ -121,3 +122,4 @@ RETURN_TO_TOS=MANDATORY
 
 **Enrichi — Phase 3C** — Séparation stricte formalisée.
 **Enrichi — Phase 4D** — Actions externes bornées gouvernées par TOS (VALD-088).
+**Enrichi — DEC-024** — TAGORA Sourcing AI ajouté comme module autonome futur ; repo non créé ; Mail IA n'absorbe pas le métier fournisseurs.

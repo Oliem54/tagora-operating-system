@@ -13,6 +13,7 @@ Ce dépôt est la **Constitution méthodologique** de l'écosystème logiciel TA
 - TAGORA Voice
 - TAGORA Mail IA
 - TAGORA Pulse
+- TAGORA Sourcing AI (fondation documentaire — repo non créé)
 - TAGORA Platform
 - Tous les futurs modules TAGORA
 
