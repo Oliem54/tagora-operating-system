@@ -31,8 +31,7 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0005 | Contrat typographique transversal Outfit + Syne | **Remplacé par ADR-0006** — historique Validé 2026-08-14 | 2026-08-14 | Écosystème TAGORA | Body = Outfit ; Display = Syne ; preuve Website `6415cdd` — **LEGACY** pour usage actif | `WAITING_FOR_WEBSITE_EVIDENCE` reste CLOSED ; supersédé par ADR-0006 |
 | ADR-0006 | Charte de marque centrale finale TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-15 | Écosystème TAGORA | Guide PDF 2026-08-14 = source finale ; 8 couleurs exclusives ; 4 gradients ; Avenir Next + JHC Notion ; mapping rôles en attente | Aucun produit modifié ; assets sources et fonts non reçus ; transfert Martin requis |
 | ADR-0007 | Contrat d'emplacement des surfaces TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Website=`tagora.ca` discover/sell ; Nexus=`app.tagora.ca` portail ; SaaS autonomes ; Time n'est plus l'entrée publique centrale | Doc + paquets seulement ; aucun DNS/redirect/deploy |
-| ADR-0005 | Contrat typographique transversal Outfit + Syne | **Remplacé par ADR-0006** — historique Validé 2026-08-14 | 2026-08-14 | Écosystème TAGORA | Body = Outfit ; Display = Syne ; preuve Website `6415cdd` — **LEGACY** pour usage actif | `WAITING_FOR_WEBSITE_EVIDENCE` reste CLOSED ; supersédé par ADR-0006 |
-| ADR-0006 | Charte de marque centrale finale TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-15 | Écosystème TAGORA | Guide PDF 2026-08-14 = source finale ; 8 couleurs exclusives ; 4 gradients ; Avenir Next + JHC Notion ; mapping rôles en attente | Aucun produit modifié ; assets sources et fonts non reçus ; transfert Martin requis |
+| ADR-0008 | Contrat de mapping et d'intégration des modules TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Login central `app.tagora.ca/login` ; `/modules/{slug}` ; Nexus access broker ; Entra External ID cible ; HANDOFF_V1 cible | Complète ADR-0007 ; aucun SSO/Entra/OAuth réel |
 
 ### Liens
 
@@ -43,15 +42,16 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0005](ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md) — remplacé par ADR-0006
 - [ADR-0006](ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)
 - [ADR-0007](ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
+- [ADR-0008](ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (TCP entitlements, billing, auth commune, mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, etc.) pourront être ajoutées après transfert Martin des paquets concernés.
+Les ADR futures (TCP entitlements, contrat technique TAGORA_HANDOFF_V1, mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, etc.) pourront être ajoutées après transfert Martin des paquets concernés.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0007 Validé (contrat d'emplacement des surfaces, 2026-08-16)** — ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.
+**Enrichi — ADR-0008 Validé (mapping intégration modules, 2026-08-16)** — ADR-0007 reste Validé (surfaces). ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.

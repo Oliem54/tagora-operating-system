@@ -43,6 +43,7 @@ L'architecture TAGORA n'est pas un diagramme unique imposé à tous. C'est un **
 4. **Pas de sur-architecture** — documenter le nécessaire, pas l'hypothétique.
 5. **Compatibilité sans fusion** — voir [REGLES_DE_COMPATIBILITE_MODULES.md](../03_gouvernance/REGLES_DE_COMPATIBILITE_MODULES.md).
 6. **Emplacement des surfaces** — Website / Nexus / SaaS autonomes selon [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md) (DEC-019 / ADR-0007). Time n'est pas l'entrée publique centrale.
+7. **Mapping d'accès** — login central, catalogue `/modules/{slug}`, access broker Nexus selon [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md) (DEC-020 / ADR-0008).
 
 ---
 
@@ -72,4 +73,4 @@ L'architecture TAGORA n'est pas un diagramme unique imposé à tous. C'est un **
 
 ## Statut
 
-**Enrichi — Contrat surfaces (2026-08-16)** — Règles architecture définies. Emplacement Website/Nexus/SaaS : ADR-0007. Décisions techniques : via ADR.
+**Enrichi — Mapping intégration (2026-08-16)** — Règles architecture définies. Surfaces : ADR-0007. Accès/identité cible : ADR-0008. Décisions techniques : via ADR.

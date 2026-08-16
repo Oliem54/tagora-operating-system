@@ -123,8 +123,8 @@ EN :
 
 Le Website explique, présente et vend les produits. Les sous-domaines applicatifs hébergent les SaaS autonomes.
 
-CTA connexion : vers `app.tagora.ca` lorsque pertinent.  
-CTA produits : vers leurs sous-domaines lorsque pertinent.
+CTA connexion : **« Se connecter »** → `https://app.tagora.ca/login` ; **« Mon espace TAGORA »** → `https://app.tagora.ca` (DEC-020 / ADR-0008).  
+Découvrir un module : page commerciale Website. Le lancement authentifié d'un SaaS est orchestré par Nexus.
 
 ---
 
@@ -217,6 +217,7 @@ Un nouveau GO Martin séparé est obligatoire avant :
 
 - [ADR-0007](../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
 - [VALIDATION_VALD_098_CONTRAT_EMPLACEMENT_SURFACES.md](../10_knowledge/VALIDATION_VALD_098_CONTRAT_EMPLACEMENT_SURFACES.md)
+- Complément mapping : [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md)
 - [PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md](../04_adoption_modules/plans_instanciation/PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md)
 - [ADR-0004](../05_adr/ADR-0004-CONVENTION-DOMAINES-CANONIQUES-TAGORA.md)
 - [PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md](../04_adoption_modules/plans_instanciation/PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md)

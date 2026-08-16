@@ -75,7 +75,7 @@ Légende : `REBUILD` = reconstruire dans le propriétaire cible, sans copier le 
 | « Se connecter » / « Mon espace TAGORA » / `app.tagora.ca` | — | TAGORA Nexus | A_CONFIRMER (Phase W3) |
 | `navigation.nexus` définie non rendue | Time | A_CONFIRMER | Nexus / Time, pas Website Auth |
 
-> **Note 2026-08-16 (DEC-019) :** le **rôle** CTA « Se connecter » / « Mon espace TAGORA » / `app.tagora.ca` est figé — Nexus. Le comportement final de `https://time.tagora.ca/` est `REDIRECT_LATER` (non appliqué). Les lignes `A_CONFIRMER` ci-dessus restent l'état Track B du 13 août.
+> **Note 2026-08-16 (DEC-020) :** le **rôle** CTA « Se connecter » / « Mon espace TAGORA » / `app.tagora.ca` est figé — Nexus. **Cibles :** Se connecter → `https://app.tagora.ca/login` ; Mon espace → `https://app.tagora.ca`. Le comportement final de `https://time.tagora.ca/` est `REDIRECT_LATER` (non appliqué). Les lignes `A_CONFIRMER` ci-dessus restent l'état Track B du 13 août.
 
 ```text
 LEGAL_SPLIT_REQUIRED=YES
