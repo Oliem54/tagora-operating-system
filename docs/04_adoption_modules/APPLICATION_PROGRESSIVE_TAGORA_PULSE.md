@@ -8,6 +8,8 @@ Définir le plan d'adoption progressive des standards TOS sur **TAGORA Pulse**.
 
 Module TAGORA Pulse — adoption post-pilote TAGORA Time.
 
+**Complément 2026-08-16 — widget client X-Plod :** chantier opérationnel distinct de l'adoption TOS Pulse et de l'accès Nexus (DEC-020). Site public X-Plod = `EXTERNAL_CUSTOMER_INTEGRATION_SURFACE`, pas `tagora.ca`, pas `pulse.tagora.ca`. Preflight READ-ONLY uniquement. Paquet : [PAQUET_TRANSFERT_PULSE_P2_XPLOD_WIDGET_PREFLIGHT.md](paquets_transfert/PAQUET_TRANSFERT_PULSE_P2_XPLOD_WIDGET_PREFLIGHT.md). Gouvernance : [GOUVERNANCE_PULSE_P2_XPLOD_WIDGET_PREFLIGHT.md](plans_instanciation/GOUVERNANCE_PULSE_P2_XPLOD_WIDGET_PREFLIGHT.md). Aucune installation, aucun write.
+
 ## Principes
 
 - Convergence progressive vers l'ensemble des piliers TOS.

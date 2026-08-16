@@ -53,3 +53,4 @@ Aucune DB, aucune migration, aucun Railway, aucune Production, aucun DNS, aucun 
 
 - [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](../../02_standards/CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md)
 - [ADR-0007](../../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
+- Widget X-Plod (preflight READ-ONLY, hors domaine canonique Pulse) : [PAQUET_TRANSFERT_PULSE_P2_XPLOD_WIDGET_PREFLIGHT.md](PAQUET_TRANSFERT_PULSE_P2_XPLOD_WIDGET_PREFLIGHT.md)

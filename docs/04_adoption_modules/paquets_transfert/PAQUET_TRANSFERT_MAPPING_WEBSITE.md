@@ -52,3 +52,4 @@ Aucun DNS, deploy, entitlement, Auth, runtime métier, OAuth, secret.
 - [ADR-0008](../../05_adr/ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - Paquet surfaces (DEC-019) : [PAQUET_TRANSFERT_SURFACES_WEBSITE.md](PAQUET_TRANSFERT_SURFACES_WEBSITE.md)
 - Identité (DEC-021) : hors détail Website ; login central inchangé.
+- Widget public X-Plod : hors Website TAGORA ; ne pas confondre avec `tagora.ca`.
