@@ -27,7 +27,8 @@ REQUIRED_CHANGE (mission future, pas ce gate) :
 - Découvrir un module -> page commerciale Website correspondante;
 - conserver pages commerciales FR/EN;
 - ne jamais décider entitlement;
-- ne pas activer runtime dans ce gate.
+- ne pas activer runtime dans ce gate;
+- ne pas porter le bootstrap d'identité (DEC-021) : conserver uniquement le login central Nexus.
 
 ACCEPTANCE_CRITERIA:
   MAPPING_ACKNOWLEDGED=YES
@@ -35,6 +36,7 @@ ACCEPTANCE_CRITERIA:
   MON_ESPACE_CTA_TARGET=https://app.tagora.ca
   ENTITLEMENT_DECISION_BY_WEBSITE=NO
   RUNTIME_IN_WEBSITE=NO
+  IDENTITY_BOOTSTRAP_OUT_OF_SCOPE=YES
 
 MARTIN_TRANSFER_REQUIRED=YES
 AUCUNE IMPLÉMENTATION AUTOMATIQUE.
@@ -49,3 +51,4 @@ Aucun DNS, deploy, entitlement, Auth, runtime métier, OAuth, secret.
 - [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](../../02_standards/CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md)
 - [ADR-0008](../../05_adr/ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - Paquet surfaces (DEC-019) : [PAQUET_TRANSFERT_SURFACES_WEBSITE.md](PAQUET_TRANSFERT_SURFACES_WEBSITE.md)
+- Identité (DEC-021) : hors détail Website ; login central inchangé.

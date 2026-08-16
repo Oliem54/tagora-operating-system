@@ -285,6 +285,7 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 |---|---|
 | ADR-0004 / DEC-015 | Domaines canoniques — inchangés |
 | ADR-0007 / DEC-019 / VALD-098 | Emplacement des surfaces — **complété**, non remplacé |
+| ADR-0009 / DEC-021 / VALD-100 | Identité centrale / bootstrap Time — complément ultérieur |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
 ---
@@ -293,5 +294,6 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 
 - [ADR-0008](../05_adr/ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - [VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md](../10_knowledge/VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md)
+- Complément identité : [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md)
 - [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md)
 - [ADR-0007](../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
