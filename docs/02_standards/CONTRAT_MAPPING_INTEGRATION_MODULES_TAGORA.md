@@ -124,9 +124,9 @@ Routes portail **réservées** comme contrat canonique :
 | TAGORA Stock Premium | `stock` | `https://app.tagora.ca/modules/stock` |
 | TAGORA Pulse AI | `pulse` | `https://app.tagora.ca/modules/pulse` |
 
-Slug candidat (non canonique DNS — DEC-024 / ADR-0012) :
+Slug candidat historique (non canonique DNS — DEC-024 / ADR-0012 ; **non implémenté** — DEC-025) :
 
-| Module | Slug candidat | Route portail candidate |
+| Module | Slug candidat historique | Route portail candidate historique |
 |---|---|---|
 | TAGORA Sourcing AI | `sourcing` | `https://app.tagora.ca/modules/sourcing` |
 
@@ -137,10 +137,18 @@ TIME_PORTAL_ROUTE=https://app.tagora.ca/modules/time
 MAIL_PORTAL_ROUTE=https://app.tagora.ca/modules/mail
 STOCK_PORTAL_ROUTE=https://app.tagora.ca/modules/stock
 PULSE_PORTAL_ROUTE=https://app.tagora.ca/modules/pulse
+PREVIOUS_NEXUS_ROUTE_CANDIDATE=https://app.tagora.ca/modules/sourcing
+PREVIOUS_NEXUS_ROUTE_CANDIDATE_STATUS=HISTORICAL_CANDIDATE_NOT_IMPLEMENTED
+CURRENT_NEXUS_MODULE_ROUTE=TBD
 SOURCING_PORTAL_ROUTE_CANDIDATE=https://app.tagora.ca/modules/sourcing
+SOURCING_IN_NEXUS_AVAILABLE=NO
+SOURCING_HANDOFF_AVAILABLE=NO
+SOURCING_PORTAL_ACCESS_AVAILABLE=NO
 SOURCING_SURFACE_STATUS=CANDIDATE_UNTIL_OFFICIAL_TOS_ADOPTION
 DNS_AUTHORIZED=NO
 ```
+
+Complément **DEC-025 / ADR-0013 / VALD-104** : la route Nexus Sourcing **reste TBD** et **n'est pas disponible**. Ne pas présenter `/modules/sourcing` comme route disponible.
 
 Nexus orchestre l'accès. Nexus **n'absorbe pas** les SaaS.
 
@@ -155,7 +163,7 @@ Nexus orchestre l'accès. Nexus **n'absorbe pas** les SaaS.
 | TAGORA Stock Premium | `https://stock.tagora.ca` |
 | TAGORA Pulse AI | `https://pulse.tagora.ca` |
 | Administration future | `https://admin.tagora.ca` |
-| TAGORA Sourcing AI (candidat) | `https://sourcing.tagora.ca` — **non canonique DNS** |
+| TAGORA Sourcing AI (candidat historique DEC-024) | `https://sourcing.tagora.ca` — **non adopté** ; `CURRENT_APPLICATION_DOMAIN=TBD` (DEC-025) |
 
 Les applications restent autonomes.
 
@@ -217,7 +225,7 @@ Les URL SaaS canoniques restent valides pour accès direct ou favori :
 
 `time.tagora.ca` · `mail.tagora.ca` · `stock.tagora.ca` · `pulse.tagora.ca`
 
-Candidat non activé : `sourcing.tagora.ca` (DEC-024 ; DNS interdit).
+Candidat historique non adopté : `sourcing.tagora.ca` (DEC-024 ; statut courant DEC-025 = `HISTORICAL_CANDIDATE_NOT_ADOPTED` ; `APPLICATION_DOMAIN=TBD` ; DNS interdit). Ne pas présenter ce domaine comme officiel, actif, réservé, configuré, publié ou approuvé.
 
 À terme :
 
@@ -301,7 +309,8 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 | ADR-0009 / DEC-021 / VALD-100 | Identité centrale / bootstrap Time — **complété**, non remplacé |
 | ADR-0010 / DEC-022 / VALD-101 | Contrat technique TAGORA_HANDOFF_V1 — **complété**, non remplacé |
 | ADR-0011 / DEC-023 / VALD-102 | Sélection officielle du pilote Stock Premium — **complété**, non remplacé |
-| ADR-0012 / DEC-024 / VALD-103 | TAGORA Sourcing AI — slug / domaine **candidats** seulement ; DNS non adopté |
+| ADR-0012 / DEC-024 / VALD-103 | TAGORA Sourcing AI — slug / domaine **candidats** historiques ; DNS non adopté |
+| ADR-0013 / DEC-025 / VALD-104 | TAGORA Sourcing AI — route Nexus **TBD** et non disponible ; domaine applicatif TBD |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
 ---
@@ -314,5 +323,6 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 - Complément handoff : [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
 - Complément sélection pilote : [ADR-0011](../05_adr/ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - Complément candidat Sourcing AI : [ADR-0012](../05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
+- Complément commercial Coming Soon : [ADR-0013](../05_adr/ADR-0013-TAGORA-SOURCING-AI-COMMERCIAL-MODULE-MAP-COMING-SOON.md)
 - [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md)
 - [ADR-0007](../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)

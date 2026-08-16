@@ -195,6 +195,31 @@ L'adoption officielle de ces adresses dans le tableau canonique exige un Human G
 
 Source : [TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md](../04_adoption_modules/TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md).
 
+### Complément DEC-025 — domaine applicatif Sourcing TBD
+
+Complément **DEC-025 / ADR-0013 / VALD-104**. Ne remplace pas le bloc candidat DEC-024 ci-dessus. N'étend pas le tableau canonique. Aucun DNS.
+
+```text
+APPLICATION_DOMAIN=TBD
+DOMAIN_DECISION_DEFERRED=YES
+PREVIOUS_SAAS_DOMAIN_CANDIDATE=https://sourcing.tagora.ca
+PREVIOUS_SAAS_DOMAIN_CANDIDATE_STATUS=HISTORICAL_CANDIDATE_NOT_ADOPTED
+CURRENT_APPLICATION_DOMAIN=TBD
+WEBSITE_FR_ROUTE=https://tagora.ca/fr/sourcing
+WEBSITE_EN_ROUTE=https://tagora.ca/en/sourcing
+WEBSITE_ROUTES_STATUS=PROPOSED_COMMERCIAL_ROUTES
+WEBSITE_ROUTE_IMPLEMENTATION_AUTHORIZED=NO
+WEBSITE_PAGES_AVAILABLE=NO
+DNS_AUTHORIZED=NO
+SUBDOMAIN_RESERVATION_AUTHORIZED=NO
+DOMAIN_PUBLICATION_AUTHORIZED=NO
+APPLICATION_URL_PUBLICATION_AUTHORIZED=NO
+```
+
+Ne pas présenter `sourcing.tagora.ca` comme domaine officiel, actif, réservé, configuré, publié ou approuvé.
+
+Source : [TAGORA_SOURCING_AI_COMMERCIAL_POSITIONING_COMING_SOON.md](../04_adoption_modules/TAGORA_SOURCING_AI_COMMERCIAL_POSITIONING_COMING_SOON.md).
+
 ---
 
 ## Interdictions
@@ -231,7 +256,8 @@ Un nouveau GO Martin séparé est obligatoire avant :
 |---|---|
 | ADR-0003 / DEC-014 | Positionnement Nexus / Cloud / TCP — inchangé |
 | ADR-0004 / DEC-015 / VALD-093 | Domaines canoniques — **complétés**, non remplacés |
-| ADR-0012 / DEC-024 / VALD-103 | TAGORA Sourcing AI — surfaces **candidates** seulement ; DNS non adopté |
+| ADR-0012 / DEC-024 / VALD-103 | TAGORA Sourcing AI — surfaces **candidates** historiques ; DNS non adopté |
+| ADR-0013 / DEC-025 / VALD-104 | TAGORA Sourcing AI — domaine applicatif **TBD** ; candidat `sourcing.tagora.ca` = historique non adopté ; Coming Soon |
 | DEC-016 / VALD-095 | Track B entrée publique Time → Website — rôle Time public **clos** ici ; exécution / redirect **non autorisés** |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
@@ -246,3 +272,4 @@ Un nouveau GO Martin séparé est obligatoire avant :
 - [ADR-0004](../05_adr/ADR-0004-CONVENTION-DOMAINES-CANONIQUES-TAGORA.md)
 - [PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md](../04_adoption_modules/plans_instanciation/PLAN_TRACK_B_ENTREE_PUBLIQUE_TIME_VERS_WEBSITE.md)
 - Complément candidat Sourcing AI : [ADR-0012](../05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
+- Complément commercial Coming Soon : [ADR-0013](../05_adr/ADR-0013-TAGORA-SOURCING-AI-COMMERCIAL-MODULE-MAP-COMING-SOON.md)

@@ -35,7 +35,8 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0009 | Identité centrale TAGORA et bootstrap utilisateurs Time | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Time = source bootstrap ; TAGORA_USER_ID ; Entra issuer+subject ; email ≠ identité ; pas de copie mot de passe ; rôles namespacés | Complète ADR-0008 ; aucune DB/Entra/SSO |
 | ADR-0010 | Contrat technique TAGORA_HANDOFF_V1 | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Handoff hybride code opaque + assertion serveur-à-serveur ; sessions locales ; adapters Time/Mail/Stock/Pulse ; pilote Stock recommandé non approuvé | Complète ADR-0008 et ADR-0009 ; aucun endpoint/Entra/OAuth réel ; sélection pilote = ADR-0011 |
 | ADR-0011 | Sélection officielle du module pilote identité : Stock Premium | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | `SELECTED_PILOT_MODULE=STOCK_PREMIUM` ; sélection approuvée ; implémentation non autorisée ; I5/I6/I7 non commencés | Complète ADR-0010 ; n'autorise pas I7 ; Stock non touché |
-| ADR-0012 | Fondation officielle du module TAGORA Sourcing AI (super-agent) | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Module autonome SaaS agentique ; un agent visible ; Alibaba prioritaire sans connecteur ; aucune autorité d'achat ; surfaces candidates | Complète ADR-0004/0007/0008 sans les remplacer ; repo non créé ; DNS non adopté |
+| ADR-0012 | Fondation officielle du module TAGORA Sourcing AI (super-agent) | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Module autonome SaaS agentique ; un agent visible ; Alibaba prioritaire sans connecteur ; aucune autorité d'achat ; surfaces candidates | Complète ADR-0004/0007/0008 sans les remplacer ; repo non créé ; DNS non adopté ; complété (non remplacé) par ADR-0013 |
+| ADR-0013 | Classification commerciale TAGORA Sourcing AI (Coming Soon) et carte des cinq modules SaaS | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | 5e module SaaS mensuel Coming Soon ; domaine applicatif TBD ; Nexus n'est pas un module commercial ; routes Website proposées non implémentées | Complète ADR-0012 sans la remplacer ; aucun DNS ; aucune implémentation Website/Nexus |
 
 ### Liens
 
@@ -51,15 +52,16 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0010](ADR-0010-CONTRAT-TECHNIQUE-TAGORA-HANDOFF-V1.md)
 - [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - [ADR-0012](ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
+- [ADR-0013](ADR-0013-TAGORA-SOURCING-AI-COMMERCIAL-MODULE-MAP-COMING-SOON.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, logout global, modèle I5, adoption DNS de `sourcing.tagora.ca`, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité est sélectionné par ADR-0011 (Stock Premium) ; l'implémentation du pilote et I5–I9 restent interdits. TAGORA Sourcing AI est fondé par ADR-0012 ; repo, DNS et connecteurs restent interdits.
+Les ADR futures (mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, logout global, modèle I5, décision de domaine applicatif Sourcing, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité est sélectionné par ADR-0011 (Stock Premium) ; l'implémentation du pilote et I5–I9 restent interdits. TAGORA Sourcing AI est fondé par ADR-0012 et classé commercialement Coming Soon par ADR-0013 ; repo, DNS, domaine applicatif et connecteurs restent interdits. `sourcing.tagora.ca` n'est pas un domaine adopté.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0012 Validé (fondation TAGORA Sourcing AI super-agent, 2026-08-16)** — ADR-0011 reste Validé (pilote identité Stock). ADR-0010 reste Validé (HANDOFF_V1). ADR-0009 reste Validé (bootstrap identité). ADR-0008 reste Validé (mapping). ADR-0007 reste Validé (surfaces). ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.
+**Enrichi — ADR-0013 Validé (classification commerciale Sourcing AI Coming Soon + carte 5 modules, 2026-08-16)** — ADR-0012 reste Validé (fondation ; complétée, non remplacée). ADR-0011 reste Validé (pilote identité Stock). ADR-0010 reste Validé (HANDOFF_V1). ADR-0009 reste Validé (bootstrap identité). ADR-0008 reste Validé (mapping). ADR-0007 reste Validé (surfaces). ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.

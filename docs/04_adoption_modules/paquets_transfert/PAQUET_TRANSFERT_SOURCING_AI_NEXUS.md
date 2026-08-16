@@ -1,13 +1,13 @@
-# Paquet de transfert — Catalogue Nexus × TAGORA Sourcing AI
+# Paquet de transfert — Positionnement Nexus × TAGORA Sourcing AI
 
 ```text
 TOS_SCOPE_ONLY=YES
 PRODUCT_APPLICATION_BY_TOS=NO
 PACKETS_EXECUTED=NO
 MARTIN_TRANSFER_REQUIRED=YES
-SOURCE_ADR=ADR-0012
-SOURCE_DECISION=DEC-024
-SOURCE_VALIDATION=VALD-103
+SOURCE_ADR=ADR-0012 + ADR-0013
+SOURCE_DECISION=DEC-024 + DEC-025
+SOURCE_VALIDATION=VALD-103 + VALD-104
 NEXUS_IMPLEMENTATION_AUTHORIZED=NO
 HANDOFF_IMPLEMENTATION_AUTHORIZED=NO
 SSO_IMPLEMENTATION_AUTHORIZED=NO
@@ -15,9 +15,11 @@ DNS_AUTHORIZED=NO
 IMPLEMENTATION_AUTHORIZED=NO
 ```
 
-Martin transfère ce paquet à l'agent TAGORA Nexus. TOS n'implémente rien. Nexus n'est pas modifié par ce gate.
+Martin transfère cette note à l'agent TAGORA Nexus **uniquement** sous transfert Martin séparé. TOS n'implémente rien. Nexus n'est pas modifié par ce gate.
 
 ---
+
+## Fondation DEC-024 (inchangée — historique)
 
 ```text
 PROJECT_TARGET: TAGORA Nexus
@@ -28,21 +30,73 @@ TARGET_HANDOFF=TAGORA_HANDOFF_V1
 NEXUS_MODULE_ROUTE_CANDIDATE=https://app.tagora.ca/modules/sourcing
 SAAS_APPLICATION_CANDIDATE=https://sourcing.tagora.ca
 SURFACE_STATUS=CANDIDATE_UNTIL_OFFICIAL_TOS_ADOPTION
+```
 
+Ces valeurs DEC-024 **restent dans l'historique**. Elles ne sont pas implémentées.
+
+---
+
+## Note de positionnement DEC-025
+
+```text
+PROJECT_TARGET=TAGORA Nexus
+SOURCING_AI=FIFTH_COMMERCIAL_SAAS_MODULE
+NEXUS=CENTRAL_CLIENT_PORTAL
+NEXUS_POSITION=CENTRAL_CLIENT_PORTAL + ACCESS_BROKER
+NEXUS_IS_COMMERCIAL_MODULE=NO
+NEXUS_IS_SIXTH_MONTHLY_MODULE=NO
+SOURCING_COMMERCIAL_STATUS=COMING_SOON
+SOURCING_APPLICATION_DOMAIN=TBD
+SOURCING_NEXUS_ROUTE=TBD
+SOURCING_SUBSCRIPTION_AVAILABLE=NO
+SOURCING_USER_ACCESS_AVAILABLE=NO
+SOURCING_HANDOFF_AVAILABLE=NO
+SOURCING_IN_NEXUS_AVAILABLE=NO
+SOURCING_PORTAL_ACCESS_AVAILABLE=NO
+NEXUS_IMPLEMENTATION_AUTHORIZED=NO
+MARTIN_TRANSFER_REQUIRED=YES
+```
+
+```text
+PREVIOUS_NEXUS_ROUTE_CANDIDATE=https://app.tagora.ca/modules/sourcing
+PREVIOUS_NEXUS_ROUTE_CANDIDATE_STATUS=HISTORICAL_CANDIDATE_NOT_IMPLEMENTED
+CURRENT_NEXUS_MODULE_ROUTE=TBD
+PREVIOUS_SAAS_DOMAIN_CANDIDATE=https://sourcing.tagora.ca
+PREVIOUS_SAAS_DOMAIN_CANDIDATE_STATUS=HISTORICAL_CANDIDATE_NOT_ADOPTED
+CURRENT_APPLICATION_DOMAIN=TBD
+```
+
+Nexus n'est **pas** un module commercial mensuel. TAGORA Sourcing AI est le **5e** module SaaS commercialisé séparément, en statut Coming Soon.
+
+Nexus permettra à terme :
+
+- l'accès aux modules souscrits ;
+- le contexte client / organisation ;
+- la navigation inter-modules ;
+- le lancement des modules autorisés.
+
+Aucun de ces accès n'est disponible pour Sourcing AI maintenant.
+
+Ne pas présenter `/modules/sourcing` comme route disponible.  
+Ne pas présenter `sourcing.tagora.ca` comme domaine officiel, actif, réservé, configuré, publié ou approuvé.
+
+```text
 REQUIRED_CHANGE:
 acknowledgement + impact analysis seulement.
 
-Reconnaître le module candidat dans le catalogue futur.
+Reconnaître Sourcing AI comme 5e module commercial Coming Soon.
 Ne pas absorber Sourcing AI.
 Ne pas créer de route runtime.
 Ne pas implémenter TAGORA_HANDOFF_V1.
+Ne pas ouvrir d'abonnement, d'accès utilisateur ni de portail Sourcing.
 Ne pas faire de DNS.
 
 ACCEPTANCE_CRITERIA:
-  SOURCING_CATALOG_ENTRY_ACKNOWLEDGED=YES
-  MODULE_KEY_SOURCING_ACKNOWLEDGED=YES
-  CANDIDATE_ROUTE_RECOGNIZED=YES
-  AUTONOMOUS_SAAS_PRESERVED=YES
+  SOURCING_FIFTH_MODULE_ACKNOWLEDGED=YES
+  NEXUS_NOT_COMMERCIAL_MODULE_ACKNOWLEDGED=YES
+  COMING_SOON_STATUS_ACKNOWLEDGED=YES
+  NEXUS_ROUTE_TBD_ACKNOWLEDGED=YES
+  SOURCING_ACCESS_NOT_AVAILABLE_ACKNOWLEDGED=YES
   HANDOFF_REAL=NO
   IMPLEMENTATION_AUTHORIZED=NO
 
@@ -52,11 +106,14 @@ AUCUNE IMPLÉMENTATION AUTOMATIQUE.
 
 ## Interdictions
 
-Aucun code Nexus, aucun endpoint handoff, aucun Entra, aucun SSO, aucun OAuth, aucun DNS, aucun catalogue runtime, aucune Production.
+Aucun code Nexus, aucun endpoint handoff, aucun Entra, aucun SSO, aucun OAuth, aucun DNS, aucun catalogue runtime, aucune souscription, aucun accès utilisateur, aucune Production.
 
 ## Références
 
+- [TAGORA_SOURCING_AI_COMMERCIAL_POSITIONING_COMING_SOON.md](../TAGORA_SOURCING_AI_COMMERCIAL_POSITIONING_COMING_SOON.md)
 - [TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md](../TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION.md)
+- [ADR-0013](../../05_adr/ADR-0013-TAGORA-SOURCING-AI-COMMERCIAL-MODULE-MAP-COMING-SOON.md)
 - [ADR-0012](../../05_adr/ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
 - [APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md](../APPLICATION_PROGRESSIVE_TAGORA_NEXUS.md)
+- [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](../../02_standards/CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md)
 - [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](../../02_standards/CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)

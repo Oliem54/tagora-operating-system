@@ -16,7 +16,8 @@ Fondé sur [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TC
 **Complément handoff 2026-08-16 :** contrat technique TAGORA_HANDOFF_V1 (DEC-022 / ADR-0010 / VALD-101). Access broker conceptuel seulement. Aucun endpoint runtime. Paquet : [PAQUET_TRANSFERT_HANDOFF_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_HANDOFF_NEXUS.md).  
 **Complément pilote identité 2026-08-16 :** Stock Premium **sélectionné** (DEC-023 / ADR-0011 / VALD-102). Implémentation non autorisée. I5/I6/I7 non commencés.
 
-**Complément catalogue Sourcing AI 2026-08-16 :** DEC-024 / ADR-0012 / VALD-103. `NEXUS_MODULE_KEY=sourcing` candidat. Route candidate `https://app.tagora.ca/modules/sourcing`. Paquet préparé, non exécuté : [PAQUET_TRANSFERT_SOURCING_AI_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_SOURCING_AI_NEXUS.md). `NEXUS_IMPLEMENTATION_AUTHORIZED=NO`. Aucun handoff réel.
+**Complément catalogue Sourcing AI 2026-08-16 :** DEC-024 / ADR-0012 / VALD-103. `NEXUS_MODULE_KEY=sourcing` candidat. Route candidate `https://app.tagora.ca/modules/sourcing`. Paquet préparé, non exécuté : [PAQUET_TRANSFERT_SOURCING_AI_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_SOURCING_AI_NEXUS.md). `NEXUS_IMPLEMENTATION_AUTHORIZED=NO`. Aucun handoff réel.  
+**Complément commercial Coming Soon 2026-08-16 :** DEC-025 / ADR-0013 / VALD-104. Sourcing AI = 5e module SaaS mensuel Coming Soon. Nexus n'est pas un module commercial. `SOURCING_NEXUS_ROUTE=TBD`. Candidat `/modules/sourcing` = historique non implémenté. `SOURCING_IN_NEXUS_AVAILABLE=NO`. `SOURCING_HANDOFF_AVAILABLE=NO`. Note : [PAQUET_TRANSFERT_SOURCING_AI_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_SOURCING_AI_NEXUS.md).
 
 **Autorisé maintenant :** `TAGORA-NEXUS-TOS-ADOPTION-BASELINE` — documentation et architecture seulement.
 
