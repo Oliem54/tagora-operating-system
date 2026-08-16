@@ -9,6 +9,8 @@ Décision : **DEC-015**
 
 Cette ADR fixe uniquement la convention normative des domaines canoniques de l'écosystème TAGORA.
 
+Les **rôles de surface**, pages commerciales Website et la clôture du rôle d'entrée publique Time sont complétés par **ADR-0007 / DEC-019 / VALD-098**. ADR-0004 n'est **pas** remplacée. Le tableau des domaines reste valide.
+
 Elle **n'autorise aucun changement DNS, déploiement, code, infrastructure ou modification d'un autre repository**.
 
 ---
@@ -141,6 +143,7 @@ Les projets concernés devront, lorsqu'ils recevront la décision via Martin, v�
 - [REGLES_DE_SEPARATION_DES_PROJETS.md](../03_gouvernance/REGLES_DE_SEPARATION_DES_PROJETS.md)
 - [REGISTRE_DECISIONS.md](../10_knowledge/REGISTRE_DECISIONS.md)
 - [REGISTRE_VALIDATIONS.md](../10_knowledge/REGISTRE_VALIDATIONS.md)
+- Complément rôles de surface : [ADR-0007](ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
 
 ---
 

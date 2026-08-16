@@ -10,6 +10,8 @@ Définir le **squelette de gouvernance** pour l'adoption progressive des standar
 
 Fondé sur [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TCP.md) — **Validé** (Martin ST-Gelais — Direction, 2026-08-10), Option A renforcée.
 
+**Complément surfaces 2026-08-16 :** `app.tagora.ca` = portail client authentifié central (DEC-019 / ADR-0007 / VALD-098). Nexus **ne change pas** le contrat de domaines. Nexus peut reporter des bloqueurs et proposer un plan. Aucune fusion des applications. Paquet : [PAQUET_TRANSFERT_SURFACES_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_SURFACES_NEXUS.md).
+
 **Autorisé maintenant :** `TAGORA-NEXUS-TOS-ADOPTION-BASELINE` — documentation et architecture seulement.
 
 **Toujours interdit :**

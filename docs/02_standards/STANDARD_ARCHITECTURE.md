@@ -42,6 +42,7 @@ L'architecture TAGORA n'est pas un diagramme unique imposé à tous. C'est un **
 3. **ADR obligatoire** pour décision architecturale significative (multi-modules, auth, API commune).
 4. **Pas de sur-architecture** — documenter le nécessaire, pas l'hypothétique.
 5. **Compatibilité sans fusion** — voir [REGLES_DE_COMPATIBILITE_MODULES.md](../03_gouvernance/REGLES_DE_COMPATIBILITE_MODULES.md).
+6. **Emplacement des surfaces** — Website / Nexus / SaaS autonomes selon [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md) (DEC-019 / ADR-0007). Time n'est pas l'entrée publique centrale.
 
 ---
 
@@ -71,4 +72,4 @@ L'architecture TAGORA n'est pas un diagramme unique imposé à tous. C'est un **
 
 ## Statut
 
-**Enrichi — Phase 3C** — Règles architecture définies. Décisions techniques : via ADR.
+**Enrichi — Contrat surfaces (2026-08-16)** — Règles architecture définies. Emplacement Website/Nexus/SaaS : ADR-0007. Décisions techniques : via ADR.

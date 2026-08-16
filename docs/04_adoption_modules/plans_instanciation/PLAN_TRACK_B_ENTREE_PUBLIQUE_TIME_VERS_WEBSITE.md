@@ -4,6 +4,9 @@
 **Décideur :** Martin ST-Gelais — Direction
 **Validation :** VALD-095
 **Décision liée :** DEC-016
+
+> **Note 2026-08-16 (DEC-019 / ADR-0007 / VALD-098) :** le **rôle** d'entrée publique centrale n'appartient plus à Time. `LEGACY_TIME_ENTRY_STATUS=TO_BE_DECOMMISSIONED_OR_REDIRECTED_BY_SEPARATE_TRANSITION`. Ce document Track B reste la préparation historique du 13 août. Exécution, cleanup, DNS et redirect restent **non autorisés**. Voir [PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md](PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md) et [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](../../02_standards/CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md).
+> `PHASE4D_LOT2_UNCHANGED=YES`
 **Preuve :** [TIME_AUDIT_READONLY_ENTREE_PUBLIQUE.md](../audits_time/TIME_AUDIT_READONLY_ENTREE_PUBLIQUE.md)
 
 ```text
@@ -71,6 +74,8 @@ Légende : `REBUILD` = reconstruire dans le propriétaire cible, sans copier le 
 | `https://time.tagora.ca/` comportement final | Time | A_CONFIRMER | après alignement Nexus |
 | « Se connecter » / « Mon espace TAGORA » / `app.tagora.ca` | — | TAGORA Nexus | A_CONFIRMER (Phase W3) |
 | `navigation.nexus` définie non rendue | Time | A_CONFIRMER | Nexus / Time, pas Website Auth |
+
+> **Note 2026-08-16 (DEC-019) :** le **rôle** CTA « Se connecter » / « Mon espace TAGORA » / `app.tagora.ca` est figé — Nexus. Le comportement final de `https://time.tagora.ca/` est `REDIRECT_LATER` (non appliqué). Les lignes `A_CONFIRMER` ci-dessus restent l'état Track B du 13 août.
 
 ```text
 LEGAL_SPLIT_REQUIRED=YES

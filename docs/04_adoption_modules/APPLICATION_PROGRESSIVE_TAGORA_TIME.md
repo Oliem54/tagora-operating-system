@@ -1067,6 +1067,8 @@ La Phase 4D globale reste **IN_PROGRESS**. Le gate est préparé dans TOS ; il n
 **Validation :** VALD-095
 **Décision :** DEC-016
 
+> **Note 2026-08-16 :** DEC-019 / ADR-0007 / VALD-098 closent le **rôle** d'entrée publique centrale de Time. Time = application SaaS sur `time.tagora.ca`. Cleanup / redirect / DNS toujours interdits. Phase 4D Lot 2 **inchangée**. Plan : [PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md](plans_instanciation/PLAN_TRANSITION_TIME_LEGACY_ENTREE_PUBLIQUE.md).
+
 Cette section **n'appartient pas** à Phase 4D QA. Elle n'autorise aucun cleanup Time.
 
 | Champ | Valeur |
