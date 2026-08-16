@@ -13,6 +13,8 @@ Elle **complète** ADR-0008 / DEC-020 et ADR-0009 / DEC-021. Elle **ne les rempl
 
 Elle **n'autorise aucun** endpoint runtime, Entra réel, OAuth, SSO, DB, secret, token, ni écriture hors TOS.
 
+Elle **ne choisit pas** le module pilote. La sélection officielle est [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md) / DEC-023 / VALD-102.
+
 ---
 
 ## Contexte
@@ -88,7 +90,7 @@ Non retenu : cookie `.tagora.ca` partagé ; base de mots de passe commune ; JOIN
 
 - I5 (dedup Time) et I6 (Entra staging) restent bloquants avant tout handoff réel.
 - Chaque module doit implémenter **son** adapter ; pas de modèle unique recopié.
-- Pilote recommandé (Stock) **non approuvé**.
+- Pilote recommandé (Stock) **non approuvé** par cette ADR. Sélection officielle : [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md) (implémentation toujours interdite).
 - Logout global non défini.
 
 ### Boundary
@@ -118,6 +120,7 @@ Website : login central seulement. Widget public Pulse / X-Plod : hors handoff s
 - [VALIDATION_VALD_101_CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](../10_knowledge/VALIDATION_VALD_101_CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
 - [ADR-0008](ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - [ADR-0009](ADR-0009-CONTRAT-IDENTITE-CENTRALE-BOOTSTRAP-UTILISATEURS.md)
+- Complément sélection pilote : [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 
 ---
 

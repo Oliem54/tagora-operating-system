@@ -257,7 +257,7 @@ Après adoption documentaire par tous les projets :
 | **I2** | READ-ONLY compatibility review Time/Mail/Stock/Pulse | **PASS** (Time + IDENTITY-I1/I2/I3) |
 | **I3** | Contrat technique TAGORA_HANDOFF_V1 et mapping identité/tenant | **OUI** — [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) |
 | **I4** | Microsoft Entra External ID sur **STAGING uniquement** | NON — Human Gate Martin obligatoire |
-| **I5** | Connecter **UN SEUL** module pilote en non-production | NON — Stock Premium recommandé, **non approuvé** |
+| **I5** | Connecter **UN SEUL** module pilote en non-production | NON — Stock Premium **sélectionné** (DEC-023) ; implémentation non autorisée |
 | **I6** | QA identité + tenant + entitlement | NON |
 | **I7** | Ajouter les autres modules un par un | NON |
 | **I8** | Website CTA / Mon espace selon readiness | NON |
@@ -287,6 +287,7 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 | ADR-0007 / DEC-019 / VALD-098 | Emplacement des surfaces — **complété**, non remplacé |
 | ADR-0009 / DEC-021 / VALD-100 | Identité centrale / bootstrap Time — **complété**, non remplacé |
 | ADR-0010 / DEC-022 / VALD-101 | Contrat technique TAGORA_HANDOFF_V1 — **complété**, non remplacé |
+| ADR-0011 / DEC-023 / VALD-102 | Sélection officielle du pilote Stock Premium — **complété**, non remplacé |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
 ---
@@ -297,5 +298,6 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 - [VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md](../10_knowledge/VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md)
 - Complément identité : [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md)
 - Complément handoff : [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
+- Complément sélection pilote : [ADR-0011](../05_adr/ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md)
 - [ADR-0007](../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)

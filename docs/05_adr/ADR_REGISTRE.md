@@ -33,7 +33,8 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0007 | Contrat d'emplacement des surfaces TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Website=`tagora.ca` discover/sell ; Nexus=`app.tagora.ca` portail ; SaaS autonomes ; Time n'est plus l'entrée publique centrale | Doc + paquets seulement ; aucun DNS/redirect/deploy |
 | ADR-0008 | Contrat de mapping et d'intégration des modules TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Login central `app.tagora.ca/login` ; `/modules/{slug}` ; Nexus access broker ; Entra External ID cible ; HANDOFF_V1 cible | Complète ADR-0007 ; aucun SSO/Entra/OAuth réel |
 | ADR-0009 | Identité centrale TAGORA et bootstrap utilisateurs Time | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Time = source bootstrap ; TAGORA_USER_ID ; Entra issuer+subject ; email ≠ identité ; pas de copie mot de passe ; rôles namespacés | Complète ADR-0008 ; aucune DB/Entra/SSO |
-| ADR-0010 | Contrat technique TAGORA_HANDOFF_V1 | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Handoff hybride code opaque + assertion serveur-à-serveur ; sessions locales ; adapters Time/Mail/Stock/Pulse ; pilote Stock recommandé non approuvé | Complète ADR-0008 et ADR-0009 ; aucun endpoint/Entra/OAuth réel |
+| ADR-0010 | Contrat technique TAGORA_HANDOFF_V1 | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Handoff hybride code opaque + assertion serveur-à-serveur ; sessions locales ; adapters Time/Mail/Stock/Pulse ; pilote Stock recommandé non approuvé | Complète ADR-0008 et ADR-0009 ; aucun endpoint/Entra/OAuth réel ; sélection pilote = ADR-0011 |
+| ADR-0011 | Sélection officielle du module pilote identité : Stock Premium | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | `SELECTED_PILOT_MODULE=STOCK_PREMIUM` ; sélection approuvée ; implémentation non autorisée ; I5/I6/I7 non commencés | Complète ADR-0010 ; n'autorise pas I7 ; Stock non touché |
 
 ### Liens
 
@@ -47,15 +48,16 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0008](ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - [ADR-0009](ADR-0009-CONTRAT-IDENTITE-CENTRALE-BOOTSTRAP-UTILISATEURS.md)
 - [ADR-0010](ADR-0010-CONTRAT-TECHNIQUE-TAGORA-HANDOFF-V1.md)
+- [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, logout global, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010 ; l'implémentation reste interdite.
+Les ADR futures (mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, logout global, modèle I5, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité est sélectionné par ADR-0011 (Stock Premium) ; l'implémentation du pilote et I5–I9 restent interdits.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0010 Validé (TAGORA_HANDOFF_V1, 2026-08-16)** — ADR-0009 reste Validé (bootstrap identité). ADR-0008 reste Validé (mapping). ADR-0007 reste Validé (surfaces). ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.
+**Enrichi — ADR-0011 Validé (sélection pilote identité Stock Premium, 2026-08-16)** — ADR-0010 reste Validé (HANDOFF_V1). ADR-0009 reste Validé (bootstrap identité). ADR-0008 reste Validé (mapping). ADR-0007 reste Validé (surfaces). ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.

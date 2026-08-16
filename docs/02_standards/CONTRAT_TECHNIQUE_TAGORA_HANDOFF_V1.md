@@ -49,12 +49,14 @@ MARTIN_TRANSFER_REQUIRED=YES
 CROSS_PROJECT_IMPACT=YES
 RULE_CHANGE=YES
 TOS_SCOPE_ONLY=YES
-PILOT_APPROVED=NO
+SELECTED_PILOT_MODULE=STOCK_PREMIUM
+PILOT_SELECTION_APPROVED=YES
+PILOT_IMPLEMENTATION_AUTHORIZED=NO
 ```
 
-Décision Martin : **DEC-022**  
-ADR : **ADR-0010**  
-Validation : **VALD-101**  
+Décision Martin : **DEC-022** (contrat) ; **DEC-023** (sélection pilote)  
+ADR : **ADR-0010** ; **ADR-0011**  
+Validation : **VALD-101** ; **VALD-102**  
 Date : **2026-08-16**  
 Décideur : **Martin ST-Gelais — Direction**
 
@@ -470,14 +472,19 @@ Aucun secret, token, mot de passe, hash dans les logs.
 
 Comparaison : Time = source bootstrap I5 et chantier Lot 2 distinct ; Mail = dual APP/GRAPH ; Pulse = tenant absent + dual AppUser/User ; Stock = rôles déjà `stock:*`, tenant UUID identifié, fail-closed account, déjà candidat mapping DEC-020.
 
+DEC-022 a **recommandé** Stock Premium sans l'approuver. DEC-023 **sélectionne** officiellement Stock Premium. L'implémentation reste interdite.
+
 ```text
 RECOMMENDED_PILOT_MODULE=STOCK_PREMIUM
-RATIONALE=rôles déjà namespacés ; tenant UUID canonique identifié ; isolation Time I5 / Mail Graph / Pulse dual-user ; candidat mapping DEC-020 à évaluer
-PILOT_APPROVED=NO
+SELECTED_PILOT_MODULE=STOCK_PREMIUM
+PILOT_SELECTION_APPROVED=YES
+PILOT_IMPLEMENTATION_AUTHORIZED=NO
+RATIONALE=rôles déjà namespacés ; tenant UUID canonique identifié ; isolation Time I5 / Mail Graph / Pulse dual-user ; session locale autonome ; pas de Graph
 HUMAN_GATE_REQUIRED=YES
+IDENTITY_I7_STARTED=NO
 ```
 
-Ce gate **ne choisit pas** le pilote. Le choix explicite reste un Human Gate Martin.
+La sélection officielle n'autorise **pas** IDENTITY-I7. Le paquet Stock reste en attente de I5, puis I6, puis un nouveau Human Gate Martin avant I7. Aucun transfert d'implémentation maintenant.
 
 ---
 
@@ -489,10 +496,10 @@ Ce gate **ne choisit pas** le pilote. Le choix explicite reste un Human Gate Mar
 | IDENTITY-I1 | READ-ONLY Mail IA | **PASS** |
 | IDENTITY-I2 | READ-ONLY Stock Premium | **PASS** |
 | IDENTITY-I3 | READ-ONLY Pulse AI | **PASS** |
-| **IDENTITY-I4** | Contrat technique TAGORA_HANDOFF_V1 | **OUI — ce document** |
+| **IDENTITY-I4** | Contrat technique TAGORA_HANDOFF_V1 | **CLOSED** — ce document (DEC-022) |
 | IDENTITY-I5 | Migration / reconciliation Time | **NON** |
 | IDENTITY-I6 | Entra External ID staging | **NON** — Human Gate |
-| IDENTITY-I7 | Un module pilote | **NON** — pilote non approuvé |
+| IDENTITY-I7 | Un module pilote | **NON** — Stock **sélectionné** (DEC-023) ; implémentation non autorisée ; non commencé |
 | IDENTITY-I8 | QA | **NON** |
 | IDENTITY-I9 | Modules suivants un par un | **NON** |
 
@@ -512,6 +519,7 @@ Aucun code produit ; aucun repo Time/Mail/Stock/Pulse/Nexus modifié hors paquet
 |---|---|
 | ADR-0008 / DEC-020 / VALD-099 | Mapping accès — **complété**, non remplacé |
 | ADR-0009 / DEC-021 / VALD-100 | Bootstrap identité Time — **complété**, non remplacé |
+| ADR-0011 / DEC-023 / VALD-102 | Sélection officielle du pilote Stock Premium — **complété**, non remplacé |
 | ADR-0007 / DEC-019 | Surfaces — inchangé |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
@@ -520,7 +528,9 @@ Aucun code produit ; aucun repo Time/Mail/Stock/Pulse/Nexus modifié hors paquet
 ## Références
 
 - [ADR-0010](../05_adr/ADR-0010-CONTRAT-TECHNIQUE-TAGORA-HANDOFF-V1.md)
+- [ADR-0011](../05_adr/ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - [VALIDATION_VALD_101_CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](../10_knowledge/VALIDATION_VALD_101_CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
+- [VALIDATION_VALD_102_SELECTION_MODULE_PILOTE_IDENTITE.md](../10_knowledge/VALIDATION_VALD_102_SELECTION_MODULE_PILOTE_IDENTITE.md)
 - [SYNTHESE_COMPARATIVE_IDENTITE_AUTH_QUATRE_MODULES.md](../04_adoption_modules/audits_identite/SYNTHESE_COMPARATIVE_IDENTITE_AUTH_QUATRE_MODULES.md)
 - [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md)
 - [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md)

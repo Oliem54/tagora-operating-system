@@ -79,7 +79,7 @@ Un compte TAGORA, un login primaire, un mot de passe, un MFA. Pas de base de mot
 
 ### Séquence
 
-I0 = ce contrat. I1–I9 ultérieurs. I4 Entra staging sous Human Gate. I5 un seul pilote non-production (Stock Premium recommandé à évaluer). I9 DNS/Production en dernier.
+I0 = ce contrat. I1–I9 ultérieurs. I4 Entra staging sous Human Gate. I5 un seul pilote non-production (Stock Premium recommandé à évaluer ; sélection officielle ADR-0011, implémentation non autorisée). I9 DNS/Production en dernier.
 
 ---
 
@@ -131,6 +131,7 @@ TOS (doc only) ; Website ; Nexus ; Time ; Mail IA ; Stock Premium ; Pulse AI.
 - [VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md](../10_knowledge/VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md)
 - Complément identité : [ADR-0009](ADR-0009-CONTRAT-IDENTITE-CENTRALE-BOOTSTRAP-UTILISATEURS.md)
 - Complément handoff : [ADR-0010](ADR-0010-CONTRAT-TECHNIQUE-TAGORA-HANDOFF-V1.md)
+- Complément sélection pilote : [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - [ADR-0007](ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
 
 ---

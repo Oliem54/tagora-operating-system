@@ -13,7 +13,8 @@ Fondé sur [ADR-0003](../05_adr/ADR-0003-POSITIONNEMENT-TAGORA-NEXUS-PLATFORM-TC
 **Complément surfaces 2026-08-16 :** `app.tagora.ca` = portail client authentifié central (DEC-019 / ADR-0007 / VALD-098).  
 **Complément mapping 2026-08-16 :** login central `https://app.tagora.ca/login` ; catalogue `/modules` ; access broker (DEC-020 / ADR-0008 / VALD-099).  
 **Complément identité 2026-08-16 :** Time = source bootstrap, pas autorité ; TAGORA_USER_ID central (DEC-021 / ADR-0009 / VALD-100). Aucun Entra réel. Paquet : [PAQUET_TRANSFERT_IDENTITE_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_IDENTITE_NEXUS.md).  
-**Complément handoff 2026-08-16 :** contrat technique TAGORA_HANDOFF_V1 (DEC-022 / ADR-0010 / VALD-101). Access broker conceptuel seulement. Aucun endpoint runtime. Paquet : [PAQUET_TRANSFERT_HANDOFF_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_HANDOFF_NEXUS.md).
+**Complément handoff 2026-08-16 :** contrat technique TAGORA_HANDOFF_V1 (DEC-022 / ADR-0010 / VALD-101). Access broker conceptuel seulement. Aucun endpoint runtime. Paquet : [PAQUET_TRANSFERT_HANDOFF_NEXUS.md](paquets_transfert/PAQUET_TRANSFERT_HANDOFF_NEXUS.md).  
+**Complément pilote identité 2026-08-16 :** Stock Premium **sélectionné** (DEC-023 / ADR-0011 / VALD-102). Implémentation non autorisée. I5/I6/I7 non commencés.
 
 **Autorisé maintenant :** `TAGORA-NEXUS-TOS-ADOPTION-BASELINE` — documentation et architecture seulement.
 

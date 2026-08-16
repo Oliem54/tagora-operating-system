@@ -164,7 +164,7 @@ Aucun module ne peut être intégré par JOIN email. Aucun rôle métier ne peut
 
 ---
 
-## Module pilote — comparaison (non approuvé)
+## Module pilote — comparaison (recommandation DEC-022 ; sélection DEC-023)
 
 | Critère | TIME | MAIL | STOCK | PULSE |
 |---|---|---|---|---|
@@ -176,9 +176,13 @@ Aucun module ne peut être intégré par JOIN email. Aucun rôle métier ne peut
 
 ```text
 RECOMMENDED_PILOT_MODULE=STOCK_PREMIUM
-PILOT_APPROVED=NO
-HUMAN_GATE_REQUIRED=YES
+SELECTED_PILOT_MODULE=STOCK_PREMIUM
+PILOT_SELECTION_APPROVED=YES
+PILOT_IMPLEMENTATION_AUTHORIZED=NO
+IDENTITY_I7_STARTED=NO
 ```
+
+La comparaison DEC-022 a recommandé Stock. DEC-023 / ADR-0011 / VALD-102 **sélectionne** Stock Premium. L'implémentation du pilote reste interdite. IDENTITY-I7 n'est pas commencé.
 
 Rationale : voir [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](../../02_standards/CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) § Module pilote.
 
@@ -190,4 +194,6 @@ Rationale : voir [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](../../02_standards/CON
 - [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](../../02_standards/CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md)
 - [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](../../02_standards/CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md)
 - [ADR-0010](../../05_adr/ADR-0010-CONTRAT-TECHNIQUE-TAGORA-HANDOFF-V1.md)
+- [ADR-0011](../../05_adr/ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - [VALD-101](../../10_knowledge/VALIDATION_VALD_101_CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
+- [VALD-102](../../10_knowledge/VALIDATION_VALD_102_SELECTION_MODULE_PILOTE_IDENTITE.md)

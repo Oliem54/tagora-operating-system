@@ -52,6 +52,8 @@ IMPLEMENTATION_AUTHORIZED=NO
 
 Prochain retour : validation du contrat et **choix explicite** du module pilote. IDENTITY-I5 à I9 non commencés.
 
+Complétée par VALD-102 / DEC-023 / ADR-0011 : `SELECTED_PILOT_MODULE=STOCK_PREMIUM`. Cette validation n'autorisait pas l'implémentation du pilote.
+
 ## Décisions liées
 
 ADR-0008 / DEC-020 / VALD-099 restent **Validé**.  
@@ -64,3 +66,4 @@ VALD-094 / Phase 4D Lot 2 restent **inchangés**.
 - [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](../02_standards/CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
 - [SYNTHESE_COMPARATIVE_IDENTITE_AUTH_QUATRE_MODULES.md](../04_adoption_modules/audits_identite/SYNTHESE_COMPARATIVE_IDENTITE_AUTH_QUATRE_MODULES.md)
 - [REGISTRE_DECISIONS.md](REGISTRE_DECISIONS.md) — DEC-022
+- Complément sélection pilote : [VALIDATION_VALD_102_SELECTION_MODULE_PILOTE_IDENTITE.md](VALIDATION_VALD_102_SELECTION_MODULE_PILOTE_IDENTITE.md) — DEC-023
