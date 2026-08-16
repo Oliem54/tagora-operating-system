@@ -25,7 +25,8 @@ DECISION_TOS: app.tagora.ca est le portail client et l'access broker.
 CENTRAL_LOGIN=https://app.tagora.ca/login
 PORTAL_MODULE_CATALOG=https://app.tagora.ca/modules
 NEXUS_ACCESS_BROKER=YES
-TAGORA_HANDOFF_V1=TARGET_STANDARD
+TAGORA_HANDOFF_V1=OFFICIAL_TECHNICAL_CONTRACT
+HANDOFF_REAL_AUTHORIZED=NO
 
 REQUIRED_CHANGE (mission future, pas ce gate) :
 - réserver /modules;
@@ -34,7 +35,7 @@ REQUIRED_CHANGE (mission future, pas ce gate) :
 - catalogue;
 - entitlement fail-closed;
 - access broker;
-- TAGORA_HANDOFF_V1 (contrat technique ultérieur);
+- TAGORA_HANDOFF_V1 (contrat technique DEC-022 — aucun handoff réel ici);
 - identité commune cible (Entra External ID / OIDC+PKCE);
 - aucun SSO réel sans Human Gate.
 
@@ -59,3 +60,4 @@ Aucun Entra, app registration, OAuth, secret, token, handoff réel, DNS, deploy,
 - [ADR-0008](../../05_adr/ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - Paquet surfaces (DEC-019) : [PAQUET_TRANSFERT_SURFACES_NEXUS.md](PAQUET_TRANSFERT_SURFACES_NEXUS.md)
 - Identité (DEC-021) : [PAQUET_TRANSFERT_IDENTITE_NEXUS.md](PAQUET_TRANSFERT_IDENTITE_NEXUS.md)
+- Handoff (DEC-022) : [PAQUET_TRANSFERT_HANDOFF_NEXUS.md](PAQUET_TRANSFERT_HANDOFF_NEXUS.md)

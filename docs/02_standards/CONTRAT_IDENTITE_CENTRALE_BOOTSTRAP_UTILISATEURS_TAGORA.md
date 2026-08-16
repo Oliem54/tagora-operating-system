@@ -272,10 +272,11 @@ time.tagora.ca
 ```
 
 ```text
-TAGORA_HANDOFF_V1=TARGET_STANDARD_ONLY
+TAGORA_HANDOFF_V1=OFFICIAL_TECHNICAL_CONTRACT
+HANDOFF_REAL_AUTHORIZED=NO
 ```
 
-Aucun endpoint, callback, state, nonce, token ou protocole crypto concret n'est inventé ici. Cela viendra dans le contrat technique TAGORA_HANDOFF_V1.
+Le protocole conceptuel est figé par [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) (DEC-022 / ADR-0010 / VALD-101). Aucun endpoint runtime n'est autorisé ici.
 
 ---
 
@@ -311,17 +312,17 @@ Website conserve uniquement le login central Nexus : `https://app.tagora.ca/logi
 | Phase | Objet | Autorisé maintenant |
 |---|---|---|
 | **IDENTITY-I0** | Contrat TOS identité / bootstrap | **OUI** — ce document |
-| **IDENTITY-I1** | READ-ONLY compatibility Mail IA | NON — transfert Martin |
-| **IDENTITY-I2** | READ-ONLY compatibility Stock Premium | NON |
-| **IDENTITY-I3** | READ-ONLY compatibility Pulse AI | NON |
-| **IDENTITY-I4** | Contrat technique TAGORA_HANDOFF_V1 après comparaison des quatre modules | NON |
+| **IDENTITY-I1** | READ-ONLY compatibility Mail IA | **PASS** |
+| **IDENTITY-I2** | READ-ONLY compatibility Stock Premium | **PASS** |
+| **IDENTITY-I3** | READ-ONLY compatibility Pulse AI | **PASS** |
+| **IDENTITY-I4** | Contrat technique TAGORA_HANDOFF_V1 après comparaison des quatre modules | **OUI** — [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) |
 | **IDENTITY-I5** | Modèle de migration / dedup Time | NON |
 | **IDENTITY-I6** | Entra External ID STAGING | NON — Human Gate séparé |
-| **IDENTITY-I7** | Un seul module pilote | NON |
+| **IDENTITY-I7** | Un seul module pilote | NON — Stock recommandé, **non approuvé** |
 | **IDENTITY-I8** | QA | NON |
 | **IDENTITY-I9** | Modules suivants un par un | NON |
 
-Prochain transfert recommandé : **TAGORA Mail IA**, analyse READ-ONLY.
+Prochain Human Gate : validation du contrat HANDOFF_V1 et choix explicite du module pilote. I5–I9 non commencés.
 
 ---
 
@@ -336,6 +337,7 @@ Aucun code produit ; aucun repo Time/Nexus/Mail/Stock/Pulse ; aucune DB ; aucune
 | ID | Relation |
 |---|---|
 | ADR-0008 / DEC-020 / VALD-099 | Mapping accès / identité cible — **complété**, non remplacé |
+| ADR-0010 / DEC-022 / VALD-101 | Contrat technique TAGORA_HANDOFF_V1 — complément ultérieur |
 | ADR-0007 / DEC-019 | Surfaces — inchangé |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
@@ -345,5 +347,6 @@ Aucun code produit ; aucun repo Time/Nexus/Mail/Stock/Pulse ; aucune DB ; aucune
 
 - [ADR-0009](../05_adr/ADR-0009-CONTRAT-IDENTITE-CENTRALE-BOOTSTRAP-UTILISATEURS.md)
 - [VALIDATION_VALD_100_IDENTITE_CENTRALE_BOOTSTRAP.md](../10_knowledge/VALIDATION_VALD_100_IDENTITE_CENTRALE_BOOTSTRAP.md)
+- Complément handoff : [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
 - [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md)
 - [ADR-0008](../05_adr/ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)

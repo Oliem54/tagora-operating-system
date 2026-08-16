@@ -8,6 +8,8 @@ Définir le plan d'adoption progressive des standards TOS sur **TAGORA Time**, p
 
 Module **TAGORA Time** uniquement — application métier horodateur / gestion du temps. TOS et Time restent des entités **séparées**.
 
+**Complément identité / handoff 2026-08-16 :** Time = source bootstrap, pas autorité (DEC-021). Contrat TAGORA_HANDOFF_V1 conceptuel (DEC-022 / ADR-0010). Phase 4D Lot 2 **inchangée**. Paquets : [PAQUET_TRANSFERT_IDENTITE_TIME.md](paquets_transfert/PAQUET_TRANSFERT_IDENTITE_TIME.md), [PAQUET_TRANSFERT_HANDOFF_TIME.md](paquets_transfert/PAQUET_TRANSFERT_HANDOFF_TIME.md). Aucune écriture Time.
+
 ---
 
 ## Pourquoi TAGORA Time est le projet pilote

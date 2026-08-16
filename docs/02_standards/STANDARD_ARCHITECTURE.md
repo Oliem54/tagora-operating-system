@@ -45,6 +45,7 @@ L'architecture TAGORA n'est pas un diagramme unique imposé à tous. C'est un **
 6. **Emplacement des surfaces** — Website / Nexus / SaaS autonomes selon [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md) (DEC-019 / ADR-0007). Time n'est pas l'entrée publique centrale.
 7. **Mapping d'accès** — login central, catalogue `/modules/{slug}`, access broker Nexus selon [CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md](CONTRAT_MAPPING_INTEGRATION_MODULES_TAGORA.md) (DEC-020 / ADR-0008).
 8. **Identité centrale** — bootstrap Time et rattachement conceptuel selon [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md) (DEC-021 / ADR-0009). Time n'est pas l'autorité d'identité.
+9. **Handoff d'accès** — contrat technique conceptuel [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) (DEC-022 / ADR-0010). Session locale par module. Aucun cookie partagé. Aucun handoff réel sans Human Gate.
 
 ---
 
@@ -74,4 +75,4 @@ L'architecture TAGORA n'est pas un diagramme unique imposé à tous. C'est un **
 
 ## Statut
 
-**Enrichi — Identité centrale (2026-08-16)** — Surfaces : ADR-0007. Accès : ADR-0008. Bootstrap identité Time : ADR-0009. Décisions techniques : via ADR.
+**Enrichi — TAGORA_HANDOFF_V1 (2026-08-16)** — Surfaces : ADR-0007. Accès : ADR-0008. Bootstrap identité Time : ADR-0009. Handoff conceptuel : ADR-0010. Décisions techniques : via ADR.

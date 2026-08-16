@@ -8,6 +8,8 @@ Définir le plan d'adoption progressive des standards TOS sur **TAGORA Mail IA**
 
 Module TAGORA Mail IA — adoption post-pilote, avec attention particulière à TAF (IA).
 
+**Complément identité / handoff 2026-08-16 :** IDENTITY-I1 PASS. `APP_AUTH != GRAPH_AUTH`. Contrat TAGORA_HANDOFF_V1 conceptuel (DEC-022). Paquets : [PAQUET_TRANSFERT_IDENTITE_MAIL_IA.md](paquets_transfert/PAQUET_TRANSFERT_IDENTITE_MAIL_IA.md), [PAQUET_TRANSFERT_HANDOFF_MAIL_IA.md](paquets_transfert/PAQUET_TRANSFERT_HANDOFF_MAIL_IA.md). Aucun Graph / Mail.Send.
+
 ## Principes
 
 - Convergence vers TOS incluant standards IA (TAF).

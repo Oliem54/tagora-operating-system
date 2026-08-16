@@ -169,11 +169,11 @@ Pour ouvrir un module :
 9. le SaaS conserve ses propres rôles et permissions métier.
 
 ```text
-TAGORA_HANDOFF_V1=TARGET_STANDARD
+TAGORA_HANDOFF_V1=OFFICIAL_TECHNICAL_CONTRACT
 HANDOFF_REAL_AUTHORIZED=NO
 ```
 
-Le mécanisme précis de callback, return target, state, nonce et handoff sera défini dans un **contrat technique séparé**. Ce document n'invente aucun endpoint OAuth commun.
+Le mécanisme conceptuel (code opaque one-time, rédemption serveur-à-serveur, assertion hors navigateur, `return_to` allowlisté) est figé par [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) (DEC-022 / ADR-0010). Ce document n'invente aucun endpoint OAuth commun. Aucun handoff réel n'est autorisé.
 
 ---
 
@@ -254,10 +254,10 @@ Après adoption documentaire par tous les projets :
 |---|---|---|
 | **I0** | Contrat TOS mapping/adresses | **OUI** — ce document |
 | **I1** | Nexus portail / catalogue en local/mock | NON — Human Gate séparé |
-| **I2** | READ-ONLY compatibility review Time/Mail/Stock/Pulse | NON — après transfert Martin |
-| **I3** | Contrat technique TAGORA_HANDOFF_V1 et mapping identité/tenant | NON — contrat séparé |
+| **I2** | READ-ONLY compatibility review Time/Mail/Stock/Pulse | **PASS** (Time + IDENTITY-I1/I2/I3) |
+| **I3** | Contrat technique TAGORA_HANDOFF_V1 et mapping identité/tenant | **OUI** — [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md) |
 | **I4** | Microsoft Entra External ID sur **STAGING uniquement** | NON — Human Gate Martin obligatoire |
-| **I5** | Connecter **UN SEUL** module pilote en non-production | NON — pilote recommandé à évaluer : Stock Premium |
+| **I5** | Connecter **UN SEUL** module pilote en non-production | NON — Stock Premium recommandé, **non approuvé** |
 | **I6** | QA identité + tenant + entitlement | NON |
 | **I7** | Ajouter les autres modules un par un | NON |
 | **I8** | Website CTA / Mon espace selon readiness | NON |
@@ -285,7 +285,8 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 |---|---|
 | ADR-0004 / DEC-015 | Domaines canoniques — inchangés |
 | ADR-0007 / DEC-019 / VALD-098 | Emplacement des surfaces — **complété**, non remplacé |
-| ADR-0009 / DEC-021 / VALD-100 | Identité centrale / bootstrap Time — complément ultérieur |
+| ADR-0009 / DEC-021 / VALD-100 | Identité centrale / bootstrap Time — **complété**, non remplacé |
+| ADR-0010 / DEC-022 / VALD-101 | Contrat technique TAGORA_HANDOFF_V1 — **complété**, non remplacé |
 | VALD-094 | Phase 4D Lot 2 — **inchangée** |
 
 ---
@@ -295,5 +296,6 @@ Un nouveau GO Martin est obligatoire avant : implémentation cross-project ; Ent
 - [ADR-0008](../05_adr/ADR-0008-CONTRAT-MAPPING-INTEGRATION-MODULES-TAGORA.md)
 - [VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md](../10_knowledge/VALIDATION_VALD_099_MAPPING_INTEGRATION_MODULES.md)
 - Complément identité : [CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md](CONTRAT_IDENTITE_CENTRALE_BOOTSTRAP_UTILISATEURS_TAGORA.md)
+- Complément handoff : [CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md](CONTRAT_TECHNIQUE_TAGORA_HANDOFF_V1.md)
 - [CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md](CONTRAT_EMPLACEMENT_SURFACES_TAGORA.md)
 - [ADR-0007](../05_adr/ADR-0007-CONTRAT-EMPLACEMENT-SURFACES-TAGORA.md)
