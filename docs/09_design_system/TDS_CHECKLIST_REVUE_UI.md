@@ -30,14 +30,18 @@ Avant de valider un écran, répondre honnêtement :
 | 6 | **La navigation est-elle cohérente ?** — Où suis-je ? Que faire ensuite ? | ☐ |
 | 7 | **L'écran fonctionne-t-il en mobile et desktop ?** — Ou limitation documentée | ☐ |
 | 8 | **L'écran semble-t-il appartenir à l'univers TAGORA ?** — Cohérence TDS / marque | ☐ |
+| 9 | **Le bon thème produit est-il appliqué ?** — Tokens officiels, sans couleur locale inventée | ☐ |
+| 10 | **Le logo est-il correct pour le fond ?** — Canvas complet, sans crop, déformation ou recoloration | ☐ |
+| 11 | **Le nom canonique est-il accessible ?** — `TAGORA + NOM`, métadonnées et nom accessible cohérents | ☐ |
+| 12 | **Les seuils WCAG 2.2 AA passent-ils ?** — Contraste, clavier, focus et cibles tactiles vérifiés | ☐ |
 
 ---
 
 ## Seuil de validation
 
-- **8/8** — Prêt pour validation formelle (avec TQF si parcours critique).
-- **6–7/8** — Corrections mineures avant validation.
-- **< 6/8** — Retravail UX/TDS requis.
+- **12/12** — Prêt pour validation formelle (avec TQF si parcours critique).
+- **10–11/12** — Corrections mineures avant validation.
+- **< 10/12** — Retravail UX/TDS requis.
 
 Les échecs doivent être **notés** (ticket, commentaire PR, note TKS) — pas ignorés.
 
@@ -50,6 +54,7 @@ Les échecs doivent être **notés** (ticket, commentaire PR, note TKS) — pas 
 - Familles Avenir Next + JHC Notion uniquement ; Outfit/Syne LEGACY ; aucun mapping body/display inventé ([ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md), [CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAGORA.md))
 - Couleurs centrales limitées à la palette exclusive ; gradients officiels uniquement
 - Pas de surcharge — détails secondaires en vues dédiées ([DESIGN_PREMIUM_2027.md](DESIGN_PREMIUM_2027.md))
+- Thème et structure communs ([STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md), [REGISTRE_THEMES_MODULES_TAGORA.md](REGISTRE_THEMES_MODULES_TAGORA.md))
 
 ---
 
@@ -70,4 +75,4 @@ Les échecs doivent être **notés** (ticket, commentaire PR, note TKS) — pas 
 
 ## Statut
 
-**Enrichi — Charte centrale finale (2026-08-15)** — Compléments optionnels alignés sur ADR-0006. Checklist 8 points inchangée.
+**Enrichi — système visuel des modules (2026-08-18)** — Checklist portée à 12 points avec thème, logo, nom accessible et WCAG 2.2 AA. Application produit non autorisée.

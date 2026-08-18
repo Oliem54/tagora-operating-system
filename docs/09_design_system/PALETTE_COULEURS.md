@@ -2,11 +2,11 @@
 
 ## Objectif
 
-Définir la **palette officielle exclusive** TAGORA et le cadre sémantique encore non assigné — identité visuelle commune, sans inventer de rôles absents de la charte.
+Définir la **palette officielle exclusive** TAGORA, les accents produits scellés et les couleurs fonctionnelles communes de l'interface.
 
 ## Portée
 
-Couleurs centrales, dégradés officiels, et catégories sémantiques à confirmer plus tard — tous modules TAGORA.
+Couleurs centrales, dégradés officiels, accents des produits et états fonctionnels — tous modules TAGORA.
 
 Source canonique : [CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAGORA.md) · **DEC-018** · **ADR-0006** · **VALD-097**
 
@@ -19,7 +19,9 @@ FINAL_PALETTE_STATUS=OFFICIAL_EXCLUSIVE
 FINAL_GRADIENTS_STATUS=OFFICIAL_EXCLUSIVE
 PREVIOUS_MATRIX_STATUS=OBSOLETE
 PREVIOUS_PALETTE_STATUS=OBSOLETE
-SEMANTIC_COLOR_MAPPING=NOT_DEFINED_BY_BRAND_GUIDE
+SEMANTIC_COLOR_MAPPING_NOT_DEFINED_BY_BRAND_GUIDE=YES
+UI_FUNCTIONAL_MAPPING=DEFINED_BY_DEC_029
+PRODUCT_ACCENT_MAPPING=DEFINED_BY_DEC_029
 PRODUCT_APPLICATION_AUTHORIZED=NO
 ```
 
@@ -49,7 +51,21 @@ Aucune autre couleur centrale TAGORA n'est autorisée.
 | Vert mousse | `#74C365` |
 | Acier Azure | `#1E488F` |
 
-La charte **nomme** ces huit couleurs. Elle **ne définit pas** explicitement `PRIMARY_COLOR`, `SUCCESS_COLOR`, `DANGER_COLOR`, ni d'affectation par module. TOS n'invente pas ces mappings.
+La charte **nomme** ces huit couleurs. Elle ne définit pas de mapping sémantique. DEC-029 ajoute séparément une couche UI fonctionnelle et une couche d'accents produits sans modifier la palette de marque centrale.
+
+## Accents produits scellés
+
+| Produit | Accent source | Accent secondaire source |
+|---|---:|---:|
+| HORORA | `#1F79E0` | `#4174BA` |
+| PULS | `#55C558` | — |
+| DEPORA | `#00C1D5` | `#4DBED2` |
+| MESSOR | `#DBDF5C` | `#DADF3A` |
+| YORVA | `#BAC300` | — |
+| ETIOQ | `#F2F890` | `#E3E88F` |
+| NEXUS | `#008247` | — |
+
+Ces couleurs sont autorisées uniquement dans le thème du produit correspondant. Les valeurs dérivées sont figées dans [REGISTRE_THEMES_MODULES_TAGORA.md](REGISTRE_THEMES_MODULES_TAGORA.md).
 
 ---
 
@@ -71,39 +87,31 @@ Aucun autre dégradé central TAGORA n'est déclaré officiel.
 La palette n'est pas décorative seule. Elle sert à :
 
 - **Identifier** l'univers TAGORA d'un coup d'œil.
-- **Communiquer** des statuts et états métier (succès, alerte, erreur) — mapping sémantique encore à confirmer.
+- **Communiquer** des statuts et états métier par la couche fonctionnelle commune.
 - **Guider** l'attention vers l'information critique.
-- **Unifier** Time, Stock Premium, Voice, Mail IA, Pulse et Nexus.
+- **Unifier** HORORA, PULS, DEPORA, MESSOR, YORVA, ETIOQ et Nexus.
 
 ---
 
-## Catégories sémantiques — mapping non défini par la charte
+## Couleurs sémantiques fonctionnelles
 
-Les catégories suivantes restent un **cadre** TDS. Leur liaison aux huit couleurs officielles n'est **pas** actée.
+Ces couleurs sont des outils d'interface, pas des couleurs de marque. Elles restent identiques dans tous les modules.
 
-| Catégorie | Usage prévu | Mapping hex |
-|---|---|---|
-| **Primaire** | Actions principales, identité TAGORA | Non défini par la charte |
-| **Secondaire** | Actions secondaires, accents | Non défini par la charte |
-| **Neutres** | Texte, fonds, séparateurs | Non défini par la charte |
-| **Fond** | Arrière-plans page, cartes, panneaux | Non défini par la charte |
-| **Texte** | Corps, titres, texte atténué | Non défini par la charte |
-| **Bordures** | Contours, dividers | Non défini par la charte |
-| **Succès** | Confirmation, état OK | Non défini par la charte |
-| **Avertissement** | Attention, action requise bientôt | Non défini par la charte |
-| **Danger** | Erreur, suppression, blocage | Non défini par la charte |
-| **Information** | Message informatif neutre | Non défini par la charte |
-| **Rôles** | Différenciation visuelle rôles (si applicable) | Non défini par la charte |
-| **Statuts** | États métier transverses | Non défini par la charte |
+| État | Foreground | Background | Border |
+|---|---:|---:|---:|
+| Succès | `#067647` | `#ECFDF3` | `#ABEFC6` |
+| Avertissement | `#B54708` | `#FFFAEB` | `#FEDF89` |
+| Danger | `#B42318` | `#FEF3F2` | `#FECDCA` |
+| Information | `#175CD3` | `#EFF8FF` | `#B2DDFF` |
 
-> **Règle :** Ne pas inventer d'affectation sémantique détaillée. Toute liaison catégorie → hex exige une confirmation Martin ou designer distincte.
+Chaque état comporte un libellé ou une icône. L'accent produit ne remplace jamais automatiquement ces couleurs.
 
 ---
 
 ## Règles
 
 1. **Compréhension avant décoration** — Une couleur doit aider à comprendre un statut ou une priorité.
-2. **Cohérence sémantique** — « Succès » signifie la même chose dans Time et Stock Premium, une fois le mapping confirmé.
+2. **Cohérence sémantique** — « Succès » signifie la même chose dans HORORA et DEPORA.
 3. **Accessibilité** — Contrastes suffisants (voir [ACCESSIBILITE.md](ACCESSIBILITE.md)).
 4. **Pas de couleurs ad hoc** — Exceptions documentées via gouvernance TOS.
 5. **Palette exclusive** — Aucune couleur centrale hors des huit valeurs officielles.
@@ -111,25 +119,14 @@ Les catégories suivantes restent un **cadre** TDS. Leur liaison aux huit couleu
 
 ---
 
-## Application TAGORA Time — statuts métier à couvrir
+## Mapping métier local
 
-Couleurs sémantiques Time : **mapping hex non défini** par la charte. Les noms de tokens restent à confirmer.
-
-| Statut Time | Objectif visuel | Hex |
-|---|---|---|
-| **Punch actif** | Employé en service — visible immédiatement | Non défini par la charte |
-| **Punch terminé** | Shift clos — état repos / hors service | Non défini par la charte |
-| **Retard** | Alerte sans ambiguïté | Non défini par la charte |
-| **Absence** | Distinct du retard et du punch normal | Non défini par la charte |
-| **Attente de validation** | Superviseur doit agir | Non défini par la charte |
-| **Erreur** | Blocage ou échec action | Non défini par la charte |
-| **Alerte direction** | Synthèse ou KPI nécessitant attention | Non défini par la charte |
+Chaque module associe ses statuts métier aux quatre états fonctionnels dans sa propre documentation. Un statut métier n'est pas automatiquement un succès parce qu'il est positif, ni une erreur parce qu'il utilise une couleur vive.
 
 ---
 
 ## Éléments à documenter plus tard
 
-- Mapping sémantique des huit couleurs (primaire, succès, danger, modules)
 - Mode sombre
 - Matrice statut → couleur → contraste WCAG
 - Exemples visuels de référence
@@ -137,4 +134,4 @@ Couleurs sémantiques Time : **mapping hex non défini** par la charte. Les noms
 
 ## Statut
 
-**Enrichi — Charte centrale finale (2026-08-15)** — Huit hex et quatre dégradés exclusifs actés (DEC-018 / ADR-0006 / VALD-097). Mapping sémantique : en attente. Application produit : non autorisée.
+**Enrichi — système visuel des modules (2026-08-18)** — Palette centrale DEC-018 inchangée ; accents produits et couleurs fonctionnelles UI ajoutés par DEC-029 / ADR-0017 / VALD-108. Application produit : non autorisée.

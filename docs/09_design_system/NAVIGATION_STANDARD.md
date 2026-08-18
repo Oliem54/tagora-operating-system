@@ -6,14 +6,14 @@ Définir le standard officiel de **navigation** et d'architecture de l'informati
 
 ## Portée
 
-Menus, actions rapides, filtres, vues détaillées, dashboards et wayfinding — tous modules. **TAGORA Time** en priorité.
+Menus, actions rapides, filtres, vues détaillées, dashboards et wayfinding — tous modules. **TAGORA DEPORA** est le premier pilote du système visuel commun.
 
 ---
 
 ## Principes de navigation TAGORA
 
 1. **Claire** — L'utilisateur comprend où il est et ce qu'il peut faire.
-2. **Constante** — Mêmes patterns entre Time, Stock Premium, Voice, Mail IA, Pulse, Platform.
+2. **Constante** — Mêmes patterns entre HORORA, PULS, DEPORA, MESSOR, YORVA, ETIOQ et Nexus.
 3. **Prévisible** — Même type d'action au même endroit logique (ex. action principale en évidence).
 4. **Adaptée au rôle** — Employé, superviseur, direction et admin ne voient pas la même navigation.
 
@@ -40,6 +40,7 @@ Ne pas mélanger action principale et filtres avancés sur le même niveau visue
 - **Résumé en haut** — statuts, alertes, KPIs critiques.
 - **Listes et détails en dessous** — drill-down vers vues secondaires.
 - **Cohérence de layout** — structure similaire entre modules TAGORA (sans copier à l'identique).
+- **Thème borné** — l'accent identifie le module ; la position des repères et le comportement restent communs.
 
 ---
 
@@ -78,13 +79,18 @@ Les **menus finaux de TAGORA Time ne sont pas inventés ici** — à documenter 
 
 ---
 
+## Gabarit commun
+
+Le header recommandé mesure au moins 64 px ; une sidebar desktop mesure 256 px et sa variante réduite 72 px. Le module conserve ses libellés métier, mais place de façon cohérente l'identité, le contexte, l'action principale, le profil, l'aide et la sortie.
+
+Référence normative : [STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md).
+
 ## Éléments à documenter plus tard
 
-- Patterns sidebar, top nav, tabs (choix par module)
-- Navigation inter-applications TAGORA (Platform)
-- Breadcrumbs et titres de page
-- Matrice navigation complète Time (dépôt Time)
+- Matrice de navigation réelle par module et par rôle
+- Navigation inter-applications via Nexus
+- Exceptions justifiées aux dimensions de référence
 
 ## Statut
 
-**Enrichi — Phase 3B** — Principes navigation définis. Menus Time à mapper sur le produit réel.
+**Enrichi — système visuel des modules (2026-08-18)** — Principes et dimensions de référence communs ; menus métier à mapper dans chaque produit ; aucune application autorisée.

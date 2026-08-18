@@ -2,7 +2,9 @@
 
 **Date :** 2026-08-15  
 **Décideur :** Martin ST-Gelais — Direction  
-**Statut :** Validé  
+**Statut :** Validé
+
+> Complément actif : DEC-029 / ADR-0017 / VALD-108 documentent les thèmes des identités produits, leur mapping normal/light, les tokens UI et WCAG 2.2 AA. La licence Web et le mapping typographique restent en attente.
 **Type :** Humaine / Gouvernance
 
 ## Décision validée
@@ -34,8 +36,10 @@ Cette validation autorise uniquement l'enregistrement normatif dans TAGORA Opera
 ```text
 PRODUCT_APPLICATION_AUTHORIZED=NO
 OTHER_REPOSITORY_WRITE_AUTHORIZED=NO
-LOGO_SOURCE_ASSETS_RECEIVED=NO
-FONT_FILES_RECEIVED=NO
+LOGO_SOURCE_ASSETS_RECEIVED=YES
+FONT_FILES_RECEIVED=YES
+FONT_LICENSE_VALIDATED=NO
+ASSET_RECEIPT_COMPLETED_BY=VALD-106
 FONT_IMPLEMENTATION_AUTHORIZED=NO
 ASSET_RECONSTRUCTION_FROM_PDF=PROHIBITED
 TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION
@@ -45,7 +49,7 @@ DEPLOYMENT_AUTHORIZED=NO
 CODE_CHANGE_AUTHORIZED=NO
 ```
 
-Toute application concrète doit être transférée par Martin à l'agent propriétaire du projet concerné et suivre ses propres Human Gates. Les assets officiels et le mapping typographique doivent être fournis avant implémentation exacte.
+Toute application concrète doit être transférée par Martin à l'agent propriétaire du projet concerné et suivre ses propres Human Gates. Les actifs ont été reçus le 2026-08-17 et enregistrés par VALD-106 ; leur licence Web, leur mapping clair/sombre, leur contraste et le rôle typographique restent à valider avant implémentation exacte.
 
 ## Décisions remplacées pour l'usage actif
 

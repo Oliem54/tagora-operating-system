@@ -22,9 +22,13 @@ FINAL_GRADIENTS_STATUS=OFFICIAL_EXCLUSIVE
 TYPOGRAPHY_STATUS=FINAL_FAMILIES_APPROVED
 TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION
 OUTFIT_SYNE_STATUS=LEGACY
-FONT_FILES_RECEIVED=NO
+FONT_FILES_RECEIVED=YES
+FONT_LICENSE_VALIDATED=NO
 FONT_IMPLEMENTATION_AUTHORIZED=NO
-LOGO_SOURCE_ASSETS_RECEIVED=NO
+LOGO_SOURCE_ASSETS_RECEIVED=YES
+LOGO_SOURCE_ASSETS_RECEIVED_DATE=2026-08-17
+PRODUCT_THEME_SYSTEM=VALIDATED_BY_DEC_029
+PRODUCT_PNG_OPACITY=OPAQUE
 ASSET_RECONSTRUCTION_FROM_PDF=PROHIBITED
 PRODUCT_APPLICATION_AUTHORIZED=NO
 OTHER_REPOSITORY_WRITE_AUTHORIZED=NO
@@ -37,6 +41,8 @@ Décision Martin : **DEC-018**
 ADR : **ADR-0006**  
 Validation : **VALD-097**  
 Date d'enregistrement TOS : **2026-08-15**
+
+Complément identité des modules : **DEC-029 / ADR-0017 / VALD-108 — 2026-08-18**
 
 Cette décision remplace, pour l'**usage actif** :
 
@@ -102,7 +108,8 @@ Aucun autre dégradé central TAGORA n'est déclaré officiel.
 ```text
 TYPOGRAPHY_STATUS=FINAL_FAMILIES_APPROVED
 TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION
-FONT_FILES_RECEIVED=NO
+FONT_FILES_RECEIVED=YES
+FONT_LICENSE_VALIDATED=NO
 FONT_IMPLEMENTATION_AUTHORIZED=NO
 ```
 
@@ -142,12 +149,11 @@ Ne pas reproduire automatiquement l'ancien modèle Outfit-body / Syne-display.
 
 `WAITING_FOR_WEBSITE_EVIDENCE` reste historiquement **CLOSED** (VALD-096, 2026-08-14). Cette fermeture n'est pas réécrite. La décision ultérieure du guide final la remplace pour l'usage actif.
 
-### Actifs typographiques requis avant implémentation
+### Validations typographiques requises avant implémentation
 
-- fichiers web licenciés Avenir Next ;
-- fichiers web licenciés JHC Notion ;
-- preuve / licence d'utilisation web appropriée ;
-- formats web nécessaires au projet ;
+- confirmation que la licence fournie autorise l'incorporation Web ;
+- confirmation des restrictions de redistribution et de dépôt Git ;
+- sélection des fichiers WOFF2 nécessaires au projet ;
 - confirmation du rôle de chaque famille.
 
 Interdit : télécharger une police depuis une source non approuvée ; partager les fichiers de police ; committer une police sans gate produit spécifique ; substituer automatiquement une police ressemblante.
@@ -177,28 +183,42 @@ Règles :
 - zone de protection suffisante.
 
 ```text
-LOGO_SOURCE_ASSETS_RECEIVED=NO
+LOGO_SOURCE_ASSETS_RECEIVED=YES
+LOGO_SOURCE_ASSETS_RECEIVED_DATE=2026-08-17
 ASSET_RECONSTRUCTION_FROM_PDF=PROHIBITED
 ```
 
 ---
 
-## Actifs officiels manquants
+## Identités visuelles des modules
+
+DEC-029 ajoute une couche produit à la charte centrale sans remplacer ses huit couleurs de marque.
+
+- 14 PNG produits de 1080 × 1080 px ;
+- variantes normales sur fond intégré `#182643` ;
+- variantes `light` sur fond blanc intégré ;
+- fichiers opaques, non transparents ;
+- accents scellés par produit ;
+- aucun SVG produit livré ;
+- usage, taille minimale et tokens dans le standard visuel des modules.
+
+La couleur `#182643` reste un fond incorporé aux assets. Elle ne remplace pas l'Indigo spatial `#1B2641` comme couleur centrale.
+
+Références : [STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md), [REGISTRE_THEMES_MODULES_TAGORA.md](REGISTRE_THEMES_MODULES_TAGORA.md).
+
+---
+
+## Réception des actifs et validations encore requises
+
+Les logos centraux PNG/SVG, les variantes horizontales/verticales, les icônes, les fichiers typographiques OTF/WOFF2 et le document de licence ont été reçus le 2026-08-17. Les identités produits ont été reçues en PNG normal/clair et en sources PSD.
 
 ```text
-MISSING_BRAND_ASSETS=
-1. logo SVG officiel
-2. favicon SVG officiel
-3. favicon PNG officiel si fourni
-4. variante logo horizontale
-5. variante logo verticale
-6. variante couleur
-7. variante noire
-8. variante blanche
-9. variante négative
-10. fichiers web licenciés Avenir Next
-11. fichiers web licenciés JHC Notion
-12. confirmation rôle Avenir Next / JHC Notion
+PENDING_BRAND_ASSET_VALIDATIONS=
+1. validation licence Web Avenir Next et JHC Notion
+2. confirmation rôle Avenir Next / JHC Notion
+3. mapping du symbole autonome vers favicon et icônes
+4. exports horizontaux ou symboles autonomes officiels des identités produits
+5. exports SVG officiels des identités produits
 ```
 
 ---
@@ -232,5 +252,8 @@ Les six projets devront migrer **après transfert Martin** et **GO propre** de c
 - [VALIDATION_VALD_097_CHARTE_MARQUE_CENTRALE_FINALE.md](../10_knowledge/VALIDATION_VALD_097_CHARTE_MARQUE_CENTRALE_FINALE.md)
 - [PALETTE_COULEURS.md](PALETTE_COULEURS.md)
 - [TYPOGRAPHIE.md](TYPOGRAPHIE.md)
+- [STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md)
+- [REGISTRE_THEMES_MODULES_TAGORA.md](REGISTRE_THEMES_MODULES_TAGORA.md)
+- [ADR-0017](../05_adr/ADR-0017-SYSTEME-IDENTITE-VISUELLE-MODULES-TAGORA.md)
 - [PAQUET_TRANSFERT_CHARTE_MARQUE_CENTRALE.md](../04_adoption_modules/paquets_transfert/PAQUET_TRANSFERT_CHARTE_MARQUE_CENTRALE.md)
 - Historique : [ADR-0005](../05_adr/ADR-0005-CONTRAT-TYPOGRAPHIQUE-TRANSVERSAL-OUTFIT-SYNE.md), [CONTRAT_TYPOGRAPHIQUE_TRANSVERSAL.md](CONTRAT_TYPOGRAPHIQUE_TRANSVERSAL.md)

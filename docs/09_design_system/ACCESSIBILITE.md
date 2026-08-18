@@ -6,7 +6,7 @@ Définir l'**accessibilité comme standard obligatoire** TAGORA — intégrée a
 
 ## Portée
 
-Toutes les interfaces TAGORA — desktop, mobile, tous rôles. **TAGORA Time** en priorité.
+Toutes les interfaces TAGORA — desktop, mobile, tous rôles. **TAGORA DEPORA** est le premier pilote du système visuel commun.
 
 ---
 
@@ -16,7 +16,7 @@ L'accessibilité n'est pas un « plus » premium. C'est une **exigence** aligné
 
 - Public **20 à 60 ans et plus**.
 - Environnements professionnels variés (bureau, terrain, mobile).
-- Conformité progressive aux repères reconnus (WCAG — niveau cible à valider).
+- Conformité cible : **WCAG 2.2 niveau AA** pour les nouvelles surfaces et refontes significatives.
 
 ---
 
@@ -31,6 +31,18 @@ L'accessibilité n'est pas un « plus » premium. C'est une **exigence** aligné
 | **Erreurs** | Messages compréhensibles — pas uniquement par la couleur |
 | **Mobile et desktop** | Parcours utilisables sur les deux ; pas desktop-only de facto |
 | **Navigation clavier** | À exiger et documenter lors des specs composants (Phase ultérieure) |
+
+## Seuils minimaux
+
+| Élément | Seuil |
+|---|---:|
+| Texte normal | 4,5:1 |
+| Grand texte | 3:1 |
+| Composant, bordure active et focus | 3:1 |
+| Zone interactive cible | 44 × 44 px |
+| Anneau de focus | 2 px minimum + offset contrasté au besoin |
+
+Les tokens de thème sont vérifiés dans [REGISTRE_THEMES_MODULES_TAGORA.md](REGISTRE_THEMES_MODULES_TAGORA.md). Un accent produit n'est pas automatiquement une couleur de texte ou de bouton.
 
 ---
 
@@ -57,17 +69,16 @@ Priorités a11y pilote :
 
 - Ne pas sacrifier accessibilité pour esthétique.
 - Valider a11y avant release production (avec TQF).
-- Documenter niveau WCAG cible lors de validation palette et typo.
+- Vérifier WCAG 2.2 AA lors de la validation palette, typo et composants.
 
 ---
 
 ## Éléments à documenter plus tard
 
-- Niveau WCAG cible (AA recommandé — à confirmer)
 - Checklist a11y technique (ARIA, focus, skip links)
 - Outils de test recommandés
 - Processus audit accessibilité
 
 ## Statut
 
-**Enrichi — Phase 3B** — Exigences définies. WCAG niveau et tests : à valider.
+**Enrichi — système visuel des modules (2026-08-18)** — WCAG 2.2 AA, seuils de contraste, cible tactile et focus documentés. Application produit sous gate distinct.

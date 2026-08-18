@@ -13,6 +13,8 @@ PACKETS_EXECUTED=NO
 PACKET_COUNT=8
 ```
 
+> **Politique de transition — DEC-027 / ADR-0015 / VALD-106 :** la convention canonique demeure `TAGORA + NOM DU MODULE`. `NOM par TAGORA` est réservé à une signature graphique secondaire. La mention « anciennement » est limitée à six mois après une date de première publication enregistrée. Les routes et domaines suivent une stratégie progressive option C, sans changement autorisé par la documentation TOS.
+
 ## Carte commerciale officielle
 
 | N° | Nom officiel | Correspondance | Statut commercial |
@@ -101,5 +103,6 @@ Formulations autorisées : `prévu pour`, `conçu pour`, `vise à`, `Coming Soon
 - [MESSOR](paquets_transfert/PAQUET_TRANSFERT_NOMENCLATURE_MESSOR.md)
 - [YORVA](paquets_transfert/PAQUET_TRANSFERT_NOMENCLATURE_YORVA.md)
 - [ETIOQ](paquets_transfert/PAQUET_TRANSFERT_NOMENCLATURE_ETIOQ.md)
+- [Pilote Website — identité des modules](paquets_transfert/PAQUET_TRANSFERT_PILOTE_WEBSITE_IDENTITE_MODULES.md) — préparé par DEC-027, exécution non autorisée
 
 Ces paquets sont préparés, non exécutés, et doivent être transférés par Martin.

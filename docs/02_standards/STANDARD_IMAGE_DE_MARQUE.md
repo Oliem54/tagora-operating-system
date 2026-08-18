@@ -15,7 +15,7 @@ Logo, couleurs, typographie, iconographie, ton visuel — tous points de contact
 L'image de marque TAGORA est l'**ensemble des signes visuels** qui permettent de reconnaître instantanément un produit de l'écosystème :
 
 - Qualité perçue **professionnelle, premium, moderne**.
-- **Cohérence** entre Time, Stock Premium, Voice, Mail IA, Pulse et Platform.
+- **Cohérence** entre TAGORA HORORA, TAGORA PULS, TAGORA DEPORA, TAGORA MESSOR, TAGORA YORVA, TAGORA ETIOQ et le portail TAGORA Nexus.
 - **Autonomie des modules** — chaque app garde son métier ; la marque unifie l'expérience, pas le contenu fonctionnel.
 
 Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-apps) — **sans copier** une marque tierce.
@@ -49,6 +49,8 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 |---|---|
 | **Logo** | Symbole géométrique + logotype + signature « Piloter • Innover • Performer » — versions verticale/horizontale ; min. 30 px ; proportions préservées ; assets sources requis ([CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md)) |
 | **Couleurs** | Huit couleurs exclusives et quatre dégradés officiels — [PALETTE_COULEURS.md](../09_design_system/PALETTE_COULEURS.md), [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md) |
+| **Thèmes produits** | Accents scellés et tokens dérivés par module — [REGISTRE_THEMES_MODULES_TAGORA.md](../09_design_system/REGISTRE_THEMES_MODULES_TAGORA.md) |
+| **Structure UI** | 80 % structure commune / 20 % identité produit — [STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](../09_design_system/STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md) |
 | **Typographie** | Familles finales Avenir Next + JHC Notion — rôles body/display **non confirmés** — [TYPOGRAPHIE.md](../09_design_system/TYPOGRAPHIE.md), [ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md) |
 | **Icônes** | Style cohérent — set iconographique commun (à valider) |
 | **Statuts** | Couleurs et libellés sémantiques alignés écosystème |
@@ -58,7 +60,7 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 ## Signature commune sans fusion des modules
 
-- **TAGORA Time** reste l'horodateur ; **Stock Premium** reste l'inventaire — etc.
+- **TAGORA HORORA** reste le module du temps et des horaires ; **TAGORA DEPORA** reste le module des stocks et inventaires — etc.
 - La marque est la **couche d'expérience** partagée, pas un monolithe produit.
 - TOS documente la marque ; les modules **appliquent** progressivement.
 
@@ -66,15 +68,19 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 ## Ce qui reste à valider plus tard
 
-- Fichiers source logo (SVG, variantes, favicon) — `LOGO_SOURCE_ASSETS_RECEIVED=NO`
-- Fichiers web licenciés Avenir Next et JHC Notion — `FONT_FILES_RECEIVED=NO`
+- Licence d'incorporation Web Avenir Next et JHC Notion — `FONT_LICENSE_VALIDATED=NO`
+- Mapping du symbole central vers favicon et icônes
+- Exports SVG officiels des identités produits
 - Confirmation du rôle Avenir Next / JHC Notion — `TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION`
-- Mapping sémantique des huit couleurs (primaire, succès, danger, modules)
 - Bibliothèque icônes
 - Guidelines marketing vs produit (si distinct)
 - Co-branding partenaires
 
-> **Note 2026-08-15 :** la charte centrale finale est **validée** (DEC-018 / ADR-0006 / VALD-097). Outfit + Syne sont **LEGACY**. Les polices finales et le logo sont nommés ; leurs fichiers sources et le mapping de rôles restent requis avant application produit.
+> **Note 2026-08-17 :** les actifs centraux et les fichiers typographiques ont été reçus (DEC-027 / ADR-0015 / VALD-106). À cette date, les contrastes et le mapping clair/sombre restaient à valider ; DEC-029 les traite pour les identités produits. La licence Web, le favicon et le rôle des polices restent en attente.
+>
+> **Note 2026-08-18 :** DEC-029 / ADR-0017 / VALD-108 valident la structure 80/20, les thèmes, les tokens, le mapping normal/light, la taille minimale produit et WCAG 2.2 AA. Les PNG produits sont opaques. Aucun produit n'est modifié.
+>
+> **Note 2026-08-15 :** la charte centrale finale est **validée** (DEC-018 / ADR-0006 / VALD-097). Outfit + Syne sont **LEGACY**.
 >
 > **Note historique 2026-08-14 :** la typographie commune Outfit + Syne a été validée ce jour-là (DEC-017 / ADR-0005 / VALD-096). Cette validation reste historiquement vraie et `WAITING_FOR_WEBSITE_EVIDENCE` reste CLOSED. Elle est remplacée pour l'usage actif par DEC-018.
 
@@ -90,4 +96,4 @@ Inspiration d'**ambition** : suite professionnelle unifiée (cohérence multi-ap
 
 ## Statut
 
-**Enrichi — Charte centrale finale (2026-08-15)** — Identité centrale actée. Assets sources, licences font et mapping typo : en attente. Application produit : non autorisée.
+**Enrichi — système visuel des modules (2026-08-18)** — Identité centrale, structure commune, thèmes produits et accessibilité documentés ; licence Web et mapping typographique en attente. Application produit : non autorisée.

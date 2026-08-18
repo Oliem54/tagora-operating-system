@@ -17,7 +17,8 @@ Source canonique : [CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAG
 ```text
 TYPOGRAPHY_STATUS=FINAL_FAMILIES_APPROVED
 TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION
-FONT_FILES_RECEIVED=NO
+FONT_FILES_RECEIVED=YES
+FONT_LICENSE_VALIDATED=NO
 FONT_IMPLEMENTATION_AUTHORIZED=NO
 OUTFIT_SYNE_STATUS=LEGACY
 WAITING_FOR_WEBSITE_EVIDENCE=CLOSED
@@ -57,16 +58,16 @@ Ne **pas** reproduire automatiquement l'ancien modèle Outfit-body / Syne-displa
 ## Actifs typographiques
 
 ```text
-FONT_FILES_RECEIVED=NO
+FONT_FILES_RECEIVED=YES
+FONT_LICENSE_VALIDATED=NO
 FONT_IMPLEMENTATION_AUTHORIZED=NO
 ```
 
-Exiger avant implémentation exacte :
+Les fichiers OTF/WOFF2 et le document de licence ont été reçus le 2026-08-17. Exiger avant implémentation exacte :
 
-- fichiers web licenciés Avenir Next ;
-- fichiers web licenciés JHC Notion ;
-- preuve / licence d'utilisation web appropriée ;
-- formats web nécessaires au projet ;
+- validation que la licence autorise l'incorporation Web ;
+- validation des restrictions de redistribution et de dépôt Git ;
+- sélection des fichiers WOFF2 nécessaires au projet ;
 - confirmation du rôle de chaque famille.
 
 Interdit :

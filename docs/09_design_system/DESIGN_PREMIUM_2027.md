@@ -90,12 +90,12 @@ Le design Time est **documenté dans TOS** avant toute refonte UI importante dan
 
 ## Ce qui reste à valider plus tard
 
-- Mapping sémantique des huit couleurs officielles (tokens) — voir [PALETTE_COULEURS.md](PALETTE_COULEURS.md)
+- Exemples visuels complets appliquant les tokens communs et produits — voir [STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md)
 - Rôle body/display de Avenir Next et JHC Notion — voir [TYPOGRAPHIE.md](TYPOGRAPHIE.md)
 - Assets logo/favicon officiels et fichiers web licenciés
 - Bibliothèque de composants implémentée (hors TOS)
-- Espacement, elevation, motion, animations
-- Mockups de référence et design tokens techniques
+- Motion et animations
+- Mockups de référence multi-modules
 - Mode sombre (si applicable)
 - Processus de revue design formel — voir [TDS_CHECKLIST_REVUE_UI.md](TDS_CHECKLIST_REVUE_UI.md)
 
@@ -109,7 +109,8 @@ Le design Time est **documenté dans TOS** avant toute refonte UI importante dan
 - Référencer la charte de marque centrale finale ([CHARTE_MARQUE_CENTRALE_TAGORA.md](CHARTE_MARQUE_CENTRALE_TAGORA.md), [ADR-0006](../05_adr/ADR-0006-CHARTE-MARQUE-CENTRALE-FINALE-TAGORA.md)).
 - Référencer la palette exclusive, les dégradés officiels et les familles Avenir Next + JHC Notion. Outfit + Syne : LEGACY.
 - Ne pas appliquer le mapping body/display tant que `TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION`.
+- Appliquer la structure 80/20, les fondations communes et les thèmes scellés de DEC-029 lors de toute future migration autorisée.
 
 ## Statut
 
-**Enrichi — Charte centrale finale (2026-08-15)** — Direction design premium structurée. Identité centrale actée (DEC-018 / ADR-0006). Mapping sémantique couleurs, rôles typo et composants : à confirmer. Application produit : non autorisée.
+**Enrichi — système visuel des modules (2026-08-18)** — Direction premium, structure 80/20, composants, thèmes et accessibilité documentés. Rôles typographiques et implémentation produit restent non autorisés.

@@ -1,5 +1,7 @@
 # Paquet de transfert — Website × nomenclature officielle TAGORA
 
+> **Complété par DEC-027 / ADR-0015 / VALD-106.** Pour l'audit des nouveaux actifs et le futur pilote local, utiliser [PAQUET_TRANSFERT_PILOTE_WEBSITE_IDENTITE_MODULES.md](PAQUET_TRANSFERT_PILOTE_WEBSITE_IDENTITE_MODULES.md). Aucun des deux paquets n'autorise une implémentation Website.
+
 ```text
 PROJECT_TARGET=TAGORA Website
 SOURCE_DECISION=DEC-026

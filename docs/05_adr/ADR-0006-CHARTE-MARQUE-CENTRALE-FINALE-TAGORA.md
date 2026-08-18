@@ -91,7 +91,8 @@ Outfit et Syne : **LEGACY**.
 ```text
 TYPOGRAPHY_STATUS=FINAL_FAMILIES_APPROVED
 TYPOGRAPHY_ROLE_MAPPING=WAITING_FOR_MARTIN_OR_DESIGNER_CONFIRMATION
-FONT_FILES_RECEIVED=NO
+FONT_FILES_RECEIVED=YES
+FONT_LICENSE_VALIDATED=NO
 FONT_IMPLEMENTATION_AUTHORIZED=NO
 OUTFIT_SYNE_STATUS=LEGACY
 ```
@@ -107,13 +108,18 @@ Règles : versions verticale et horizontale ; taille minimale 30 px ; proportion
 Le PDF est une référence documentaire. Il ne remplace pas les assets sources.
 
 ```text
-LOGO_SOURCE_ASSETS_RECEIVED=NO
+LOGO_SOURCE_ASSETS_RECEIVED=YES
+LOGO_SOURCE_ASSETS_RECEIVED_DATE=2026-08-17
 ASSET_RECONSTRUCTION_FROM_PDF=PROHIBITED
 ```
 
 ### Assets
 
-Les assets sources restent requis avant toute implémentation exacte. Voir la liste `MISSING_BRAND_ASSETS` dans [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md).
+Les assets centraux PNG/SVG, les variantes horizontales/verticales et les fichiers typographiques OTF/WOFF2 ont été reçus le 2026-08-17. DEC-027 / ADR-0015 / VALD-106 enregistrent cette réception et exigent encore l'audit des licences, des contrastes, du mapping clair/sombre et du rôle typographique avant toute implémentation.
+
+Les identités produits reçues comportent des PNG et des sources PSD, mais aucun SVG produit déclaré. Voir les validations encore requises dans [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md).
+
+DEC-029 / ADR-0017 / VALD-108 complètent ensuite cette décision pour les identités produits : PNG opaques, mapping normal/light, thèmes scellés, tokens UI, contraste et WCAG 2.2 AA. La licence Web, le mapping typographique, les symboles autonomes et les SVG produits restent en attente.
 
 ### Legacy
 

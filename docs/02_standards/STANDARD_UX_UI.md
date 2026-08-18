@@ -49,8 +49,11 @@ Le TDS **matérialise** la philosophie UX :
 | Identité visuelle | [CHARTE_MARQUE_CENTRALE_TAGORA.md](../09_design_system/CHARTE_MARQUE_CENTRALE_TAGORA.md) |
 | Revue écran | [TDS_CHECKLIST_REVUE_UI.md](../09_design_system/TDS_CHECKLIST_REVUE_UI.md) |
 | Image de marque | [STANDARD_IMAGE_DE_MARQUE.md](STANDARD_IMAGE_DE_MARQUE.md) |
+| Structure commune et thèmes produits | [STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md](../09_design_system/STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md), [REGISTRE_THEMES_MODULES_TAGORA.md](../09_design_system/REGISTRE_THEMES_MODULES_TAGORA.md) |
 
 Toute interface TAGORA **applique le TDS** — pas de design local sans alignement documenté.
+
+La cohérence n'impose pas les mêmes fonctions : la structure et les comportements sont communs, tandis que le logo, l'accent, le contenu et la navigation métier identifient le module.
 
 ---
 
@@ -80,4 +83,4 @@ Compréhensible par un public **20 à 60 ans** — langage simple, icônes avec 
 
 ## Statut
 
-**Enrichi — Phase 3B** — Philosophie et liens TDS/TQF structurés.
+**Enrichi — système visuel des modules (2026-08-18)** — Philosophie, structure 80/20 et liens TDS/TQF structurés. Application produit sous gate distinct.
