@@ -6,7 +6,7 @@ Définir ce que signifie **compatibilité** entre modules TAGORA — sans fusion
 
 ## Portée
 
-Time, Stock Premium, Voice, Mail IA, Pulse, Platform et futurs modules.
+HORORA (projet technique Time), PULS (projet technique Pulse AI), DEPORA (projet technique Stock Premium), MESSOR (projet technique Mail IA), Voice, YORVA, ETIOQ, Platform et futurs modules.
 
 ---
 
@@ -36,7 +36,7 @@ La **compatibilité TAGORA** est la capacité des modules à :
 
 ## Règles
 
-1. **Compatibilité ne veut pas dire fusion** — Time reste Time ; Voice reste Voice.
+1. **Compatibilité ne veut pas dire fusion** — HORORA reste autonome ; Voice reste Voice ; chaque ancien identifiant technique reste en place jusqu'à un gate propre au projet.
 2. **Chaque module doit pouvoir évoluer** sans briser les autres — contrats versionnés si intégration.
 3. **Breaking changes** documentés et communiqués avant impact cross-module.
 4. **Standards TOS prioritaires** sur conventions locales non documentées.
@@ -46,7 +46,7 @@ La **compatibilité TAGORA** est la capacité des modules à :
 
 ## Convergence progressive
 
-- Module pilote **Time** valide standards → autres modules réutilisent.
+- Le projet pilote technique **Time**, dont le nom commercial officiel est **TAGORA HORORA**, valide les standards → autres modules réutilisent.
 - Pas de migration simultanée obligatoire sur tous les piliers.
 - Incompatibilité temporaire = plan de résolution daté.
 

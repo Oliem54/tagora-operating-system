@@ -1,5 +1,7 @@
 # TAGORA Sourcing AI — Fondation du super-agent et du module
 
+> **Historique de fondation conservé.** Depuis DEC-026 / ADR-0014 / VALD-105 (2026-08-17), le nom commercial officiel de ce métier est **TAGORA YORVA**. Les références `TAGORA Sourcing AI` ci-dessous décrivent l'état historique DEC-024 et ne doivent pas être interprétées comme le nom commercial courant. Le métier, les interdictions et l'absence d'implémentation demeurent applicables.
+
 ## Identité du gate
 
 ```text

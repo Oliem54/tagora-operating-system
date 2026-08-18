@@ -8,12 +8,13 @@ Ce dépôt est la **Constitution méthodologique** de l'écosystème logiciel TA
 
 ## Portée
 
-- TAGORA Time (projet pilote)
-- TAGORA Stock Premium
+- TAGORA HORORA (anciennement TAGORA Time ; projet pilote technique Time)
+- TAGORA PULS (anciennement TAGORA Pulse AI)
+- TAGORA DEPORA (anciennement TAGORA Stock Premium)
+- TAGORA MESSOR (anciennement TAGORA Mail IA)
+- TAGORA YORVA (anciennement TAGORA Sourcing AI ; Coming Soon — repo non créé)
+- TAGORA ETIOQ (Coming Soon — repo non créé)
 - TAGORA Voice
-- TAGORA Mail IA
-- TAGORA Pulse
-- TAGORA Sourcing AI (fondation documentaire — repo non créé)
 - TAGORA Platform
 - Tous les futurs modules TAGORA
 

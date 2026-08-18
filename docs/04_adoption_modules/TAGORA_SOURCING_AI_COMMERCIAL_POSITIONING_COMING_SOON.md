@@ -1,5 +1,7 @@
 # TAGORA Sourcing AI — Positionnement commercial Coming Soon
 
+> **Document historique DEC-025.** Depuis DEC-026 / ADR-0014 / VALD-105 (2026-08-17), le nom commercial courant est **TAGORA YORVA** et la carte officielle compte six modules. Le statut `COMING_SOON`, le domaine applicatif `TBD`, les routes Website proposées et toutes les interdictions ci-dessous restent applicables.
+
 ```text
 GATE=TOS_TAGORA_SOURCING_AI_COMMERCIAL_MODULE_MAP_COMING_SOON_GO
 MODE=DOCUMENTATION_ONLY

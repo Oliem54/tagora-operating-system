@@ -1,8 +1,10 @@
-# Application progressive — TAGORA Pulse
+# Application progressive — TAGORA PULS (projet technique TAGORA Pulse AI)
+
+> **Nomenclature 2026-08-17 — DEC-026 / ADR-0014 / VALD-105 :** le nom commercial officiel s'écrit exactement **TAGORA PULS**, sans « e » final et sans suffixe « AI » ou « IA ». Le repository, les routes, domaines, DB et identifiants techniques Pulse ne sont pas renommés par cette décision.
 
 ## Objectif
 
-Définir le plan d'adoption progressive des standards TOS sur **TAGORA Pulse**.
+Définir le plan d'adoption progressive des standards TOS sur **TAGORA PULS**, projet technique historiquement nommé TAGORA Pulse AI / TAGORA Pulse.
 
 ## Portée
 

@@ -1,4 +1,6 @@
-# Application progressive — TAGORA Time
+# Application progressive — TAGORA HORORA (projet technique TAGORA Time)
+
+> **Nomenclature 2026-08-17 — DEC-026 / ADR-0014 / VALD-105 :** le nom commercial officiel est désormais **TAGORA HORORA**. Le repository, le projet technique, les routes, domaines, DB et identifiants `Time` ne sont pas renommés par cette décision.
 
 ## Objectif
 

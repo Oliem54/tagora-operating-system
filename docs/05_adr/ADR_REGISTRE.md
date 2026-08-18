@@ -37,6 +37,7 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0011 | Sélection officielle du module pilote identité : Stock Premium | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | `SELECTED_PILOT_MODULE=STOCK_PREMIUM` ; sélection approuvée ; implémentation non autorisée ; I5/I6/I7 non commencés | Complète ADR-0010 ; n'autorise pas I7 ; Stock non touché |
 | ADR-0012 | Fondation officielle du module TAGORA Sourcing AI (super-agent) | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | Module autonome SaaS agentique ; un agent visible ; Alibaba prioritaire sans connecteur ; aucune autorité d'achat ; surfaces candidates | Complète ADR-0004/0007/0008 sans les remplacer ; repo non créé ; DNS non adopté ; complété (non remplacé) par ADR-0013 |
 | ADR-0013 | Classification commerciale TAGORA Sourcing AI (Coming Soon) et carte des cinq modules SaaS | **Validé** — Martin ST-Gelais — Direction | 2026-08-16 | Écosystème TAGORA | 5e module SaaS mensuel Coming Soon ; domaine applicatif TBD ; Nexus n'est pas un module commercial ; routes Website proposées non implémentées | Complète ADR-0012 sans la remplacer ; aucun DNS ; aucune implémentation Website/Nexus |
+| ADR-0014 | Nomenclature commerciale officielle et carte des six modules SaaS | **Validé** — Martin ST-Gelais — Direction | 2026-08-17 | Écosystème TAGORA | HORORA, PULS, DEPORA, MESSOR, YORVA et ETIOQ ; casse majuscule uniforme ; YORVA / ETIOQ Coming Soon ; Nexus non commercial | Remplace les noms commerciaux et le compte de cinq modules ; conserve métiers, historique et identifiants techniques ; aucun autre repository touché |
 
 ### Liens
 
@@ -53,15 +54,16 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0011](ADR-0011-SELECTION-MODULE-PILOTE-IDENTITE-STOCK-PREMIUM.md)
 - [ADR-0012](ADR-0012-TAGORA-SOURCING-AI-SUPER-AGENT-MODULE-FOUNDATION.md)
 - [ADR-0013](ADR-0013-TAGORA-SOURCING-AI-COMMERCIAL-MODULE-MAP-COMING-SOON.md)
+- [ADR-0014](ADR-0014-NOMENCLATURE-COMMERCIALE-SIX-MODULES-SAAS.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, logout global, modèle I5, décision de domaine applicatif Sourcing, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité est sélectionné par ADR-0011 (Stock Premium) ; l'implémentation du pilote et I5–I9 restent interdits. TAGORA Sourcing AI est fondé par ADR-0012 et classé commercialement Coming Soon par ADR-0013 ; repo, DNS, domaine applicatif et connecteurs restent interdits. `sourcing.tagora.ca` n'est pas un domaine adopté.
+Les ADR futures (mapping sémantique des couleurs, rôle Avenir Next / JHC Notion, repos Nexus/TCP, logout global, modèle I5, domaines applicatifs YORVA / ETIOQ, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité reste identifié techniquement comme Stock Premium par ADR-0011 ; l'implémentation du pilote et I5–I9 restent interdits. Le métier Sourcing AI est fondé par ADR-0012, classé Coming Soon par ADR-0013 et renommé commercialement TAGORA YORVA par ADR-0014. TAGORA ETIOQ est ajouté comme sixième module Coming Soon. Repositories, DNS, domaines applicatifs et connecteurs restent interdits.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0013 Validé (classification commerciale Sourcing AI Coming Soon + carte 5 modules, 2026-08-16)** — ADR-0012 reste Validé (fondation ; complétée, non remplacée). ADR-0011 reste Validé (pilote identité Stock). ADR-0010 reste Validé (HANDOFF_V1). ADR-0009 reste Validé (bootstrap identité). ADR-0008 reste Validé (mapping). ADR-0007 reste Validé (surfaces). ADR-0004 reste Validé (domaines). ADR-0006 Validé (charte). ADR-0005 Remplacé.
+**Enrichi — ADR-0014 Validé (nomenclature officielle + carte 6 modules, 2026-08-17)** — ADR-0013 et ADR-0012 restent valides comme historique et fondation ; leurs noms commerciaux et le compte de modules sont remplacés par ADR-0014. ADR-0011 à ADR-0001 restent inchangées dans leur portée.

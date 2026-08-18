@@ -1,12 +1,14 @@
-# Application progressive — TAGORA Sourcing AI
+# Application progressive — TAGORA YORVA (fondation technique Sourcing AI)
+
+> **Nomenclature 2026-08-17 — DEC-026 / ADR-0014 / VALD-105 :** le nom commercial officiel est désormais **TAGORA YORVA**. La fondation métier Sourcing AI est conservée. Aucun repository, moteur, agent, route, domaine ou identifiant technique n'est renommé ni créé par cette décision.
 
 ## Objectif
 
-Définir le plan d'adoption progressive des standards TOS sur **TAGORA Sourcing AI** — module autonome agentique de sourcing — **sans plan de code** et **sans création de repository**.
+Définir le plan d'adoption progressive des standards TOS sur **TAGORA YORVA** — module autonome agentique de sourcing fondé historiquement sous le nom TAGORA Sourcing AI — **sans plan de code** et **sans création de repository**.
 
 ## Portée
 
-Module TAGORA Sourcing AI (nom commercial) / Supplier Intelligence (moteur interne) / TAGORA Sourcing Agent (agent visible).
+Module TAGORA YORVA (nom commercial courant) / TAGORA Sourcing AI (nom historique de fondation) / Supplier Intelligence (moteur interne historique) / TAGORA Sourcing Agent (agent visible historique, renommage futur TBD).
 
 **Fondation 2026-08-16 :** DEC-024 / ADR-0012 / VALD-103. Gate `TOS_TAGORA_SOURCING_AI_SUPER_AGENT_MODULE_FOUNDATION_GO`. L'ancien gate `TOS_TAGORA_SOURCING_AI_MODULE_FOUNDATION_GO` n'est pas exécuté.
 
