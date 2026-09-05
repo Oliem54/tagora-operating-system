@@ -53,6 +53,7 @@ Rôles définis dans TOS sous gouvernance TAF.
 2. Statut **Documenté** ≠ agent logiciel déployé.
 3. Mettre à jour le registre si le périmètre change.
 4. Aucun secret dans ce registre.
+5. L'identité visuelle commune de la collègue IA n'est pas ce registre de rôles. Elle est définie par [TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.md](../governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.md).
 
 ## Statut
 

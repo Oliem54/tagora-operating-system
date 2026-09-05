@@ -1,0 +1,323 @@
+{
+  "contractId": "TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1",
+  "identityId": "TAGORA_AI_COLLEAGUE_V1",
+  "version": "1.0.0",
+  "status": "ACTIVE_APPROVED",
+  "displayConceptFr": "Collègue IA TAGORA",
+  "displayConceptEn": "TAGORA AI Colleague",
+  "canonicalDisplayConcept": "Collègue IA TAGORA",
+  "approvedBy": "MARTIN",
+  "approvalDate": "2026-09-05",
+  "approvalTimeMontreal": "2026-09-05 16:12 -04:00",
+  "approvalEnvironment": "PULS_STAGING",
+  "sourceGate": "TOS-TAGORA-UNIFIED-AI-COLLEAGUE-VISUAL-IDENTITY-V1-GOVERNANCE-AND-CANONICAL-RECORD-GO",
+  "decisionAuthority": "MARTIN_AND_TOS",
+  "identityScope": "COMMON_VISUAL_IDENTITY_ONLY",
+  "humanReapprovalRequired": true,
+  "sameWomanRequired": true,
+  "identityRegenerationAllowed": false,
+  "faceModificationAllowed": false,
+  "visualIdentityGrantsPermissions": false,
+  "visualIdentityGrantsBusinessAuthority": false,
+  "documentationOnly": true,
+  "runtimeChange": false,
+  "moduleRegistryV1Unchanged": true,
+  "historicalAdrRewrite": false,
+  "historicalDecRewrite": false,
+  "humanApprovals": {
+    "identity": "PASS",
+    "desktop": "PASS",
+    "desktopLabel": "MARTIN_XPLOD_REDHEAD_DESKTOP",
+    "mobile": "PASS",
+    "size": "PASS",
+    "premiumIntegration": "PASS",
+    "messageAvatar": "PASS",
+    "visualE2E": "PASS",
+    "visualE2EPercent": 100,
+    "approver": "MARTIN",
+    "feedback": "La nouvelle agente rousse officielle TAGORA est approuvée dans PULS Staging. Le portrait principal, la version ordinateur, la version téléphone et l’avatar de conversation sont validés."
+  },
+  "masterSha256": "12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27",
+  "masterDimensions": "1122x1402",
+  "masterFormat": "PNG",
+  "alphaSupport": true,
+  "masterAssetCentralStorage": "DEFERRED_TO_NEXUS",
+  "masterAsset": {
+    "sha256": "12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27",
+    "dimensions": "1122x1402",
+    "width": 1122,
+    "height": 1402,
+    "format": "PNG",
+    "colorType": "RGBA",
+    "alpha": true,
+    "aspectRatio": "APPROXIMATELY_4_TO_5",
+    "filename": "tagora-ai-xplod-redhead-v1.png",
+    "versionedFilenameRequired": true,
+    "pixelsMustRemainUnmodifiedForThisVersion": true,
+    "centralStorage": "DEFERRED_TO_NEXUS"
+  },
+  "dimensions": "1122x1402",
+  "format": "PNG",
+  "alpha": true,
+  "sourceModule": "PULS",
+  "sourceRepository": "Oliem54/xplod-ai-agent",
+  "sourceBranch": "fix/puls-xplod-premium-portrait-integration-v2",
+  "sourceCommit": "b7f821ed81e61d85c1ad93689ba05927463152d5",
+  "sourceAssetPath": "apps/web/public/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+  "sourceAssetUrl": "https://pulse-staging.tagora.ca/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+  "canonicalAssetReference": "sha256:12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27",
+  "canonicalRuntimeAssetUrl": null,
+  "canonicalRuntimeAssetUrlStatus": "NOT_PUBLISHED_AWAITING_NEXUS_REGISTRY",
+  "source": {
+    "module": "PULS",
+    "repository": "Oliem54/xplod-ai-agent",
+    "localRepository": "C:\\Dev\\TAGORA\\tagora-pulse-ai",
+    "branch": "fix/puls-xplod-premium-portrait-integration-v2",
+    "commit": "b7f821ed81e61d85c1ad93689ba05927463152d5",
+    "prNumber": 18,
+    "pr": "https://github.com/Oliem54/xplod-ai-agent/pull/18",
+    "prState": "DRAFT",
+    "prMerged": false,
+    "stagingDeployment": "37c37307-378c-475e-b958-928a84bcf3bd",
+    "stagingUrl": "https://pulse-staging.tagora.ca",
+    "formationUrl": "https://pulse-staging.tagora.ca/command-center/agents/xplod-canada/formation",
+    "assetPath": "apps/web/public/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+    "assetUrl": "https://pulse-staging.tagora.ca/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+    "assetUrlRole": "SOURCE_EVIDENCE_ONLY_NOT_CANONICAL_RUNTIME",
+    "originalApprovedLocalAsset": "C:\\Users\\Utilisateur\\Oliem\\TAGORA - Documents\\Tagora_women_photo.png",
+    "pulsMustRemainHold": true,
+    "pulsPr18MergeAuthorized": false,
+    "pulsProductionAuthorized": false
+  },
+  "applicableModules": [
+    {
+      "id": "NEXUS",
+      "canonicalCommercialName": "TAGORA Nexus",
+      "canonicalKey": "tagora_nexus",
+      "classification": "CENTRAL_PORTAL_NOT_SAAS_MODULE"
+    },
+    {
+      "id": "PULS",
+      "canonicalCommercialName": "TAGORA PULS",
+      "canonicalKey": "tagora_pulse_ai",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "HORORA",
+      "canonicalCommercialName": "TAGORA HORORA",
+      "canonicalKey": "tagora_horora",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "DEPORA",
+      "canonicalCommercialName": "TAGORA DEPORA",
+      "canonicalKey": "tagora_depora",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "MESSOR",
+      "canonicalCommercialName": "TAGORA MESSOR",
+      "canonicalKey": "tagora_messor",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "YORVA",
+      "canonicalCommercialName": "TAGORA YORVA",
+      "canonicalKey": "tagora_yorva",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "ETIOQ",
+      "canonicalCommercialName": "TAGORA ETIOQ",
+      "canonicalKey": "tagora_etioq",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "TAGORA_WEBSITE",
+      "canonicalCommercialName": "TAGORA Website",
+      "canonicalKey": "tagora_website",
+      "classification": "PUBLIC_WEBSITE_WHEN_COMMON_COLLEAGUE_IS_SHOWN"
+    }
+  ],
+  "moduleSpecificityPreserved": [
+    "names",
+    "roles",
+    "specializations",
+    "permissions",
+    "data",
+    "colors",
+    "businessResponsibilities",
+    "safeguards",
+    "applicationAuthorities"
+  ],
+  "immutableIdentityRules": [
+    "All listed modules must represent exactly the same woman as the certified master file.",
+    "The approved master SHA-256 is immutable for version 1.0.0.",
+    "Visual identity is shared. Business authority, permissions, data and module roles are not shared.",
+    "A module may keep its name, role, specialization, permissions, data, accent colour, copy, safeguards and application authority.",
+    "Generating a new woman, a lookalike, a face swap, or any face, trait, skin, hair, apparent-age, or expression change is forbidden.",
+    "tagora-ai.png and any former agent must not become the active identity.",
+    "Silent master replacement, unversioned publication, and untraceable derivatives are forbidden."
+  ],
+  "allowedDerivativeRules": [
+    "exact_copy",
+    "resize",
+    "non_destructive_crop",
+    "lossless_visual_optimization",
+    "webp_or_avif_conversion",
+    "alpha_conservation_or_use",
+    "responsive_adaptation",
+    "vertical_portrait_approximately_4_5",
+    "small_rectangular_avatar",
+    "slightly_rounded_corners",
+    "module_frame_colour_adaptation"
+  ],
+  "forbiddenTransformations": [
+    "generate_a_new_woman",
+    "use_a_lookalike",
+    "face_swap",
+    "alter_the_face",
+    "alter_facial_features",
+    "change_skin_colour",
+    "change_hair",
+    "change_apparent_identity",
+    "change_apparent_age",
+    "change_reference_expression",
+    "deform_body_or_face",
+    "replace_with_tagora-ai.png",
+    "use_a_former_agent_as_active_identity",
+    "generative_transformation",
+    "generative_clothing_change",
+    "generative_morphology_change",
+    "silent_master_replacement",
+    "unversioned_asset_publication",
+    "untraceable_derivative",
+    "saturated_blue_background",
+    "double_ring",
+    "circular_halo",
+    "circular_medallion_as_primary",
+    "ratio_deformation",
+    "degrading_face_enlargement"
+  ],
+  "moduleAccentRules": {
+    "recolorWomanForbidden": true,
+    "accentsApplyToFrameBackgroundOrAccentOnly": true,
+    "accents": {
+      "TAGORA_BASE": "#182643",
+      "NEXUS": "#008247",
+      "HORORA": "#1F79E0",
+      "PULS": "#55C558",
+      "DEPORA": "#00C1D5",
+      "MESSOR": "#DBDF5C",
+      "YORVA": "#BAC300",
+      "ETIOQ": "#F2F890"
+    }
+  },
+  "presentationRules": {
+    "primary": [
+      "premium_vertical_portrait",
+      "approximately_4_5_ratio",
+      "slightly_rounded_corners",
+      "transparent_or_harmonized_background",
+      "excellent_desktop_and_phone_readability",
+      "no_primary_circle",
+      "no_double_ring"
+    ],
+    "conversation": [
+      "small_vertical_or_square_slightly_rounded_rectangle",
+      "same_woman",
+      "recognizable_face",
+      "no_double_circle",
+      "no_other_identity"
+    ]
+  },
+  "TOSAuthority": [
+    "official_visual_identity",
+    "governance_rules",
+    "active_identity",
+    "canonical_version",
+    "applicable_modules",
+    "authorized_transformations",
+    "forbidden_transformations",
+    "deprecation",
+    "future_replacement",
+    "human_approval_proof"
+  ],
+  "NexusAuthority": [
+    "central_technical_registry",
+    "asset_reference_publication",
+    "approved_variant_distribution",
+    "canonical_sha256_exposure",
+    "version_metadata",
+    "module_compatibility_control"
+  ],
+  "moduleAuthority": [
+    "business_role",
+    "functional_persona",
+    "permissions",
+    "data",
+    "tenant_isolation",
+    "colors",
+    "copy",
+    "behaviors",
+    "deployment"
+  ],
+  "deprecationPolicy": {
+    "silentSubstitutionForbidden": true,
+    "newMasterRequiresNewVersion": true,
+    "oldVersionMustBeExplicitlyDeprecated": true,
+    "humanGateRequired": "MARTIN_AND_TOS",
+    "tagoraAiPngNeverBecomesFallback": true,
+    "deprecatedShaMustNotBeServedAsCurrent": true,
+    "nexusMustPublishDeprecationBeforeModulesSwitch": true,
+    "twoActiveIdentitiesForbidden": true
+  },
+  "replacementPolicy": {
+    "sameIdentityIdCannotMapToAnotherWoman": true,
+    "newMasterRequiresNewVersion": true,
+    "newProofRequired": true,
+    "newMartinHumanValidationRequired": true,
+    "newTosGateRequired": true,
+    "newNexusGateRequired": true,
+    "newPerModuleStagingValidationRequired": true,
+    "silentMasterReplacementForbidden": true
+  },
+  "nexusRegistryResponsibility": {
+    "owner": "NEXUS",
+    "publishTechnicalRegistry": true,
+    "exposeCanonicalVersion": true,
+    "exposeSha256": true,
+    "distributeAssetReferences": true,
+    "indicateAvailableVariants": true,
+    "allowModulesToVerifyExpectedVersion": true,
+    "authorizedByThisContract": false
+  },
+  "moduleConsumptionResponsibility": {
+    "consumeRegisteredIdentity": true,
+    "keepLocalPresentationAndBusinessRole": true,
+    "mustNotCreateCompetingIdentity": true,
+    "mustProveCorrectWomanInStaging": true,
+    "implementationAuthorizedByThisContract": false,
+    "noAutomaticGlobalProductionDeployment": true
+  },
+  "safety": {
+    "personalUserData": false,
+    "secrets": false,
+    "tokens": false,
+    "privateUrls": false,
+    "environmentKeys": false,
+    "productionAccess": false
+  },
+  "executionHolds": {
+    "tosCanonicalMergeAuthorizedByThisGate": true,
+    "nexusChangeAuthorized": false,
+    "pulsChangeAuthorized": false,
+    "otherModuleChangeAuthorized": false,
+    "productionAuthorized": false,
+    "databaseAuthorized": false,
+    "envChangeAuthorized": false,
+    "secretChangeAuthorized": false,
+    "productImplementationAuthorized": false,
+    "nexusRegistryImplementationAuthorized": false
+  }
+}

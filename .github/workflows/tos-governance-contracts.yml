@@ -1,0 +1,29 @@
+name: TOS governance contracts
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - "governance/**"
+
+jobs:
+  validate-ai-colleague-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Syntax-check validators
+        run: |
+          node --check scripts/validate-ai-colleague-visual-identity.mjs
+          node --check scripts/ai-colleague-visual-identity.test.mjs
+      - name: Run identity contract tests
+        run: node --test scripts/ai-colleague-visual-identity.test.mjs
+      - name: Validate canonical identity contract
+        run: |
+          node scripts/validate-ai-colleague-visual-identity.mjs
+          node scripts/validate-tagora-ai-colleague-identity.mjs
