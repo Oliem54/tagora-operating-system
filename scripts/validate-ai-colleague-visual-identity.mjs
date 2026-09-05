@@ -10,11 +10,47 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const ACTIVE_STATUSES = new Set([
+  "ACTIVE_APPROVED",
   "APPROVED_MASTER_VISUAL_IDENTITY",
   "ACTIVE",
   "CANONICAL",
   "CURRENT",
 ]);
+
+export const REQUIRED_HUMAN_APPROVALS = [
+  "identity",
+  "desktop",
+  "mobile",
+  "size",
+  "premiumIntegration",
+  "messageAvatar",
+  "visualE2E",
+];
+
+export const REQUIRED_ACCENTS = {
+  TAGORA_BASE: "#182643",
+  NEXUS: "#008247",
+  HORORA: "#1F79E0",
+  PULS: "#55C558",
+  DEPORA: "#00C1D5",
+  MESSOR: "#DBDF5C",
+  YORVA: "#BAC300",
+  ETIOQ: "#F2F890",
+};
+
+export const REQUIRED_ALLOWED_DERIVATIVES = [
+  "exact_copy",
+  "resize",
+  "non_destructive_crop",
+];
+
+export const REQUIRED_FORBIDDEN_TRANSFORMATIONS = [
+  "generate_a_new_woman",
+  "face_swap",
+  "alter_the_face",
+  "silent_master_replacement",
+  "untraceable_derivative",
+];
 
 export const REQUIRED_SURFACES = [
   "NEXUS",
@@ -75,6 +111,20 @@ function moduleIds(contract) {
   if (!Array.isArray(contract.applicableModules)) return [];
   return contract.applicableModules.map((item) =>
     typeof item === "string" ? item : item?.id,
+  );
+}
+
+function hasHumanApproval(contract) {
+  const approvals = isPlainObject(contract.humanApprovals)
+    ? contract.humanApprovals
+    : {};
+  const allPass = REQUIRED_HUMAN_APPROVALS.every(
+    (key) => String(approvals[key] ?? "").toUpperCase() === "PASS",
+  );
+  return (
+    String(contract.approvedBy ?? "").toUpperCase() === "MARTIN" &&
+    allPass &&
+    Number(approvals.visualE2EPercent) === 100
   );
 }
 
@@ -150,21 +200,36 @@ export function collectIdentityContractErrors(options = {}) {
       identityId: contract.identityId,
       version: contract.version,
       status: contract.status,
+      displayConceptFr: contract.displayConceptFr,
+      displayConceptEn: contract.displayConceptEn,
       approvedBy: contract.approvedBy,
       approvalDate: contract.approvalDate,
-      masterSha256: contract.masterAsset?.sha256 ?? contract.masterSha256,
-      dimensions: contract.masterAsset?.dimensions ?? contract.dimensions,
-      format: contract.masterAsset?.format ?? contract.format,
-      alpha: contract.masterAsset?.alpha ?? contract.alpha,
+      approvalEnvironment: contract.approvalEnvironment,
       sourceModule: contract.source?.module ?? contract.sourceModule,
+      sourceRepository: contract.source?.repository ?? contract.sourceRepository,
+      sourceBranch: contract.source?.branch ?? contract.sourceBranch,
       sourceCommit: contract.source?.commit ?? contract.sourceCommit,
       sourceAssetPath: contract.source?.assetPath ?? contract.sourceAssetPath,
       sourceAssetUrl: contract.source?.assetUrl ?? contract.sourceAssetUrl,
+      masterSha256: contract.masterAsset?.sha256 ?? contract.masterSha256,
+      masterDimensions:
+        contract.masterDimensions ??
+        contract.masterAsset?.dimensions ??
+        contract.dimensions,
+      masterFormat: contract.masterFormat ?? contract.masterAsset?.format ?? contract.format,
+      alphaSupport: contract.alphaSupport ?? contract.masterAsset?.alpha ?? contract.alpha,
       applicableModules: contract.applicableModules,
+      identityScope: contract.identityScope,
       immutableIdentityRules: contract.immutableIdentityRules,
       allowedDerivativeRules: contract.allowedDerivativeRules,
       forbiddenTransformations: contract.forbiddenTransformations,
+      moduleAccentRules: contract.moduleAccentRules,
+      TOSAuthority: contract.TOSAuthority,
+      NexusAuthority: contract.NexusAuthority,
+      moduleAuthority: contract.moduleAuthority,
       deprecationPolicy: contract.deprecationPolicy,
+      replacementPolicy: contract.replacementPolicy,
+      humanReapprovalRequired: contract.humanReapprovalRequired,
       nexusRegistryResponsibility: contract.nexusRegistryResponsibility,
       moduleConsumptionResponsibility: contract.moduleConsumptionResponsibility,
     };
@@ -219,11 +284,79 @@ export function collectIdentityContractErrors(options = {}) {
     if (contract.identityRegenerationAllowed !== false) {
       errors.push(`${label}: identityRegenerationAllowed must be false`);
     }
+    if (contract.faceModificationAllowed !== false) {
+      errors.push(`${label}: faceModificationAllowed must be false`);
+    }
     if (contract.sameWomanRequired !== true) {
       errors.push(`${label}: sameWomanRequired must be true`);
     }
+    if (contract.identityScope !== "COMMON_VISUAL_IDENTITY_ONLY") {
+      errors.push(`${label}: identityScope must be COMMON_VISUAL_IDENTITY_ONLY`);
+    }
+    if (contract.humanReapprovalRequired !== true) {
+      errors.push(`${label}: humanReapprovalRequired must be true`);
+    }
+    if (contract.visualIdentityGrantsPermissions !== false) {
+      errors.push(`${label}: visual identity must not grant permissions`);
+    }
+    if (contract.visualIdentityGrantsBusinessAuthority !== false) {
+      errors.push(`${label}: visual identity must not grant business authority`);
+    }
+    if (contract.documentationOnly !== true || contract.runtimeChange !== false) {
+      errors.push(`${label}: visual identity must remain documentation-only, not business runtime`);
+    }
     if (contract.deprecationPolicy?.silentSubstitutionForbidden !== true) {
       errors.push(`${label}: silent substitution must be forbidden`);
+    }
+    if (contract.replacementPolicy?.newMasterRequiresNewVersion !== true) {
+      errors.push(`${label}: replacementPolicy must require a new version for a new master`);
+    }
+    if (contract.moduleAccentRules?.recolorWomanForbidden !== true) {
+      errors.push(`${label}: module accents must not recolor the woman`);
+    }
+    const accents = contract.moduleAccentRules?.accents ?? {};
+    for (const [surface, hex] of Object.entries(REQUIRED_ACCENTS)) {
+      if (String(accents[surface] ?? "").toUpperCase() !== hex) {
+        errors.push(`${label}: moduleAccentRules.accents.${surface} must be ${hex}`);
+      }
+    }
+    const allowed = Array.isArray(contract.allowedDerivativeRules)
+      ? contract.allowedDerivativeRules
+      : [];
+    for (const rule of REQUIRED_ALLOWED_DERIVATIVES) {
+      if (!allowed.includes(rule)) {
+        errors.push(`${label}: allowedDerivativeRules missing ${rule}`);
+      }
+    }
+    const forbidden = Array.isArray(contract.forbiddenTransformations)
+      ? contract.forbiddenTransformations
+      : [];
+    for (const rule of REQUIRED_FORBIDDEN_TRANSFORMATIONS) {
+      if (!forbidden.includes(rule)) {
+        errors.push(`${label}: forbiddenTransformations missing ${rule}`);
+      }
+    }
+    if (
+      !Array.isArray(contract.TOSAuthority) ||
+      contract.TOSAuthority.length === 0 ||
+      !Array.isArray(contract.NexusAuthority) ||
+      contract.NexusAuthority.length === 0 ||
+      !Array.isArray(contract.moduleAuthority) ||
+      contract.moduleAuthority.length === 0
+    ) {
+      errors.push(`${label}: TOS, Nexus and module authorities must be recorded`);
+    }
+    if ((contract.alphaSupport ?? contract.masterAsset?.alpha) !== true) {
+      errors.push(`${label}: alphaSupport must be true`);
+    }
+    if (ACTIVE_STATUSES.has(contract.status) && !hasHumanApproval(contract)) {
+      errors.push(`${label}: active identity requires recorded Martin human approval`);
+    }
+    const storage = String(
+      contract.masterAssetCentralStorage ?? contract.masterAsset?.centralStorage ?? "",
+    );
+    if (storage !== "TOS" && storage !== "DEFERRED_TO_NEXUS") {
+      errors.push(`${label}: masterAssetCentralStorage must be TOS or DEFERRED_TO_NEXUS`);
     }
 
     if (
@@ -258,18 +391,36 @@ export function collectIdentityContractErrors(options = {}) {
         IDENTITY_ID: contract.identityId,
         CONTRACT_VERSION: String(contract.version),
         CONTRACT_STATUS: contract.status,
+        DISPLAY_CONCEPT_FR: contract.displayConceptFr,
+        DISPLAY_CONCEPT_EN: contract.displayConceptEn,
         APPROVED_BY: contract.approvedBy,
         APPROVAL_DATE: contract.approvalDate,
+        APPROVAL_ENVIRONMENT: contract.approvalEnvironment,
+        IDENTITY_SCOPE: contract.identityScope,
         MASTER_ASSET_SHA256: sha,
         MASTER_ASSET_DIMENSIONS:
-          contract.masterAsset?.dimensions ?? contract.dimensions,
+          contract.masterDimensions ??
+          contract.masterAsset?.dimensions ??
+          contract.dimensions,
+        MASTER_ASSET_FORMAT:
+          contract.masterFormat ?? contract.masterAsset?.format ?? contract.format,
+        MASTER_ASSET_ALPHA:
+          (contract.alphaSupport ?? contract.masterAsset?.alpha ?? contract.alpha)
+            ? "YES"
+            : "NO",
+        MASTER_ASSET_CENTRAL_STORAGE:
+          contract.masterAssetCentralStorage ?? contract.masterAsset?.centralStorage,
         SOURCE_MODULE: contract.source?.module ?? contract.sourceModule,
+        SOURCE_REPOSITORY: contract.source?.repository ?? contract.sourceRepository,
+        SOURCE_BRANCH: contract.source?.branch ?? contract.sourceBranch,
         SOURCE_COMMIT: contract.source?.commit ?? contract.sourceCommit,
         SOURCE_ASSET_PATH: contract.source?.assetPath ?? contract.sourceAssetPath,
         SOURCE_ASSET_URL: contract.source?.assetUrl ?? contract.sourceAssetUrl,
         CANONICAL_ASSET_REFERENCE: contract.canonicalAssetReference,
         SAME_WOMAN_REQUIRED: contract.sameWomanRequired ? "YES" : "NO",
         IDENTITY_REGENERATION_ALLOWED: contract.identityRegenerationAllowed ? "YES" : "NO",
+        FACE_MODIFICATION_ALLOWED: contract.faceModificationAllowed ? "YES" : "NO",
+        HUMAN_REAPPROVAL_REQUIRED: contract.humanReapprovalRequired ? "YES" : "NO",
         APPLICABLE_MODULES: ids.join(","),
       };
       for (const [key, value] of Object.entries(expected)) {

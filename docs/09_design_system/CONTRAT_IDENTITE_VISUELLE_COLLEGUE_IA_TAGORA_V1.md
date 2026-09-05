@@ -7,8 +7,11 @@ DECISION=DEC-030
 ADR=ADR-0018
 IDENTITY_ID=TAGORA_AI_COLLEAGUE_V1
 IDENTITY_VERSION=1.0.0
+CONTRACT_STATUS=ACTIVE_APPROVED
 CONTRACT_ID=TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1
 CANONICAL_MACHINE_CONTRACT=docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.json
+IDENTITY_SCOPE=COMMON_VISUAL_IDENTITY_ONLY
+MASTER_ASSET_CENTRAL_STORAGE=DEFERRED_TO_NEXUS
 TOS_SCOPE_ONLY=YES
 PRODUCT_IMPLEMENTATION_AUTHORIZED=NO
 ```
@@ -33,7 +36,8 @@ La même femme rousse adulte, approuvée humainement par Martin dans PULS Stagin
 | Dimensions | `1122x1402` |
 | Format | PNG RGBA |
 | Alpha | Oui |
-| Approbation humaine | PASS — Martin — desktop, mobile, avatar message et E2E visuel |
+| Approbation humaine | PASS — Martin — desktop, mobile, taille, intégration Premium, avatar message et E2E visuel 100 % |
+| Stockage binaire TOS | Différé à Nexus ; SHA-256 enregistré ici |
 
 Le commit source contient un contrôle automatisé qui exige exactement ce SHA-256, ces dimensions et un PNG RGBA (`colorType=6`).
 
@@ -92,6 +96,21 @@ Autorisé :
 
 Tout dérivé doit documenter son parent, sa méthode et son usage. Un dérivé ne devient jamais un nouveau master sans décision TOS versionnée.
 
+## Couleurs de module
+
+La couleur du module s'applique uniquement au cadre, au fond ou à l'accent. Elle ne recolorise pas la femme.
+
+| Surface | Accent |
+|---|---|
+| TAGORA_BASE | `#182643` |
+| NEXUS | `#008247` |
+| HORORA | `#1F79E0` |
+| PULS | `#55C558` |
+| DEPORA | `#00C1D5` |
+| MESSOR | `#DBDF5C` |
+| YORVA | `#BAC300` |
+| ETIOQ | `#F2F890` |
+
 ## Séparation identité / autorité
 
 La collègue IA TAGORA est une identité visuelle et conversationnelle. Elle n'est pas :
@@ -128,7 +147,7 @@ Nexus publiera le registre technique central correspondant à ce contrat :
 - variantes disponibles ;
 - version attendue par module.
 
-Le registre Nexus est une référence de conformité. Les modules ne doivent pas dépendre de Nexus au runtime uniquement pour afficher l'image.
+Le registre Nexus est une référence de conformité. Les modules ne doivent pas dépendre de Nexus au runtime uniquement pour afficher l'image. Chaque module intègre et valide l'identité séparément sur Staging. Aucun déploiement Production global n'est autorisé automatiquement.
 
 ### Modules
 

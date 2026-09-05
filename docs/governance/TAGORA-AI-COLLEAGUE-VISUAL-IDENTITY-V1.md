@@ -10,18 +10,25 @@ La machine-readable source de ce contrat, utilisée par les validations automati
 CONTRACT_ID=TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1
 IDENTITY_ID=TAGORA_AI_COLLEAGUE_V1
 CONTRACT_VERSION=1.0.0
-CONTRACT_STATUS=APPROVED_MASTER_VISUAL_IDENTITY
-CANONICAL_DISPLAY_CONCEPT=Collègue IA TAGORA
+CONTRACT_STATUS=ACTIVE_APPROVED
+DISPLAY_CONCEPT_FR=Collègue IA TAGORA
+DISPLAY_CONCEPT_EN=TAGORA AI Colleague
 APPROVED_BY=MARTIN
 APPROVAL_DATE=2026-09-05
-APPROVAL_TIME_MONTREAL=2026-09-05 12:23 -04:00
-SOURCE_GATE=TOS-TAGORA-UNIFIED-AI-COLLEAGUE-VISUAL-IDENTITY-V1-GOVERNANCE-GO
+APPROVAL_TIME_MONTREAL=2026-09-05 16:12 -04:00
+APPROVAL_ENVIRONMENT=PULS_STAGING
+SOURCE_GATE=TOS-TAGORA-UNIFIED-AI-COLLEAGUE-VISUAL-IDENTITY-V1-GOVERNANCE-AND-CANONICAL-RECORD-GO
 DECISION_AUTHORITY=MARTIN_AND_TOS
+IDENTITY_SCOPE=COMMON_VISUAL_IDENTITY_ONLY
+HUMAN_REAPPROVAL_REQUIRED=YES
 MASTER_ASSET_SHA256=12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27
 MASTER_ASSET_DIMENSIONS=1122x1402
-MASTER_ASSET_FORMAT=PNG RGBA
+MASTER_ASSET_FORMAT=PNG
 MASTER_ASSET_ALPHA=YES
+MASTER_ASSET_CENTRAL_STORAGE=DEFERRED_TO_NEXUS
 SOURCE_MODULE=PULS
+SOURCE_REPOSITORY=Oliem54/xplod-ai-agent
+SOURCE_BRANCH=fix/puls-xplod-premium-portrait-integration-v2
 SOURCE_COMMIT=b7f821ed81e61d85c1ad93689ba05927463152d5
 SOURCE_ASSET_PATH=apps/web/public/brand/assistants/tagora-ai-xplod-redhead-v1.png
 SOURCE_ASSET_URL=https://pulse-staging.tagora.ca/brand/assistants/tagora-ai-xplod-redhead-v1.png
@@ -31,6 +38,15 @@ CANONICAL_RUNTIME_ASSET_URL=
 CANONICAL_RUNTIME_ASSET_URL_STATUS=NOT_PUBLISHED_AWAITING_NEXUS_REGISTRY
 SAME_WOMAN_REQUIRED=YES
 IDENTITY_REGENERATION_ALLOWED=NO
+FACE_MODIFICATION_ALLOWED=NO
+DERIVATIVES_POLICY_RECORDED=YES
+FORBIDDEN_TRANSFORMATIONS_RECORDED=YES
+MODULE_ACCENT_POLICY_RECORDED=YES
+TOS_AUTHORITY_RECORDED=YES
+NEXUS_AUTHORITY_RECORDED=YES
+MODULE_AUTHORITY_RECORDED=YES
+HUMAN_APPROVAL_RECORDED=YES
+APPLICABLE_MODULES=NEXUS,PULS,HORORA,DEPORA,MESSOR,YORVA,ETIOQ,TAGORA_WEBSITE
 DOCUMENTATION_ONLY=yes
 RUNTIME_CHANGE=no
 MODULE_REGISTRY_V1_UNCHANGED=yes
@@ -46,7 +62,16 @@ HISTORICAL_DEC_REWRITE=no
 
 Enregistrer l'identité visuelle officielle de la **collègue IA TAGORA** : la même femme rousse adulte, approuvée humainement par Martin dans PULS Staging.
 
-Cette image devient l'identité visuelle commune et cohérente de la collègue IA dans la série TAGORA. TOS en possède le contrat. Nexus publiera plus tard le registre technique. Les modules consommeront l'identité enregistrée sans créer d'identité concurrente.
+Cette image devient l'identité visuelle commune et cohérente de la collègue IA dans toute la série TAGORA. TOS possède le contrat. Nexus publiera plus tard le registre technique. Chaque module intégrera et validera l'identité séparément sur Staging. Aucun déploiement Production global n'est autorisé automatiquement.
+
+### Six règles lues par tous les modules
+
+1. **La femme est la même dans tous les modules.** Nexus, PULS, HORORA, DEPORA, MESSOR, YORVA, ETIOQ et le site public TAGORA, lorsqu'une collègue IA commune y est représentée, doivent montrer exactement la femme du master certifié.
+2. **Les fonctions métier peuvent être différentes.** Chaque module conserve ses noms, rôles, spécialisations, permissions, données, couleurs, responsabilités, garde-fous et autorités applicatives.
+3. **L'identité visuelle ne donne aucune permission.** Ce n'est pas une identité d'accès, ni un compte, ni un rôle, ni un entitlement.
+4. **Nexus distribuera plus tard les références techniques.** Ce contrat n'autorise pas encore le registre technique Nexus.
+5. **Chaque module doit intégrer et valider l'identité séparément sur Staging.** Aucun rollout multimodule n'est déclenché ici.
+6. **Aucun déploiement Production global n'est autorisé automatiquement.**
 
 ### Limites
 
@@ -61,7 +86,7 @@ PRODUCTION_AUTHORIZED=no
 DATABASE_AUTHORIZED=no
 ENV_CHANGE_AUTHORIZED=no
 SECRET_CHANGE_AUTHORIZED=no
-TOS_CANONICAL_MERGE_AUTHORIZED_BY_THIS_GATE=no
+TOS_CANONICAL_MERGE_AUTHORIZED_BY_THIS_GATE=yes
 NEXUS_REGISTRY_IMPLEMENTATION_AUTHORIZED=no
 MODULE_IMPLEMENTATION_AUTHORIZED=no
 PERSONAL_USER_DATA=no
@@ -70,8 +95,6 @@ TOKENS=no
 PRIVATE_URLS=no
 ENVIRONMENT_KEYS=no
 ```
-
-Ce fichier ne transfère aucune permission, aucune donnée, aucun rôle métier et aucune autorité applicative d'un module vers un autre.
 
 ---
 
@@ -87,8 +110,11 @@ L'identité est **commune visuellement**. Elle n'est pas une identité d'accès,
 HUMAN_IDENTITY_APPROVAL=PASS
 HUMAN_DESKTOP_APPROVAL=PASS
 HUMAN_MOBILE_APPROVAL=PASS
+HUMAN_SIZE_APPROVAL=PASS
+HUMAN_PREMIUM_INTEGRATION_APPROVAL=PASS
 HUMAN_MESSAGE_AVATAR_APPROVAL=PASS
 HUMAN_VISUAL_E2E=PASS
+HUMAN_VISUAL_E2E_PERCENT=100
 ```
 
 ---
@@ -97,22 +123,27 @@ HUMAN_VISUAL_E2E=PASS
 
 Le pin d'identité est le SHA-256. L'URL Staging PULS est une **preuve de source**, pas la référence runtime canonique. Un fichier servi au même chemin peut changer ; les octets identifiés par le SHA-256 ne le peuvent pas sans une nouvelle version.
 
+TOS n'a pas de mécanisme officiel de conservation d'assets binaires de référence. Le PNG n'est donc **pas** importé dans ce dépôt. Le SHA-256, les métadonnées et la source PULS certifiée sont enregistrés ici. Le futur gate Nexus créera le registre technique et le stockage central.
+
 | Champ | Valeur |
 |---|---|
 | Fichier | `tagora-ai-xplod-redhead-v1.png` |
 | SHA-256 | `12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27` |
 | Dimensions | 1122 × 1402 |
-| Format | PNG RGBA |
+| Format | PNG |
+| Color type | RGBA |
 | Alpha | oui |
+| Ratio | approximativement 4:5 |
 | Module source | PULS |
 | Dépôt source | `Oliem54/xplod-ai-agent` |
 | Branche source | `fix/puls-xplod-premium-portrait-integration-v2` |
 | Commit source | `b7f821ed81e61d85c1ad93689ba05927463152d5` |
-| PR source | https://github.com/Oliem54/xplod-ai-agent/pull/18 (DRAFT) |
+| PR source | https://github.com/Oliem54/xplod-ai-agent/pull/18 (DRAFT, non fusionnée) |
 | Déploiement Staging | `37c37307-378c-475e-b958-928a84bcf3bd` |
 | URL Staging (preuve seulement) | https://pulse-staging.tagora.ca/brand/assistants/tagora-ai-xplod-redhead-v1.png |
 | Chemin source | `apps/web/public/brand/assistants/tagora-ai-xplod-redhead-v1.png` |
 | Référence canonique | `sha256:12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27` |
+| Stockage binaire TOS | `DEFERRED_TO_NEXUS` |
 
 `tagora-ai.png` n'est **pas** cette identité et ne peut pas la remplacer.
 
@@ -133,10 +164,6 @@ La même collègue IA doit être utilisée lorsque ces surfaces la représentent
 | ETIOQ | TAGORA ETIOQ | `tagora_etioq` | Module SaaS |
 | TAGORA_WEBSITE | TAGORA Website | `tagora_website` | Site public, seulement si la collègue commune y est représentée |
 
-```text
-APPLICABLE_MODULES=NEXUS,PULS,HORORA,DEPORA,MESSOR,YORVA,ETIOQ,TAGORA_WEBSITE
-```
-
 Voice IA et Boards ne sont pas dans cette V1.
 
 Nexus reste le portail central. Ce contrat ne le transforme pas en module SaaS.
@@ -147,13 +174,13 @@ Nexus reste le portail central. Ce contrat ne le transforme pas en module SaaS.
 
 Chaque module conserve :
 
-- son nom fonctionnel ;
+- son nom ;
 - son rôle ;
 - sa spécialisation ;
 - ses permissions ;
 - ses données ;
-- sa couleur d'accent ;
-- ses textes métier ;
+- ses couleurs ;
+- ses responsabilités métier ;
 - ses garde-fous ;
 - son autorité applicative.
 
@@ -165,28 +192,33 @@ ADR-0017 (80 % structure commune / 20 % identité produit) reste la règle des *
 
 ## 6. Invariants d'identité
 
-Tous les modules doivent représenter exactement la même femme.
+Tous les modules doivent représenter exactement la même femme que le fichier master certifié.
 
-Interdictions :
+Le SHA-256 du master est **immuable** pour la version 1.0.0.
+
+Interdictions absolues :
 
 - générer une nouvelle femme ;
-- remplacer son visage ;
-- modifier ses traits ;
-- changer son âge apparent ;
-- changer sa couleur de peau ;
-- changer sa couleur ou sa texture de cheveux ;
-- changer son expression de référence ;
+- utiliser une femme ressemblante ;
 - effectuer un face swap ;
-- utiliser une personne ressemblante ;
-- utiliser une ancienne agente TAGORA ;
-- utiliser `tagora-ai.png` comme identité de remplacement ;
-- appliquer une transformation générative qui modifie son identité ;
-- déformer le portrait ;
-- ajouter un fond bleu saturé ;
-- utiliser un double anneau ou un halo circulaire comme présentation principale.
+- modifier son visage ;
+- modifier ses traits ;
+- modifier sa couleur de peau ;
+- modifier ses cheveux ;
+- changer l'identité apparente ;
+- changer l'âge apparent ;
+- modifier l'expression de référence ;
+- déformer le corps ou le visage ;
+- remplacer l'image par `tagora-ai.png` ;
+- utiliser une ancienne agente comme identité active ;
+- utiliser une transformation générative ;
+- remplacer silencieusement le master ;
+- publier un asset sans version ;
+- publier un dérivé impossible à rattacher au master approuvé.
 
 ```text
 IDENTITY_REGENERATION_ALLOWED=NO
+FACE_MODIFICATION_ALLOWED=NO
 FACE_SWAP_ALLOWED=NO
 LOOKALIKE_ALLOWED=NO
 FORMER_AGENT_ALLOWED=NO
@@ -198,55 +230,120 @@ SILENT_SUBSTITUTION_FORBIDDEN=YES
 
 ## 7. Dérivés autorisés
 
-Chaque dérivé doit rester relié au master approuvé et **ne doit pas modifier le visage**.
+Les dérivés doivent provenir du master approuvé. Un recadrage doit toujours conserver une reconnaissance claire de la même femme.
 
 Autorisé :
 
+- copie exacte ;
 - redimensionnement ;
 - recadrage non destructif ;
-- optimisation PNG ou WebP ;
-- fond transparent ;
-- variantes responsive ;
-- portrait vertical 4:5 ;
-- petit avatar rectangulaire aux coins arrondis ;
-- adaptation du cadre aux couleurs du module.
+- optimisation sans perte visuelle ;
+- conversion WebP ou AVIF ;
+- conservation ou utilisation de la transparence ;
+- adaptation responsive ;
+- portrait vertical approximativement 4:5 ;
+- petit avatar rectangulaire ;
+- coins légèrement arrondis ;
+- adaptation du cadre à la couleur du module.
 
-Un cadre aux couleurs du module n'est pas une nouvelle femme. Un recadrage qui coupe ou déforme le visage n'est pas un dérivé autorisé.
+Interdit :
+
+- régénération IA ;
+- retouche du visage ;
+- changement de coiffure ;
+- changement de vêtements génératif ;
+- changement de morphologie ;
+- modification de l'expression ;
+- changement de personne ;
+- changement d'âge ;
+- arrière-plan bleu saturé ;
+- double anneau ;
+- halo circulaire ;
+- médaillon circulaire principal ;
+- déformation du ratio ;
+- agrandissement dégradant fortement le visage.
 
 ---
 
-## 8. Split de gouvernance
+## 8. Couleurs de module
+
+Chaque module peut utiliser sa couleur officielle uniquement dans le cadre, le fond ou l'accent visuel. La couleur du module ne doit pas recolorer la femme, son visage, ses cheveux ou ses vêtements.
+
+| Surface | Accent |
+|---|---|
+| TAGORA_BASE | `#182643` |
+| NEXUS | `#008247` |
+| HORORA | `#1F79E0` |
+| PULS | `#55C558` |
+| DEPORA | `#00C1D5` |
+| MESSOR | `#DBDF5C` |
+| YORVA | `#BAC300` |
+| ETIOQ | `#F2F890` |
+
+Présentation principale recommandée : portrait vertical Premium, ratio approximatif 4:5, coins légèrement arrondis, fond transparent ou harmonisé, aucun cercle principal, aucun double anneau.
+
+Présentation conversationnelle recommandée : petit rectangle vertical ou carré légèrement arrondi, même femme, visage reconnaissable, aucun double cercle.
+
+---
+
+## 9. Split de gouvernance
 
 ### TOS
 
-- définit l'identité officielle ;
-- possède ce contrat ;
-- définit les invariants, la version et la liste des surfaces ;
-- définit les règles de dérivation, de remplacement et de dépréciation.
+TOS fait autorité sur :
+
+- l'identité visuelle officielle ;
+- les règles de gouvernance ;
+- l'identité active ;
+- la version canonique ;
+- les modules applicables ;
+- les transformations autorisées ;
+- les transformations interdites ;
+- la dépréciation ;
+- le remplacement futur ;
+- la preuve d'approbation humaine.
 
 ### Nexus
 
-- publiera le registre technique central ;
-- exposera la version canonique et le SHA-256 ;
-- distribuera les références d'assets et les variantes ;
-- permettra aux modules de vérifier la version attendue.
+Nexus fera autorité plus tard sur :
+
+- le registre technique central ;
+- la publication des références d'assets ;
+- la distribution des variantes approuvées ;
+- l'exposition du SHA-256 canonique ;
+- les métadonnées de version ;
+- le contrôle de compatibilité des modules.
 
 Ce contrat **n'autorise pas** Nexus à implémenter ce registre. Un gate Nexus séparé est obligatoire.
 
 ### Modules
 
-- consommeront l'identité enregistrée ;
-- conserveront leur présentation et leur rôle métier ;
-- ne créeront aucune identité concurrente ;
-- devront prouver en Staging qu'ils utilisent la bonne femme.
+Chaque module conserve :
 
-Ce contrat **n'autorise pas** l'implémentation module.
+- son rôle métier ;
+- sa persona fonctionnelle ;
+- ses permissions ;
+- ses données ;
+- son isolation tenant ;
+- ses couleurs ;
+- ses textes ;
+- ses comportements ;
+- son déploiement.
+
+Le contrat visuel commun ne transfère aucune autorité métier vers TOS ou Nexus. Ce contrat **n'autorise pas** l'implémentation module.
 
 ---
 
-## 9. Politique de dépréciation et de remplacement
+## 10. Politique de dépréciation et de remplacement
 
-Remplacer le master exige une **nouvelle version** de ce contrat, une dépréciation explicite de l'ancienne version, et un Human Gate Martin et TOS.
+Remplacer le master exige :
+
+- une nouvelle version ;
+- une nouvelle preuve ;
+- une nouvelle validation humaine Martin ;
+- un nouveau gate TOS ;
+- un nouveau gate Nexus ;
+- une nouvelle validation Staging par module.
 
 Interdit :
 
@@ -254,7 +351,8 @@ Interdit :
 - pointer une URL non versionnée comme source de vérité ;
 - servir `tagora-ai.png` comme repli ;
 - laisser deux identités actives concurrentes ;
-- basculer les modules avant publication Nexus de la dépréciation.
+- basculer les modules avant publication Nexus de la dépréciation ;
+- remapper `TAGORA_AI_COLLEAGUE_V1` vers une autre femme.
 
 ```text
 NEW_MASTER_REQUIRES_NEW_VERSION=YES
@@ -266,36 +364,41 @@ UNVERSIONED_CANONICAL_ASSET_REFERENCE_FORBIDDEN=YES
 
 ---
 
-## 10. Validations automatisées
+## 11. Validations automatisées
 
 Le script `scripts/validate-ai-colleague-visual-identity.mjs` refuse :
 
-- un SHA-256 absent ou mal formé ;
+- un `identityId` absent ;
 - une version absente ;
+- un SHA-256 absent ou mal formé ;
 - une liste de modules vide ;
 - deux identités actives concurrentes ;
 - une substitution silencieuse de l'image (SHA changé sans nouvelle version) ;
-- une référence runtime canonique vers un asset non versionné (sans SHA-256).
+- un dérivé non traçable / une référence runtime canonique non versionnée ;
+- une activation sans approbation humaine Martin ;
+- une confusion entre identité visuelle et autorité métier.
 
-Le jumeau JSON et ce Markdown doivent rester alignés sur l'identité, la version, le statut, le SHA-256 et les modules.
+Le jumeau JSON et ce Markdown doivent rester alignés sur l'identité, la version, le statut, le SHA-256, le périmètre et les modules.
 
 ---
 
-## 11. Sécurité du contrat
+## 12. Sécurité du contrat
 
 Ce contrat ne contient :
 
 - aucune donnée personnelle d'utilisateur ;
 - aucun secret ;
+- aucun mot de passe ;
 - aucun jeton ;
-- aucune URL privée ;
-- aucune clé d'environnement.
+- aucune clé privée ;
+- aucune URL administrative privée ;
+- aucun accès Production.
 
 Les URL GitHub et Staging citées sont des preuves publiques de source, pas des credentials.
 
 ---
 
-## 12. Interdictions d'exécution
+## 13. Interdictions d'exécution
 
 ```text
 NEXUS_REPOSITORY_CHANGE_AUTHORIZED=no
@@ -307,22 +410,24 @@ DATABASE_AUTHORIZED=no
 ENV_CHANGE_AUTHORIZED=no
 SECRET_CHANGE_AUTHORIZED=no
 DEPLOYMENT_AUTHORIZED=no
-TOS_CANONICAL_MERGE_AUTHORIZED_BY_THIS_GATE=no
+PULS_PR_18_MERGE_AUTHORIZED=no
 ```
 
 ADR-0017 n'est pas réécrite. La décision correspondante est DEC-030 / ADR-0018. Le registre des modules V1 n'est pas modifié.
 
 ---
 
-## 13. Prochaine étape
+## 14. Prochaine étape
+
+Après enregistrement de ce contrat sur la branche canonique TOS :
 
 ```text
 NEXT_RECOMMENDED_GATE=NEXUS_IDENTITY_REGISTRY_GATE
-READY_FOR_NEXUS_IDENTITY_REGISTRY_GATE_UNTIL_CANONICAL_MERGE=NO
+READY_FOR_NEXUS_IDENTITY_REGISTRY_GATE=YES
 STOP_FOR_MARTIN_AND_SEPARATE_NEXUS_IDENTITY_REGISTRY_GATE=YES
 ```
 
-Après fusion de ce contrat sur la branche canonique TOS, un gate Nexus distinct pourra publier le registre technique.
+Aucun merge PULS. Aucune Production PULS. Aucun changement Nexus dans ce gate. Aucun déploiement module.
 
 ---
 

@@ -23,10 +23,12 @@ Une seule identité visuelle humaine commune est active pour la collègue IA TAG
 ```text
 IDENTITY_ID=TAGORA_AI_COLLEAGUE_V1
 VERSION=1.0.0
-STATUS=ACTIVE
+STATUS=ACTIVE_APPROVED
+IDENTITY_SCOPE=COMMON_VISUAL_IDENTITY_ONLY
 SAME_WOMAN_ALL_MODULES=REQUIRED
 GENERATIVE_REPLACEMENT=PROHIBITED
 SILENT_ASSET_SUBSTITUTION=PROHIBITED
+MASTER_ASSET_CENTRAL_STORAGE=DEFERRED_TO_NEXUS
 ```
 
 Applicable à Nexus, PULS, HORORA, DEPORA, MESSOR, YORVA, ETIOQ et TAGORA Website lorsque la collègue IA commune y est représentée.
@@ -35,11 +37,11 @@ L'identité visuelle commune ne transfère aucune permission, aucun rôle, aucun
 
 ## Autorités
 
-- **TOS** : contrat, version, fingerprint, invariants, dérivés, remplacement et dépréciation.
-- **Nexus** : futur registre technique central et version attendue par module.
-- **Modules** : présentation locale, comportement métier, permissions, données et garde-fous ; copie locale vérifiée de l'asset.
+- **TOS** : identité visuelle officielle, règles de gouvernance, identité active, version canonique, modules applicables, transformations autorisées et interdites, dépréciation, remplacement futur, preuve d'approbation humaine.
+- **Nexus** : futur registre technique central, publication des références d'assets, distribution des variantes approuvées, exposition du SHA-256, métadonnées de version, contrôle de compatibilité.
+- **Modules** : rôle métier, persona fonctionnelle, permissions, données, isolation tenant, couleurs, textes, comportements et déploiement.
 
-Nexus ne devient pas une dépendance runtime obligatoire uniquement pour afficher le portrait.
+L'identité visuelle commune ne transfère aucune autorité métier vers TOS ou Nexus. Nexus ne devient pas une dépendance runtime obligatoire uniquement pour afficher le portrait. Le stockage binaire central est différé à Nexus : TOS n'importe pas le PNG.
 
 ## Dérivés
 
