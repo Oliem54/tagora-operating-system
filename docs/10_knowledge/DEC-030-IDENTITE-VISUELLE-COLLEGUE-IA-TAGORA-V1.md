@@ -28,5 +28,6 @@ Cette décision ne transfère ni rôles, ni permissions, ni données, ni autorit
 ## Références
 
 - `docs/05_adr/ADR-0018-IDENTITE-VISUELLE-COLLEGUE-IA-TAGORA-V1.md`
+- `docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.json`
+- `docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.md`
 - `docs/09_design_system/CONTRAT_IDENTITE_VISUELLE_COLLEGUE_IA_TAGORA_V1.md`
-- `docs/07_ai/identity/TAGORA_AI_COLLEAGUE_V1.json`

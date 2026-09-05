@@ -83,7 +83,8 @@ PRODUCTION_AUTHORIZED=NO
 
 ## Références
 
-- `docs/09_design_system/CONTRAT_IDENTITE_VISUELLE_COLLEGUE_IA_TAGORA_V1.md`
-- `docs/07_ai/identity/TAGORA_AI_COLLEAGUE_V1.json`
+- `docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.json` — contrat machine canonique
+- `docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.md` — contrat de gouvernance TOS
+- `docs/09_design_system/CONTRAT_IDENTITE_VISUELLE_COLLEGUE_IA_TAGORA_V1.md` — lecture design
 - ADR-0017 — système d'identité visuelle cohérente des modules TAGORA
 - DEC-030 — identité visuelle unifiée de la collègue IA TAGORA V1

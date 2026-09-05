@@ -1,0 +1,197 @@
+{
+  "contractId": "TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1",
+  "identityId": "TAGORA_AI_COLLEAGUE_V1",
+  "version": "1.0.0",
+  "status": "APPROVED_MASTER_VISUAL_IDENTITY",
+  "canonicalDisplayConcept": "Collègue IA TAGORA",
+  "approvedBy": "MARTIN",
+  "approvalDate": "2026-09-05",
+  "approvalTimeMontreal": "2026-09-05 12:23 -04:00",
+  "sourceGate": "TOS-TAGORA-UNIFIED-AI-COLLEAGUE-VISUAL-IDENTITY-V1-GOVERNANCE-GO",
+  "decisionAuthority": "MARTIN_AND_TOS",
+  "documentationOnly": true,
+  "runtimeChange": false,
+  "moduleRegistryV1Unchanged": true,
+  "historicalAdrRewrite": false,
+  "historicalDecRewrite": false,
+  "sameWomanRequired": true,
+  "identityRegenerationAllowed": false,
+  "humanApprovals": {
+    "identity": "PASS",
+    "desktop": "PASS",
+    "mobile": "PASS",
+    "messageAvatar": "PASS",
+    "visualE2E": "PASS"
+  },
+  "masterAsset": {
+    "sha256": "12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27",
+    "dimensions": "1122x1402",
+    "width": 1122,
+    "height": 1402,
+    "format": "PNG RGBA",
+    "alpha": true,
+    "filename": "tagora-ai-xplod-redhead-v1.png",
+    "versionedFilenameRequired": true
+  },
+  "masterSha256": "12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27",
+  "dimensions": "1122x1402",
+  "format": "PNG RGBA",
+  "alpha": true,
+  "sourceModule": "PULS",
+  "sourceCommit": "b7f821ed81e61d85c1ad93689ba05927463152d5",
+  "sourceAssetPath": "apps/web/public/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+  "sourceAssetUrl": "https://pulse-staging.tagora.ca/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+  "canonicalAssetReference": "sha256:12ed4b7c31e872e3e32cba59852d30b2fe4b919613feb759535e3e6803773c27",
+  "canonicalRuntimeAssetUrl": null,
+  "canonicalRuntimeAssetUrlStatus": "NOT_PUBLISHED_AWAITING_NEXUS_REGISTRY",
+  "source": {
+    "module": "PULS",
+    "repository": "Oliem54/xplod-ai-agent",
+    "branch": "fix/puls-xplod-premium-portrait-integration-v2",
+    "commit": "b7f821ed81e61d85c1ad93689ba05927463152d5",
+    "pr": "https://github.com/Oliem54/xplod-ai-agent/pull/18",
+    "prState": "DRAFT",
+    "stagingDeployment": "37c37307-378c-475e-b958-928a84bcf3bd",
+    "stagingUrl": "https://pulse-staging.tagora.ca",
+    "assetPath": "apps/web/public/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+    "assetUrl": "https://pulse-staging.tagora.ca/brand/assistants/tagora-ai-xplod-redhead-v1.png",
+    "assetUrlRole": "SOURCE_EVIDENCE_ONLY_NOT_CANONICAL_RUNTIME"
+  },
+  "applicableModules": [
+    {
+      "id": "NEXUS",
+      "canonicalCommercialName": "TAGORA Nexus",
+      "canonicalKey": "tagora_nexus",
+      "classification": "CENTRAL_PORTAL_NOT_SAAS_MODULE"
+    },
+    {
+      "id": "PULS",
+      "canonicalCommercialName": "TAGORA PULS",
+      "canonicalKey": "tagora_pulse_ai",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "HORORA",
+      "canonicalCommercialName": "TAGORA HORORA",
+      "canonicalKey": "tagora_horora",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "DEPORA",
+      "canonicalCommercialName": "TAGORA DEPORA",
+      "canonicalKey": "tagora_depora",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "MESSOR",
+      "canonicalCommercialName": "TAGORA MESSOR",
+      "canonicalKey": "tagora_messor",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "YORVA",
+      "canonicalCommercialName": "TAGORA YORVA",
+      "canonicalKey": "tagora_yorva",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "ETIOQ",
+      "canonicalCommercialName": "TAGORA ETIOQ",
+      "canonicalKey": "tagora_etioq",
+      "classification": "SAAS_MODULE"
+    },
+    {
+      "id": "TAGORA_WEBSITE",
+      "canonicalCommercialName": "TAGORA Website",
+      "canonicalKey": "tagora_website",
+      "classification": "PUBLIC_WEBSITE_WHEN_COMMON_COLLEAGUE_IS_SHOWN"
+    }
+  ],
+  "moduleSpecificityPreserved": [
+    "functionalName",
+    "role",
+    "specialization",
+    "permissions",
+    "data",
+    "accentColor",
+    "businessCopy",
+    "safeguards",
+    "applicationAuthority"
+  ],
+  "immutableIdentityRules": [
+    "All listed surfaces must represent exactly the same adult redhead woman.",
+    "The approved master SHA-256 is the identity pin. Bytes that do not match are a different person.",
+    "Visual identity is shared. Business authority, permissions, data and module roles are not shared.",
+    "A module may keep its name, role, specialization, permissions, data, accent colour, copy, safeguards and application authority."
+  ],
+  "allowedDerivativeRules": [
+    "resize",
+    "non_destructive_crop",
+    "png_or_webp_optimization",
+    "transparent_background",
+    "responsive_variants",
+    "vertical_portrait_4_5",
+    "small_rectangular_avatar_with_rounded_corners",
+    "module_frame_colour_adaptation"
+  ],
+  "forbiddenTransformations": [
+    "generate_a_new_woman",
+    "replace_the_face",
+    "alter_facial_features",
+    "change_apparent_age",
+    "change_skin_colour",
+    "change_hair_colour_or_texture",
+    "change_reference_expression",
+    "face_swap",
+    "use_a_lookalike",
+    "use_a_former_tagora_agent",
+    "use_tagora-ai.png_as_replacement_identity",
+    "apply_a_generative_transform_that_changes_identity",
+    "deform_the_portrait",
+    "add_a_saturated_blue_background",
+    "use_a_double_ring_or_circular_halo_as_primary_presentation"
+  ],
+  "deprecationPolicy": {
+    "silentSubstitutionForbidden": true,
+    "newMasterRequiresNewVersion": true,
+    "oldVersionMustBeExplicitlyDeprecated": true,
+    "humanGateRequired": "MARTIN_AND_TOS",
+    "tagoraAiPngNeverBecomesFallback": true,
+    "deprecatedShaMustNotBeServedAsCurrent": true,
+    "nexusMustPublishDeprecationBeforeModulesSwitch": true
+  },
+  "nexusRegistryResponsibility": {
+    "owner": "NEXUS",
+    "publishTechnicalRegistry": true,
+    "exposeCanonicalVersion": true,
+    "exposeSha256": true,
+    "distributeAssetReferences": true,
+    "indicateAvailableVariants": true,
+    "allowModulesToVerifyExpectedVersion": true,
+    "authorizedByThisContract": false
+  },
+  "moduleConsumptionResponsibility": {
+    "consumeRegisteredIdentity": true,
+    "keepLocalPresentationAndBusinessRole": true,
+    "mustNotCreateCompetingIdentity": true,
+    "mustProveCorrectWomanInStaging": true,
+    "implementationAuthorizedByThisContract": false
+  },
+  "safety": {
+    "personalUserData": false,
+    "secrets": false,
+    "tokens": false,
+    "privateUrls": false,
+    "environmentKeys": false
+  },
+  "executionHolds": {
+    "tosCanonicalMergeAuthorizedByThisGate": false,
+    "nexusChangeAuthorized": false,
+    "pulsChangeAuthorized": false,
+    "otherModuleChangeAuthorized": false,
+    "productionAuthorized": false,
+    "databaseAuthorized": false,
+    "envChangeAuthorized": false,
+    "secretChangeAuthorized": false
+  }
+}

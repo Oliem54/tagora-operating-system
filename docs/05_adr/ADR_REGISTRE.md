@@ -41,6 +41,7 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0015 | Politique de transition de l'architecture de marque TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-17 | Écosystème TAGORA | `TAGORA + NOM` reste canonique ; `NOM par TAGORA` secondaire ; « anciennement » maximum 6 mois ; routes/domaines option C ; séparation logos/typographie | Complète ADR-0014 ; pilote Website préparé mais non autorisé ; aucun autre repository touché |
 | ADR-0016 | Format commercial uniforme des modules TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-17 | Écosystème TAGORA | Problème, action, résultat, risque, statut et CTA ; langage court et entrepreneurial ; statuts actuel/pilote/futur distincts | Complète ADR-0015 ; aucune réécriture Website ni promesse non mesurée autorisée |
 | ADR-0017 | Système d'identité visuelle cohérente des modules TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-18 | Écosystème TAGORA | 80 % structure commune / 20 % identité produit ; thèmes par tokens ; états sémantiques globaux ; WCAG 2.2 AA | DEPORA premier pilote ; 8 paquets ; aucune implémentation produit autorisée |
+| ADR-0018 | Identité visuelle unifiée de la collègue IA TAGORA V1 | **Validé** — Martin ST-Gelais — Direction | 2026-09-05 | Écosystème TAGORA | Une seule femme rousse adulte (`TAGORA_AI_COLLEAGUE_V1`) pour Nexus, PULS, HORORA, DEPORA, MESSOR, YORVA, ETIOQ et le site TAGORA ; pas de transfert de permissions | Gouvernance TOS seulement ; registre technique Nexus et implémentation modules non autorisés |
 
 ### Liens
 
@@ -61,15 +62,16 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0015](ADR-0015-POLITIQUE-TRANSITION-ARCHITECTURE-MARQUE-TAGORA.md)
 - [ADR-0016](ADR-0016-FORMAT-COMMERCIAL-UNIFORME-MODULES-TAGORA.md)
 - [ADR-0017](ADR-0017-SYSTEME-IDENTITE-VISUELLE-MODULES-TAGORA.md)
+- [ADR-0018](ADR-0018-IDENTITE-VISUELLE-COLLEGUE-IA-TAGORA-V1.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (validation des licences Web, mapping typographique, repos Nexus/TCP, logout global, modèle I5, domaines applicatifs YORVA / ETIOQ, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité reste identifié techniquement comme Stock Premium par ADR-0011 ; l'implémentation du pilote et I5–I9 restent interdits. Le métier Sourcing AI est fondé par ADR-0012, classé Coming Soon par ADR-0013 et renommé commercialement TAGORA YORVA par ADR-0014. TAGORA ETIOQ est ajouté comme sixième module Coming Soon. ADR-0015 fixe la transition progressive, ADR-0016 le format commercial et ADR-0017 le système visuel commun. Repositories, routes, DNS, domaines applicatifs et connecteurs restent interdits.
+Les ADR futures (validation des licences Web, mapping typographique, repos Nexus/TCP, logout global, modèle I5, domaines applicatifs YORVA / ETIOQ, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité reste identifié techniquement comme Stock Premium par ADR-0011 ; l'implémentation du pilote et I5–I9 restent interdits. Le métier Sourcing AI est fondé par ADR-0012, classé Coming Soon par ADR-0013 et renommé commercialement TAGORA YORVA par ADR-0014. TAGORA ETIOQ est ajouté comme sixième module Coming Soon. ADR-0015 fixe la transition progressive, ADR-0016 le format commercial, ADR-0017 le système visuel commun des modules, et ADR-0018 l'identité visuelle de la collègue IA. Repositories, routes, DNS, domaines applicatifs et connecteurs restent interdits.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0017 Validé (identité visuelle cohérente, 2026-08-18)** — complète ADR-0016 et les décisions de marque ; DEPORA reste le premier pilote, mais aucune implémentation, route, domaine, DNS ou production n'est autorisée. ADR-0016 à ADR-0001 restent inchangées dans leur portée.
+**Enrichi — ADR-0018 Validé (collègue IA TAGORA, 2026-09-05)** — complète ADR-0017 sans la remplacer ; la même femme est l'identité visuelle commune ; aucune implémentation Nexus, module ou Production n'est autorisée. ADR-0017 à ADR-0001 restent inchangées dans leur portée.

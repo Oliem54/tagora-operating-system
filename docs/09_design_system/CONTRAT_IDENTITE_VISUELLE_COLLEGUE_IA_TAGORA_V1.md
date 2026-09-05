@@ -7,6 +7,8 @@ DECISION=DEC-030
 ADR=ADR-0018
 IDENTITY_ID=TAGORA_AI_COLLEAGUE_V1
 IDENTITY_VERSION=1.0.0
+CONTRACT_ID=TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1
+CANONICAL_MACHINE_CONTRACT=docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.json
 TOS_SCOPE_ONLY=YES
 PRODUCT_IMPLEMENTATION_AUTHORIZED=NO
 ```
@@ -147,9 +149,9 @@ Chaque module :
 
 ## Validation automatisée TOS
 
-Le manifeste machine lisible est `docs/07_ai/identity/TAGORA_AI_COLLEAGUE_V1.json`.
+Le manifeste machine canonique est `docs/governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.json`. Ce n'est pas un second registre : le dossier `docs/07_ai/` reste le registre des **rôles** d'agents, pas de l'identité visuelle.
 
-Le validateur `scripts/validate-tagora-ai-colleague-identity.mjs` refuse :
+Le validateur `scripts/validate-ai-colleague-visual-identity.mjs` refuse :
 
 - un SHA absent ou mal formé ;
 - une version absente ou invalide ;
@@ -174,6 +176,8 @@ PRODUCTION_AUTHORIZED=NO
 
 ## Références
 
+- [Contrat machine TOS](../governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.json)
+- [Contrat de gouvernance TOS](../governance/TAGORA-AI-COLLEAGUE-VISUAL-IDENTITY-V1.md)
 - [ADR-0018](../05_adr/ADR-0018-IDENTITE-VISUELLE-COLLEGUE-IA-TAGORA-V1.md)
 - [ADR-0017](../05_adr/ADR-0017-SYSTEME-IDENTITE-VISUELLE-MODULES-TAGORA.md)
 - [Standard identité visuelle modules](STANDARD_IDENTITE_VISUELLE_MODULES_TAGORA.md)
