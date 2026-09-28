@@ -1,0 +1,58 @@
+# VALD-112 — Hôte du runtime 24/7 EXPANORA
+
+**Date :** 2026-09-23
+
+**Décideur :** Martin ST-Gelais — Direction
+
+**Statut :** Validé
+
+**Type :** Humaine / Gouvernance
+
+**Gate :** `EXPANORA-24X7-RUNTIME-PROVIDER-VALIDATION`
+
+## Décision validée
+
+```text
+EXPANORA_24X7_RUNTIME_PROVIDER_VALIDATED=YES
+EXPANORA_24X7_RUNTIME_PROVIDER=GOOGLE_CLOUD_RUN_WORKER_POOLS
+REGION=northamerica-northeast1
+REGION_NAME=Montreal
+SCALE_TO_ZERO=FORBIDDEN
+MIN_INSTANCES_PER_ENVIRONMENT=1
+GOOGLE_SDK_IN_CORE=NOT_REQUIRED
+COST_STATUS=TO_BE_MEASURED_AT_PROVISIONING
+MONTHLY_COST_FROZEN=NO
+SIZE_HYPOTHESIS_AUTHORIZES_RESOURCES=NO
+GOOGLE_CLOUD_PROJECT_CREATED=NO
+BILLING_ACTIVATED=NO
+IMPLEMENTATION_AUTHORIZED=NO
+```
+
+Le coût de revue 120 à 180 USD n'est pas retenu comme chiffre officiel. Les tailles 1 vCPU / 1 Gio / 1 instance sont des hypothèses de départ, pas des ressources autorisées.
+
+## Autorisations
+
+Cette validation fige l'hôte cible. Elle ne crée aucune infrastructure.
+
+```text
+CODE_AUTHORIZED=NO
+ACCOUNT_CREATION_AUTHORIZED=NO
+WORKER_POOL_CREATION_AUTHORIZED=NO
+BILLING_ACTIVATION_AUTHORIZED=NO
+ARTIFACT_REGISTRY_AUTHORIZED=NO
+CONTAINER_BUILD_AUTHORIZED=NO
+SERVICE_ACCOUNT_AUTHORIZED=NO
+SECRET_CREATION_AUTHORIZED=NO
+DEPLOYMENT_AUTHORIZED=NO
+PRODUCTION_DEPLOYMENT_AUTHORIZED=NO
+```
+
+## Livrables
+
+- DEC-034 ;
+- ADR-0022 ;
+- [EXPANORA_24X7_RUNTIME_PROVIDER_DECISION.md](../04_adoption_modules/EXPANORA_24X7_RUNTIME_PROVIDER_DECISION.md).
+
+## Prochain Human Gate
+
+`EXPANORA-24X7-RUNTIME-IMPLEMENTATION-PREPARATION` — calculateur de prix, coûts Staging et Production, journaux et réseau, validation Martin avant toute dépense. Non autorisé. Ne déploie pas Production.

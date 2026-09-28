@@ -42,6 +42,11 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 | ADR-0016 | Format commercial uniforme des modules TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-17 | Écosystème TAGORA | Problème, action, résultat, risque, statut et CTA ; langage court et entrepreneurial ; statuts actuel/pilote/futur distincts | Complète ADR-0015 ; aucune réécriture Website ni promesse non mesurée autorisée |
 | ADR-0017 | Système d'identité visuelle cohérente des modules TAGORA | **Validé** — Martin ST-Gelais — Direction | 2026-08-18 | Écosystème TAGORA | 80 % structure commune / 20 % identité produit ; thèmes par tokens ; états sémantiques globaux ; WCAG 2.2 AA | DEPORA premier pilote ; 8 paquets ; aucune implémentation produit autorisée |
 | ADR-0018 | Identité visuelle unifiée de la collègue IA TAGORA V1 | **Validé** — Martin ST-Gelais — Direction | 2026-09-05 | Écosystème TAGORA | Une seule femme rousse adulte (`TAGORA_AI_COLLEAGUE_V1`) pour Nexus, PULS, HORORA, DEPORA, MESSOR, YORVA, ETIOQ et le site TAGORA ; pas de transfert de permissions | Gouvernance TOS seulement ; registre technique Nexus et implémentation modules non autorisés |
+| ADR-0019 | Couche de rôles de gouvernance d'organisation Nexus | **Validé** — Martin ST-Gelais — Direction | 2026-09-06 | Nexus + TOS | `organization_owner` / `organization_admin` / `organization_member` distincts des rôles d'entrée, principals admin Nexus et rôles métier ; colonne sur `nexus_memberships` | Contrat TOS ; spec Nexus ; migration non appliquée ; gate d'implémentation distinct |
+| ADR-0020 | Architecture V1 d'EXPANORA | **Validé** — Martin ST-Gelais — Direction | 2026-09-22 | TOS ; module futur EXPANORA | Module autonome ; clé `tagora_expanora` ; tuile Nexus réservée non visible ; demandes d'action vers le module propriétaire ; aucun fournisseur IA dans le cœur | VALD-110 ; implémentation non autorisée ; registre des modules non réécrit |
+| ADR-0021 | Architecture de déploiement EXPANORA V1 | **Validé — amendé 24/7** — Martin ST-Gelais — Direction | 2026-09-22 | TOS ; déploiement futur EXPANORA | Runtime cloud permanent 24/7 exigé ; fournisseur non verrouillé ; Vercel et Supabase `ca-central-1` inchangés | VALD-111 amendée ; ADR-0020 non rouverte ; aucune infrastructure |
+| ADR-0022 | Hébergement du runtime 24/7 EXPANORA | **Validé** — Martin ST-Gelais — Direction | 2026-09-23 | TOS ; runtime EXPANORA | Cloud Run worker pools à Montréal ; au moins une instance par environnement ; coût non figé | VALD-112 ; aucun projet Google ; ADR-0021 non remplacée |
+| ADR-0023 | Préparation d'implémentation du runtime 24/7 EXPANORA | **Validé** — Martin ST-Gelais — Direction | 2026-09-23 | TOS ; préparation EXPANORA | Ordre de grandeur 72,60 USD/mois ; deux projets GCP ; file Postgres derrière contrat ; Production sur un GO distinct | VALD-113 ; aucun dépôt ; ADR-0022 non rouverte |
 
 ### Liens
 
@@ -63,15 +68,20 @@ ADR stockées dans `docs/05_adr/`. Complète le [README_ADR.md](README_ADR.md) e
 - [ADR-0016](ADR-0016-FORMAT-COMMERCIAL-UNIFORME-MODULES-TAGORA.md)
 - [ADR-0017](ADR-0017-SYSTEME-IDENTITE-VISUELLE-MODULES-TAGORA.md)
 - [ADR-0018](ADR-0018-IDENTITE-VISUELLE-COLLEGUE-IA-TAGORA-V1.md)
+- [ADR-0019](ADR-0019-COUCHE-ROLES-GOUVERNANCE-ORGANISATION-NEXUS.md)
+- [ADR-0020](ADR-0020-ARCHITECTURE-EXPANORA-V1.md)
+- [ADR-0021](ADR-0021-ARCHITECTURE-DEPLOIEMENT-EXPANORA-V1.md)
+- [ADR-0022](ADR-0022-HEBERGEMENT-RUNTIME-24X7-EXPANORA.md)
+- [ADR-0023](ADR-0023-PREPARATION-IMPLEMENTATION-RUNTIME-24X7-EXPANORA.md)
 
 ---
 
 ## Prochaines entrées
 
-Les ADR futures (validation des licences Web, mapping typographique, repos Nexus/TCP, logout global, modèle I5, domaines applicatifs YORVA / ETIOQ, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité reste identifié techniquement comme Stock Premium par ADR-0011 ; l'implémentation du pilote et I5–I9 restent interdits. Le métier Sourcing AI est fondé par ADR-0012, classé Coming Soon par ADR-0013 et renommé commercialement TAGORA YORVA par ADR-0014. TAGORA ETIOQ est ajouté comme sixième module Coming Soon. ADR-0015 fixe la transition progressive, ADR-0016 le format commercial, ADR-0017 le système visuel commun des modules, et ADR-0018 l'identité visuelle de la collègue IA. Repositories, routes, DNS, domaines applicatifs et connecteurs restent interdits.
+Les ADR futures (validation des licences Web, mapping typographique, repos Nexus/TCP, logout global, modèle I5, domaines applicatifs YORVA / ETIOQ, classement commercial d'EXPANORA, etc.) pourront être ajoutées après transfert Martin des paquets concernés. TAGORA_HANDOFF_V1 est figé conceptuellement par ADR-0010. Le pilote identité reste identifié techniquement comme Stock Premium par ADR-0011 ; l'implémentation du pilote et I5–I9 restent interdits. Le métier Sourcing AI est fondé par ADR-0012, classé Coming Soon par ADR-0013 et renommé commercialement TAGORA YORVA par ADR-0014. TAGORA ETIOQ est ajouté comme sixième module Coming Soon. ADR-0015 fixe la transition progressive, ADR-0016 le format commercial, ADR-0017 le système visuel commun des modules, et ADR-0018 l'identité visuelle de la collègue IA. ADR-0019 fige la couche de gouvernance d'organisation Nexus ; la migration `governance_role` exige un gate d'implémentation distinct. ADR-0020 valide l'architecture V1 d'EXPANORA (VALD-110) : module autonome, clé `tagora_expanora`, tuile réservée non visible, demandes d'action sans écriture directe intermodule. Elle n'amende pas ADR-0014 ni ADR-0018. ADR-0022 valide Cloud Run worker pools à Montréal pour le runtime 24/7. Le coût n'est pas figé. Aucun compte n'est créé. Elle ne remplace pas ADR-0021. ADR-0023 valide la préparation d'implémentation (ordre de grandeur 72,60 USD/mois, deux projets, file Postgres derrière contrat). Le prochain gate `EXPANORA-LOCAL-REPOSITORY-BOOTSTRAP-GO` n'est pas autorisé. Repositories, DNS et connecteurs restent interdits hors gates propres.
 
 ---
 
 ## Statut du registre
 
-**Enrichi — ADR-0018 Validé (collègue IA TAGORA, 2026-09-05)** — complète ADR-0017 sans la remplacer ; la même femme est l'identité visuelle commune ; aucune implémentation Nexus, module ou Production n'est autorisée. ADR-0017 à ADR-0001 restent inchangées dans leur portée.
+**Enrichi — ADR-0023 Validée (préparation runtime EXPANORA, 2026-09-23)** — VALD-113. Ordre de grandeur 72,60 USD/mois. Deux projets non créés. File derrière contrat. Bootstrap local non autorisé. ADR-0022, ADR-0021 et ADR-0020 ne sont pas rouvertes.

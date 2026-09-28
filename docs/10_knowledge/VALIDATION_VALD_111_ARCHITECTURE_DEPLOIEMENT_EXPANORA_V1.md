@@ -1,0 +1,70 @@
+# VALD-111 — Architecture de déploiement EXPANORA V1
+
+**Date :** 2026-09-22
+
+**Décideur :** Martin ST-Gelais — Direction
+
+**Statut :** Validé — amendé sur le runtime 24/7
+
+**Type :** Humaine / Gouvernance
+
+**Gate :** `EXPANORA-DEPLOYMENT-ARCHITECTURE-24X7-AMENDMENT`
+
+## Décision validée
+
+```text
+EXPANORA_DEPLOYMENT_ARCHITECTURE_V1_VALIDATED=YES
+EXPANORA_24X7_RUNTIME_ARCHITECTURE_AMENDED=YES
+EXPANORA_24X7_RUNTIME_REQUIRED=YES
+CLOUD_LIVE=24_HOURS_7_DAYS
+PRODUCTION_RESERVED=expanora.tagora.ca
+STAGING_RESERVED=expanora.staging.tagora.ca
+NEXUS_ROUTE_RESERVED=/modules/expanora
+NEXUS_TILE_VISIBLE=NO
+WEB_API_PLATFORM=Vercel
+PREFERRED_EXECUTION_REGION=Montreal / yul1
+EXPANORA_WORKER_RUNTIME=LONG_LIVED_CLOUD_24X7
+SCHEDULED_AND_EVENT_DRIVEN_REPLACE_PERMANENT_RUNTIME=NO
+LONG_LIVED_WORKER_HOST_LOCKED=NO
+PERMANENT_DAEMON_REQUIRED_IN_V1=REPLACED_BY_24X7_REQUIREMENT
+EXPANORA_DATABASE_PLATFORM=Supabase Postgres
+DATABASE_REGION=ca-central-1
+READ_ONLY=YES
+WORDPRESS_WRITE=DISABLED_BY_DEFAULT
+SECRET_BACKEND=SUPABASE_VAULT_OR_EQUIVALENT
+BUSINESS_AUDIT_SEPARATE=YES
+FUTURE_HANDOFF_AUDIENCE=tagora_expanora
+ADR_0020_REOPENED=NO
+IMPLEMENTATION_AUTHORIZED=NO
+DNS_CREATED=NO
+DATABASE_CREATED=NO
+X_PLOD_CONFIRMED=NO
+```
+
+L'ancienne règle « un worker continu n'est pas obligatoire » est remplacée. Le runtime cloud permanent est une exigence. Son fournisseur n'est pas choisi. Les autres décisions de VALD-111 restent en vigueur.
+
+## Autorisations
+
+Cette validation enregistre l'architecture de déploiement TOS. Elle n'autorise aucun code.
+
+```text
+CODE_AUTHORIZED=NO
+REPO_CREATION_AUTHORIZED=NO
+DEPLOYMENT_AUTHORIZED=NO
+DATABASE_CREATION_AUTHORIZED=NO
+DNS_AUTHORIZED=NO
+SECRET_CREATION_AUTHORIZED=NO
+PAID_SERVICE_ACTIVATION_AUTHORIZED=NO
+NEXUS_CHANGE_AUTHORIZED=NO
+OTHER_MODULE_CHANGE_AUTHORIZED=NO
+```
+
+## Livrables
+
+- DEC-033 ;
+- ADR-0021 ;
+- [EXPANORA_DEPLOYMENT_ARCHITECTURE_V1.md](../04_adoption_modules/EXPANORA_DEPLOYMENT_ARCHITECTURE_V1.md).
+
+## Prochain Human Gate
+
+Aucun gate d'implémentation n'est autorisé. Le handoff Nexus, audience `tagora_expanora`, exige un gate futur spécifique.
