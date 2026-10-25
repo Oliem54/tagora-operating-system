@@ -59,12 +59,17 @@ PULS est responsable de ses activités de suivi virtuel, notamment :
 - l'état de ses séquences et tentatives de relance;
 - les réponses ou résultats observés par PULS;
 - la demande de prise en charge humaine lorsque la conversation ou une règle
-  le justifie.
+  le justifie;
+- le blocage immédiat de toute nouvelle relance lorsqu'un lead demande
+  l'arrêt, puis la transmission durable de cette demande à RELORA.
 
 PULS ne modifie pas de lui-même le propriétaire humain, l'étape commerciale,
 les préférences de contact ou les droits CRM faisant autorité dans RELORA.
 PULS peut proposer un changement; RELORA l'enregistre selon les droits et
-règles CRM.
+règles CRM. Une demande d'arrêt observée dans PULS ne reste pas une simple
+proposition : le blocage local est immédiat, et RELORA doit persister la
+suppression ou la préférence canonique selon la section 6. PULS n'écrit pas
+cette préférence directement.
 
 ## 4. Leads et sources à synchroniser
 
@@ -122,12 +127,39 @@ contact, la prise en charge humaine et les arrêts demandés. Si cet état est
 absent, contradictoire ou trop ancien pour garantir une action sûre, PULS
 suspend la relance et demande une vérification.
 
-Une réponse du lead, une demande d'arrêt, un changement de préférence ou une
-prise en charge humaine doit entraîner l'arrêt ou la révision de la séquence
-PULS. RELORA inscrit l'activité et sa prochaine action. Les tâches humaines
-et virtuelles doivent être visibles et coordonnées afin d'éviter les contacts
+Une réponse du lead, un changement de préférence ou une prise en charge
+humaine doit entraîner l'arrêt ou la révision de la séquence PULS concernée.
+RELORA inscrit l'activité et sa prochaine action. Les tâches humaines et
+virtuelles doivent être visibles et coordonnées afin d'éviter les contacts
 contradictoires. Une politique pourra autoriser certains suivis parallèles,
 mais elle devra définir les canaux et les plages de contact compatibles.
+Une demande d'arrêt n'est pas couverte par cette seule inscription : elle
+suit le flux ci-dessous.
+
+### Demande d'arrêt reçue dans PULS
+
+Ce flux est une proposition de contrat. Il n'est pas implémenté.
+
+Lorsqu'un lead demande l'arrêt dans PULS, PULS bloque immédiatement toute
+nouvelle relance. Ce blocage est local et précède la réponse de RELORA.
+
+PULS transmet ensuite à RELORA un événement durable indiquant la demande,
+son heure, sa source et sa portée connue (canal, entreprise ou marque).
+L'événement proposé `puls.lead.reply_received.v1` peut inscrire une réponse,
+mais il ne tient pas lieu de cette demande d'arrêt.
+
+RELORA enregistre la suppression ou la préférence canonique, puis transmet
+la politique de contact à jour à PULS.
+
+Si la transmission, la portée ou la confirmation est incertaine, PULS reste
+bloqué. Aucun humain et aucune séquence future ne peuvent reprendre le
+contact avant la réconciliation de la politique. RELORA ne doit pas non plus
+traiter une demande absente, partielle ou non confirmée comme une
+autorisation de contact.
+
+Une demande d'arrêt ne peut être annulée par l'IA ou par une simple
+réattribution humaine. Toute reprise exige une nouvelle autorisation
+conforme à une règle encore à définir (section 10).
 
 Les noms d'événements ci-dessous sont des propositions de contrat, pas des
 événements implémentés :
@@ -137,12 +169,18 @@ Les noms d'événements ci-dessous sont des propositions de contrat, pas des
 | RELORA → PULS | `relora.lead.created_or_linked.v1` | Créer ou relier le contexte de suivi PULS |
 | PULS → RELORA | `puls.lead.captured.v1` | Créer ou relier le dossier CRM RELORA |
 | RELORA → PULS | `relora.lead.assignment_changed.v1` | Transmettre le responsable principal et le soutien |
-| RELORA → PULS | `relora.lead.contact_policy_changed.v1` | Transmettre admissibilité, préférence ou arrêt |
-| RELORA → PULS | `relora.lead.human_takeover.v1` | Suspendre ou réviser les relances virtuelles |
+| PULS → RELORA | `puls.lead.stop_requested.v1` | Après le blocage immédiat, transmettre la demande d'arrêt durable : heure, source et portée connue (canal, entreprise ou marque) |
+| RELORA → PULS | `relora.lead.contact_policy_changed.v1` | Après enregistrement de la suppression ou de la préférence canonique, transmettre la politique de contact à jour, y compris un arrêt |
+| RELORA → PULS | `relora.lead.human_takeover.v1` | Suspendre ou réviser les relances virtuelles, sans annuler une demande d'arrêt |
 | PULS → RELORA | `puls.lead.qualification_completed.v1` | Inscrire le résultat de qualification dans l'historique |
 | PULS → RELORA | `puls.followup.outcome_recorded.v1` | Inscrire le résultat d'une tentative ou d'une séquence |
-| PULS → RELORA | `puls.lead.reply_received.v1` | Arrêter la séquence et inscrire la réponse ou son résumé autorisé |
-| PULS → RELORA | `puls.lead.human_followup_requested.v1` | Créer ou mettre à jour une tâche de suivi humain |
+| PULS → RELORA | `puls.lead.reply_received.v1` | Inscrire la réponse ou son résumé autorisé et arrêter ou réviser la séquence concernée; ne persiste pas à lui seul une demande d'arrêt |
+| PULS → RELORA | `puls.lead.human_followup_requested.v1` | Créer ou mettre à jour une tâche de suivi humain, sans lever une demande d'arrêt |
+
+Pour une demande d'arrêt, l'aller proposé est `puls.lead.stop_requested.v1`
+et le retour proposé est `relora.lead.contact_policy_changed.v1`. Le retour
+confirme la politique réconciliée. Il n'autorise une reprise que si cette
+politique et la règle encore à définir en section 10 le permettent.
 
 Le transport des événements (webhook, bus ou autre) n'est pas choisi par ce
 contrat et nécessite une décision distincte.
@@ -155,7 +193,7 @@ champ partagé.
 | Domaine | Propriétaire | Exemples d'état |
 |---|---|---|
 | Cycle CRM et prochaine action | RELORA | nouveau, actif, converti, fermé, en attente humaine, ne pas contacter |
-| Qualification et séquence virtuelle | PULS | à qualifier, admissible, planifiée, en cours, réponse reçue, suspendue, terminée, erreur |
+| Qualification et séquence virtuelle | PULS | à qualifier, admissible, planifiée, en cours, réponse reçue, suspendue, bloquée en attente de réconciliation d'arrêt, terminée, erreur |
 
 RELORA garde la décision finale pour l'étape CRM et le responsable humain.
 PULS garde l'état détaillé de ses séquences et communique les changements
@@ -175,6 +213,9 @@ pertinents à RELORA.
   rapprochement automatique ne doit traverser les périmètres d'entreprise.
 - Les événements et les actions de relance doivent être idempotents : un
   rejeu ne crée ni doublon CRM ni deuxième envoi.
+- Le rejeu d'une demande d'arrêt ne lève pas le blocage et ne crée pas une
+  seconde préférence contradictoire. Tant que RELORA n'a pas confirmé sa
+  persistance, aucune relance humaine ou virtuelle ne reprend.
 - Les reprises après panne doivent être traçables. En cas d'échec durable,
   l'événement va dans une file d'erreur visible; aucun envoi ne doit être
   répété sans confirmer son résultat antérieur.
@@ -214,7 +255,11 @@ doivent confirmer :
 8. la technologie d'échange, sa sécurité, sa rétention, ses reprises et sa
    surveillance;
 9. les délais attendus de synchronisation et la personne responsable des
-   files d'erreurs.
+   files d'erreurs;
+10. la règle qui pourra autoriser une reprise après une demande d'arrêt.
+    Cette règle n'est pas définie. Une demande d'arrêt ne peut être annulée
+    par l'IA ou par une simple réattribution humaine. Toute reprise exigera
+    une nouvelle autorisation conforme à cette règle, encore à confirmer.
 
 ## 11. Portée et critères fonctionnels futurs
 
@@ -228,8 +273,20 @@ que :
 - l'attribution principale et le soutien éventuel sont visibles dans RELORA
   et transmis à PULS;
 - les activités virtuelles de PULS apparaissent dans l'historique RELORA;
-- une réponse, un arrêt ou une prise en charge humaine suspend correctement
-  les relances concernées;
+- une réponse ou une prise en charge humaine suspend ou révise les relances
+  concernées, sans annuler une demande d'arrêt;
+- lorsqu'un lead demande l'arrêt dans PULS, PULS bloque immédiatement toute
+  nouvelle relance;
+- PULS transmet à RELORA un événement durable indiquant la demande, son
+  heure, sa source et sa portée connue (canal, entreprise ou marque);
+- RELORA enregistre la suppression ou la préférence canonique, puis transmet
+  la politique à jour à PULS;
+- si la transmission, la portée ou la confirmation est incertaine, PULS
+  reste bloqué, et ni un humain ni une séquence future ne reprend le contact
+  avant la réconciliation de la politique;
+- une demande d'arrêt n'est annulée ni par l'IA ni par une simple
+  réattribution humaine; toute reprise exige une nouvelle autorisation
+  conforme à la règle encore à définir en section 10;
 - les doublons, les événements rejoués et les défaillances ne provoquent pas
   de double envoi;
 - les entreprises et droits d'accès restent isolés;
@@ -239,6 +296,8 @@ que :
 ## 12. Statut
 
 Ce document est un contrat fonctionnel proposé pour revue. Les décisions de
-la section 10 ne sont pas encore prises. Il n'autorise ni intégration réelle,
-ni import QuickBooks, ni accès à des données clients, ni envoi, ni migration,
-ni déploiement.
+la section 10 ne sont pas encore prises, y compris la règle de reprise après
+une demande d'arrêt. Le flux PULS → RELORA → PULS décrit à la section 6 est
+une proposition de contrat, pas un comportement implémenté. Ce document
+n'autorise ni intégration réelle, ni import QuickBooks, ni accès à des données
+clients, ni envoi, ni migration, ni déploiement.
