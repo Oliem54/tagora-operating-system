@@ -4,6 +4,8 @@ Registre canonique des modules TAGORA destiné à **TAGORA Website** et **TAGORA
 
 Ce document est une **réconciliation documentaire** écrite sur `main` courant. Il n'implémente aucun registre runtime. Il ne modifie aucun autre repository.
 
+> **Réconciliation du sixième nom — 2026-11-21 — ADR-0024 / DEC-036 / VALD-114.** Pour toute décision postérieure à cette date, le sixième module s'appelle TAGORA RELORA. Les lignes, clés, domaines et actifs ETIOQ de ce registre restent l'instantané historique aligné sur `main`. Ils ne sont pas réécrits ici : logo, palette et domaine de production RELORA ne sont pas décidés par ce gate. `RELORA_SECURITY_HOLD=true`. `RELORA_OPENABLE=false`. Aucun renommage technique.
+
 ```text
 REGISTRY_ID=TAGORA-MODULE-REGISTRY-V1
 REGISTRY_VERSION=1.1.0-main-aligned
@@ -108,7 +110,7 @@ FUTURE_RESERVED_MODULE_COUNT=2
 
 Les six modules SaaS mensuels de DEC-026 / ADR-0014 sont les **seules tuiles actuellement visibles**. Voice IA et Boards sont enregistrés pour une activation future ; ils ne doivent pas apparaître comme tuiles actives.
 
-L'ordre commercial ADR-0014 (HORORA, PULS, DEPORA, MESSOR, YORVA, ETIOQ) reste la carte commerciale officielle. L'ordre d'affichage « Mon espace TAGORA » ci-dessous est celui fixé par la décision Martin de réconciliation (MESSOR = 1). Les deux ordres ne sont pas fusionnés.
+L'ordre commercial ADR-0014 (HORORA, PULS, DEPORA, MESSOR, YORVA, ETIOQ) est l'instantané du 2026-08-17. Depuis ADR-0024, le sixième nom de lecture active est RELORA ; ETIOQ reste le nom historique de cet instantané. L'ordre d'affichage « Mon espace TAGORA » ci-dessous est celui fixé par la décision Martin de réconciliation (MESSOR = 1). Les deux ordres ne sont pas fusionnés. Les tuiles de ce fichier ne sont pas renommées par ADR-0024.
 
 YORVA et ETIOQ restent `COMING_SOON` au sens commercial ADR-0014. `ACTIVE_VISIBLE` signifie seulement : tuile prévue dans les six positions actuelles, pas disponibilité produit.
 

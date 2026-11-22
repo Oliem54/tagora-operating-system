@@ -15,6 +15,8 @@ PACKET_COUNT=8
 
 > **Politique de transition — DEC-027 / ADR-0015 / VALD-106 :** la convention canonique demeure `TAGORA + NOM DU MODULE`. `NOM par TAGORA` est réservé à une signature graphique secondaire. La mention « anciennement » est limitée à six mois après une date de première publication enregistrée. Les routes et domaines suivent une stratégie progressive option C, sans changement autorisé par la documentation TOS.
 
+> **Réconciliation du sixième nom — 2026-11-21 — ADR-0024 / DEC-036 / VALD-114.** Le sixième module de lecture active est TAGORA RELORA. TAGORA ETIOQ reste le nom historique du 2026-08-17 dans le tableau et la section ci-dessous. Le métier étiquettes décrit sous ETIOQ n'est pas réattribué. Aucun dépôt, dossier, domaine, DNS ou clé technique n'est renommé. `RELORA_SECURITY_HOLD=true`. `RELORA_OPENABLE=false`. Cette réconciliation n'ouvre pas RELORA.
+
 ## Carte commerciale officielle
 
 | N° | Nom officiel | Correspondance | Statut commercial |
@@ -25,6 +27,8 @@ PACKET_COUNT=8
 | 4 | TAGORA MESSOR | Ancien nom : TAGORA Mail IA | Existant ; transition non exécutée |
 | 5 | TAGORA YORVA | Ancien nom commercial : TAGORA Sourcing AI | `COMING_SOON` |
 | 6 | TAGORA ETIOQ | Nom de travail antérieur : TAGORA TAG | `COMING_SOON` |
+
+Le tableau ci-dessus est l'enregistrement du 2026-08-17. La carte de lecture active depuis le 2026-11-21 conserve les cinq premiers noms et nomme le sixième TAGORA RELORA. TAGORA ETIOQ y figure comme nom historique de cette position.
 
 Tous les modules sont destinés à être commercialisables séparément par abonnement mensuel.
 

@@ -4,6 +4,8 @@
 
 **Validé — Martin ST-Gelais — Direction — 2026-08-17**
 
+> **Réconciliation 2026-11-21 — ADR-0024 / DEC-036 / VALD-114.** Le sixième module de lecture active est TAGORA RELORA. TAGORA ETIOQ reste le nom historique écrit dans cette ADR. Aucun dépôt, dossier, domaine ou identifiant technique n'est renommé. `RELORA_SECURITY_HOLD=true`. `RELORA_OPENABLE=false`.
+
 Validation : **VALD-105**
 Décision : **DEC-026**
 

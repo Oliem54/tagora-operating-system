@@ -1,6 +1,8 @@
 # TAGORA Nexus — fournisseur d'identité humaine V1
 
-Décision de gouvernance distincte. Elle **ne réécrit pas** ADR-0008, ADR-0009, ADR-0010, DEC-020, DEC-021, DEC-022 ni leurs contrats. Elle **supersède**, pour la V1 seulement et pour le fournisseur d'identité humaine de TAGORA Nexus, les clauses Entra External ID listées ci-dessous.
+> **Réconciliation 2026-11-21 — ADR-0024 / DEC-036 / VALD-114.** La lecture active du fournisseur d'identité humain est `ENTRA_EXTERNAL_ID`. Le corps de ce fichier reste la décision historique du 2026-08-21, y compris son choix documentaire d'un Supabase Auth dédié. Cette réconciliation ne modifie aucun runtime, secret, tenant ou contrat SSO. Contrat actif : [TAGORA-NEXUS-CENTRAL-MFA-V1.md](TAGORA-NEXUS-CENTRAL-MFA-V1.md).
+
+Décision de gouvernance distincte. Elle **ne réécrit pas** ADR-0008, ADR-0009, ADR-0010, DEC-020, DEC-021, DEC-022 ni leurs contrats. Elle **supersède**, pour la V1 seulement et pour le fournisseur d'identité humaine de TAGORA Nexus, les clauses Entra External ID listées ci-dessous. Le paragraphe précédent est le texte du 2026-08-21. La lecture active est celle du bandeau.
 
 Ce document n'implémente rien. Il ne crée aucun projet, utilisateur, secret, DNS, table, callback ou runtime.
 
