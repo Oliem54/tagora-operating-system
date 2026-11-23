@@ -349,4 +349,35 @@ ACTIVE_PRIORITY=NEXUS_HORORA_V1_E2E_CERTIFICATION_REMAINS_ON_HOLD
 NEXT_ACTION=TOS_ACKNOWLEDGE_AND_HOLD
 ```
 
-Martin accepte cet inventaire comme état de référence. Le MFA Phone reste actif jusqu'à une migration TOTP préparée, sécurisée, testée et approuvée par un GO distinct. Ce GO de conception Staging n'est pas autorisé. La priorité active demeure la certification E2E Nexus vers HORORA V1, toujours en hold. Aucune activation, désactivation, migration, modification Nexus ou changement Production n'est déclenché.
+Martin accepte cet inventaire comme état de référence historique. La migration Phone vers TOTP est annulée par la section 16. Le MFA Phone reste actif. Aucune activation, désactivation, migration, modification Nexus ou changement Production n'est déclenché.
+
+## 16. Correction — autorité unique NEXUS, aucun MFA local HORORA
+
+```text
+GATE=TOS_NEXUS_HORORA_CENTRAL_ONLY_AUTH_AND_PHONE_MFA_DECOMMISSION_READONLY_PLAN_GO
+DATE=2026-11-22
+AUTHORITY=MARTIN
+NEXUS_CENTRAL_AUTHORITY=CONFIRMED
+HORORA_LOCAL_MFA_TARGET=NONE
+HORORA_TOTP_MIGRATION=CANCELLED
+HORORA_MFA_TOTP_STAGING_MIGRATION_DESIGN_AND_RECOVERY_READONLY_GO=CANCELLED_NOT_EXECUTED
+NEXUS_HORORA_E2E_STATUS=HOLD_TRANSPORT_PASS_MFA_ASSURANCE_ABSENT
+LEGACY_PAGE_LOGIN_PATHS=REDIRECTED_TO_NEXUS
+LEGACY_LOCAL_MFA_AND_PASSWORD_CHECK=STILL_PRESENT
+ALL_USERS_EXCLUSIVE_NEXUS=NOT_CONFIRMED
+EXACT_BLOCKERS=HANDOFF_HAS_NO_VERIFIED_MFA_CLAIM;ENTRA_STAGING_MFA_POLICY_UNREAD;NO_SERVER_VERIFIED_ID_TOKEN;LOCAL_AAL2_STILL_REQUIRED_FOR_ADMIN_AND_DIRECTION;EXCLUSIVE_ACCESS_FOR_ALL_18_ACCOUNTS_NOT_PROVEN
+MONTHLY_SAVINGS_TARGET=75_USD
+PHONE_MFA_DISABLE=NO
+PHONE_ADDON_DISABLE=NO
+NEXUS_CHANGE=NO
+PRODUCTION_CHANGED=NO
+IMPLEMENTATION_AUTHORIZED=NO
+NEXT_SINGLE_GO=NEXUS_ENTRA_STAGING_DIRECTORY_READER_MFA_POLICY_READONLY_GO
+NEXT_SINGLE_GO_AUTHORIZED=NO
+```
+
+NEXUS est l'autorité unique visée pour l'authentification humaine, le SSO, le MFA et l'entrée dans les modules. HORORA conserve ses administrateurs, ses rôles, ses permissions métier et l'isolation par organisation. L'assertion ne porte pas ces permissions : `business_permissions_authority=false` reste en vigueur.
+
+Le transport `TAGORA_HANDOFF_V1` déjà prouvé reste valable : ES256, 120 secondes, `sub` = `nuser`, organisation, `jti` et `nonce` à usage unique. Le lancement Production existant ne signe pas `auth_time`, `acr`, `amr` ni une méthode MFA. Les pages `/login`, `/connexion`, `/employe/login` et `/direction/login` renvoient déjà vers NEXUS en l'absence de session broker. Un cookie JWT Supabase antérieur au 2026-09-08 est refusé. Le MFA local admin et Direction, l'exigence AAL2 du cookie applicatif local et la vérification de mot de passe `signInWithPassword` sont encore présents. Un acteur hors liste nominative n'entre que s'il a exactement un rôle HORORA actif déjà enregistré. Les 18 comptes ne sont donc pas prouvés comme exclusivement accessibles par NEXUS.
+
+Le MFA Phone et l'add-on à 0,1027 USD de l'heure restent actifs. Leur retrait attend, dans l'ordre : une politique MFA Staging lue, une assertion MFA signée et vérifiée sur le handoff existant, une preuve Staging employé, Direction et administrateur sans AAL2 local, la fermeture des voies locales restantes, puis un GO Production distinct de Martin.
